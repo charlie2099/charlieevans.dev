@@ -5,10 +5,10 @@ header {
   nav {
     grid-area: nav;
   }
-  section {
+  section {  /* change */
     grid-area: section;
   }
-  article {
+  article {  /* change */
     grid-area: article;
   }
   footer {
@@ -24,12 +24,21 @@ header {
   /*-------------------------------------------HEADER-----------------------------------------------*/
   #Website_title {
     font-size: 40px;
-    background-color: rgb(32, 32, 32);
+    background-color: rgb(0, 0, 0);
     color: rgb(48, 197, 255);
     margin: 0px;
     padding: 6px;
     text-align: center;
     font-family: monospace;
+  }
+  .headerToggle {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+  .headerToggle + .container {
+    padding-top: 102px;
   }
   /*--------------------------------------------NAV-------------------------------------------------*/
   /*#Nav_links_title
@@ -42,7 +51,7 @@ header {
       text-align: center;
       margin: 0px;
       padding: 20px;
-      background-color: rgb(32, 32, 32);
+      background-color: rgb(0, 0, 0);
   }
   .nav_links {
     text-decoration: none;
@@ -58,9 +67,16 @@ header {
     background-color: rgb(48, 197, 255);
     color: white;
   }
+  /*-----------------------------------------ARTICLE------------------------------------------------*/
+  article {
+      background-color: rgb(77, 77, 77);
+      text-align: center;
+  }
   /*-----------------------------------------SECTION------------------------------------------------*/
   section {
-      background-color: rgb(77, 77, 77);
+      background-color: rgb(0, 0, 0);
+      border: 2px solid rgb(48, 197, 255);
+      margin: 20px;
   }
   /*----------------------------------------PARAGRAPHS----------------------------------------------*/
   .paragraphs {
@@ -76,10 +92,12 @@ header {
   /*-----------------------------------------FOOTER----------------------------------------------*/
   footer 
   {
-    background-color:rgb(32, 32, 32);
+    background-color:rgb(0, 0, 0);
     color:rgb(255, 255, 255);
-    padding:15px;
+    padding:10px;
     font-family: monospace;
+    font-size: 20px;
+    text-align: center;
   }
   /*--------------------------------------MEDIA QUERIES------------------------------------------*/
   /* Responsive Design */
@@ -89,14 +107,15 @@ header {
   {
     body {
       margin: 0%;
-      background-color: rgb(255, 255, 255); /* nice grey colour rgb(32, 32, 32) */
+      background-color: rgb(32, 32, 32); /* nice grey colour rgb(32, 32, 32) */
       display: grid;
-      grid-template-columns: repeat(6, 1fr);
+      grid-template-columns: repeat(12, 1fr);
       grid-template-rows: auto;
       grid-template-areas:
-      "header header header header nav nav"
-      "article article section section section section"
-      "footer footer footer footer footer footer";
+      "header header header header header header header header nav nav nav nav"
+      ". article article article article article article article article article article ."
+      ". section section section section section section section section section section ."
+      "footer footer footer footer footer footer footer footer footer footer footer footer";
     }
   }
   
