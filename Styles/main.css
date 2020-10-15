@@ -238,13 +238,18 @@
   @media only screen and (max-width: 768px) 
   {
     body {
-      margin: 0%;
-      background-color: rgb(32, 32, 32); /* nice grey colour rgb(32, 32, 32) */
+      background-color: rgb(245, 245, 245);
     }
 
-    #Tab1,#Tab2,#Tab3,#Tab4,#Tab5{
-      font-size: 14px;
-      text-align: center;
+    #Website_title {
+      font-size: 60px;
+    }
+
+    .menu {
+      padding: 10px;
+    }
+    .nav_links {
+      margin: auto;
     }
   }
   
@@ -252,49 +257,44 @@
   @media only screen and (max-width: 600px) 
   {
     body {
-      background-color: rgb(32, 32, 32); /* nice grey colour rgb(32, 32, 32) */
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      grid-template-rows: auto;
-      grid-template-areas:
-      "header header header"
-      "nav nav nav"
-      "banner banner banner"
-      "article article article"
-      "footer footer footer";
+      background-color: rgb(245, 245, 245);
     }
 
     #Website_title {
       font-size: 30px;
     }
+    .headerToggle {
+      padding: 10px;
+      position: fixed;
+      top: 0;
+      width: auto;
+    }
+    .headerToggle + .container {
+      padding-top: 102px;
+    }
 
-    .homeBanner {
-      font-size: 12px;
+    .menu {
+      padding: 10px;
+    }
+    .nav_links {
+      margin: auto;
     }
    
     article {
-      font-size: 12px;
-      padding: 50px;
       display: grid;
-      grid-template-columns: repeat(4, 1fr);
+      grid-template-columns: repeat(3, 1fr);
       grid-template-rows: auto;
       grid-template-areas:
-      "section section section section"
-      "figure figure figure figure"
-    }
-
-    figure { 
-      margin: 60px;
-      color: rgb(224, 239, 222);
-      font-family: Helvetica;
-      background-color: rgb(77, 77, 77);
-      border: 2px solid rgb(255, 255, 255);
-      border-radius: 50px;
-
-      display: grid;
-      grid-template-columns: repeat(1, 1fr);
-      grid-template-rows: repeat(1, 1fr);
-      grid-template-areas:
-      "figcaption";
+      "HOME HOME HOME"
+      "ABOUT ABOUT ABOUT"
+      "SKILLS SKILLS SKILLS"
+      "GAMES GAMES GAMES"
+      "box1 box1 box1"
+      "box2 box2 box2"
+      "box3 box3 box3"
+      "box4 box4 box4"
+      "box5 box5 box5"
+      "box6 box6 box6"
+      "CONTACT CONTACT CONTACT"
     }
   }
