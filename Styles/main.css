@@ -5,12 +5,6 @@
   nav {
     grid-area: nav;
   }
-  .homeBanner {
-    grid-area: banner1;
-  }
-  .aboutBanner {
-    grid-area: banner2;
-  }
   article { 
     grid-area: article;
   }
@@ -26,6 +20,25 @@
   footer {
     grid-area: footer;
   }
+
+
+
+  .homeBanner {
+    grid-area: HOME;
+  }
+  .aboutBanner {
+    grid-area: ABOUT;
+  }
+  .skillsBanner {
+    grid-area: SKILLS;
+  }
+  .gamesBanner {
+    grid-area: GAMES;
+  }
+  .contactBanner {
+    grid-area: CONTACT;
+  }
+
 
 
   .box1 {
@@ -46,15 +59,6 @@
   .box6 {
     grid-area: box6;
   }
-  .box7 {
-    grid-area: box7;
-  }
-  .box8 {
-    grid-area: box8;
-  }
-  .box9 {
-    grid-area: box9;
-  }
   /*----------------------------------------TEXT COLOUR--------------------------------------------*/
   p, li, table, figcaption{
     color: rgb(255, 255, 255);
@@ -68,15 +72,20 @@
   color: rgb(224, 239, 222);
   font-family: Helvetica;
   }
+  h4 {
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+    font-family: monospace;
+  }
   /*-------------------------------------------HEADER-----------------------------------------------*/
   header {
     background-color: rgb(32, 32, 32);
-    border: 2px solid rgb(32, 32, 32);
-    border-bottom-color: rgb(255, 255, 255);
+    /* border: 2px solid rgb(32, 32, 32);
+    border-bottom-color: rgb(255, 255, 255); */
     padding: 20px;
   }
   #Website_title {
-    font-size: 100px;
+    font-size: 80px;
     color: rgb(255, 255, 255);
     text-align: center;
     font-family: Helvetica;
@@ -89,11 +98,14 @@
   .headerToggle + .container {
     padding-top: 102px;
   }
-  /*-------------------------------------------BANNER-----------------------------------------------*/
+  /*--------------------------------------------BANNER-----------------------------------------------*/
   .homeBanner,
-  .aboutBanner {
-    padding: 10px;
-    background-color: rgb(72, 190, 255);
+  .aboutBanner,
+  .skillsBanner,
+  .gamesBanner,
+  .contactBanner {
+    background-color: rgb(32, 32, 32);
+    border: 2px solid rgb(255, 255, 255); /* may not need */
     text-align: center;
     font-family: Helvetica;
   }
@@ -103,6 +115,9 @@
       text-align: center;
       padding: 40px;
       background-color: rgb(32, 32, 32);
+      border: 2px solid rgb(32, 32, 32);
+      border-top-color: rgb(255, 255, 255);
+      border-bottom-color: rgb(255, 255, 255); 
   }
   .nav_links {
     text-decoration: none;
@@ -110,7 +125,7 @@
     color: white;
     margin: 100px;
     padding: 20px;
-    font-size: 30px;
+    font-size: 25px;
     font-family: monospace;
   }
   .nav_links:hover {
@@ -121,6 +136,7 @@
   /*------------------------------------------ARTICLE-----------------------------------------------*/
   article {
       text-align: center;
+      padding: 40px;
   }
   /*---------------------------------------INTRODUCTION---------------------------------------------*/
   #introduction {
@@ -130,9 +146,10 @@
   }
   /*----------------------------------------PARAGRAPHS----------------------------------------------*/
   p {
-    background-color: rgb(77, 77, 77);
-    border: 2px solid rgb(255, 255, 255);
-    border-radius: 40px;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(32, 32, 32);
+    border-radius: 10px;
+
     padding: 25px;
     overflow: auto;
     font-family: Helvetica;
@@ -144,11 +161,20 @@
   footer 
   {
     background-color:rgb(32, 32, 32);
-    color:rgb(224, 239, 222);
+    color:rgb(255, 255, 255);
     padding: 30px;
     font-family: monospace;
     font-size: 20px;
     text-align: center;
+  }
+  .fab:hover {
+      color: rgb(48, 197, 255);
+  }
+  .fa-twitter,
+  .fa-github,
+  .fa-linkedin,
+  .fa-playstation {
+    color: rgb(110, 110, 110);
   }
   /*--------------------------------------MEDIA QUERIES------------------------------------------*/
   /* Responsive Design */
@@ -158,31 +184,33 @@
   {
     body {
       margin: 0%;
-      background-color: rgb(255, 255, 255);
+      background-color: rgb(245, 245, 245);
       display: grid;
-      grid-template-columns: repeat(12, 1fr);
+      grid-template-columns: repeat(1, 1fr);
       grid-template-rows: auto;
       grid-template-areas:
-      "header header header header header header header header header header header header"
-      "nav nav nav nav nav nav nav nav nav nav nav nav"
-      "banner1 banner1 banner1 banner1 banner1 banner1 banner1 banner1 banner1 banner1 banner1 banner1"
-      ". article article article article article article article article article article ."
-      "banner2 banner2 banner2 banner2 banner2 banner2 banner2 banner2 banner2 banner2 banner2 banner2"
-      "footer footer footer footer footer footer footer footer footer footer footer footer";
+      "header"
+      "nav"
+      "article"
+      "footer";
     }
    
     article {
-      padding: 50px;
       display: grid;
       grid-template-columns: repeat(11, 1fr);
       grid-template-rows: auto;
       grid-template-areas:
+      "HOME HOME HOME HOME HOME HOME HOME HOME HOME HOME HOME"
+      "ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT"
+      "SKILLS SKILLS SKILLS SKILLS SKILLS SKILLS SKILLS SKILLS SKILLS SKILLS SKILLS"
+      "GAMES GAMES GAMES GAMES GAMES GAMES GAMES GAMES GAMES GAMES GAMES"
       "box1 box1 box1 . box2 box2 box2 . box3 box3 box3"
       "box4 box4 box4 . box5 box5 box5 . box6 box6 box6"
-      "box7 box7 box7 . box8 box8 box8 . box9 box9 box9";
+      "CONTACT CONTACT CONTACT CONTACT CONTACT CONTACT CONTACT CONTACT CONTACT CONTACT CONTACT"
     }
 
     section {
+      margin: 20px;
       display: grid;
       grid-template-columns: repeat(1, 1fr);
       grid-template-rows: auto;
