@@ -112,14 +112,6 @@
     text-align: center;
     font-family: Helvetica;
   }
-  .headerToggle {
-    position: fixed;
-    top: 0;
-    width: 100%;
-  }
-  .headerToggle + .container {
-    padding-top: 102px;
-  }
   /*--------------------------------------------BANNER-----------------------------------------------*/
   .aboutBanner,
   .skillsBanner,
@@ -153,6 +145,16 @@
     background-color: rgb(48, 197, 255);
     border-radius: 30px;
     color: white;
+  }
+  .headerToggle {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    opacity: 0.8;
+    padding: 25px;
+  }
+  .headerToggle + .container {
+    padding-top: 102px;
   }
   /*------------------------------------------ARTICLE-----------------------------------------------*/
   article {
