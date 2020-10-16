@@ -22,10 +22,6 @@
   }
 
 
-
-  .homeBanner {
-    grid-area: HOME;
-  }
   .aboutBanner {
     grid-area: ABOUT;
   }
@@ -35,12 +31,35 @@
   .gamesBanner {
     grid-area: GAMES;
   }
+  .resumeBanner {
+    grid-area: RESUME;
+  }
   .contactBanner {
     grid-area: CONTACT;
   }
 
 
+/* About Grid */
+  .intro_para
+  {
+    grid-area: intro_para;
+  }
+  .profile_pic
+  {
+    grid-area: profile_pic
+  }
 
+  /* Skills Grid */
+  .skills1
+  {
+    grid-area: skills1;
+  }
+  .skills2
+  {
+    grid-area: skills2;
+  }
+
+  /* Game Grid */
   .box1 {
     grid-area: box1;
   }
@@ -59,9 +78,12 @@
   .box6 {
     grid-area: box6;
   }
+
+  /* Resume Grid */
+  /* Contact Grid */
   /*----------------------------------------TEXT COLOUR--------------------------------------------*/
   p, li, table, figcaption{
-    color: rgb(255, 255, 255);
+    color: rgb(32, 32, 32);
   }
   h1 {
     font-size: 30px;
@@ -74,14 +96,14 @@
   }
   h4 {
     font-size: 25px;
-    color: rgb(255, 255, 255);
+    color: rgb(48, 197, 255);
     font-family: monospace;
   }
   /*-------------------------------------------HEADER-----------------------------------------------*/
   header {
     background-color: rgb(32, 32, 32);
-    /* border: 2px solid rgb(32, 32, 32);
-    border-bottom-color: rgb(255, 255, 255); */
+    border: 3px solid rgb(32, 32, 32);
+    border-bottom-color: rgb(48, 197, 255); 
     padding: 20px;
   }
   #Website_title {
@@ -99,10 +121,10 @@
     padding-top: 102px;
   }
   /*--------------------------------------------BANNER-----------------------------------------------*/
-  .homeBanner,
   .aboutBanner,
   .skillsBanner,
   .gamesBanner,
+  .resumeBanner,
   .contactBanner {
     background-color: rgb(32, 32, 32);
     border: 2px solid rgb(255, 255, 255); /* may not need */
@@ -115,14 +137,13 @@
       text-align: center;
       padding: 40px;
       background-color: rgb(32, 32, 32);
-      border: 2px solid rgb(32, 32, 32);
-      border-top-color: rgb(255, 255, 255);
-      border-bottom-color: rgb(255, 255, 255); 
+      border: 4px solid rgb(32, 32, 32);
+      border-bottom-color: rgb(48, 197, 255);
   }
   .nav_links {
     text-decoration: none;
     /* color: rgb(86, 56, 255);  nice blue colour */ 
-    color: white;
+    color: rgb(48, 197, 255);
     margin: 100px;
     padding: 20px;
     font-size: 25px;
@@ -147,7 +168,7 @@
   /*----------------------------------------PARAGRAPHS----------------------------------------------*/
   p {
     background-color: rgb(255, 255, 255);
-    border: 1px solid rgb(32, 32, 32);
+    border: 4px solid rgb(32, 32, 32);
     border-radius: 10px;
 
     padding: 25px;
@@ -200,12 +221,14 @@
       grid-template-columns: repeat(11, 1fr);
       grid-template-rows: auto;
       grid-template-areas:
-      "HOME HOME HOME HOME HOME HOME HOME HOME HOME HOME HOME"
       "ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT"
+      "intro_para intro_para intro_para intro_para intro_para intro_para intro_para profile_pic profile_pic profile_pic profile_pic"
       "SKILLS SKILLS SKILLS SKILLS SKILLS SKILLS SKILLS SKILLS SKILLS SKILLS SKILLS"
+      ". skills1 skills1 skills1 skills1 . skills2 skills2 skills2 skills2 ."
       "GAMES GAMES GAMES GAMES GAMES GAMES GAMES GAMES GAMES GAMES GAMES"
       "box1 box1 box1 . box2 box2 box2 . box3 box3 box3"
       "box4 box4 box4 . box5 box5 box5 . box6 box6 box6"
+      "RESUME RESUME RESUME RESUME RESUME RESUME RESUME RESUME RESUME RESUME RESUME"
       "CONTACT CONTACT CONTACT CONTACT CONTACT CONTACT CONTACT CONTACT CONTACT CONTACT CONTACT"
     }
 
@@ -285,9 +308,10 @@
       grid-template-columns: repeat(3, 1fr);
       grid-template-rows: auto;
       grid-template-areas:
-      "HOME HOME HOME"
       "ABOUT ABOUT ABOUT"
+      "intro_para . profile_pic"
       "SKILLS SKILLS SKILLS"
+      "skills1 . skills2"
       "GAMES GAMES GAMES"
       "box1 box1 box1"
       "box2 box2 box2"
@@ -295,6 +319,7 @@
       "box4 box4 box4"
       "box5 box5 box5"
       "box6 box6 box6"
-      "CONTACT CONTACT CONTACT"
+      "RESUME RESUME RESUME"
+      "CONTACT CONTACT CONTACT";
     }
   }
