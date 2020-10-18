@@ -107,7 +107,7 @@
     padding: 20px;
   }
   #Website_title {
-    font-size: 80px;
+    font-size: 4.5vw;
     color: rgb(255, 255, 255);
     text-align: center;
     font-family: Helvetica;
@@ -120,41 +120,69 @@
   .contactBanner {
     background-color: rgb(32, 32, 32);
     border: 2px solid rgb(255, 255, 255); /* may not need */
+    border-radius: 50px;
     text-align: center;
     font-family: Helvetica;
   }
   /*--------------------------------------------NAV-------------------------------------------------*/
   .menu {
-      /* margin: 20px; */
-      text-align: center;
-      padding: 40px;
-      background-color: rgb(32, 32, 32);
-      border: 4px solid rgb(32, 32, 32);
-      border-bottom-color: rgb(48, 197, 255);
+    /* margin: 20px; */
+    text-align: center;
+    padding: 10px;
+    background-color: rgb(32, 32, 32);
+    border: 4px solid rgb(32, 32, 32);
+    border-bottom-color: rgb(48, 197, 255);
   }
   .nav_links {
     text-decoration: none;
     /* color: rgb(86, 56, 255);  nice blue colour */ 
     color: rgb(48, 197, 255);
-    margin: 100px;
     padding: 20px;
     font-size: 25px;
     font-family: monospace;
   }
   .nav_links:hover {
-    background-color: rgb(48, 197, 255);
-    border-radius: 30px;
-    color: white;
+   background-color: rgb(48, 197, 255);
+   border-radius: 30px;
+   color: white;
   }
+  li {
+    text-decoration: none;
+    float: left;
+    width: 370px;
+    margin: 2px;
+    list-style-type: none;
+  }
+  li a {
+    text-decoration: none;
+    display: block;
+  }
+
+  /* Scrolling nav bar */
+  /* box */
   .headerToggle {
     position: fixed;
-    top: 0;
-    width: 100%;
-    opacity: 0.8;
-    padding: 25px;
+    left: 0px;
+    width: 300px; /* box width */
+    border: none;
+    background: none;
+   }
+   /* box links */
+  .headerToggle a{
+    background-color: rgba(32, 32, 32, 0.322);
+    color: rgb(32, 32, 32);
+    border-radius: 30px;
+   position: relative;
+   left: -300px;
+   transition: 0.3s;
+   padding: 0px;
+   font-size: 25px;
+  }
+  .headerToggle a:hover {
+    left: -80px;
   }
   .headerToggle + .container {
-    padding-top: 102px;
+   padding-top: 102px;
   }
   /*------------------------------------------ARTICLE-----------------------------------------------*/
   article {
@@ -203,11 +231,11 @@
   /* Responsive Design */
 
   /* Desktop */
-  @media only screen and (min-width: 992px)
+  @media only screen and (max-width: 1980px)
   {
     body {
       margin: 0%;
-      background-color: rgb(245, 245, 245);
+      background-color: rgb(255, 255, 255);
       display: grid;
       grid-template-columns: repeat(1, 1fr);
       grid-template-rows: auto;
@@ -223,15 +251,15 @@
       grid-template-columns: repeat(11, 1fr);
       grid-template-rows: auto;
       grid-template-areas:
-      "ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT"
+      ". ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ."
       "intro_para intro_para intro_para intro_para intro_para intro_para intro_para profile_pic profile_pic profile_pic profile_pic"
-      "SKILLS SKILLS SKILLS SKILLS SKILLS SKILLS SKILLS SKILLS SKILLS SKILLS SKILLS"
+      ". SKILLS SKILLS SKILLS SKILLS SKILLS SKILLS SKILLS SKILLS SKILLS ."
       ". skills1 skills1 skills1 skills1 . skills2 skills2 skills2 skills2 ."
-      "GAMES GAMES GAMES GAMES GAMES GAMES GAMES GAMES GAMES GAMES GAMES"
+      ". GAMES GAMES GAMES GAMES GAMES GAMES GAMES GAMES GAMES ."
       "box1 box1 box1 . box2 box2 box2 . box3 box3 box3"
       "box4 box4 box4 . box5 box5 box5 . box6 box6 box6"
-      "RESUME RESUME RESUME RESUME RESUME RESUME RESUME RESUME RESUME RESUME RESUME"
-      "CONTACT CONTACT CONTACT CONTACT CONTACT CONTACT CONTACT CONTACT CONTACT CONTACT CONTACT"
+      ". RESUME RESUME RESUME RESUME RESUME RESUME RESUME RESUME RESUME ."
+      ". CONTACT CONTACT CONTACT CONTACT CONTACT CONTACT CONTACT CONTACT CONTACT ."
     }
 
     section {
@@ -260,68 +288,60 @@
   }
   
   /* Tablet (Ipad) */ 
-  @media only screen and (max-width: 768px) 
+  @media only screen and (max-width: 1024px) 
   {
     body {
-      background-color: rgb(245, 245, 245);
+      background-color: rgb(255, 255, 255);
     }
 
-    #Website_title {
-      font-size: 60px;
-    }
-
-    .menu {
-      padding: 10px;
-    }
-    .nav_links {
-      margin: auto;
+    article {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: auto;
+      grid-template-areas:
+      "ABOUT ABOUT"
+      "intro_para profile_pic"
+      "SKILLS SKILLS"
+      "skills1 skills2" 
+      "GAMES GAMES"
+      "box1 box2"
+      "box3 box4"
+      "box5 box6"
+      "RESUME RESUME"
+      "CONTACT CONTACT";
     }
   }
   
   /* Mobile (Iphone 6/7/8) */
-  @media only screen and (max-width: 600px) 
+  @media only screen and (max-width: 414px) 
   {
     body {
-      background-color: rgb(245, 245, 245);
+      background-color: rgb(255, 255, 255);
     }
 
-    #Website_title {
-      font-size: 30px;
-    }
-    .headerToggle {
-      padding: 10px;
-      position: fixed;
-      top: 0;
-      width: auto;
-    }
-    .headerToggle + .container {
-      padding-top: 102px;
-    }
-
-    .menu {
-      padding: 10px;
-    }
-    .nav_links {
-      margin: auto;
-    }
-   
     article {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(1, 1fr);
       grid-template-rows: auto;
       grid-template-areas:
-      "ABOUT ABOUT ABOUT"
-      "intro_para . profile_pic"
-      "SKILLS SKILLS SKILLS"
-      "skills1 . skills2"
-      "GAMES GAMES GAMES"
-      "box1 box1 box1"
-      "box2 box2 box2"
-      "box3 box3 box3"
-      "box4 box4 box4"
-      "box5 box5 box5"
-      "box6 box6 box6"
-      "RESUME RESUME RESUME"
-      "CONTACT CONTACT CONTACT";
+      "ABOUT"
+      "intro_para"
+      "profile_pic"
+      "SKILLS"
+      "skills1" 
+      "skills2"
+      "GAMES"
+      "box1"
+      "box2"
+      "box3"
+      "box4"
+      "box5"
+      "box6"
+      "RESUME"
+      "CONTACT";
+    }
+
+    h4 {
+      font-size: 18px;
     }
   }
