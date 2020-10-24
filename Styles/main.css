@@ -31,8 +31,8 @@
   .gamesBanner {
     grid-area: GAMES;
   }
-  .resumeBanner {
-    grid-area: RESUME;
+  .blogBanner {
+    grid-area: BLOG;
   }
   .contactBanner {
     grid-area: CONTACT;
@@ -79,9 +79,9 @@
     grid-area: box6;
   }
 
-  /* Resume Grid */
+  /* Blog Grid */
   /* Contact Grid */
-  /*----------------------------------------TEXT COLOUR--------------------------------------------*/
+  /*------------------------------------------TEXT COLOUR--------------------------------------------*/
   p, li, table, figcaption{
     color: rgb(32, 32, 32);
   }
@@ -99,7 +99,11 @@
     color: rgb(48, 197, 255);
     font-family: monospace;
   }
-  /*-------------------------------------------HEADER-----------------------------------------------*/
+  /*---------------------------------------------IMAGES-----------------------------------------------*/
+  img {
+    border: 4px solid rgb(48, 197, 255);
+  }
+  /*---------------------------------------------HEADER-----------------------------------------------*/
   header {
     background-color: rgb(32, 32, 32);
     border: 3px solid rgb(32, 32, 32);
@@ -116,7 +120,7 @@
   .aboutBanner,
   .skillsBanner,
   .gamesBanner,
-  .resumeBanner,
+  .blogBanner,
   .contactBanner {
     background-color: rgb(32, 32, 32);
     border: 2px solid rgb(255, 255, 255); /* may not need */
@@ -197,16 +201,13 @@
   }
   /*----------------------------------------PARAGRAPHS----------------------------------------------*/
   p {
-    background-color: rgb(255, 255, 255);
     border: 4px solid rgb(32, 32, 32);
     border-radius: 10px;
-
-    padding: 25px;
+    font-size: 30px;
+    margin: auto;
+    padding: 0px;
     overflow: auto;
     font-family: Helvetica;
-  }
-  .clearfix {  /* expands container to account for any overflow of content */
-    overflow: auto;
   }
   /*-----------------------------------------FOOTER----------------------------------------------*/
   footer 
@@ -252,13 +253,13 @@
       grid-template-rows: auto;
       grid-template-areas:
       ". ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ."
-      "intro_para intro_para intro_para intro_para intro_para intro_para intro_para profile_pic profile_pic profile_pic profile_pic"
+      ". intro_para intro_para intro_para intro_para intro_para intro_para profile_pic profile_pic profile_pic ."
       ". SKILLS SKILLS SKILLS SKILLS SKILLS SKILLS SKILLS SKILLS SKILLS ."
       ". skills1 skills1 skills1 skills1 . skills2 skills2 skills2 skills2 ."
       ". GAMES GAMES GAMES GAMES GAMES GAMES GAMES GAMES GAMES ."
       "box1 box1 box1 . box2 box2 box2 . box3 box3 box3"
       "box4 box4 box4 . box5 box5 box5 . box6 box6 box6"
-      ". RESUME RESUME RESUME RESUME RESUME RESUME RESUME RESUME RESUME ."
+      ". BLOG BLOG BLOG BLOG BLOG BLOG BLOG BLOG BLOG ."
       ". CONTACT CONTACT CONTACT CONTACT CONTACT CONTACT CONTACT CONTACT CONTACT ."
     }
 
@@ -307,7 +308,7 @@
       "box1 box2"
       "box3 box4"
       "box5 box6"
-      "RESUME RESUME"
+      "BLOG BLOG"
       "CONTACT CONTACT";
     }
   }
@@ -337,7 +338,7 @@
       "box4"
       "box5"
       "box6"
-      "RESUME"
+      "BLOG"
       "CONTACT";
     }
 
