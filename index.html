@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1" name="viewport"/>
     <link rel="stylesheet" type="text/css" href="Styles/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -36,9 +37,15 @@
   <article class = "Banner" id = "SkillsBanner">
     <h2>Skills</h2>
   </article>
-
   <section class = "Content" id = "Skills">
-    <h2>List</h2>
+    <h3>C++</h3>
+    <div class="progressbar">
+        <div class="skills cplusplus">80%&nbsp;</div>
+      </div>
+    <h3>HTML</h3>
+    <div class="progressbar">    
+        <div class="skills html">60%&nbsp;</div>
+    </div>  
   </section>
 
   <article class = "Banner" id = "GamesBanner">
@@ -52,15 +59,91 @@
   <article class = "Banner" id = "BlogBanner">
     <h2>Blog</h2>
   </article>
+  <section class = "Content" id = "Blog">
+    <!--Entry 1-->
+    <div>
+        <div class="leftcolumn">
+          <div class="card">
+            <h2 style="color: rgb(0, 217, 255);">Role of The Gameplay Programmer</h2>
+            <h5>Title description, Dec 7, 2017</h5>
+            <div class="fakeimg" style="height:200px;">Image</div>
+            <p>Some text..</p>
+            <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+          </div>
+        </div>
+      </div>
+
+      <!--Entry 2-->
+    <div>
+        <div class="rightcolumn">
+          <div class="card">
+            <h2 style="color: rgb(0, 217, 255);">TITLE HEADING</h2>
+            <h5>Title description, Dec 7, 2017</h5>
+            <div class="fakeimg" style="height:200px;">Image</div>
+            <p>Some text..</p>
+            <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+          </div>
+        </div>
+      </div>
+  </section>
 
   <article class = "Banner" id = "ContactBanner">
     <h2>Contact</h2>
   </article>
+  <section class = "Content" id = "Contact">
+    <div class="container">
+  <form action="/action_page.php">
+    <div class="row">
+      <div class="col-25">
+        <label for="fname">First Name</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="lname">Last Name</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="country">Country</label>
+      </div>
+      <div class="col-75">
+        <select id="country" name="country">
+          <option value="australia">Australia</option>
+          <option value="canada">Canada</option>
+          <option value="usa">USA</option>
+        </select>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="subject">Subject</label>
+      </div>
+      <div class="col-75">
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+      </div>
+    </div>
+    <div class="row">
+      <input type="submit" value="Submit">
+    </div>
+  </form>
+</div>
+  </section>
   
   <footer>
       <p>Charlie Evans 2021</p>
+      <a href="https://twitter.com/charlieevans203" target="_blank"><i class='fa fa-twitter' style='font-size:24px'></i></a>
+      <a href="https://github.com/charlie2099" target="_blank"><i class='fa fa-github' style='font-size:24px'></i></a>
+      <a href="https://linkedin.com" target="_blank"><i class='fa fa-linkedin' style='font-size:24px'></i></a>
   </footer>
 </div>
 
+<script src="script.js"></script>
 </body>
 </html>

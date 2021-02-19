@@ -5,7 +5,7 @@
 
 body {
   font-family: Arial, Helvetica, sans-serif;
-  /* background-color: #2e3141; */
+  background-color: #2e3141; 
 }
 /*-------------------------------------HEADER-------------------------------------*/
 /* Style the header */
@@ -50,6 +50,8 @@ nav {
   background-color: rgb(85, 191, 209); /* NICE green rgb(85, 209, 151); NICE blue rgb(85, 191, 209); NICE purple rgb(129, 85, 209) */
   text-align: center;
   font-size: 22px;
+  border-radius: 25px;
+  margin: 10px;
 }
 #AboutBanner { grid-area: ABOUT; }
 #SkillsBanner { grid-area: SKILLS; }
@@ -64,15 +66,19 @@ nav {
   font-size: 24px;
   padding: 20px;
   margin: 20px;
+  border-radius: 10px;
 }
 #About { grid-area: about; }
 #Skills { grid-area: skills; }
+#Blog { grid-area: blog; }
+#Contact { grid-area: contact; }
 /*-------------------------------------PICTURE-------------------------------------*/
 #Pic {
   grid-area: pic;
   background-color: rgb(202, 29, 29);
   width: 500px;
   margin: 20px;
+  border-radius: 10px;
 }
 /*-------------------------------------GRID-------------------------------------*/
 /* The grid container */
@@ -88,7 +94,9 @@ nav {
     'GAMES GAMES GAMES GAMES GAMES GAMES'
     'left left middle middle right right' 
     'BLOG BLOG BLOG BLOG BLOG BLOG'
+    'blog blog blog blog blog blog'
     'CONTACT CONTACT CONTACT CONTACT CONTACT CONTACT'
+    'contact contact contact contact contact contact'
     'footer footer footer footer footer footer';
    /*grid-column-gap: 10px; /* if you want gap between the columns */
 } 
@@ -120,6 +128,15 @@ footer {
   padding: 10px;
   text-align: center;
 }
+.fa:hover {
+  color: rgb(48, 197, 255);
+}
+.fa-twitter,
+.fa-github,
+.fa-linkedin {
+  color: rgb(110, 110, 110);
+  padding: 10px;
+}
 /*-------------------------------------MEDIA QUERIES-------------------------------------*/
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
 @media (max-width: 600px) {
@@ -136,7 +153,126 @@ footer {
       'middle middle middle middle middle middle' 
       'right right right right right right' 
       'BLOG BLOG BLOG BLOG BLOG BLOG'
+      'blog blog blog blog blog blog'
       'CONTACT CONTACT CONTACT CONTACT CONTACT CONTACT'
+      'contact contact contact contact contact contact'
       'footer footer footer footer footer footer';
   }
 }
+
+
+/*-------------------------------------FORM-------------------------------------*/
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid rgb(110, 110, 110);
+  border-radius: 4px;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  color: black;
+  background-color: #f2f2f2;
+  padding: 20px;
+  margin: 50px;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+/*-------------------------------------BLOG-------------------------------------*/
+.leftcolumn { 
+  float: left;  
+  width: 50%;
+}
+
+.rightcolumn { 
+  float: right;  
+  width: 50%;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: rgb(170, 170, 170);
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+  color: white;
+  background-color: #5c5c5c;
+  text-align: left;
+  font-size: 24px;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 10px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+/*-------------------------------------SKILLS-------------------------------------*/
+.progressbar {
+  width: 30%;
+  background-color: #ddd;
+  border: 4px solid rgb(59, 56, 56);
+  border-radius: 20px;
+}
+
+.skills {
+  text-align: right;
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+  border-radius: 20px;
+}
+
+.cplusplus {width: 80%; background-color: rgb(85, 191, 209);}
+.html {width: 60%; background-color: rgb(85, 191, 209);}
