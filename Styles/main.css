@@ -1,351 +1,142 @@
-/*--------------------------------------------GRID-----------------------------------------------*/
-  header {
-    grid-area: header;
-  }
-  nav {
-    grid-area: nav;
-  }
-  article { 
-    grid-area: article;
-  }
-  section {  
-    grid-area: section;
-  }
-  figure {
-    grid-area: figure;
-  }
-  figcaption {
-    grid-area: figcaption;
-  }
-  footer {
-    grid-area: footer;
-  }
+/*-------------------------------------GENERAL-------------------------------------*/
+* {
+  box-sizing: border-box;
+}
 
-
-  .aboutBanner {
-    grid-area: ABOUT;
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  /* background-color: #2e3141; */
+}
+/*-------------------------------------HEADER-------------------------------------*/
+/* Style the header */
+header {
+  grid-area: header;
+  color: white;
+  background-color: #4e4e4e;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+}
+/*-------------------------------------NAV-------------------------------------*/
+nav {
+  grid-area: nav;
+  color: white;
+  background-color: #1f1f1f;
+  text-align: center;
+  font-size: 24px;
+}
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+/* Change color on hover */
+.topnav a:hover {
+  background-color: rgb(85, 191, 209);
+  color: black;
+}
+/*-------------------------------------BANNER-------------------------------------*/
+.Banner {
+  color: white;
+  background-color: rgb(85, 191, 209); /* NICE green rgb(85, 209, 151); NICE blue rgb(85, 191, 209); NICE purple rgb(129, 85, 209) */
+  text-align: center;
+  font-size: 22px;
+}
+#AboutBanner { grid-area: ABOUT; }
+#SkillsBanner { grid-area: SKILLS; }
+#GamesBanner { grid-area: GAMES; }
+#BlogBanner { grid-area: BLOG; }
+#ContactBanner { grid-area: CONTACT; }
+/*-------------------------------------CONTENT-------------------------------------*/
+.Content {
+  color: white;
+  background-color: #706f6f;
+  text-align: center;
+  font-size: 24px;
+  padding: 20px;
+  margin: 20px;
+}
+#About { grid-area: about; }
+#Skills { grid-area: skills; }
+/*-------------------------------------PICTURE-------------------------------------*/
+#Pic {
+  grid-area: pic;
+  background-color: rgb(202, 29, 29);
+  width: 500px;
+  margin: 20px;
+}
+/*-------------------------------------GRID-------------------------------------*/
+/* The grid container */
+.grid-container {
+  display: grid;
+  grid-template-areas: 
+    'header header header header header header'
+    'nav nav nav nav nav nav'
+    'ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT'
+    'about about about about about pic'
+    'SKILLS SKILLS SKILLS SKILLS SKILLS SKILLS'
+    'skills skills skills skills skills skills'
+    'GAMES GAMES GAMES GAMES GAMES GAMES'
+    'left left middle middle right right' 
+    'BLOG BLOG BLOG BLOG BLOG BLOG'
+    'CONTACT CONTACT CONTACT CONTACT CONTACT CONTACT'
+    'footer footer footer footer footer footer';
+   /*grid-column-gap: 10px; /* if you want gap between the columns */
+} 
+/*-------------------------------------BOXES-------------------------------------*/
+.left,
+.middle,
+.right {
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+/* Style the left column */
+.left {
+  grid-area: left;
+}
+/* Style the middle column */
+.middle {
+  grid-area: middle;
+}
+/* Style the right column */
+.right {
+  grid-area: right;
+}
+/*-------------------------------------FOOTER-------------------------------------*/
+/* Style the footer */
+footer {
+  grid-area: footer;
+  color: white;
+  background-color: #333;
+  padding: 10px;
+  text-align: center;
+}
+/*-------------------------------------MEDIA QUERIES-------------------------------------*/
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  .grid-container  {
+    grid-template-areas: 
+      'header header header header header header' 
+      'nav nav nav nav nav nav'
+      'ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT'
+      'about about about about about pic'
+      'SKILLS SKILLS SKILLS SKILLS SKILLS SKILLS'
+      'skills skills skills skills skills skills'
+      'GAMES GAMES GAMES GAMES GAMES GAMES'
+      'left left left left left left' 
+      'middle middle middle middle middle middle' 
+      'right right right right right right' 
+      'BLOG BLOG BLOG BLOG BLOG BLOG'
+      'CONTACT CONTACT CONTACT CONTACT CONTACT CONTACT'
+      'footer footer footer footer footer footer';
   }
-  .skillsBanner {
-    grid-area: SKILLS;
-  }
-  .gamesBanner {
-    grid-area: GAMES;
-  }
-  .blogBanner {
-    grid-area: BLOG;
-  }
-  .contactBanner {
-    grid-area: CONTACT;
-  }
-
-
-/* About Grid */
-  .intro_para
-  {
-    grid-area: intro_para;
-  }
-  .profile_pic
-  {
-    grid-area: profile_pic
-  }
-
-  /* Skills Grid */
-  .skills1
-  {
-    grid-area: skills1;
-  }
-  .skills2
-  {
-    grid-area: skills2;
-  }
-
-  /* Game Grid */
-  .box1 {
-    grid-area: box1;
-  }
-  .box2 {
-    grid-area: box2;
-  }
-  .box3 {
-    grid-area: box3;
-  }
-  .box4 {
-    grid-area: box4;
-  }
-  .box5 {
-    grid-area: box5;
-  }
-  .box6 {
-    grid-area: box6;
-  }
-
-  /* Blog Grid */
-  /* Contact Grid */
-  /*------------------------------------------TEXT COLOUR--------------------------------------------*/
-  p, li, table, figcaption{
-    color: rgb(32, 32, 32);
-  }
-  h1 {
-    font-size: 30px;
-    color: rgb(32, 32, 32);
-    font-family: Helvetica;
-  }
-  h2, h3 {
-  color: rgb(224, 239, 222);
-  font-family: Helvetica;
-  }
-  h4 {
-    font-size: 25px;
-    color: rgb(48, 197, 255);
-    font-family: monospace;
-  }
-  /*---------------------------------------------IMAGES-----------------------------------------------*/
-  img {
-    border: 4px solid rgb(48, 197, 255);
-  }
-  /*---------------------------------------------HEADER-----------------------------------------------*/
-  header {
-    background-color: rgb(32, 32, 32);
-    border: 3px solid rgb(32, 32, 32);
-    border-bottom-color: rgb(48, 197, 255); 
-    padding: 20px;
-  }
-  #Website_title {
-    font-size: 3vw;
-    color: rgb(255, 255, 255);
-    text-align: center;
-    font-family: Helvetica;
-  }
-  /*--------------------------------------------BANNER-----------------------------------------------*/
-  .aboutBanner,
-  .skillsBanner,
-  .gamesBanner,
-  .blogBanner,
-  .contactBanner {
-    background-color: rgb(32, 32, 32);
-    border: 2px solid rgb(255, 255, 255); /* may not need */
-    border-radius: 50px;
-    text-align: center;
-    font-family: Helvetica;
-  }
-  /*--------------------------------------------NAV-------------------------------------------------*/
-  .menu {
-    /* margin: 20px; */
-    text-align: center;
-    padding: 10px;
-    background-color: rgb(32, 32, 32);
-    border: 4px solid rgb(32, 32, 32);
-    border-bottom-color: rgb(48, 197, 255);
-  }
-  .nav_links {
-    text-decoration: none;
-    /* color: rgb(86, 56, 255);  nice blue colour */ 
-    color: rgb(48, 197, 255);
-    padding: 20px;
-    font-size: 25px;
-    font-family: monospace;
-  }
-  .nav_links:hover {
-   background-color: rgb(48, 197, 255);
-   border-radius: 30px;
-   color: white;
-  }
-  li {
-    text-decoration: none;
-    float: left;
-    width: 370px;
-    margin: 2px;
-    list-style-type: none;
-  }
-  li a {
-    text-decoration: none;
-    display: block;
-  }
-
-  /* Scrolling nav bar */
-  /* box */
-  .headerToggle {
-    position: fixed;
-    left: 30px; /* change back to zero! */
-    width: 300px; /* box width */
-    border: none;
-    background: none;
-    text-align: right;
-   }
-   /* box links */
-  .headerToggle a{
-    background-color: rgba(32, 32, 32, 0.699);
-    color: rgb(48, 197, 255);
-    border-radius: 30px;
-    position: relative;
-    left: -300px;
-    transition: 0.3s;
-    padding: 5px;
-    margin: 5px;
-    font-size: 25px;
-  }
-  .headerToggle a:hover {
-    left: -100px;
-    text-align: center;
-  }
-  .headerToggle + .container {
-   padding-top: 102px;
-  }
-  /*------------------------------------------ARTICLE-----------------------------------------------*/
-  article {
-      text-align: center;
-      padding: 40px;
-  }
-  /*---------------------------------------INTRODUCTION---------------------------------------------*/
-  #introduction {
-    margin: 40px;
-    font-family: monospace;
-    font-size: 26px;
-  }
-  /*----------------------------------------PARAGRAPHS----------------------------------------------*/
-  p {
-    border: 4px solid rgb(32, 32, 32);
-    border-radius: 10px;
-    font-size: 30px;
-    margin: auto;
-    padding: 0px;
-    overflow: auto;
-    font-family: Helvetica;
-  }
-  /*-----------------------------------------FOOTER----------------------------------------------*/
-  footer 
-  {
-    background-color:rgb(32, 32, 32);
-    color:rgb(255, 255, 255);
-    padding: 30px;
-    font-family: monospace;
-    font-size: 20px;
-    text-align: center;
-  }
-  .fab:hover {
-      color: rgb(48, 197, 255);
-  }
-  .fa-twitter,
-  .fa-github,
-  .fa-linkedin,
-  .fa-playstation {
-    color: rgb(110, 110, 110);
-  }
-  /*--------------------------------------MEDIA QUERIES------------------------------------------*/
-  /* Responsive Design */
-
-  /* Desktop */
-  @media only screen and (max-width: 1980px)
-  {
-    body {
-      margin: 0%;
-      background-color: rgb(255, 255, 255);
-      display: grid;
-      grid-template-columns: repeat(1, 1fr);
-      grid-template-rows: auto;
-      grid-template-areas:
-      "header"
-      "nav"
-      "article"
-      "footer";
-    }
-   
-    article {
-      display: grid;
-      grid-template-columns: repeat(11, 1fr);
-      grid-template-rows: auto;
-      grid-template-areas:
-      ". ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ."
-      ". intro_para intro_para intro_para intro_para intro_para intro_para profile_pic profile_pic profile_pic ."
-      ". SKILLS SKILLS SKILLS SKILLS SKILLS SKILLS SKILLS SKILLS SKILLS ."
-      ". skills1 skills1 skills1 skills1 . skills2 skills2 skills2 skills2 ."
-      ". GAMES GAMES GAMES GAMES GAMES GAMES GAMES GAMES GAMES ."
-      "box1 box1 box1 . box2 box2 box2 . box3 box3 box3"
-      "box4 box4 box4 . box5 box5 box5 . box6 box6 box6"
-      ". BLOG BLOG BLOG BLOG BLOG BLOG BLOG BLOG BLOG ."
-      ". CONTACT CONTACT CONTACT CONTACT CONTACT CONTACT CONTACT CONTACT CONTACT ."
-    }
-
-    section {
-      margin: 20px;
-      display: grid;
-      grid-template-columns: repeat(1, 1fr);
-      grid-template-rows: auto;
-      grid-template-areas:
-      "figure";
-    }
-
-    figure { 
-      margin: 60px;
-      color: rgb(224, 239, 222);
-      font-family: Helvetica;
-      background-color: rgb(77, 77, 77);
-      border: 2px solid rgb(255, 255, 255);
-      border-radius: 50px;
-
-      display: grid;
-      grid-template-columns: repeat(1, 1fr);
-      grid-template-rows: repeat(2, 1fr);
-      grid-template-areas:
-      "figcaption";
-    }
-  }
-  
-  /* Tablet (Ipad) */ 
-  @media only screen and (max-width: 1024px) 
-  {
-    body {
-      background-color: rgb(255, 255, 255);
-    }
-
-    article {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      grid-template-rows: auto;
-      grid-template-areas:
-      "ABOUT ABOUT"
-      "intro_para profile_pic"
-      "SKILLS SKILLS"
-      "skills1 skills2" 
-      "GAMES GAMES"
-      "box1 box2"
-      "box3 box4"
-      "box5 box6"
-      "BLOG BLOG"
-      "CONTACT CONTACT";
-    }
-  }
-  
-  /* Mobile (Iphone 6/7/8) */
-  @media only screen and (max-width: 414px) 
-  {
-    body {
-      background-color: rgb(255, 255, 255);
-    }
-
-    article {
-      display: grid;
-      grid-template-columns: repeat(1, 1fr);
-      grid-template-rows: auto;
-      grid-template-areas:
-      "ABOUT"
-      "intro_para"
-      "profile_pic"
-      "SKILLS"
-      "skills1" 
-      "skills2"
-      "GAMES"
-      "box1"
-      "box2"
-      "box3"
-      "box4"
-      "box5"
-      "box6"
-      "BLOG"
-      "CONTACT";
-    }
-
-    h4 {
-      font-size: 18px;
-    }
-  }
+}

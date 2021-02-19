@@ -1,130 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-<head> 
-    <meta charset="UTF-8"> 
-    <link rel="stylesheet" type="text/css" href="Styles/main.css">
+<head>
     <title>Charlie Evans | Game Programming Portfolio</title> 
+    <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1" name="viewport"/>
+    <link rel="stylesheet" type="text/css" href="Styles/main.css">
 </head>
 
 <body>
-  <header> 
-    <h1 id = "Website_title">Charlie Evans</h1>
-    <h1 id = "Website_title">Games Programming Portfolio</h1>
+
+<div class="grid-container">
+  <header>
+    <h2 style="float:left">Games Programming Portfolio</h2>
+    <h2>Charlie Joe Evans</h2>
   </header>
+  <nav class = "topnav">
+    <a href="#AboutBanner">About</a>
+    <a href="#SkillsBanner">Skills</a>
+    <a href="#GamesBanner">Games</a>
+    <a href="#BlogBanner">Blog</a>
+    <a href="#ContactBanner">Contact</a>
+  </nav>
 
-  <nav class = "menu" id = "headerID">
-    <li><a class = "nav_links" href = "#ABOUT">About</a></li>
-    <li><a class = "nav_links" href = "#SKILLS">Skills</a></li> 
-    <li><a class = "nav_links" href = "#GAMES">Games</a></li> 
-    <li><a class = "nav_links" href = "#BLOG" >Blog</a></li>
-    <li><a class = "nav_links" href = "#CONTACT">Contact</a></li>
-  </nav> 
+  <article class = "Banner" id = "AboutBanner">
+    <h2>About Me</h2>
+  </article>
+  
+  <section class = "Content" id = "About">
+      <h2>Hello, my name is Charlie and I'm a <span style="color: rgb(0, 217, 255);">Game Designer</span></h2>
+      <p style="font-size: 30px;">I am a 2nd year Games Technology student studying at UWE Bristol with an enthusiasm for programming and game design</p>
+  </section>
 
-  <!-- Top Navigation Menu -->
-  <!--<nav id = "headerID">
-    <div class="topnav">
-        <div id = "button">
-            <a href="javascript:void(0);" class="icon" onclick="dropdownMenu()">
-                <i class="fa fa-bars"></i>
-             </a>
-        </div>
-        <div id = "myLinks">
-            <a class = "nav_links" href = "#ABOUT">About</a> 
-            <a class = "nav_links" href = "#SKILLS">Skills</a> 
-            <a class = "nav_links" href = "#GAMES">Games</a> 
-            <a class = "nav_links" href = "#BLOG" >Blog</a>
-            <a class = "nav_links" href = "#CONTACT">Contact</a>
-        </div>
-    </div>
-  </nav>-->
+  <img src = "images/beach6.jpeg" alt = "profile pic" id = "Pic"></img>
 
-  <article class = "container">
-
-        <div class = "aboutBanner" id = "ABOUT">
-            <h4>ABOUT</h4>
-        </div> 
-       
-        <section class = "intro_para">
-            <p>Hello, my name is Charlie and I'm a Year 2 Game Technology student studying at UWE Bristol.
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed luctus, odio auctor tristique ultricies, est orci faucibus quam, nec aliquam ipsum nulla 
-                convallis nibh. Nam luctus dolor at orci malesuada lobortis nec a leo. Maecenas ut neque faucibus, volutpat metus a, venenatis mi. In quis libero nibh. 
-                Quisque vulputate eros convallis, facilisis quam a, malesuada augue. Morbi ac mollis ipsum. Integer rhoncus nulla a enim imperdiet interdum. Proin eu n
-                isi nec dolor dignissim efficitur nec sit amet mauris.</p> 
-            <!--<p>Move contacts to here</p>-->
-        </section>
-        <section class = "profile_pic">
-            <img src = "images\beach6.jpeg" alt = "Profile Picture" style = "width: 449px; height: 331px;"></img> <!--beach 3 (410x402), beach6 (449x331), -->
-        </section>
-
-        <div class = "skillsBanner" id = "SKILLS">
-            <h4>SKILLS</h4>
-        </div> 
-
-        <section class = "skills1">
-            <h4>LANGUAGES</h4>
-            <li>C++</li>
-            <li>C#</li>
-            <li>Python</li>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>Javascript</li>
-        </section>
-        <section class = "skills2">
-            <p>Software</p>
-        </section>
-
-        <div class = "gamesBanner" id = "GAMES">
-            <h4>GAMES</h4>
-        </div> 
-
-        <section class = "box1">
-            <h1>Space Race</h1>
-            <img src = "images\space_race.png" alt = "Space Race Title Screen" style = "width: 450px; height: 250px;"></img>
-        </section>
-
-        <section class = "box2">
-            <h1>Jet Fighter</h1>
-            <img src = "images\jet_fighter.png" alt = "Jet Fighter Title Screen" style = "width: 450px; height: 250px;"></img>
-        </section>
-
-        <section class = "box3">
-            <h1>Game 3</h1>
-            <p></p>
-        </section>
-
-        <section class = "box4">
-            <h1>Game 4</h1>
-            <p></p>
-        </section>
-
-        <section class = "box5">
-            <h1>Game 5</h1>
-            <p></p>
-        </section>
-
-        <section class = "box6">
-            <h1>Game 6</h1>
-            <p></p>
-        </section>
-
-        <div class = "blogBanner" id = "BLOG">
-            <h4>BLOG</h4>
-        </div> 
-
-        <div class = "contactBanner" id = "CONTACT">
-            <h4>CONTACT</h4>
-        </div> 
+  <article class = "Banner" id = "SkillsBanner">
+    <h2>Skills</h2>
   </article>
 
-  <footer> Follow me on&nbsp;
-    <a href="https://twitter.com/charlieevans203" target="_blank"><i class='fab fa-twitter' style='font-size:24px'></i></a>
-    <a href="https://github.com/charlie2099" target="_blank"><i class='fab fa-github' style='font-size:24px'></i></a>
-    <a href="https://linkedin.com" target="_blank"><i class='fab fa-linkedin' style='font-size:24px'></i></a>
-    <a href="https://my.playstation.com/profile/Mr_Chilli_" target="_blank"><i class='fab fa-playstation' style='font-size:24px'></i></a>
-  </footer>
+  <section class = "Content" id = "Skills">
+    <h2>List</h2>
+  </section>
 
-  <script src="script.js"></script>
-  <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+  <article class = "Banner" id = "GamesBanner">
+    <h2>Games</h2>
+  </article>
+
+  <section class="left" style="background-color:#aaa;">Game 1</section>
+  <section class="middle" style="background-color:#bbb;">Game 2</section>  
+  <section class="right" style="background-color:#ccc;">Game 3</section>
+
+  <article class = "Banner" id = "BlogBanner">
+    <h2>Blog</h2>
+  </article>
+
+  <article class = "Banner" id = "ContactBanner">
+    <h2>Contact</h2>
+  </article>
+  
+  <footer>
+      <p>Charlie Evans 2021</p>
+  </footer>
+</div>
+
 </body>
 </html>
