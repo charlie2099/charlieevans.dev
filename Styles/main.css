@@ -5,14 +5,14 @@
 
 body {
   font-family: Arial, Helvetica, sans-serif;
-  background-color: #2e3141; 
+  background-color: rgb(53,56,73);
 }
 /*-------------------------------------HEADER-------------------------------------*/
 /* Style the header */
 header {
   grid-area: header;
   color: white;
-  background-color: #4e4e4e;
+  background-color: #4e4e4e; /* rgb(85, 93, 209); */
   padding: 30px;
   text-align: center;
   font-size: 35px;
@@ -41,17 +41,17 @@ nav {
 }
 /* Change color on hover */
 .topnav a:hover {
-  background-color: rgb(85, 191, 209);
+  background-color: rgb(85, 93, 209);
   color: black;
 }
 /*-------------------------------------BANNER-------------------------------------*/
 .Banner {
   color: white;
-  background-color: rgb(85, 191, 209); /* NICE green rgb(85, 209, 151); NICE blue rgb(85, 191, 209); NICE purple rgb(129, 85, 209) */
+  background-color: rgb(85, 93, 209); /* NICE green rgb(85, 209, 151); NICE blue rgb(85, 191, 209); NICE purple rgb(129, 85, 209) */
   text-align: center;
   font-size: 22px;
-  border-radius: 25px;
-  margin: 10px;
+  border-radius: 50px;
+  margin: 40px;
 }
 #AboutBanner { grid-area: ABOUT; }
 #SkillsBanner { grid-area: SKILLS; }
@@ -61,15 +61,17 @@ nav {
 /*-------------------------------------CONTENT-------------------------------------*/
 .Content {
   color: white;
-  background-color: #706f6f;
+  background-color: #272936;
   text-align: center;
   font-size: 24px;
   padding: 20px;
   margin: 20px;
-  border-radius: 10px;
+  /*border: 4px solid rgb(85, 191, 209);*/
+  border-radius: 20px;
 }
 #About { grid-area: about; }
 #Skills { grid-area: skills; }
+#Games { grid-area: games; }
 #Blog { grid-area: blog; }
 #Contact { grid-area: contact; }
 /*-------------------------------------PICTURE-------------------------------------*/
@@ -92,7 +94,7 @@ nav {
     'SKILLS SKILLS SKILLS SKILLS SKILLS SKILLS'
     'skills skills skills skills skills skills'
     'GAMES GAMES GAMES GAMES GAMES GAMES'
-    'left left middle middle right right' 
+    'games games games games games games'
     'BLOG BLOG BLOG BLOG BLOG BLOG'
     'blog blog blog blog blog blog'
     'CONTACT CONTACT CONTACT CONTACT CONTACT CONTACT'
@@ -100,25 +102,6 @@ nav {
     'footer footer footer footer footer footer';
    /*grid-column-gap: 10px; /* if you want gap between the columns */
 } 
-/*-------------------------------------BOXES-------------------------------------*/
-.left,
-.middle,
-.right {
-  padding: 10px;
-  height: 300px; /* Should be removed. Only for demonstration */
-}
-/* Style the left column */
-.left {
-  grid-area: left;
-}
-/* Style the middle column */
-.middle {
-  grid-area: middle;
-}
-/* Style the right column */
-.right {
-  grid-area: right;
-}
 /*-------------------------------------FOOTER-------------------------------------*/
 /* Style the footer */
 footer {
@@ -138,7 +121,7 @@ footer {
   padding: 10px;
 }
 /*-------------------------------------MEDIA QUERIES-------------------------------------*/
-/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+/* Responsive layout */
 @media (max-width: 600px) {
   .grid-container  {
     grid-template-areas: 
@@ -149,9 +132,7 @@ footer {
       'SKILLS SKILLS SKILLS SKILLS SKILLS SKILLS'
       'skills skills skills skills skills skills'
       'GAMES GAMES GAMES GAMES GAMES GAMES'
-      'left left left left left left' 
-      'middle middle middle middle middle middle' 
-      'right right right right right right' 
+      'games games games games games games'
       'BLOG BLOG BLOG BLOG BLOG BLOG'
       'blog blog blog blog blog blog'
       'CONTACT CONTACT CONTACT CONTACT CONTACT CONTACT'
@@ -159,8 +140,6 @@ footer {
       'footer footer footer footer footer footer';
   }
 }
-
-
 /*-------------------------------------FORM-------------------------------------*/
 input[type=text], select, textarea {
   width: 100%;
@@ -191,10 +170,12 @@ input[type=submit]:hover {
 
 .container {
   border-radius: 5px;
-  color: black;
-  background-color: #f2f2f2;
+  color: rgb(255, 255, 255);
+  background-color: #3f435a;
   padding: 20px;
-  margin: 50px;
+  margin: 20px;
+  float: left;
+  width: 47.7%;
 }
 
 .col-25 {
@@ -244,7 +225,7 @@ input[type=submit]:hover {
 /* Add a card effect for articles */
 .card {
   color: white;
-  background-color: #5c5c5c;
+  background-color: #3f435a;
   text-align: left;
   font-size: 24px;
   padding: 20px;
@@ -260,19 +241,37 @@ input[type=submit]:hover {
   }
 }
 /*-------------------------------------SKILLS-------------------------------------*/
+.skillcolumn { 
+  float: left;  
+  width: 33.3%;
+}
+
 .progressbar {
-  width: 30%;
-  background-color: #ddd;
-  border: 4px solid rgb(59, 56, 56);
+  width: 90%;
+  background-color: rgb(126, 126, 126);
+  border: 4px solid #272936;
   border-radius: 20px;
 }
 
 .skills {
-  text-align: right;
+  text-align: center;
   font-size: 20px;
   color: rgb(255, 255, 255);
   border-radius: 20px;
+  padding: 5px;
 }
 
-.cplusplus {width: 80%; background-color: rgb(85, 191, 209);}
-.html {width: 60%; background-color: rgb(85, 191, 209);}
+.cplusplus {width: 80%; background-color: rgb(85, 93, 209);}
+.html {width: 60%; background-color: rgb(85, 93, 209);}
+.python {width: 50%; background-color: rgb(85, 93, 209);}
+/*-------------------------------------GAMES-------------------------------------*/
+.gamecolumn { 
+  float: left;  
+  width: 33.3%;
+}
+/*-------------------------------------GAME IMAGES-------------------------------------*/
+#gamepic {
+  background-color: rgb(202, 29, 29);
+  width: 100%;
+  border-radius: 10px;
+}
