@@ -239,12 +239,12 @@ input[type=submit]:hover {
 /*-------------------------------------BLOG-------------------------------------*/
 .leftcolumn { 
   float: left;  
-  width: 50%;
+  width: 100%;
 }
 
 .rightcolumn { 
   float: right;  
-  width: 50%;
+  width: 100%;
 }
 
 /* Fake image */
