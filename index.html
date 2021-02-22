@@ -10,7 +10,6 @@
 
 <body>
 
-<div class="grid-container">
   <header>
     <h2 style="float:left;">Games Programming Portfolio</h2>
     <h2>Charlie Joe Evans</h2>
@@ -23,13 +22,15 @@
     <a href="#ContactBanner">Contact</a>
   </nav>
 
+<div class="grid-container">
+
   <article class = "Banner" id = "AboutBanner">
     <h2>About Me</h2>
   </article>
   
   <section class = "Content" id = "About">
       <h2>Hello, my name is Charlie and I'm a <span style="color: rgb(0, 217, 255);">Game Designer</span></h2>
-      <p style="font-size: 30px;">I am a 2nd year Games Technology student studying at UWE Bristol with an enthusiasm for programming and game design</p>
+      <p id = "AboutText">I am a 2nd year Games Technology student studying at UWE Bristol with an enthusiasm for programming and game design</p>
   </section>
 
   <img src = "images/beach6.jpeg" alt = "profile pic" id = "Pic"></img>
@@ -189,10 +190,10 @@
     <div>
       <div class="gamecolumn">
         <div class="card">
-          <h2 style="color: rgb(0, 217, 255);">Jet Fighter</h2>
+          <h2 style="color: rgb(0, 217, 255);">Tanks</h2>
           
           <h3 style="text-align: left;">2D racing game. Navigate through asteroids to beat your opponent.</h3>
-          <img src = "images/space_race.png" alt = "profile pic" id = "gamepic"></img>
+          <img src = "images/space_race.png" style="opacity: 10%;" alt = "profile pic" id = "gamepic"></img>
       
         </div>
       </div>
@@ -202,10 +203,10 @@
     <div>
       <div class="gamecolumn">
         <div class="card">
-          <h2 style="color: rgb(0, 217, 255);">Tanks</h2>
+          <h2 style="color: rgb(0, 217, 255);">Pac Man</h2>
           
           <h3 style="text-align: left;">2D racing game. Navigate through asteroids to beat your opponent.</h3>
-          <img src = "images/space_race.png" alt = "profile pic" id = "gamepic"></img>
+          <img src = "images/space_race.png" style="opacity: 10%;" alt = "profile pic" id = "gamepic"></img>
       
         </div>
       </div>
@@ -215,10 +216,10 @@
     <div>
       <div class="gamecolumn">
         <div class="card">
-          <h2 style="color: rgb(0, 217, 255);">PacMan</h2>
+          <h2 style="color: rgb(0, 217, 255);">Jet Fighter</h2>
           
           <h3 style="text-align: left;">2D racing game. Navigate through asteroids to beat your opponent.</h3>
-          <img src = "images/space_race.png" alt = "profile pic" id = "gamepic"></img>
+          <img src = "images/jet_fighter.png" alt = "profile pic" id = "gamepic"></img>
       
         </div>
       </div>
@@ -231,7 +232,7 @@
           <h2 style="color: rgb(0, 217, 255);">Battleship</h2>
           
           <h3 style="text-align: left;">2D racing game. Navigate through asteroids to beat your opponent.</h3>
-          <img src = "images/space_race.png" alt = "profile pic" id = "gamepic"></img>
+          <img src = "images/battleship.png" alt = "profile pic" id = "gamepic"></img>
       
         </div>
       </div>
@@ -244,7 +245,7 @@
           <h2 style="color: rgb(0, 217, 255);">EGA Trek</h2>
           
           <h3 style="text-align: left;">2D racing game. Navigate through asteroids to beat your opponent.</h3>
-          <img src = "images/space_race.png" alt = "profile pic" id = "gamepic"></img>
+          <img src = "images/trek.png" alt = "profile pic" id = "gamepic"></img>
       
         </div>
       </div>
@@ -257,7 +258,7 @@
           <h2 style="color: rgb(0, 217, 255);">Angry Birds</h2>
           
           <h3 style="text-align: left;">2D racing game. Navigate through asteroids to beat your opponent.</h3>
-          <img src = "images/space_race.png" alt = "profile pic" id = "gamepic"></img>
+          <img src = "images/angrybird.png" alt = "profile pic" id = "gamepic"></img>
       
         </div>
       </div>
@@ -270,7 +271,7 @@
           <h2 style="color: rgb(0, 217, 255);">Platformer</h2>
           
           <h3 style="text-align: left;">2D racing game. Navigate through asteroids to beat your opponent.</h3>
-          <img src = "images/space_race.png" alt = "profile pic" id = "gamepic"></img>
+          <img src = "images/platformer.png" alt = "profile pic" id = "gamepic"></img>
       
         </div>
       </div>
@@ -313,7 +314,7 @@
   </article>
 
   <section class = "Content" id = "Contact">
-    <!--Entry 1-->
+    <!--Details-->
     <div>
       <div class="leftcolumn">
         <div class="card">
@@ -326,6 +327,7 @@
       </div>
     </div>
 
+    <!--Form-->
     <div class="container">
   <form action="/action_page.php">
     <div class="row">
@@ -371,14 +373,15 @@
 </div>
   </section>
   
-  <footer>
-      <p>Charlie Evans 2021</p>
-      <a href="https://twitter.com/charlieevans203" target="_blank"><i class='fa fa-twitter' style='font-size:24px'></i></a>
-      <a href="https://github.com/charlie2099" target="_blank"><i class='fa fa-github' style='font-size:24px'></i></a>
-      <a href="https://linkedin.com" target="_blank"><i class='fa fa-linkedin' style='font-size:24px'></i></a>
-  </footer>
 </div>
 
-<script src="script.js"></script>
+<footer>
+  <p>Charlie Evans 2021</p>
+  <a href="https://twitter.com/charlieevans203" target="_blank"><i class='fa fa-twitter' style='font-size:24px'></i></a>
+  <a href="https://github.com/charlie2099" target="_blank"><i class='fa fa-github' style='font-size:24px'></i></a>
+  <a href="https://linkedin.com" target="_blank"><i class='fa fa-linkedin' style='font-size:24px'></i></a>
+</footer>
+
+<!--<script src="script.js"></script>-->
 </body>
 </html>
