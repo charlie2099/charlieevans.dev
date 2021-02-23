@@ -14,7 +14,7 @@
     <h2 style="float:left;">Games Programming Portfolio</h2>
     <h2>Charlie Joe Evans</h2>
   </header>
-  <nav class = "topnav">
+  <nav class = "topnav" id = "headerID">
     <a href="#AboutBanner">About</a>
     <a href="#SkillsBanner">Skills</a>
     <a href="#GamesBanner">Games</a>
@@ -42,7 +42,7 @@
   <section class = "Content" id = "Skills">
 
     <!--Languages-->
-    <div>
+    <div id = "container">
       <div class="skillcolumn">
         <div class="card">
           <h2 style="color: rgb(0, 217, 255);">Languages</h2>
@@ -338,19 +338,21 @@
   <section class = "Content" id = "Contact">
     <!--Details-->
     <div>
-      <div class="leftcolumn">
+      <div id = "contactColumnLeft">
         <div class="card">
-          <h2 style="color: rgb(0, 217, 255);">Details</h2>
-          <h4><span style = "color: royalblue;">Name:</span> Charlie Evans</h4>
-          <h4><span style = "color: royalblue;">Email:</span> charlie1899@outlook.com</h4>
-          <p>Some text..</p>
-          <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+          <h2 style="color: rgb(0, 217, 255); text-align: center;">Details</h2>
+          <h4><span style = "color: rgb(0, 217, 255);">Name:</span> Charlie Evans</h4>
+          <h4><span style = "color: rgb(0, 217, 255);">Email:</span> charlie1899@outlook.com</h4>
+          <h4><span style = "color: rgb(0, 217, 255);">Social:</span></h4>
+          <a href="https://twitter.com/charlieevans203" target="_blank"><i class='fa fa-twitter' style='font-size:32px'></i></a>
+          <a href="https://github.com/charlie2099" target="_blank"><i class='fa fa-github' style='font-size:32px'></i></a>
+          <a href="https://linkedin.com" target="_blank"><i class='fa fa-linkedin' style='font-size:32px'></i></a>
         </div>
       </div>
     </div>
 
     <!--Form-->
-    <div class="container">
+    <div>
   <form action="/action_page.php">
     <div class="row">
       <div class="col-25">
@@ -404,6 +406,6 @@
   <a href="https://linkedin.com" target="_blank"><i class='fa fa-linkedin' style='font-size:24px'></i></a>
 </footer>
 
-<!--<script src="script.js"></script>-->
+<script src="script.js"></script>
 </body>
 </html>

@@ -1,12 +1,17 @@
+// Fixed Nav bar
 window.onscroll = function() {myFunction()};
+var header = document.getElementById("headerID");
+var container = header.offsetTop;
 
-var navbar = document.getElementById("navbar");
-var sticky = navbar.offsetTop;
+function myFunction() 
+{
+  if (window.pageYOffset > container) 
+  {
+    header.classList.add("headerToggle");
+  } 
 
-function myFunction() {
-  if (window.pageYOffset >= sticky) {
-    navbar.classList.add("sticky")
-  } else {
-    navbar.classList.remove("sticky");
+  else 
+  {
+    header.classList.remove("headerToggle");
   }
 }
