@@ -70,13 +70,16 @@ nav {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
+  background-color: rgba(32, 32, 32, 0.699);
+  border-radius: 10px;
+  margin: 10px;
 }
 /* Change color on hover */
 .topnav a:hover {
   background-color: rgb(85, 93, 209);
   color: black;
 }
-/*---------------------------------SCROLLING NAV-----------------------------------*/
+/*----------------------------------SCROLLING NAV-----------------------------------*/
 /* box */
 .headerToggle {
   position: fixed;
@@ -93,7 +96,7 @@ nav {
 .headerToggle + .grid-container {
   padding-top: 15px;
 }
-/*-------------------------------------ABOUT--------------------------------------*/
+/*--------------------------------------ABOUT-------------------------------------*/
 .Content {
   color: white;
   background-color: #272936;
@@ -107,7 +110,7 @@ nav {
 
 #About { grid-area: about; }
 #Skills { grid-area: skills; }
-/*-------------------------------------GAMES--------------------------------------*/
+/*--------------------------------------GAMES-------------------------------------*/
 #gameTitle{
   font-family: "AstronBold";
   background-color: #53389e;
@@ -212,8 +215,15 @@ div.desc {
       width: 100%;
       margin: 12px 0;
   }
+  header {
+    text-align: center;
+    padding: 0px;
+  }
   .topnav a {
       float: none;
+  }
+  .headerToggle {
+    display: none;
   }
 }
 
