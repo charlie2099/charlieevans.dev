@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+  <!--=============================[HEAD]==============================-->
 <head>
     <title>Charlie Evans | Game Programming Portfolio</title> 
     <meta charset="UTF-8">
@@ -9,152 +10,133 @@
 </head>
 
 <body class="grid-container">
-  
+  <!--=============================[HEADER]============================-->
   <header> 
-    <h2>Charlie Evans</h2>
-    <h2>Gameplay Programmer</h2>
+    <nav class = "topnav" id = "headerID">
+      <a href="#AboutBanner">About</a>
+      <a href="#SkillsBanner">Skills</a>
+      <a href="#GamesBanner">Personal Projects</a>
+      <a href="#BlogBanner">Blog</a>
+      <a href="#ContactBanner">Contact</a>
+    </nav>
   </header>
-  
-  <nav class = "topnav" id = "headerID">
-    <a href="#AboutBanner">About</a>
-    <a href="#SkillsBanner">Skills</a>
-    <a href="#GamesBanner">Personal Projects</a>
-    <a href="#BlogBanner">Blog</a>
-    <a href="#ContactBanner">Contact</a>
-  </nav>
 
   <!--=============================[ABOUT]=============================-->
-  <article class = "Content" id = "About">
-    <h1>About Me</h1>
-    <h3 style = "float: left;">Hello, my name is Charlie and I'm a <span style="color: rgb(0, 217, 255);">Game Programmer</span>. I am a 2nd year Games Technology student studying at UWE Bristol with an enthusiasm for programming and game design.
-      When I'm not programming, I like to spend my time</h3>
-    <img src = "images/beach6.jpeg" alt = "profile pic" id = "Pic" style = "float: right;"></img>
-  </article>
-
-  <!--=============================[PERSONAL PROJECTS]=============================-->
-  <article class = "Content" id = "PreviousProjects">
-    <!----------------[PREVIOUS PROJECTS]---------------->
-    <h2>Previous Projects</h2>
-    <!-----------[ASGE]----------->
-    <h4>Made with <span style="color: rgb(255, 123, 0);">ASGE</span></h4>
-    <!--<h4>Made with <img src="images/unity_logo.png" style="width: 80px; background-color: white; padding: 2px;"  alt="Unity Logo"></h4>-->
-
-    <div class="responsive">
-      <div class="gallery">
-        <div id = "gameTitle">ASGE Trek</div>
-        <a target="_blank" href="https://github.com/UWEGames-GiC2/asgetrek-charlie2099"> <!--PRIVATE! Make a new public repo for asge trek.-->
-          <img src="images/trek.png" alt="Asge Trek">
-        </a>
-        <div class="summary">A reimagining of the classic bridge commander game EGA Trek made in the ASGE engine</div>
-      </div>
-    </div>
-
-    <div class="responsive">
-      <div class="gallery">
-        <div id = "gameTitle">Space Race</div>
-        <a target="_blank" href="https://github.com/UWEGames-GiC2/asgetrek-charlie2099"> <!--PRIVATE! Make a new public repo for asge trek.-->
-          <img src="images/space_race.png" alt="Space Race">
-        </a>
-        <div class="summary">A reimagining of the classic bridge commander game EGA Trek made in the ASGE engine</div>
-      </div>
-    </div>
-
-    <div class="responsive">
-      <div class="gallery">
-        <div id = "gameTitle">Jet Fighter</div>
-        <a target="_blank" href="https://github.com/UWEGames-GiC2/asgetrek-charlie2099"> <!--PRIVATE! Make a new public repo for asge trek.-->
-          <img src="images/jet_fighter.png" alt="Jet Fighter">
-        </a>
-        <div class="summary">A reimagining of the classic bridge commander game EGA Trek made in the ASGE engine</div>
-      </div>
-    </div>
-
-    <div class="responsive">
-      <div class="gallery">
-        <div id = "gameTitle">Platformer</div>
-        <a target="_blank" href="https://github.com/UWEGames-GiC2/asgetrek-charlie2099"> <!--PRIVATE! Make a new public repo for asge trek.-->
-          <img src="images/platformer.png" alt="Platformer">
-        </a>
-        <div class="summary">A reimagining of the classic bridge commander game EGA Trek made in the ASGE engine</div>
-      </div>
-    </div>
-    <div class="clearfix"></div>
-    
-    <!-----------[SFML]----------->
-    <h4>Made with <span style="color: rgb(0, 255, 106);">SFML</span></h4>  <!--rgb(204, 0, 255)-->
-
-    <div class="responsive">
-      <div class="gallery">
-        <div id = "gameTitle">Angry Birds</div>
-        <a target="_blank" href="https://github.com/UWEGames-GiC2/asgetrek-charlie2099"> <!--PRIVATE! Make a new public repo for asge trek.-->
-          <img src="images/angrybird.png" alt="Angry Birds">
-        </a>
-        <div class="summary">A reimagining of the classic bridge commander game EGA Trek made in the ASGE engine</div>
-      </div>
-    </div>
-    <div class="clearfix"></div>
-
-    <!-----------[SDL]----------->
-    <h4>Made with <span style="color: rgb(52, 72, 187);">SDL</span></h4>  <!--rgb(204, 0, 255)-->
-
-    <div class="responsive">
-      <div class="gallery">
-        <div id = "gameTitle">Angry Birds</div>
-        <a target="_blank" href="https://github.com/UWEGames-GiC2/asgetrek-charlie2099"> <!--PRIVATE! Make a new public repo for asge trek.-->
-          <img src="images/angrybird.png" alt="Angry Birds">
-        </a>
-        <div class="summary">A reimagining of the classic bridge commander game EGA Trek made in the ASGE engine</div>
-      </div>
-    </div>
-    <div class="clearfix"></div>
-
-    <!-----------[UNITY]----------->
-    <h4>Made with <span style="color: cyan;">Unity</span></h4>
-
-    <div class="responsive">
-      <div class="gallery">
-        <div id = "gameTitle">Angry Birds</div>
-        <a target="_blank" href="https://github.com/UWEGames-GiC2/asgetrek-charlie2099"> <!--PRIVATE! Make a new public repo for asge trek.-->
-          <img src="images/angrybird.png" alt="Angry Birds">
-        </a>
-        <div class="summary">A reimagining of the classic bridge commander game EGA Trek made in the ASGE engine</div>
-      </div>
-    </div>
-
-    <div class="responsive">
-      <div class="gallery">
-        <div id = "gameTitle">Platformer</div>
-        <a target="_blank" href="https://github.com/UWEGames-GiC2/asgetrek-charlie2099"> <!--PRIVATE! Make a new public repo for asge trek.-->
-          <img src="images/platformer.png" alt="Platformer">
-        </a>
-        <div class="summary">A reimagining of the classic bridge commander game EGA Trek made in the ASGE engine</div>
-      </div>
-    </div>
-
-<div class="clearfix"></div>
-
-<!--<div style="padding:6px;">
-  <p>This example use media queries to re-arrange the images on different screen sizes: for screens larger than 700px wide, it will show four images side by side, for screens smaller than 700px, it will show two images side by side. For screens smaller than 500px, the images will stack vertically (100%).</p>
-  <p>You will learn more about media queries and responsive web design later in our CSS Tutorial.</p>
-</div>-->
-  </article>
-
-  <!----------------[CURRENT PROJECTS]---------------->
-  <article class = "Content" id = "CurrentProjects">
-    <h2>Current projects</h2>
-    <h4>Made with <span style="color: cyan;">Unity</span></h4>
-
-  <div class="responsive">
-      <div class="gallery">
-        <div id = "gameTitle">Platformer</div>
-        <a target="_blank" href="https://github.com/UWEGames-GiC2/asgetrek-charlie2099"> <!--PRIVATE! Make a new public repo for asge trek.-->
-          <img src="images/platformer.png" alt="Platformer">
-        </a>
-        <div class="summary">A reimagining of the classic bridge commander game EGA Trek made in the ASGE engine</div>
+  <article class = "Strip" id = "About">
+    <div class = "Container">
+      <div class="content">
+        <img src = "images/beach6.jpeg" alt = "profile pic" id = "Pic"></img>
+        <h1>Hi. I'm <strong>Charlie Evans</strong>.</h1>
+        <h2>and I'm a <strong>Games Programmer</strong></h2>
+        <p>I am a 3rd year Games Technology student studying at UWE Bristol with an enthusiasm for programming and game design.
+           When I'm not programming, I like to spend my time...</p>
       </div>
     </div>
   </article>
 
+  <!--======================[PERSONAL PROJECTS]=======================-->
+  <article class = "Strip" id = "Projects">
+    <div class = "Container">
+      <h1>Projects</h1>
+      <h2>Made with <span style="color: cyan;">Unity</span></h2>
+      
+      <div class="responsive">
+        <div class="gallery">
+          <a target="_blank" href="https://github.com/UWEGames-GiC2/asgetrek-charlie2099"> <!--PRIVATE! Make a new public repo for asge trek.-->
+            <img src="images/angrybirds.png" alt="Platformer">
+          </a>
+          <h3><strong>Angry Birds</strong></h3>
+          <p class="summary">A reimagining of the classic bridge commander game EGA Trek made in the ASGE engine</p>
+        </div>
+      </div>
+
+      <div class="responsive">
+        <div class="gallery">
+          <a target="_blank" href="https://github.com/UWEGames-GiC2/asgetrek-charlie2099"> <!--PRIVATE! Make a new public repo for asge trek.-->
+            <img src="images/trek.png" alt="Platformer">
+          </a>
+          <h3><strong>ASGE Trek</strong></h3>
+          <p class="summary">A reimagining of the classic bridge commander game EGA Trek made in the ASGE engine</p>
+        </div>
+      </div>
+
+      <div class="responsive">
+        <div class="gallery">
+          <a target="_blank" href="https://github.com/UWEGames-GiC2/asgetrek-charlie2099"> <!--PRIVATE! Make a new public repo for asge trek.-->
+            <img src="images/space_race.png" alt="Platformer">
+          </a>
+          <h3><strong>Space Race</strong></h3>
+          <p class="summary">A reimagining of the classic bridge commander game EGA Trek made in the ASGE engine</p>
+        </div>
+      </div>
+
+      <div class="responsive">
+        <div class="gallery">
+          <a target="_blank" href="https://github.com/UWEGames-GiC2/asgetrek-charlie2099"> <!--PRIVATE! Make a new public repo for asge trek.-->
+            <img src="images/empty.png" alt="Platformer">
+          </a>
+          <h3><strong>Inventory System</strong></h3>
+          <p class="summary">A reimagining of the classic bridge commander game EGA Trek made in the ASGE engine</p>
+        </div>
+      </div>
+
+      <div class="responsive">
+        <div class="gallery">
+          <a target="_blank" href="https://github.com/UWEGames-GiC2/asgetrek-charlie2099"> <!--PRIVATE! Make a new public repo for asge trek.-->
+            <img src="images/empty.png" alt="Platformer">
+          </a>
+          <h3><strong>Squad Ai</strong></h3>
+          <p class="summary">A reimagining of the classic bridge commander game EGA Trek made in the ASGE engine</p>
+        </div>
+      </div>
+
+
+
+
+      <div class="responsive">
+        <div class="gallery">
+          <a target="_blank" href="https://github.com/UWEGames-GiC2/asgetrek-charlie2099"> <!--PRIVATE! Make a new public repo for asge trek.-->
+            <img src="images/empty.png" alt="Platformer">
+          </a>
+          <h3><strong>Squad Ai</strong></h3>
+          <p class="summary">A reimagining of the classic bridge commander game EGA Trek made in the ASGE engine</p>
+        </div>
+      </div>
+      
+      <div class="responsive">
+        <div class="gallery">
+          <a target="_blank" href="https://github.com/UWEGames-GiC2/asgetrek-charlie2099"> <!--PRIVATE! Make a new public repo for asge trek.-->
+            <img src="images/empty.png" alt="Platformer">
+          </a>
+          <h3><strong>Squad Ai</strong></h3>
+          <p class="summary">A reimagining of the classic bridge commander game EGA Trek made in the ASGE engine</p>
+        </div>
+      </div>
+
+      <div class="responsive">
+        <div class="gallery">
+          <a target="_blank" href="https://github.com/UWEGames-GiC2/asgetrek-charlie2099"> <!--PRIVATE! Make a new public repo for asge trek.-->
+            <img src="images/empty.png" alt="Platformer">
+          </a>
+          <h3><strong>Squad Ai</strong></h3>
+          <p class="summary">A reimagining of the classic bridge commander game EGA Trek made in the ASGE engine</p>
+        </div>
+      </div>
+
+      <div class="responsive">
+        <div class="gallery">
+          <a target="_blank" href="https://github.com/UWEGames-GiC2/asgetrek-charlie2099"> <!--PRIVATE! Make a new public repo for asge trek.-->
+            <img src="images/empty.png" alt="Platformer">
+          </a>
+          <h3><strong>Squad Ai</strong></h3>
+          <p class="summary">A reimagining of the classic bridge commander game EGA Trek made in the ASGE engine</p>
+        </div>
+      </div>
+
+    </div>
+  </article>
+  
+  <!--============================[FOOTER]=============================-->
   <footer>
     <p>Charlie Evans 2021</p>
     <a href="https://twitter.com/charlieevans203" target="_blank" class = "footericon"><i class='fa fa-twitter'></i></a>

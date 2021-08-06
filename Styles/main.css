@@ -30,87 +30,128 @@
      url('Fonts/Montserrat/montserrat_light/Montserrat-Light.ttf')  format('truetype'), /* Safari, Android, iOS */
      url('Fonts/Montserrat/montserrat_light/Montserrat-Light.svg#Montserrat-Light') format('svg'); /* Legacy iOS */
 }
+
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,600,600italic,700");
+@import url("fontawesome-all.min.css");
 /*-------------------------------------GENERAL-------------------------------------*/
 * {
   box-sizing: border-box;
 }
 
 body {
-  background-color: rgb(53,56,73);
+  background-color: #fafafa;
   margin: 0px;
-  font-family: "MontserratLight";
+  font-family: 'Open Sans', sans-serif;
+	line-height: 1.85em;
+	font-weight: 300px;
+	font-size: 13pt;  
 }
 
-.Content {
-  color: white;
-  background-color: #272936;
+.Strip {
+  padding: 50px;
+  color: rgb(0, 0, 0);
   text-align: center;
-  font-size: 24px;
-  padding: 20px;
-  margin: 40px;
-  /*border: 4px solid rgb(85, 191, 209);*/
-  border-radius: 20px;
+  box-shadow: inset 0px 1px 0px 0px rgb(0 0 0 / 5%), inset 0px 2px 3px 0px rgb(0 0 0 / 10%);
 }
 
-#About { grid-area: about; }
-#PreviousProjects { grid-area: prev_projects; }
-#CurrentProjects { grid-area: curr_projects; }
+.Container {
+  margin: 0 auto;
+	max-width: calc(100% - 50px);
+	width: 1300px;
+}
+
+h1 {
+  color: #3e3e3e;
+  font-size: 3.25em;
+  line-height: 1.25em;
+	letter-spacing: -0.025em;
+	font-weight: 300;
+}
+h1 strong {
+  font-weight: 700;
+}
+
+h2 {
+  color: #3e3e3e;
+  font-size: 2.0em;
+	letter-spacing: -0.025em;
+	font-weight: 300;
+}
+h2 strong {
+  font-weight: 700;
+  color: rgb(0, 128, 100);
+}
+
+h3 {
+  color: #3e3e3e;
+  font-size: 1.50em;
+  line-height: 0.25em;
+	letter-spacing: -0.025em;
+	font-weight: 300;
+}
+h3 strong {
+  font-weight: 700;
+}
+
+p {
+  color: #888;
+  font-size: 1.5em;
+  line-height: 1.50em;
+  font-weight: 100;
+}
+
+#About { 
+  grid-area: about; 
+  background-color: #fff;
+  padding: 10em 0 10em 0;
+}
+
+#Projects {
+  grid-area: projects;
+  background-color: #fafafa;
+}
 /*-------------------------------------HEADER-------------------------------------*/
 header {
   grid-area: header;
   color: white;
-  background-color: #53389e; /* rgb(85, 93, 209); or #4e4e4e or #7e389e or #53389e*/
-  padding: 15px;
+  padding: 0px;
   font-size: 24px;
-  font-family: "AstronBold";
 }
 /*-------------------------------------NAV-------------------------------------*/
 nav {
-  grid-area: nav;
   color: white;
   background-color: #1f1f1f;
   text-align: center;
-  font-size: 20px;
-  font-family: "AstronLight";
+  font-weight: bold;
+	font-size: 13pt;
 }
 /* Style the top navigation bar */
 .topnav {
   overflow: hidden;
-  background-color: #333;
+  background-color: #282828;
 }
 /* Style the topnav links */
 .topnav a {
-  float: left;
-  display: block;
+  display: inline-block;
   color: #f2f2f2;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  background-color: rgba(32, 32, 32, 0.699);
   border-radius: 10px;
-  margin: 10px;
+  margin: 5px;
 }
 /* Change color on hover */
 .topnav a:hover {
-  background-color: rgb(85, 93, 209);
-  color: black;
+	background: #383838;
 }
 /*----------------------------------SCROLLING NAV-----------------------------------*/
 /* box */
 .headerToggle {
   position: fixed;
   width: 100%;
-  background-color: #53389e;
-  border: 3px solid rgba(32, 32, 32, 0.699);
-}
-/* box links */
-.headerToggle a{
-  background-color: rgba(32, 32, 32, 0.699);
-  border-radius: 10px;
-  margin: 10px;
 }
 .headerToggle + .grid-container {
-  padding-top: 15px;
+  padding-top: 10px;
 }
 /*--------------------------------------ABOUT-------------------------------------*/
 #Pic {
@@ -119,23 +160,30 @@ nav {
   margin: 20px;
   border-radius: 100px;
 }
-/*--------------------------------PERSONAL PROJECTS-------------------------------*/
-#gameTitle{
-  font-family: "AstronBold";
-  background-color: #53389e;
-  border-radius: 5px;
-  padding: 10px;
-  text-align: center;
-  font-size: 20px;
+.content {
+  overflow: hidden;
 }
+
+.content img {
+  margin-right: 15px;
+  float: left;
+}
+
+.content h1,
+.content p{
+  margin-left: 15px;
+  display: block;
+  margin: 60px 0 0 0;
+}
+/*--------------------------------PERSONAL PROJECTS-------------------------------*/
 div.gallery {
-  border: 4px solid #53389e;
-  border-radius: 15px;
+  background: #fff;
+	box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.15), 0px 2px 3px 0px rgba(0, 0, 0, 0.1);
+  width: 100%;
 }
 
 div.gallery:hover {
-  border: 4px solid #ccc;
-  background-color: #53389e;
+  box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.15), 0px 2px 3px 0px rgb(0, 0, 0);
 }
 
 div.gallery img {
@@ -143,16 +191,16 @@ div.gallery img {
   height: auto;
 }
 
-div.summary {
+.summary {
   padding: 10px;
+  font-size: 18px;
   text-align: center;
-  font-size: 16px;
 }
 
 .responsive {
-  padding: 0 20px;
-  float: left;
+  padding: 10px;
   width: 24.99999%;
+  float: left;
 }
 
 .clearfix:after {
@@ -163,10 +211,12 @@ div.summary {
 /*-------------------------------------FOOTER-------------------------------------*/
 footer {
   grid-area: footer;
-  color: white;
-  background-color: #333;
   padding: 20px;
+  font-size: 11px;
   text-align: center;
+  background-color: #303030;
+  color: #999;
+  text-shadow: -1px -1px 0px #181818;
 }
 .footericon {
   font-size: 30px;
@@ -184,12 +234,10 @@ footer {
 .grid-container {
   display: grid;
   grid-template-areas: 
-    'header header header header header header'
-    'nav nav nav nav nav nav'
-    'about about about about about about'
-    'prev_projects prev_projects prev_projects prev_projects prev_projects prev_projects'
-    'curr_projects curr_projects curr_projects curr_projects curr_projects curr_projects'
-    'footer footer footer footer footer footer';
+    'header'
+    'about'
+    'projects'
+    'footer';
    /*grid-column-gap: 10px; /* if you want gap between the columns */
 } 
 /*---------------------------------MEDIA QUERIES--------------------------------*/
@@ -198,10 +246,8 @@ footer {
       margin: auto;
       grid-template-areas: 
       'header header' 
-      'nav nav'
       'about about'
-      'prev_projects prev_projects'
-      'curr_projects curr_projects'
+      'projects projects'
       'footer footer';
       /* background-color: red; */
   }
@@ -232,10 +278,8 @@ footer {
       margin: auto;
       grid-template-areas: 
       'header header' 
-      'nav nav'
       'about about'
-      'prev_projects prev_projects'
-      'curr_projects curr_projects'
+      'projects projects'
       'footer footer';
       /* background-color: blue; */
   }
@@ -250,10 +294,8 @@ footer {
       margin: auto;
       grid-template-areas: 
       'header header' 
-      'nav nav'
       'about about'
-      'prev_projects prev_projects'
-      'curr_projects curr_projects'
+      'projects projects'
       'footer footer';
       /* background-color: green; */
   }
