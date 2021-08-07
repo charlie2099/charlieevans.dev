@@ -10,7 +10,7 @@
 </head>
 
 <body class="grid-container">
-  <!--=============================[HEADER]============================-->
+  <!--============================[HEADER]=============================-->
   <header> 
     <nav class = "topnav" id = "headerID">
       <a href="#AboutBanner">About</a>
@@ -18,10 +18,15 @@
       <a href="#GamesBanner">Personal Projects</a>
       <a href="#BlogBanner">Blog</a>
       <a href="#ContactBanner">Contact</a>
+
+      <label class="switch">
+        <input type="checkbox">
+        <span class="slider round"></span>
+      </label>
     </nav>
   </header>
 
-  <!--=============================[ABOUT]=============================-->
+  <!--============================[ABOUT]==============================-->
   <article class = "Strip" id = "About">
     <div class = "Container">
       <div class="content">
@@ -33,108 +38,128 @@
       </div>
     </div>
   </article>
+  
+  <!--===========================[SKILLS]=============================-->
+  <article class = "Strip" id = "Skills">
+    <div class = "Container">
+      <h1>Skills</h1>
+
+      <!-- Skills Grid -->
+      <div class="row">
+
+        <div class="skillscolumn">
+          <div class="portcontent">
+              <h3><strong>Languages</strong></h3>
+              <ul>
+                <li>C++</li>
+                <li>C#</li>
+                <li>Unreal Blueprints</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Python</li>
+              </ul>  
+          </div>
+        </div>
+        
+        <div class="skillscolumn">
+          <div class="portcontent">
+            <h3><strong>Software</strong></h3>
+            <p class="summary">A reimagining of the classic bridge commander game EGA Trek made in the ASGE engine</p>
+          </div>
+        </div>
+
+        <div class="skillscolumn">
+          <div class="portcontent">
+              <h3><strong>Engines and Frameworks</strong></h3>
+              <ul>
+                <li>Unity</li>
+                <li>Unreal</li>
+                <li>SFML</li>
+                <li>SDL</li>
+                <li>ASGE</li>
+              </ul>  
+          </div>
+        </div>
+
+        <div class="skillscolumn">
+          <div class="portcontent">
+              <h3><strong>IDEs</strong></h3>
+              <ul>
+                <li>Clion</li>
+                <li>Visual Studio</li>
+                <li>Visual Studio Code</li>
+              </ul>  
+          </div>
+        </div>
+        
+      <!-- END GRID -->
+      </div>
+
+    </div> <!--End of Container-->
+  </article> <!--End of Strip-->
 
   <!--======================[PERSONAL PROJECTS]=======================-->
   <article class = "Strip" id = "Projects">
     <div class = "Container">
       <h1>Projects</h1>
-      <h2>Made with <span style="color: cyan;">Unity</span></h2>
-      
-      <div class="responsive">
-        <div class="gallery">
-          <a target="_blank" href="https://github.com/UWEGames-GiC2/asgetrek-charlie2099"> <!--PRIVATE! Make a new public repo for asge trek.-->
-            <img src="images/angrybirds.png" alt="Platformer">
-          </a>
-          <h3><strong>Angry Birds</strong></h3>
-          <p class="summary">A reimagining of the classic bridge commander game EGA Trek made in the ASGE engine</p>
+      <h2>Made with <span style="color: rgb(0, 163, 136);">Unity</span></h2>
+
+      <!-- Portfolio Gallery Grid -->
+      <div class="row">
+
+        <div class="column">
+          <div class="portcontent">
+            <img src="images/angrybirds.png" alt="Mountains" style="width:100%">
+              <h3><strong>Angry Birds</strong></h3>
+              <p class="summary">A reimagining of the classic bridge commander game EGA Trek made in the ASGE engine</p>
+          </div>
         </div>
+        
+        <div class="column">
+          <div class="portcontent">
+          <img src="images/trek2.png" alt="Lights" style="width:100%">
+            <h3><strong>ASGE Trek</strong></h3>
+            <p class="summary">A reimagining of the classic bridge commander game EGA Trek made in the ASGE engine</p>
+          </div>
+        </div>
+        
+        <div class="column">
+          <div class="portcontent">
+          <img src="images/space_race2.png" alt="Nature" style="width:100%">
+            <h3><strong>Space Race</strong></h3>
+            <p class="summary">A reimagining of the classic bridge commander game EGA Trek made in the ASGE engine</p>
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="portcontent">
+            <img src="images/empty.png" alt="Mountains" style="width:100%">
+              <h3><strong>Starfleet Command</strong></h3>
+              <p class="summary">A reimagining of the classic bridge commander game EGA Trek made in the ASGE engine</p>
+          </div>
+        </div>
+        
+        <div class="column">
+          <div class="portcontent">
+          <img src="images/empty.png" alt="Lights" style="width:100%">
+            <h3><strong>Inventory System</strong></h3>
+            <p class="summary">A reimagining of the classic bridge commander game EGA Trek made in the ASGE engine</p>
+          </div>
+        </div>
+        
+        <div class="column">
+          <div class="portcontent">
+          <img src="images/empty.png" alt="Nature" style="width:100%">
+            <h3><strong>Squad Ai</strong></h3>
+            <p class="summary">A reimagining of the classic bridge commander game EGA Trek made in the ASGE engine</p>
+          </div>
+        </div>
+        
+      <!-- END GRID -->
       </div>
 
-      <div class="responsive">
-        <div class="gallery">
-          <a target="_blank" href="https://github.com/UWEGames-GiC2/asgetrek-charlie2099"> <!--PRIVATE! Make a new public repo for asge trek.-->
-            <img src="images/trek.png" alt="Platformer">
-          </a>
-          <h3><strong>ASGE Trek</strong></h3>
-          <p class="summary">A reimagining of the classic bridge commander game EGA Trek made in the ASGE engine</p>
-        </div>
-      </div>
-
-      <div class="responsive">
-        <div class="gallery">
-          <a target="_blank" href="https://github.com/UWEGames-GiC2/asgetrek-charlie2099"> <!--PRIVATE! Make a new public repo for asge trek.-->
-            <img src="images/space_race.png" alt="Platformer">
-          </a>
-          <h3><strong>Space Race</strong></h3>
-          <p class="summary">A reimagining of the classic bridge commander game EGA Trek made in the ASGE engine</p>
-        </div>
-      </div>
-
-      <div class="responsive">
-        <div class="gallery">
-          <a target="_blank" href="https://github.com/UWEGames-GiC2/asgetrek-charlie2099"> <!--PRIVATE! Make a new public repo for asge trek.-->
-            <img src="images/empty.png" alt="Platformer">
-          </a>
-          <h3><strong>Inventory System</strong></h3>
-          <p class="summary">A reimagining of the classic bridge commander game EGA Trek made in the ASGE engine</p>
-        </div>
-      </div>
-
-      <div class="responsive">
-        <div class="gallery">
-          <a target="_blank" href="https://github.com/UWEGames-GiC2/asgetrek-charlie2099"> <!--PRIVATE! Make a new public repo for asge trek.-->
-            <img src="images/empty.png" alt="Platformer">
-          </a>
-          <h3><strong>Squad Ai</strong></h3>
-          <p class="summary">A reimagining of the classic bridge commander game EGA Trek made in the ASGE engine</p>
-        </div>
-      </div>
-
-
-
-
-      <div class="responsive">
-        <div class="gallery">
-          <a target="_blank" href="https://github.com/UWEGames-GiC2/asgetrek-charlie2099"> <!--PRIVATE! Make a new public repo for asge trek.-->
-            <img src="images/empty.png" alt="Platformer">
-          </a>
-          <h3><strong>Squad Ai</strong></h3>
-          <p class="summary">A reimagining of the classic bridge commander game EGA Trek made in the ASGE engine</p>
-        </div>
-      </div>
-      
-      <div class="responsive">
-        <div class="gallery">
-          <a target="_blank" href="https://github.com/UWEGames-GiC2/asgetrek-charlie2099"> <!--PRIVATE! Make a new public repo for asge trek.-->
-            <img src="images/empty.png" alt="Platformer">
-          </a>
-          <h3><strong>Squad Ai</strong></h3>
-          <p class="summary">A reimagining of the classic bridge commander game EGA Trek made in the ASGE engine</p>
-        </div>
-      </div>
-
-      <div class="responsive">
-        <div class="gallery">
-          <a target="_blank" href="https://github.com/UWEGames-GiC2/asgetrek-charlie2099"> <!--PRIVATE! Make a new public repo for asge trek.-->
-            <img src="images/empty.png" alt="Platformer">
-          </a>
-          <h3><strong>Squad Ai</strong></h3>
-          <p class="summary">A reimagining of the classic bridge commander game EGA Trek made in the ASGE engine</p>
-        </div>
-      </div>
-
-      <div class="responsive">
-        <div class="gallery">
-          <a target="_blank" href="https://github.com/UWEGames-GiC2/asgetrek-charlie2099"> <!--PRIVATE! Make a new public repo for asge trek.-->
-            <img src="images/empty.png" alt="Platformer">
-          </a>
-          <h3><strong>Squad Ai</strong></h3>
-          <p class="summary">A reimagining of the classic bridge commander game EGA Trek made in the ASGE engine</p>
-        </div>
-      </div>
-
-    </div>
-  </article>
+    </div> <!--End of Container-->
+  </article> <!--End of Strip-->
   
   <!--============================[FOOTER]=============================-->
   <footer>
