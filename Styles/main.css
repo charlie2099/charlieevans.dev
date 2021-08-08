@@ -229,15 +229,38 @@ div.gallery img {
   clear: both;
 }
 
-.buttonpdf {
+.button1pdf, .button2pdf, .button3pdf, .button4pdf, .button5pdf  {
   font-size: 18px;
   border-radius: 10px;
-  background-color: white; 
+  background-color: rgba(0, 0, 0, 0.050); 
   margin: 5px;
 }
-.buttonpdf:hover {
-  background-color: rgba(0, 0, 0, 0.712);
+.button1pdf:hover {
+  background-color: rgba(0, 0, 0, 0.3);
   color: rgb(255, 255, 255);
+}
+.button2pdf:hover {
+  background-color: rgba(6, 177, 0, 0.3);
+  color: rgb(255, 255, 255);
+}
+.button3pdf:hover {
+  background-color: rgba(0, 127, 177, 0.3);
+  color: rgb(255, 255, 255);
+}
+.button4pdf:hover {
+  background-color: rgba(135, 0, 177, 0.3);
+  color: rgb(255, 255, 255);
+}
+.button5pdf:hover {
+  background-color: rgba(255, 0, 0, 0.3);
+  color: rgb(255, 255, 255);
+}
+
+.buttonlink {
+  text-decoration: none;
+}
+.buttonlink:visited {
+  color: black;
 }
 /*----------------------------------CONTACT FORM----------------------------------*/
 input[type=text], select, textarea {
