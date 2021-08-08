@@ -5,7 +5,7 @@ var container = header.offsetTop;
 
 function myFunction() 
 {
-  if (window.pageYOffset > container) 
+  if (window.pageYOffset >= container) 
   {
     header.classList.add("headerToggle");
   } 
