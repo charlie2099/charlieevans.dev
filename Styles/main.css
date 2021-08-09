@@ -49,14 +49,15 @@ body {
 
 .Strip {
   padding: 50px;
+  margin: 0px; /* change this? */
   text-align: center;
   box-shadow: inset 0px 1px 0px 0px rgb(0 0 0 / 5%), inset 0px 2px 3px 0px rgb(0 0 0 / 10%);
 }
 
 .Container {
-  margin: 0 auto;
-	max-width: calc(100% - 50px);
-	width: 1300px;
+  padding-left: 400px;
+  padding-right: 400px;
+	width: auto;
 }
 
 h1 {
@@ -131,7 +132,7 @@ header {
   padding: 0px;
   font-size: 24px;
 }
-/*--------------------------------------NAV--------------------------------------*/
+/*---------------------------------------NAV--------------------------------------*/
 nav {
   color: white;
   background-color: #1f1f1f;
@@ -157,6 +158,7 @@ nav {
 /* Change color on hover */
 .topnav a:hover {
 	background: #383838;
+  color: rgb(48, 197, 255);
 }
 /*----------------------------------SCROLLING NAV-----------------------------------*/
 /* box */
@@ -167,345 +169,6 @@ nav {
 .headerToggle + .grid-container {
   padding-top: 5px;
 }
-/*--------------------------------------ABOUT-------------------------------------*/
-#Pic {
-  grid-area: pic;
-  width: 500px;
-  margin: 20px;
-  border-radius: 100px;
-}
-.content {
-  overflow: hidden;
-}
-
-.content img {
-  margin-right: 15px;
-  float: left;
-}
-
-.content h1,
-.content p{
-  margin-left: 15px;
-  display: block;
-  margin: 60px 0 0 0;
-}
-/*-------------------------------------SKILLS--------------------------------------*/
-ul {
-  font-size: 24px;
-  text-align: left;
-  list-style-position: inside;
-}
-/*--------------------------------PERSONAL PROJECTS-------------------------------*/
-div.gallery {
-  background: #fff;
-	box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.15), 0px 2px 3px 0px rgba(0, 0, 0, 0.1);
-  width: 100%;
-}
-
-div.gallery:hover {
-  box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.15), 0px 2px 3px 0px rgb(0, 0, 0);
-}
-
-div.gallery img {
-  width: 100%;
-  height: auto;
-}
-
-.summary {
-  padding: 10px;
-  font-size: 18px;
-  text-align: center;
-}
-
-.responsive {
-  padding: 10px;
-  width: 24.99999%;
-  float: left;
-}
-
-.clearfix:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-.button1pdf, .button2pdf, .button3pdf, .button4pdf, .button5pdf  {
-  font-size: 18px;
-  border-radius: 10px;
-  background-color: rgba(0, 0, 0, 0.050); 
-  margin: 5px;
-}
-.button1pdf:hover {
-  background-color: rgba(0, 0, 0, 0.3);
-  color: rgb(255, 255, 255);
-}
-.button2pdf:hover {
-  background-color: rgba(6, 177, 0, 0.3);
-  color: rgb(255, 255, 255);
-}
-.button3pdf:hover {
-  background-color: rgba(0, 127, 177, 0.3);
-  color: rgb(255, 255, 255);
-}
-.button4pdf:hover {
-  background-color: rgba(135, 0, 177, 0.3);
-  color: rgb(255, 255, 255);
-}
-.button5pdf:hover {
-  background-color: rgba(255, 0, 0, 0.3);
-  color: rgb(255, 255, 255);
-}
-
-.buttonlink {
-  text-decoration: none;
-}
-.buttonlink:visited {
-  color: black;
-}
-/*----------------------------------CONTACT FORM----------------------------------*/
-input[type=text], select, textarea {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-  margin-top: 6px;
-  margin-bottom: 16px;
-  resize: vertical;
-}
-
-input[type=submit] {
-  background-color: #04AA6D;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-input[type=submit]:hover {
-  background-color: #45a049;
-}
-
-.formcontainer {
-  border-radius: 25px;
-  background-color: #f2f2f2;
-  padding: 20px;
-}
-/*-------------------------------------FOOTER-------------------------------------*/
-footer {
-  grid-area: footer;
-  padding: 20px;
-  font-size: 11px;
-  text-align: center;
-  background-color: #303030;
-  color: #999;
-  text-shadow: -1px -1px 0px #181818;
-}
-.footericon {
-  font-size: 30px;
-}
-.fa:hover {
-  color: rgb(48, 197, 255);
-}
-.fa-twitter,
-.fa-github,
-.fa-linkedin {
-  color: rgb(110, 110, 110);
-  padding: 10px;
-}
-/*-------------------------------------GRID-------------------------------------*/
-.grid-container {
-  display: grid;
-  grid-template-areas: 
-    'header'
-    'about'
-    'skills'
-    'projects'
-    'blog'
-    'contact'
-    'footer';
-   /*grid-column-gap: 10px; /* if you want gap between the columns */
-} 
-/*---------------------------------MEDIA QUERIES--------------------------------*/
-@media (max-width: 600px) /* Mobile phones */ {
-  .grid-container {
-      margin: auto;
-      grid-template-areas: 
-      'header header' 
-      'about about'
-      'skills skills'
-      'projects projects'
-      'blog blog'
-      'contact contact'
-      'footer footer';
-      /* background-color: red; */
-  }
-  .responsive {
-      width: 100%;
-      margin: 12px 0;
-  }
-  header {
-    text-align: center;
-    padding: 0px;
-  }
-  .topnav{
-    background-color: #53389e;
-  }
-  .topnav a {
-      float: none;
-  }
-  .headerToggle {
-    position: static;
-  }
-  #Pic {
-    width: 350px;
-  }
-}
-
-@media (min-width: 600px) /* Tablets */ {
-  .grid-container {
-      margin: auto;
-      grid-template-areas: 
-      'header header' 
-      'about about'
-      'skills skills'
-      'projects projects'
-      'blog blog'
-      'contact contact'
-      'footer footer';
-      /* background-color: blue; */
-  }
-  .responsive {
-      width: 49.99999%;
-      margin: 12px 0;
-  }
-}
-
-@media (min-width: 1100px) /* Desktops */ {
-  .grid-container {
-      margin: auto;
-      grid-template-areas: 
-      'header header' 
-      'about about'
-      'skills skills'
-      'projects projects'
-      'blog blog'
-      'contact contact'
-      'footer footer';
-      /* background-color: green; */
-  }
-  .responsive {
-      width: 24.99999%;
-      margin: 6px 0;
-  }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.row {
-  margin: 8px -16px;
-}
-
-/* Add padding BETWEEN each column */
-.row,
-.row > .skillscolumn, .projectscolumn, .blogcolumn, .contactcolumn {
-  padding: 8px;
-}
-
-/* Create two equal columns that floats next to each other */
-.skillscolumn {
-  float: left;
-  width: 50%;
-}
-
-/* Create three equal columns that floats next to each other */
-.projectscolumn {
-  float: left;
-  width: 33%;
-}
-
-.blogcolumn {
-  float: left;
-  width: 100%;
-}
-
-.contactcolumn {
-  float: left;
-  width: 100%;
-}
-
-/* Clear floats after rows */ 
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Content */
-.columncontent {
-  background: #fff;
-	box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.15), 0px 2px 3px 0px rgba(0, 0, 0, 0.1);
-  padding: 5px;
-}
-
-.columncontent:hover {
-  box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.15), 0px 2px 3px 0px rgb(0, 0, 0);
-  background-color: rgba(59, 105, 255, 0.05);
-}
-
-/* Responsive layout - makes a two column-layout instead of four columns */
-@media screen and (max-width: 900px) {
-  .projectscolumn {
-    width: 50%;
-  }
-}
-
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .projectscolumn {
-    width: 100%;
-  }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*-------------------------------------SLIDER---------------------------------------*/
 .switch {
   position: relative;
@@ -565,4 +228,303 @@ input:checked + .slider:before {
 
 .slider.round:before {
   border-radius: 50%;
+}
+/*--------------------------------------ABOUT-------------------------------------*/
+#Pic {
+  grid-area: pic;
+  width: 400px;
+  margin: 60px;
+  border-radius: 100px;
+}
+.content {
+  overflow: hidden;
+}
+
+.content img {
+  margin-right: 15px;
+  float: left;
+}
+
+.content h1,
+.content p{
+  margin-left: 15px;
+  display: block;
+  margin: 60px 0 0 0;
+}
+/*-------------------------------------SKILLS--------------------------------------*/
+ul {
+  font-size: 24px;
+  text-align: left;
+  list-style-position: inside;
+}
+/*--------------------------------PERSONAL PROJECTS-------------------------------*/
+div.gallery {
+  background: #fff;
+	box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.15), 0px 2px 3px 0px rgba(0, 0, 0, 0.1);
+  width: 100%;
+}
+
+div.gallery:hover {
+  box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.15), 0px 2px 3px 0px rgb(0, 0, 0);
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+.summary {
+  padding: 10px;
+  font-size: 18px;
+  text-align: center;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.button1pdf, .button2pdf, .button3pdf, .button4pdf, .button5pdf  {
+  font-size: 18px;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.050); 
+  margin: 5px;
+}
+.button1pdf:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+  color: rgb(255, 255, 255);
+}
+.button2pdf:hover {
+  background-color: rgba(6, 177, 0, 0.3);
+  color: rgb(255, 255, 255);
+}
+.button3pdf:hover {
+  background-color: rgba(0, 127, 177, 0.3);
+  color: rgb(255, 255, 255);
+}
+.button4pdf:hover {
+  background-color: rgba(135, 0, 177, 0.3);
+  color: rgb(255, 255, 255);
+}
+.button5pdf:hover {
+  background-color: rgba(255, 0, 0, 0.3);
+  color: rgb(255, 255, 255);
+}
+
+.buttonlink {
+  text-decoration: none;
+}
+.buttonlink:visited {
+  color: black;
+}
+/*----------------------------------CONTACT FORM----------------------------------*/
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid rgb(102, 102, 102);
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+input:hover
+{
+  background-color: rgba(255, 255, 255, 0.116);
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.formcontainer {
+  border-radius: 25px;
+  background-color: #f2f2f2;
+  box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.15), 0px 2px 3px 0px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+/*-------------------------------------FOOTER-------------------------------------*/
+footer {
+  grid-area: footer;
+  padding: 20px;
+  font-size: 11px;
+  text-align: center;
+  background-color: #303030;
+  color: #999;
+  text-shadow: -1px -1px 0px #181818;
+}
+.footericon {
+  font-size: 30px;
+}
+.fa:hover {
+  color: rgb(48, 197, 255);
+}
+.fa-twitter,
+.fa-github,
+.fa-linkedin {
+  color: rgb(110, 110, 110);
+  padding: 10px;
+}
+/*-------------------------------------GRID-------------------------------------*/
+.grid-container {
+  display: grid;
+  grid-template-areas: 
+    'header'
+    'about'
+    'skills'
+    'projects'
+    'blog'
+    'contact'
+    'footer';
+} 
+/*---------------------------------MEDIA QUERIES--------------------------------*/
+@media only screen and (max-width: 850px) {
+  /*.topnav {
+    background-color: rgb(5, 158, 0);
+  }*/
+  .Container {
+    padding-left: 0px;
+    padding-right: 0px;
+    margin: 0px;
+  }
+  .content img {
+    float: none;
+  }
+  .skillscolumn {
+    width: 100%;
+  }
+  .projectscolumn {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 850px) {
+  /*.topnav {
+    background-color: rgb(158, 0, 137);
+  }*/
+  .Container {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  .skillscolumn {
+    width: 50%;
+  }
+  .projectscolumn {
+    width: 50%;
+  }
+}
+
+@media only screen and (min-width: 1080px) {
+  /*.topnav {
+    background-color: rgb(194, 248, 0);
+  }*/
+  .Container {
+    padding-left: 175px;
+    padding-right: 175px;
+  }
+  .skillscolumn {
+    width: 50%;
+  }
+  .projectscolumn {
+    width: 50%;
+  }
+} 
+
+@media only screen and (min-width: 1600px) {
+  /*.topnav {
+    background-color: rgb(0, 81, 255);
+  }*/
+  .Container {
+    padding-left: 200px;
+    padding-right: 200px;
+  }
+  .skillscolumn {
+    width: 33%;
+  }
+  .projectscolumn {
+    width: 33%;
+  }
+} 
+
+@media only screen and (min-width: 2200px) {
+  /*.topnav {
+    background-color: rgb(255, 0, 0);
+  }*/
+  .Container {
+    padding-left: 400px;
+    padding-right: 400px;
+  }
+  .skillscolumn {
+    width: 33%;
+  }
+  .projectscolumn {
+    width: 33%;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.row {
+  margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .skillscolumn, .projectscolumn, .blogcolumn, .contactcolumn {
+  padding: 8px;
+}
+
+.skillscolumn {
+  float: left;
+}
+.projectscolumn {
+  float: left;
+}
+
+.blogcolumn {
+  float: left;
+  width: 100%;
+}
+
+.contactcolumn {
+  float: left;
+  width: 100%;
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.columncontent {
+  background: #fff;
+	box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.15), 0px 2px 3px 0px rgba(0, 0, 0, 0.1);
+  padding: 5px;
+}
+
+.columncontent:hover {
+  box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.15), 0px 2px 3px 0px rgb(0, 0, 0);
+  background-color: rgba(59, 105, 255, 0.05);
 }
