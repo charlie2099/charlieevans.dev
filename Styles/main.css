@@ -406,6 +406,14 @@ footer {
   .projectscolumn {
     width: 100%;
   }
+  .topnav {
+    width: 120px;
+  }
+  .topnav a {
+    display: block;
+    padding: 10px;
+    border: 1px solid #ffffff8c;
+  }
 }
 
 @media only screen and (min-width: 850px) {
