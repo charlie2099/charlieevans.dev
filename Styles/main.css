@@ -253,9 +253,13 @@ input:checked + .slider:before {
 }
 /*-------------------------------------SKILLS--------------------------------------*/
 ul {
-  font-size: 24px;
   text-align: left;
   list-style-position: inside;
+  color: #888;
+  font-size: 1.2em;
+  line-height: 1.50em;
+  font-weight: 100;
+  list-style-type: none;
 }
 /*--------------------------------PERSONAL PROJECTS-------------------------------*/
 div.gallery {
