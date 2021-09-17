@@ -115,6 +115,7 @@
   <article class = "Strip" id = "Projects">
     <div class = "Container">
       <h1>Projects</h1>
+      <h4>Hover over images to play short clips</h4>
       <!--<h2>Made with <span style="color: rgb(0, 163, 136);">Unity</span></h2>-->
       
       <!-------===[COMPLETED PROJECTS]===------->
@@ -139,7 +140,10 @@
       <div class="row"> <!--On-going Projects Grid-->
         <div class="projectscolumn">
           <div class="columncontent">
-            <img src="images/angrybirds.png" alt="Mountains" style="width:100%">
+            <!--<img src="images/angrybirds.png" alt="Ape Assault" style="width:100%">-->
+            <video onmouseover="this.play()" onmouseout="this.pause();this.currentTime=0;" style="width:100%" muted = "muted">
+              <source src="videos/ape_assault_menu.mp4" type="video/mp4"></source>
+            </video>   
               <h3><strong>Ape Assault</strong></h3>
               <p class="summary">A physics based puzzle game inspired by angry birds made with the SFML library.</p>
               <a class = "buttonlink" href = "https://www.github.com/charlie2099" target="_blank"><button class = "button1pdf">Github <i class="fa fa-github" style = "color: black; padding: 0px;"></i></a>
@@ -152,7 +156,10 @@
 
         <div class="projectscolumn">
           <div class="columncontent">
-            <img src="images/starfleet_command1.png" alt="Starfleet Command" style="width:100%">
+            <!--<img src="images/starfleet_command4.png" alt="Starfleet Command" style="width:100%">-->
+            <video onmouseover="this.play()" onmouseout="this.pause();this.currentTime=0;" style="width:100%" muted = "muted">
+              <source src="videos/starfleet_command_menu.mp4" type="video/mp4"></source>
+            </video>   
               <h3><strong>Starfleet Command</strong></h3>
               <p class="summary">A 2D space combat game made with the SFML library.</p>
               <a class = "buttonlink" href = "https://www.github.com/charlie2099" target="_blank"><button class = "button1pdf">Github <i class="fa fa-github" style = "color: black; padding: 0px;"></i></a>
@@ -216,7 +223,7 @@
             <a class = "buttonlink" href = "https://www.github.com/charlie2099" target="_blank"><button class = "button1pdf">Github <i class="fa fa-github" style = "color: black; padding: 0px;"></i></a>
             <a class = "buttonlink" href = "" target="_blank"><button class = "button2pdf">Exe <i class="fa fa-file-pdf-o" style = "color: rgb(0, 160, 0);"></i></a>
             <a class = "buttonlink" href = "" target="_blank"><button class = "button5pdf">Youtube <i class="fa fa-youtube" style = "color:red" ></i></a> 
-            <a class = "buttonlink" href = "" target="_blank"><button class = "button3pdf">Design Document <i class="fa fa-file-pdf-o" style = "color:rgb(0, 89, 255)"></i></a>
+            <a class = "buttonlink" href = "MistsOfTurmoilDoc.pdf" target="_blank"><button class = "button3pdf">Design Document <i class="fa fa-file-pdf-o" style = "color:rgb(0, 89, 255)"></i></a>
             <a class = "buttonlink" href = "" target="_blank"><button class = "button4pdf">UML <i class="fa fa-file-pdf-o" style = "color:rgb(204, 0, 255)"></i></a>
           </div>
         </div>
