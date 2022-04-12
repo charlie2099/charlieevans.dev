@@ -375,7 +375,8 @@ footer {
 }
 .fa-twitter,
 .fa-github,
-.fa-linkedin {
+.fa-linkedin,
+.fa-slack{
   color: rgb(110, 110, 110);
   padding: 10px;
 }
