@@ -370,13 +370,14 @@ footer {
 .footericon {
   font-size: 30px;
 }
-.fa:hover {
-  color: rgb(48, 197, 255);
+.fab:hover {
+    color: rgb(48, 197, 255);
 }
 .fa-twitter,
 .fa-github,
 .fa-linkedin,
-.fa-slack{
+.fa-slack,
+.fa-itch-io {
   color: rgb(110, 110, 110);
   padding: 10px;
 }
