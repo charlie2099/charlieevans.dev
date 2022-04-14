@@ -41,7 +41,7 @@
 body {
   background-color: #fafafa;
   margin: 0px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "MontserratLight";
 	line-height: 1.85em;
 	font-weight: 300px;
 	font-size: 13pt;  
@@ -368,10 +368,7 @@ footer {
   text-shadow: -1px -1px 0px #181818;
 }
 .footericon {
-  font-size: 30px;
-}
-.fab:hover {
-    color: rgb(48, 197, 255);
+  font-size: 20px;
 }
 .fa-twitter,
 .fa-github,
@@ -380,6 +377,28 @@ footer {
 .fa-itch-io {
   color: rgb(110, 110, 110);
   padding: 10px;
+}
+
+.fa-bounce-hover:not(:hover) {
+  animation: none;
+} 
+.fab-hover{
+  padding:10px;
+}
+.fa-twitter:hover {
+  color: rgb(48, 197, 255);
+}
+.fa-github:hover {
+  color: rgb(255, 255, 255);
+}
+.fa-linkedin:hover {
+  color: rgb(48, 103, 255);
+}
+.fa-slack:hover {
+  color: rgb(255, 131, 48);
+}
+.fa-itch-io:hover {
+  color: rgb(255, 48, 48);
 }
 /*-------------------------------------GRID-------------------------------------*/
 .grid-container {
