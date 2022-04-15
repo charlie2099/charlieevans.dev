@@ -85,8 +85,7 @@ h2 strong {
 h3 {
   color: #3e3e3e;
   font-size: 1.50em;
-  line-height: 0.25em;
-	letter-spacing: -0.025em;
+	letter-spacing: 1.5px;
 	font-weight: 300;
 }
 h3 strong {
@@ -139,16 +138,18 @@ nav {
   text-align: center;
   font-weight: bold;
 	font-size: 13pt;
+  font-family: FontAwesome;
+  letter-spacing: 1px;
 }
 /* Style the top navigation bar */
 .topnav {
   overflow: hidden;
-  background-color: #282828;
+  background-color: #303030;
 }
 /* Style the topnav links */
 .topnav a {
   display: inline-block;
-  color: #f2f2f2;
+  color: #999;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -158,7 +159,7 @@ nav {
 /* Change color on hover */
 .topnav a:hover {
 	background: #383838;
-  color: rgb(48, 197, 255);
+  color: rgb(255, 255, 255);
 }
 /*----------------------------------SCROLLING NAV-----------------------------------*/
 /* box */
@@ -362,6 +363,7 @@ footer {
   grid-area: footer;
   padding: 20px;
   font-size: 11px;
+  letter-spacing: 1px;
   text-align: center;
   background-color: #303030;
   color: #999;
@@ -521,6 +523,8 @@ footer {
 .row,
 .row > .skillscolumn, .projectscolumn, .blogcolumn, .contactcolumn {
   padding: 8px;
+  font-family: FontAwesome;
+  letter-spacing: 1px;
 }
 
 .skillscolumn {
@@ -551,7 +555,7 @@ footer {
 .columncontent {
   background: #fff;
 	box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.15), 0px 2px 3px 0px rgba(0, 0, 0, 0.1);
-  padding: 5px;
+  padding: 10px;
 }
 
 .columncontent:hover {
