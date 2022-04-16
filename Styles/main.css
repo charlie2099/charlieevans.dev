@@ -53,6 +53,12 @@ body {
   text-align: center;
   box-shadow: inset 0px 1px 0px 0px rgb(0 0 0 / 5%), inset 0px 2px 3px 0px rgb(0 0 0 / 10%);
 }
+.StripTitle {
+  background-color: #303030; 
+  color: #999;
+  font-weight: bold; 
+  padding: 15px;
+}
 
 .Container {
   padding-left: 400px;
@@ -159,7 +165,24 @@ nav {
 /* Change color on hover */
 .topnav a:hover {
 	background: #383838;
-  color: rgb(255, 255, 255);
+  /* color: rgb(255, 255, 255); */
+  transition: 0.5s;
+}
+
+#AboutNav:hover{
+  color: rgb(238, 163, 113);
+}
+#SkillsNav:hover{
+  color: rgb(128, 238, 113);
+}
+#ProjectsNav:hover{
+  color: rgb(140, 113, 238);
+}
+#BlogNav:hover{
+  color: rgb(238, 113, 217);
+}
+#ContactNav:hover{
+  color: rgb(238, 230, 113);
 }
 /*----------------------------------SCROLLING NAV-----------------------------------*/
 /* box */
@@ -553,7 +576,7 @@ footer {
 
 /* Content */
 .columncontent {
-  background: #fff;
+  background: rgba(124, 124, 124, 0.116);
 	box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.15), 0px 2px 3px 0px rgba(0, 0, 0, 0.1);
   padding: 10px;
 }

@@ -13,16 +13,24 @@
   <!--============================[HEADER]=============================-->
   <header> 
     <nav class = "topnav" id = "headerID">
-      <a href="#About">About</a>
-      <a href="#Skills">Skills</a>
-      <a href="#Projects">Personal Projects</a>
-      <a href="#Blog">Blog</a>
-      <a href="#Contact">Contact</a>
+      <a href="#About" class="fa fa-lightbulb fa-bounce fa-bounce-hover" id="AboutNav">About</a>
+      <a href="#Skills" class="fa fa-list-alt fa-bounce fa-bounce-hover" id="SkillsNav">Skills</a>
+      <a href="#Projects" class="fa fa-folder-open fa-bounce fa-bounce-hover" id="ProjectsNav">Personal Projects</a>
+      <a href="#Blog" class="fa fa-edit fa-bounce fa-bounce-hover" id="BlogNav">Blog</a>
+      <a href="#Contact" class="fa fa-envelope fa-bounce fa-bounce-hover" id="ContactNav">Contact</a>
 
-      <label class="switch">
+      <!-- <label class="switch">
         <input type="checkbox">
         <span class="slider round"></span>
-      </label>
+      </label> -->
+
+      <div class="switch">
+        <label class="theme-switch" for="checkbox">
+            <input type="checkbox" id="checkbox" />
+            <div class="slider round"></div>
+        </label>
+      </div>
+
     </nav>
   </header>
 
@@ -42,7 +50,7 @@
   <!--===========================[SKILLS]=============================-->
   <article class = "Strip" id = "Skills">
     <div class = "Container">
-      <h1>Skills</h1>
+      <h1 class="StripTitle">Skills</h1>
 
       <!-- Skills Grid -->
       <div class="row">
@@ -115,7 +123,7 @@
   <!--======================[PERSONAL PROJECTS]=======================-->
   <article class = "Strip" id = "Projects">
     <div class = "Container">
-      <h1>Projects</h1>
+      <h1 class="StripTitle">Projects</h1>
       <h4>Hover over images to play short clips</h4>
       <!--<h2>Made with <span style="color: rgb(0, 163, 136);">Unity</span></h2>-->
       <!--class = "fab fa-bounce fa-bounce-hover" style=" --fa-bounce-start-scale-x: 1; --fa-bounce-start-scale-y: 1; --fa-bounce-jump-scale-x: 1; --fa-bounce-jump-scale-y: 1; --fa-bounce-land-scale-x: 1; --fa-bounce-land-scale-y: 1; --fa-bounce-rebound: 0;"-->
@@ -124,7 +132,7 @@
       <h2>Completed Projects</h2>
       <div class="row"> <!--Completed Projects Grid-->
         <div class="projectscolumn">
-          <div class="columncontent" style="background-color: rgba(21, 255, 0, 0.1);">
+          <div class="columncontent">
           <img src="images/empty.png" alt="Nature" style="width:100%">
             <h3><strong>Placeholder</strong></h3>
             <h4 style="color: rgb(59, 209, 29);">[ Placeholder ]</h4>
@@ -144,7 +152,7 @@
 
         <!--<div class="projectscolumn">
           <div class="columncontent">-->
-            <!--<img src="images/angrybirds.png" alt="Ape Assault" style="width:100%">-->
+            <!--<img src="images/angrybirds.png" alt="Angry Apes" style="width:100%">-->
             <!--<video onmouseover="this.play()" onmouseout="this.pause();this.currentTime=0;" style="width:100%" muted = "muted">
               <source src="videos/ape_assault_menu.mp4" type="video/mp4"></source>
             </video>   
@@ -160,7 +168,7 @@
         </div>-->
 
         <div class="projectscolumn">
-          <div class="columncontent" style="background-color: rgba(0, 0, 255, 0.100);">
+          <div class="columncontent">
             <!--<img src="images/starfleet_command4.png" alt="Starfleet Command" style="width:100%">-->
             <video onmouseover="this.play()" onmouseout="this.pause();this.currentTime=0;" style="width:100%" muted = "muted">
               <source src="videos/starfleet_command_menu.mp4" type="video/mp4"></source>
@@ -177,7 +185,7 @@
         </div>
 
         <div class="projectscolumn">
-          <div class="columncontent" style="background-color: rgba(255, 0, 0, 0.100);">
+          <div class="columncontent">
             <img src="images/empty.png" alt="Starfleet Command" style="width:100%">
               <h3><strong>Director AI</strong></h3>
               <h4 style="color: rgb(255, 81, 81);">[ Dissertation Project ]</h4>
@@ -189,19 +197,6 @@
               <a class = "buttonlink" href = "" target="_blank"><button class = "button4pdf">UML <i class="fa fa-file-pdf" style = "color:rgb(204, 0, 255)"></i></a>
           </div>
         </div>
-        
-        <!-- <div class="projectscolumn">
-          <div class="columncontent">
-          <img src="images/space_race2.png" alt="Nature" style="width:100%">
-            <h3><strong>Space Race</strong></h3>
-            <p class="summary">A reimagining of Atari's 'Space Race' arcade game, made with the ASGE engine.</p>
-            <a class = "buttonlink" href = "https://www.github.com/charlie2099" target="_blank"><button class = "button1pdf">Github <i class="fa fa-github" style = "color: black; padding: 0px;"></i></a>
-            <a class = "buttonlink" href = "" target="_blank"><button class = "button2pdf">Exe <i class="fa fa-file-pdf-o" style = "color: rgb(0, 160, 0);"></i></a>
-            <a class = "buttonlink" href = "" target="_blank"><button class = "button5pdf">Youtube <i class="fa fa-youtube" style = "color:red" ></i></a> 
-            <a class = "buttonlink" href = "" target="_blank"><button class = "button3pdf">Design Document <i class="fa fa-file-pdf-o" style = "color:rgb(0, 89, 255)"></i></a>
-            <a class = "buttonlink" href = "" target="_blank"><button class = "button4pdf">UML <i class="fa fa-file-pdf-o" style = "color:rgb(204, 0, 255)"></i></a>
-          </div>
-        </div> -->
 
       </div> <!--End of Grid-->
 
@@ -211,7 +206,7 @@
           <!--University Projects Grid-->
 
           <div class="projectscolumn">
-              <div class="columncontent" style="background-color: rgba(255, 145, 0, 0.1);">
+              <div class="columncontent">
                   <img src="images/trek2.png" alt="ASGE Trek" style="width:100%">
                   <h3><strong>ASGE Trek</strong></h3>
                   <h4 style="color: rgb(255, 136, 81);">[ University Project ]</h4>
@@ -225,7 +220,7 @@
           </div>
 
           <div class="projectscolumn">
-              <div class="columncontent" style="background-color: rgba(255, 145, 0, 0.1);">
+              <div class="columncontent">
                   <img src="images/mists_of_turmoil5.png" alt="Mists of Turmoil" style="width:100%">
                   <h3><strong>Mists of Turmoil</strong></h3>
                   <h4 style="color: rgb(255, 136, 81);">[ University Project ]</h4>
@@ -239,7 +234,7 @@
           </div>
 
           <div class="projectscolumn">
-              <div class="columncontent" style="background-color: rgba(255, 145, 0, 0.1);">
+              <div class="columncontent">
                   <img src="images/open_world_game.PNG" alt="Open World Streaming System" style="width:100%">
                   <h3><strong>Open World Streaming System</strong></h3>
                   <h4 style="color: rgb(255, 136, 81);">[ University Project ]</h4>
@@ -251,7 +246,7 @@
           </div>
 
           <div class="projectscolumn">
-              <div class="columncontent" style="background-color: rgba(255, 145, 0, 0.1);">
+              <div class="columncontent">
                   <img src="images/squidstribution_game.PNG" alt="Squidstribution" style="width:100%">
                   <h3><strong>Squidstribution</strong></h3>
                   <h4 style="color: rgb(255, 136, 81);">[ University Group Project ]</h4>
@@ -269,7 +264,7 @@
       <div class="row"> <!--Coming Soon Grid-->
         
         <div class="projectscolumn">
-          <div class="columncontent" style="background-color: rgba(0, 0, 255, 0.100);">
+          <div class="columncontent">
           <img src="images/empty.png" alt="Lights" style="width:100%">
             <h3><strong>Inventory System</strong></h3>
             <h4 style="color: rgb(81, 81, 255);">[ Hobby Project ]</h4>
@@ -283,7 +278,7 @@
         </div>
         
         <div class="projectscolumn">
-          <div class="columncontent" style="background-color: rgba(0, 0, 255, 0.100);">
+          <div class="columncontent">
           <img src="images/empty.png" alt="Nature" style="width:100%">
             <h3><strong>Squad Ai</strong></h3>
             <h4 style="color: rgb(81, 81, 255);">[ Hobby Project ]</h4>
@@ -317,7 +312,7 @@
   <!--============================[BLOG]==============================-->
   <article class = "Strip" id = "Blog">
     <div class = "Container">
-      <h1>Blog</h1>
+      <h1 class="StripTitle">Blog</h1>
 
       <!-- Blog Grid -->
       <div class="row">
@@ -337,7 +332,7 @@
   <!--===========================[CONTACT]============================-->
   <article class = "Strip" id = "Contact">
     <div class = "Container">
-      <h1>Contact</h1>
+      <h1 class="StripTitle">Contact</h1>
 
       <!-- Contact Grid -->
       <div class="row">
@@ -375,6 +370,6 @@
       <a href="https://charlie2099.itch.io/" target="_blank" class="footericon"><i class="fab fa-itch-io fa-bounce fa-bounce-hover">Itch Io</i></a>
   </footer>
 
-  <script src="script.js"></script>
+  <script src="headerNav.js"></script>
 </body>
 </html>
