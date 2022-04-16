@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,600,600italic,700");
+
 /*--------------------------------------FONTS-------------------------------------*/
 @font-face { font-family: "AstronBold"; 
   src: url('Fonts/astron/Astron-Bold.otf'); 
@@ -31,8 +33,7 @@
      url('Fonts/Montserrat/montserrat_light/Montserrat-Light.svg#Montserrat-Light') format('svg'); /* Legacy iOS */
 }
 
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,600,600italic,700");
-@import url("fontawesome-all.min.css");
+/*@import url("fontawesome-all.min.css");*/
 /*-------------------------------------GENERAL-------------------------------------*/
 * {
   box-sizing: border-box;
@@ -42,9 +43,9 @@ body {
   background-color: #fafafa;
   margin: 0px;
   font-family: "MontserratLight";
-	line-height: 1.85em;
-	font-weight: 300px;
-	font-size: 13pt;  
+  line-height: 1.85em;
+  font-weight: 300;
+  font-size: 13pt;  
 }
 
 .Strip {
@@ -63,15 +64,15 @@ body {
 .Container {
   padding-left: 400px;
   padding-right: 400px;
-	width: auto;
+  width: auto;
 }
 
 h1 {
   color: #3e3e3e;
   font-size: 3.25em;
   line-height: 1.25em;
-	letter-spacing: -0.025em;
-	font-weight: 300;
+  letter-spacing: -0.025em;
+  font-weight: 300;
 }
 h1 strong {
   font-weight: 700;
@@ -80,8 +81,8 @@ h1 strong {
 h2 {
   color: #3e3e3e;
   font-size: 2.0em;
-	letter-spacing: -0.025em;
-	font-weight: 300;
+  letter-spacing: -0.025em;
+  font-weight: 300;
 }
 h2 strong {
   font-weight: 700;
@@ -91,8 +92,8 @@ h2 strong {
 h3 {
   color: #3e3e3e;
   font-size: 1.50em;
-	letter-spacing: 1.5px;
-	font-weight: 300;
+  letter-spacing: 1.5px;
+  font-weight: 300;
 }
 h3 strong {
   font-weight: 700;
@@ -288,7 +289,7 @@ ul {
 /*--------------------------------PERSONAL PROJECTS-------------------------------*/
 div.gallery {
   background: #fff;
-	box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.15), 0px 2px 3px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.15), 0px 2px 3px 0px rgba(0, 0, 0, 0.1);
   width: 100%;
 }
 
@@ -314,30 +315,10 @@ div.gallery img {
 }
 
 .button1pdf, .button2pdf, .button3pdf, .button4pdf, .button5pdf  {
-  font-size: 18px;
-  border-radius: 10px;
-  background-color: rgba(0, 0, 0, 0.050); 
-  margin: 5px;
-}
-.button1pdf:hover {
-  background-color: rgba(0, 0, 0, 0.3);
-  color: rgb(255, 255, 255);
-}
-.button2pdf:hover {
-  background-color: rgba(6, 177, 0, 0.3);
-  color: rgb(255, 255, 255);
-}
-.button3pdf:hover {
-  background-color: rgba(0, 127, 177, 0.3);
-  color: rgb(255, 255, 255);
-}
-.button4pdf:hover {
-  background-color: rgba(135, 0, 177, 0.3);
-  color: rgb(255, 255, 255);
-}
-.button5pdf:hover {
-  background-color: rgba(255, 0, 0, 0.3);
-  color: rgb(255, 255, 255);
+  font-size: 26px;
+  margin: 0px;
+  border: none;
+  background: none;
 }
 
 .buttonlink {
@@ -397,9 +378,12 @@ footer {
 }
 .fa-twitter,
 .fa-github,
+.fa-github-square,
 .fa-linkedin,
 .fa-slack,
-.fa-itch-io {
+.fa-itch-io,
+.fa-youtube,
+.fa-file-pdf {
   color: rgb(110, 110, 110);
   padding: 10px;
 }
@@ -407,14 +391,15 @@ footer {
 .fa-bounce-hover:not(:hover) {
   animation: none;
 } 
-.fab-hover{
-  padding:10px;
-}
+
 .fa-twitter:hover {
   color: rgb(48, 197, 255);
 }
 .fa-github:hover {
   color: rgb(255, 255, 255);
+}
+.fa-github-square:hover {
+  color: rgb(0, 0, 0);
 }
 .fa-linkedin:hover {
   color: rgb(48, 103, 255);
@@ -425,6 +410,13 @@ footer {
 .fa-itch-io:hover {
   color: rgb(255, 48, 48);
 }
+.fa-youtube:hover {
+  color: rgb(255, 48, 48);
+}
+.fa-file-pdf:hover {
+  color: rgb(141, 48, 255);
+}
+
 /*-------------------------------------GRID-------------------------------------*/
 .grid-container {
   display: grid;
@@ -577,11 +569,10 @@ footer {
 /* Content */
 .columncontent {
   background: rgba(124, 124, 124, 0.116);
-	box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.15), 0px 2px 3px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.15), 0px 2px 3px 0px rgba(0, 0, 0, 0.1);
   padding: 10px;
 }
 
 .columncontent:hover {
   box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.15), 0px 2px 3px 0px rgb(0, 0, 0);
-  background-color: rgba(59, 105, 255, 0.05);
 }
