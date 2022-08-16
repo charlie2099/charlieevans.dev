@@ -49,7 +49,7 @@ body {
 }
 
 .Strip {
-  padding: 50px;
+  padding: 100px;
   margin: 0px; /* change this? */
   text-align: center;
   box-shadow: inset 0px 1px 0px 0px rgb(0 0 0 / 5%), inset 0px 2px 3px 0px rgb(0 0 0 / 10%);
@@ -508,8 +508,8 @@ footer {
     background-color: rgb(255, 0, 0);
   }*/
   .Container {
-    padding-left: 400px;
-    padding-right: 400px;
+    padding-left: 500px;
+    padding-right: 500px;
   }
   .skillscolumn {
     width: 33%;
