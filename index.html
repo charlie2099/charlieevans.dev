@@ -11,26 +11,14 @@
 
 <body class="grid-container">
   <!--============================[HEADER]=============================-->
-  <header> 
+  <header>
     <nav class = "topnav" id = "headerID">
+      <a style="color: rgb(127,127,222);">Charlie Evans</a>
       <a href="#About" class="fa fa-lightbulb fa-bounce fa-bounce-hover" id="AboutNav">About</a>
       <a href="#Skills" class="fa fa-list-alt fa-bounce fa-bounce-hover" id="SkillsNav">Skills</a>
       <a href="#Projects" class="fa fa-folder-open fa-bounce fa-bounce-hover" id="ProjectsNav">Personal Projects</a>
       <a href="#Blog" class="fa fa-edit fa-bounce fa-bounce-hover" id="BlogNav">Blog</a>
       <a href="#Contact" class="fa fa-envelope fa-bounce fa-bounce-hover" id="ContactNav">Contact</a>
-
-      <!-- <label class="switch">
-        <input type="checkbox">
-        <span class="slider round"></span>
-      </label> -->
-
-      <div class="switch">
-        <label class="theme-switch" for="checkbox">
-            <input type="checkbox" id="checkbox" />
-            <div class="slider round"></div>
-        </label>
-      </div>
-
     </nav>
   </header>
 
@@ -40,7 +28,7 @@
       <div class="content">
         <img src = "images/beach6.jpeg" alt = "profile pic" id = "Pic"></img>
         <h1>Hi. I'm <strong>Charlie Evans</strong>.</h1>
-        <h2>and I'm a <strong>Games Programmer</strong></h2>
+        <h2>and I'm a <strong style="color: rgb(81, 81, 255);">Games Programmer</strong></h2>
         <p>I am a 3rd year Games Technology student studying at UWE Bristol with an enthusiasm for programming and game design.
            When I'm not programming, I like to spend my time...</p>
       </div>
@@ -124,172 +112,113 @@
   <article class = "Strip" id = "Projects">
     <div class = "Container">
       <h1 class="StripTitle">Projects</h1>
-      <h4>Hover over images to play short clips</h4>
       <!--<h2>Made with <span style="color: rgb(0, 163, 136);">Unity</span></h2>-->
-      
-      <!-------===[COMPLETED PROJECTS]===------->
-      <h2>Completed Projects</h2>
-      <div class="row"> <!--Completed Projects Grid-->
-        <div class="projectscolumn">
-          <div class="columncontent">
-          <img src="images/empty.png" alt="Nature" style="width:100%">
-            <h3><strong>Placeholder</strong></h3>
-            <h4 style="color: rgb(59, 209, 29);">[ Placeholder ]</h4>
-            <p class="summary">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sagittis est sed sem.</p>
-            <a class = "buttonlink" href = "https://www.github.com/charlie2099" target="_blank"><button class = "button1pdf"><i class="fab fa-github-square fa-bounce fa-bounce-hover"></i></button></a>
-            <a class = "buttonlink" href = "" target="_blank"><button class = "button2pdf"> <i class="fab fa-itch-io fa-bounce fa-bounce-hover"></i></button></a>
-            <a class = "buttonlink" href = "" target="_blank"><button class = "button5pdf"> <i class="fab fa-youtube fa-bounce fa-bounce-hover"></i></button></a>
-            <a class = "buttonlink" href = "" target="_blank"><button class = "button3pdf"> <i class="fa fa-file-pdf fa-bounce fa-bounce-hover"></i></button></a>
-            <a class = "buttonlink" href = "" target="_blank"><button class = "button4pdf"> <i class="fa fa-file-pdf fa-bounce fa-bounce-hover"></i></button></a>
-          </div>
-        </div>
-      </div> <!--End of Grid-->
 
       <!-------===[ON-GOING PROJECTS]===------->
-      <h2>On-going Projects</h2>
+      <h2 style="text-align: left">On-going Projects</h2>
       <div class="row"> <!--On-going Projects Grid-->
 
         <div class="projectscolumn">
-          <div class="columncontent">
-            <!--<img src="images/starfleet_command4.png" alt="Starfleet Command" style="width:100%">-->
-            <video onmouseover="this.play()" onmouseout="this.pause();this.currentTime=0;" style="width:100%" muted = "muted">
-              <source src="videos/starfleet_command_menu.mp4" type="video/mp4"></source>
-            </video>   
-              <h3><strong>Starfleet Command</strong></h3>
-              <h4 style="color: rgb(81, 81, 255);">[ Hobby Project ]</h4>
-              <p class="summary">A 2D space combat game made with the SFML library.</p>
-              <a class = "buttonlink" href = "https://www.github.com/charlie2099" target="_blank"><button class = "button1pdf"><i class="fab fa-github-square fa-bounce fa-bounce-hover"></i></button></a>
-              <a class = "buttonlink" href = "https://charlie2099.itch.io/starfleet-command" target="_blank"><button class = "button2pdf"> <i class="fab fa-itch-io fa-bounce fa-bounce-hover"></i></button></a>
-              <a class = "buttonlink" href = "" target="_blank"><button class = "button5pdf"> <i class="fab fa-youtube fa-bounce fa-bounce-hover"></i></button></a>
-              <a class = "buttonlink" href = "" target="_blank"><button class = "button3pdf"> <i class="fa fa-file-pdf fa-bounce fa-bounce-hover"></i></button></a>
-              <a class = "buttonlink" href = "" target="_blank"><button class = "button4pdf"> <i class="fa fa-file-pdf fa-bounce fa-bounce-hover"></i></button></a>
-          </div>
+            <div class="columncontent">
+                <img src="images/GIFS/StarfleetCommandDemo.gif" alt="Starfleet Command Demo Vid" style="width:100%">
+                <h3><strong>Starfleet Command</strong></h3>
+                <h4 style="color: rgb(81, 81, 255);">[ Hobby Project ]</h4>
+                <!--<h3><strong>Starfleet Command</strong></h3>
+                <h4 style="color: rgb(81, 81, 255);">[ Hobby Project ]</h4>
+                <p class="summary">A 2D space combat RTS made with <span style="color: rgb(81, 81, 255);">C++</span> and the SFML library.</p>
+                <a class = "buttonlink" href = "https://www.github.com/charlie2099" target="_blank"><button class = "button1pdf"><i class="fab fa-github-square fa-bounce fa-bounce-hover"></i></button></a>
+                <a class = "buttonlink" href = "https://charlie2099.itch.io/starfleet-command" target="_blank"><button class = "button2pdf"> <i class="fab fa-itch-io fa-bounce fa-bounce-hover"></i></button></a>
+                <a class = "buttonlink" href = "" target="_blank"><button class = "button5pdf"> <i class="fab fa-youtube fa-bounce fa-bounce-hover"></i></button></a>
+                <a class = "buttonlink" href = "" target="_blank"><button class = "button3pdf"> <i class="fa fa-file-pdf fa-bounce fa-bounce-hover"></i></button></a>
+                <a class = "buttonlink" href = "" target="_blank"><button class = "button4pdf"> <i class="fa fa-file-pdf fa-bounce fa-bounce-hover"></i></button></a>-->
+            </div>
         </div>
-
+          
         <div class="projectscolumn">
           <div class="columncontent">
-            <img src="images/empty.png" alt="Director Ai" style="width:100%">
-              <h3><strong>Director AI</strong></h3>
-              <h4 style="color: rgb(255, 81, 81);">[ Dissertation Project ]</h4>
-              <p class="summary">An extensive AI system that controls the pacing and flow of a game world.</p>
-              <a class = "buttonlink" href = "https://www.github.com/charlie2099" target="_blank"><button class = "button1pdf"><i class="fab fa-github-square fa-bounce fa-bounce-hover"></i></button></a>
-              <a class = "buttonlink" href = "" target="_blank"><button class = "button2pdf"> <i class="fab fa-itch-io fa-bounce fa-bounce-hover"></i></button></a>
-              <a class = "buttonlink" href = "" target="_blank"><button class = "button5pdf"> <i class="fab fa-youtube fa-bounce fa-bounce-hover"></i></button></a>
-              <a class = "buttonlink" href = "" target="_blank"><button class = "button3pdf"> <i class="fa fa-file-pdf fa-bounce fa-bounce-hover"></i></button></a>
-              <a class = "buttonlink" href = "" target="_blank"><button class = "button4pdf"> <i class="fa fa-file-pdf fa-bounce fa-bounce-hover"></i></button></a>
+              <img src="images/GIFS/DiceRunnerDemo.gif" alt="Dice Runner Demo Vid" style="width:100%">
+              <h3><strong>Dice Runner</strong></h3>
+              <h4 style="color: rgb(197,81,255);">[ Game Jam Project ]</h4>
           </div>
-        </div>
+        </div>  
 
       </div> <!--End of Grid-->
 
         <!-------===[UNIVERSITY PROJECTS]===------->
-      <h2>University Projects</h2>
+      <h2 style="text-align: left">University Projects</h2>
       <div class="row">
           <!--University Projects Grid-->
 
           <div class="projectscolumn">
               <div class="columncontent">
-                  <img src="images/trek2.png" alt="ASGE Trek" style="width:100%">
+                  <img src="images/empty.png" alt="Director Ai" style="width:100%">
+                  <h3><strong>Director AI</strong></h3>
+                  <h4 style="color: rgb(225,75,75);">[ Dissertation Project ]</h4>
+                  <!--<p class="summary">An extensive AI system that controls the pacing and flow of a game world.</p>
+                  <a class = "buttonlink" href = "https://www.github.com/charlie2099" target="_blank"><button class = "button1pdf"><i class="fab fa-github-square fa-bounce fa-bounce-hover"></i></button></a>
+                  <a class = "buttonlink" href = "" target="_blank"><button class = "button2pdf"> <i class="fab fa-itch-io fa-bounce fa-bounce-hover"></i></button></a>
+                  <a class = "buttonlink" href = "" target="_blank"><button class = "button5pdf"> <i class="fab fa-youtube fa-bounce fa-bounce-hover"></i></button></a>
+                  <a class = "buttonlink" href = "" target="_blank"><button class = "button3pdf"> <i class="fa fa-file-pdf fa-bounce fa-bounce-hover"></i></button></a>
+                  <a class = "buttonlink" href = "" target="_blank"><button class = "button4pdf"> <i class="fa fa-file-pdf fa-bounce fa-bounce-hover"></i></button></a>-->
+              </div>
+          </div>
+
+          <div class="projectscolumn">
+              <div class="columncontent">
+                  <img src="images/empty.png" alt="ASGE Trek" style="width:100%">
                   <h3><strong>ASGE Trek</strong></h3>
-                  <h4 style="color: rgb(255, 136, 81);">[ University Project ]</h4>
-                  <p class="summary">A reimagining of the classic bridge commander game EGA Trek made in the ASGE engine</p>
+                  <h4 style="color: rgb(66,206,72);">[ University Project ]</h4>
+                  <!--<p class="summary">A reimagining of the classic bridge commander game EGA Trek made in the ASGE engine</p>
                   <a class = "buttonlink" href = "https://www.github.com/charlie2099" target="_blank"><button class = "button1pdf"><i class="fab fa-github-square fa-bounce fa-bounce-hover"></i></button></a>
                   <a class = "buttonlink" href = "https://charlie2099.itch.io/asge-trek" target="_blank"><button class = "button2pdf"> <i class="fab fa-itch-io fa-bounce fa-bounce-hover"></i></button></a>
                   <a class = "buttonlink" href = "" target="_blank"><button class = "button5pdf"> <i class="fab fa-youtube fa-bounce fa-bounce-hover"></i></button></a>
                   <a class = "buttonlink" href = "" target="_blank"><button class = "button3pdf"> <i class="fa fa-file-pdf fa-bounce fa-bounce-hover"></i></button></a>
-                  <a class = "buttonlink" href = "" target="_blank"><button class = "button4pdf"> <i class="fa fa-file-pdf fa-bounce fa-bounce-hover"></i></button></a>
+                  <a class = "buttonlink" href = "" target="_blank"><button class = "button4pdf"> <i class="fa fa-file-pdf fa-bounce fa-bounce-hover"></i></button></a>-->
               </div>
           </div>
 
           <div class="projectscolumn">
               <div class="columncontent">
-                  <img src="images/mists_of_turmoil5.png" alt="Mists of Turmoil" style="width:100%">
+                  <img src="images/empty.png" alt="Mists of Turmoil" style="width:100%">
                   <h3><strong>Mists of Turmoil</strong></h3>
-                  <h4 style="color: rgb(255, 136, 81);">[ University Project ]</h4>
-                  <p class="summary">A policeman investigating disappearances on a mysterious Scottish island in this third-person platformer made with Unreal Engine.</p>
+                  <h4 style="color: rgb(66,206,72);">[ University Project ]</h4>
+                  <!--<p class="summary">A policeman investigating disappearances on a mysterious Scottish island in this third-person platformer made with Unreal Engine.</p>
                   <a class = "buttonlink" href = "https://www.github.com/charlie2099" target="_blank"><button class = "button1pdf"><i class="fab fa-github-square fa-bounce fa-bounce-hover"></i></button></a>
                   <a class = "buttonlink" href = "" target="_blank"><button class = "button2pdf"> <i class="fab fa-itch-io fa-bounce fa-bounce-hover"></i></button></a>
                   <a class = "buttonlink" href = "" target="_blank"><button class = "button5pdf"> <i class="fab fa-youtube fa-bounce fa-bounce-hover"></i></button></a>
                   <a class = "buttonlink" href = "" target="_blank"><button class = "button3pdf"> <i class="fa fa-file-pdf fa-bounce fa-bounce-hover"></i></button></a>
-                  <a class = "buttonlink" href = "" target="_blank"><button class = "button4pdf"> <i class="fa fa-file-pdf fa-bounce fa-bounce-hover"></i></button></a>
+                  <a class = "buttonlink" href = "" target="_blank"><button class = "button4pdf"> <i class="fa fa-file-pdf fa-bounce fa-bounce-hover"></i></button></a>-->
               </div>
           </div>
 
           <div class="projectscolumn">
               <div class="columncontent">
-                  <img src="images/open_world_game.PNG" alt="Open World Streaming System" style="width:100%">
+                  <img src="images/GIFS/OpenWorldStreamingSystemDemo3.gif" alt="Open World Streaming System Demo" style="width:100%">
                   <h3><strong>Open World Streaming System</strong></h3>
-                  <h4 style="color: rgb(255, 136, 81);">[ University Project ]</h4>
-                  <p class="summary">An open-world streaming system for loading assets at runtime, demonstrated within a zombie-infested world in the Unity Engine.</p>
+                  <h4 style="color: rgb(66,206,72);">[ University Project ]</h4>
+                  <!--<p class="summary">An open-world streaming system for loading assets at runtime, demonstrated within a zombie-infested world in the Unity Engine.</p>
                   <a class = "buttonlink" href = "https://www.github.com/charlie2099" target="_blank"><button class = "button1pdf"><i class="fab fa-github-square fa-bounce fa-bounce-hover"></i></button></a>
                   <a class = "buttonlink" href = "" target="_blank"><button class = "button2pdf"> <i class="fab fa-itch-io fa-bounce fa-bounce-hover"></i></button></a>
                   <a class = "buttonlink" href = "" target="_blank"><button class = "button5pdf"> <i class="fab fa-youtube fa-bounce fa-bounce-hover"></i></button></a>
                   <a class = "buttonlink" href = "" target="_blank"><button class = "button3pdf"> <i class="fa fa-file-pdf fa-bounce fa-bounce-hover"></i></button></a>
-                  <a class = "buttonlink" href = "" target="_blank"><button class = "button4pdf"> <i class="fa fa-file-pdf fa-bounce fa-bounce-hover"></i></button></a>
+                  <a class = "buttonlink" href = "" target="_blank"><button class = "button4pdf"> <i class="fa fa-file-pdf fa-bounce fa-bounce-hover"></i></button></a>-->
               </div>
           </div>
 
           <div class="projectscolumn">
               <div class="columncontent">
-                  <img src="images/squidstribution_game.PNG" alt="Squidstribution" style="width:100%">
+                  <img src="images/empty.png" alt="Squidstribution" style="width:100%">
                   <h3><strong>Squidstribution</strong></h3>
-                  <h4 style="color: rgb(255, 136, 81);">[ University Group Project ]</h4>
-                  <p class="summary">A game where you play as a giant squid and have to take revenge on the city that wronged you.</p>
+                  <h4 style="color: rgb(43,134,47);">[ University Group Project ]</h4>
+                  <!--<p class="summary">A game where you play as a giant squid and have to take revenge on the city that wronged you.</p>
                   <a class = "buttonlink" href = "https://www.github.com/charlie2099" target="_blank"><button class = "button1pdf"><i class="fab fa-github-square fa-bounce fa-bounce-hover"></i></button></a>
                   <a class = "buttonlink" href = "" target="_blank"><button class = "button2pdf"> <i class="fab fa-itch-io fa-bounce fa-bounce-hover"></i></button></a>
                   <a class = "buttonlink" href = "" target="_blank"><button class = "button5pdf"> <i class="fab fa-youtube fa-bounce fa-bounce-hover"></i></button></a>
                   <a class = "buttonlink" href = "" target="_blank"><button class = "button3pdf"> <i class="fa fa-file-pdf fa-bounce fa-bounce-hover"></i></button></a>
-                  <a class = "buttonlink" href = "" target="_blank"><button class = "button4pdf"> <i class="fa fa-file-pdf fa-bounce fa-bounce-hover"></i></button></a>
+                  <a class = "buttonlink" href = "" target="_blank"><button class = "button4pdf"> <i class="fa fa-file-pdf fa-bounce fa-bounce-hover"></i></button></a>-->
               </div>
           </div>
 
-      </div> <!--End of Grid-->
-
-        <!-------===[COMING SOON]===------->
-      <h2>Coming Soon</h2>
-      <div class="row"> <!--Coming Soon Grid-->
-        
-        <div class="projectscolumn">
-          <div class="columncontent">
-          <img src="images/empty.png" alt="Lights" style="width:100%">
-            <h3><strong>Inventory System</strong></h3>
-            <h4 style="color: rgb(81, 81, 255);">[ Hobby Project ]</h4>
-            <p class="summary">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sagittis est sed sem.</p>
-              <a class = "buttonlink" href = "https://www.github.com/charlie2099" target="_blank"><button class = "button1pdf"><i class="fab fa-github-square fa-bounce fa-bounce-hover"></i></button></a>
-              <a class = "buttonlink" href = "" target="_blank"><button class = "button2pdf"> <i class="fab fa-itch-io fa-bounce fa-bounce-hover"></i></button></a>
-              <a class = "buttonlink" href = "" target="_blank"><button class = "button5pdf"> <i class="fab fa-youtube fa-bounce fa-bounce-hover"></i></button></a>
-              <a class = "buttonlink" href = "" target="_blank"><button class = "button3pdf"> <i class="fa fa-file-pdf fa-bounce fa-bounce-hover"></i></button></a>
-              <a class = "buttonlink" href = "" target="_blank"><button class = "button4pdf"> <i class="fa fa-file-pdf fa-bounce fa-bounce-hover"></i></button></a>
-          </div>
-        </div>
-        
-        <div class="projectscolumn">
-          <div class="columncontent">
-          <img src="images/empty.png" alt="Nature" style="width:100%">
-            <h3><strong>Squad Ai</strong></h3>
-            <h4 style="color: rgb(81, 81, 255);">[ Hobby Project ]</h4>
-            <p class="summary">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sagittis est sed sem.</p>
-              <a class = "buttonlink" href = "https://www.github.com/charlie2099" target="_blank"><button class = "button1pdf"><i class="fab fa-github-square fa-bounce fa-bounce-hover"></i></button></a>
-              <a class = "buttonlink" href = "" target="_blank"><button class = "button2pdf"> <i class="fab fa-itch-io fa-bounce fa-bounce-hover"></i></button></a>
-              <a class = "buttonlink" href = "" target="_blank"><button class = "button5pdf"> <i class="fab fa-youtube fa-bounce fa-bounce-hover"></i></button></a>
-              <a class = "buttonlink" href = "" target="_blank"><button class = "button3pdf"> <i class="fa fa-file-pdf fa-bounce fa-bounce-hover"></i></button></a>
-              <a class = "buttonlink" href = "" target="_blank"><button class = "button4pdf"> <i class="fa fa-file-pdf fa-bounce fa-bounce-hover"></i></button></a>
-          </div>
-        </div>
-
-        <!-- <div class="projectscolumn">
-          <div class="columncontent">
-          <img src="images/empty.png" alt="Nature" style="width:100%">
-            <h3><strong>Poker</strong></h3>
-            <p class="summary">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sagittis est sed sem.</p>
-            <a class = "buttonlink" href = "https://www.github.com/charlie2099" target="_blank"><button class = "button1pdf"><i class="fab fa-github"></i></button></a>
-            <a class = "buttonlink" href = "" target="_blank"><button class = "button2pdf"> <i class="fab fa-itch-io"></i></button></a>
-            <a class = "buttonlink" href = "" target="_blank"><button class = "button5pdf"> <i class="fab fa-youtube"></i></button></a>
-            <a class = "buttonlink" href = "" target="_blank"><button class = "button3pdf"> <i class="fa fa-file-pdf"></i></button></a>
-            <a class = "buttonlink" href = "" target="_blank"><button class = "button4pdf"> <i class="fa fa-file-pdf"></i></button></a>
-          </div>
-        </div> -->
-        
       </div> <!--End of Grid-->
 
     </div> <!--End of Container-->
