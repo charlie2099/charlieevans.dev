@@ -52,13 +52,15 @@ body {
   padding: 50px;
   margin: 0px; /* change this? */
   text-align: center;
-  box-shadow: inset 0px 1px 0px 0px rgb(0 0 0 / 5%), inset 0px 2px 3px 0px rgb(0 0 0 / 10%);
+  box-shadow: inset 0px 1px 0px 0px rgb(89, 65, 234), inset 0px 2px 3px 0px rgb(0 0 0 / 10%);
 }
 .StripTitle {
-  background-color: #303030; 
-  color: #999;
+  background-color: #000000;
+  color: rgb(127,127,222);
   font-weight: bold; 
   padding: 15px;
+  border-radius: 100px;
+  font-size: 45px;
 }
 
 .Container {
@@ -68,7 +70,7 @@ body {
 }
 
 h1 {
-  color: #3e3e3e;
+  color: #9b9b9b;
   font-size: 3.25em;
   line-height: 1.25em;
   letter-spacing: -0.025em;
@@ -79,7 +81,7 @@ h1 strong {
 }
 
 h2 {
-  color: #3e3e3e;
+  color: #9b9b9b;
   font-size: 2.0em;
   letter-spacing: -0.025em;
   font-weight: 300;
@@ -89,7 +91,7 @@ h2 strong {
 }
 
 h3 {
-  color: #3e3e3e;
+  color: #9b9b9b;
   font-size: 1.50em;
   letter-spacing: 1.5px;
   font-weight: 300;
@@ -99,7 +101,7 @@ h3 strong {
 }
 
 p {
-  color: #888;
+  color: #9b9b9b;
   font-size: 1.5em;
   line-height: 1.50em;
   font-weight: 100;
@@ -107,28 +109,28 @@ p {
 
 #About { 
   grid-area: about; 
-  background-color: #fff; /* #24282c */
+  background-color: #232631; /* #24282c */
   padding: 10em 0 10em 0;
 }
 
 #Skills { 
   grid-area: skills; 
-  background-color: #fafafa;
+  background-color: #353949;
 }
 
 #Projects {
   grid-area: projects;
-  background-color: #fff;
+  background-color: #232631;
 }
 
 #Blog {
   grid-area: blog;
-  background-color: #fafafa;
+  background-color: #353949;
 }
 
 #Contact {
   grid-area: contact;
-  background-color: rgb(219, 219, 219);
+  background-color: #232631;
 }
 /*-------------------------------------HEADER-------------------------------------*/
 header {
@@ -143,14 +145,14 @@ nav {
   background-color: #1f1f1f;
   text-align: center;
   font-weight: bold;
-	font-size: 13pt;
+  font-size: 13pt;
   font-family: FontAwesome;
   letter-spacing: 1px;
 }
 /* Style the top navigation bar */
 .topnav {
   overflow: hidden;
-  background-color: #303030;
+  background-color: #000000;
 }
 /* Style the topnav links */
 .topnav a {
@@ -160,29 +162,13 @@ nav {
   padding: 14px 16px;
   text-decoration: none;
   border-radius: 10px;
-  margin: 5px;
+  margin: 8px;
 }
 /* Change color on hover */
 .topnav a:hover {
-	background: #383838;
-  /* color: rgb(255, 255, 255); */
+  background: rgba(72, 72, 72, 0.39);
+  color: rgb(127,127,222);
   transition: 0.5s;
-}
-
-#AboutNav:hover{
-  color: rgb(238, 163, 113);
-}
-#SkillsNav:hover{
-  color: rgb(128, 238, 113);
-}
-#ProjectsNav:hover{
-  color: rgb(140, 113, 238);
-}
-#BlogNav:hover{
-  color: rgb(238, 113, 217);
-}
-#ContactNav:hover{
-  color: rgb(238, 230, 113);
 }
 /*----------------------------------SCROLLING NAV-----------------------------------*/
 /* box */
@@ -198,7 +184,7 @@ nav {
   grid-area: pic;
   width: 400px;
   margin: 60px;
-  border-radius: 100px;
+  border-radius: 75px;
 }
 .content {
   overflow: hidden;
@@ -219,10 +205,10 @@ nav {
 ul {
   text-align: left;
   list-style-position: inside;
-  color: #888;
-  font-size: 1.2em;
+  color: #9b9b9b;
+  font-size: 1.3em;
   line-height: 1.50em;
-  font-weight: 100;
+  font-weight: bold;
   list-style-type: none;
 }
 /*--------------------------------PERSONAL PROJECTS-------------------------------*/
@@ -463,23 +449,10 @@ footer {
 
 
 
-
-
-
-
-
-
-
-.row {
-  margin: 8px -16px;
-}
-
-/* Add padding BETWEEN each column */
-.row,
-.row > .skillscolumn, .projectscolumn, .blogcolumn, .contactcolumn {
+.skillscolumn, .projectscolumn, .blogcolumn, .contactcolumn {
   padding: 8px;
-  font-family: FontAwesome;
-  letter-spacing: 1px;
+  /*font-family: FontAwesome;*/
+  /*letter-spacing: 1px;*/
 }
 
 .skillscolumn {
@@ -497,13 +470,6 @@ footer {
   width: 100%;
 }
 
-/* Clear floats after rows */ 
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
 /* Content */
 .columncontent {
   background: rgba(124, 124, 124, 0.116);
@@ -512,5 +478,5 @@ footer {
 }
 
 .columncontent:hover {
-  box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.15), 0px 2px 3px 0px rgb(0, 0, 0);
+  box-shadow: inset 0px 0px 0px 1px rgba(89, 65, 234), 0px 2px 3px 0px rgb(0, 0, 0);
 }
