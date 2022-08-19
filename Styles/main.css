@@ -101,7 +101,7 @@ h3 strong {
 }
 
 p {
-  color: #9b9b9b;
+  color: #9b9b9b; 
   font-size: 1.5em;
   line-height: 1.50em;
   font-weight: 100;
@@ -135,13 +135,11 @@ p {
 /*-------------------------------------HEADER-------------------------------------*/
 header {
   grid-area: header;
-  color: white;
   padding: 0px;
   font-size: 24px;
 }
 /*---------------------------------------NAV--------------------------------------*/
 nav {
-  color: white;
   background-color: #1f1f1f;
   text-align: center;
   font-weight: bold;
@@ -211,22 +209,7 @@ ul {
   font-weight: bold;
   list-style-type: none;
 }
-/*--------------------------------PERSONAL PROJECTS-------------------------------*/
-div.gallery {
-  background: #fff;
-  box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.15), 0px 2px 3px 0px rgba(0, 0, 0, 0.1);
-  width: 100%;
-}
-
-div.gallery:hover {
-  box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.15), 0px 2px 3px 0px rgb(0, 0, 0);
-}
-
-div.gallery img {
-  width: 100%;
-  height: auto;
-}
-
+/*------------------------------------PROJECTS------------------------------------*/
 .summary {
   padding: 10px;
   font-size: 18px;
@@ -239,7 +222,7 @@ div.gallery img {
   clear: both;
 }
 
-.button1pdf, .button2pdf, .button3pdf, .button4pdf, .button5pdf  {
+.buttonformat {
   font-size: 26px;
   margin: 0px;
   border: none;
@@ -252,42 +235,6 @@ div.gallery img {
 .buttonlink:visited {
   color: black;
 }
-
-/*----------------------------------CONTACT FORM----------------------------------*/
-input[type=text], select, textarea {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid rgb(102, 102, 102);
-  border-radius: 4px;
-  box-sizing: border-box;
-  margin-top: 6px;
-  margin-bottom: 16px;
-  resize: vertical;
-}
-input:hover
-{
-  background-color: rgba(255, 255, 255, 0.116);
-}
-
-input[type=submit] {
-  background-color: #04AA6D;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-input[type=submit]:hover {
-  background-color: #45a049;
-}
-
-.formcontainer {
-  border-radius: 25px;
-  background-color: #f2f2f2;
-  box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.15), 0px 2px 3px 0px rgba(0, 0, 0, 0.1);
-  padding: 20px;
-}
 /*-------------------------------------FOOTER-------------------------------------*/
 footer {
   grid-area: footer;
@@ -295,13 +242,14 @@ footer {
   font-size: 11px;
   letter-spacing: 1px;
   text-align: center;
-  background-color: #303030;
+  background-color: #000000;
   color: #999;
-  text-shadow: -1px -1px 0px #181818;
 }
+
 .footericon {
   font-size: 20px;
 }
+
 .fa-twitter,
 .fa-github,
 .fa-github-square,
@@ -316,31 +264,29 @@ footer {
 
 .fa-bounce-hover:not(:hover) {
   animation: none;
+  transition: 0.5s;
 } 
 
 .fa-twitter:hover {
-  color: rgb(48, 197, 255);
+  color: rgb(127,127,222 /*48, 197, 255*/);
 }
 .fa-github:hover {
-  color: rgb(255, 255, 255);
-}
-.fa-github-square:hover {
-  color: rgb(0, 0, 0);
+  color: rgb(127,127,222 /*255, 255, 255*/);
 }
 .fa-linkedin:hover {
-  color: rgb(48, 103, 255);
+  color: rgb(127,127,222 /*48, 103, 255*/);
 }
 .fa-slack:hover {
-  color: rgb(255, 131, 48);
+  color: rgb(127,127,222 /*255, 131, 48*/);
 }
 .fa-itch-io:hover {
-  color: rgb(255, 48, 48);
+  color: rgb(127,127,222 /*240, 88, 88*/);
 }
 .fa-youtube:hover {
-  color: rgb(255, 48, 48);
+  color: rgb(127,127,222 /*255, 48, 48*/);
 }
 .fa-file-pdf:hover {
-  color: rgb(141, 48, 255);
+  color: rgb(127,127,222 /*96, 255, 152*/);
 }
 
 /*-------------------------------------GRID-------------------------------------*/
@@ -445,28 +391,15 @@ footer {
   }
 }
 
-
-
-
-
-.skillscolumn, .projectscolumn, .blogcolumn, .contactcolumn {
-  padding: 8px;
+/*---------------------------------UNSORTED--------------------------------*/
+.skillscolumn, .projectscolumn, .blogcolumn {
+  padding: 24px;
+  float: left;
   /*font-family: FontAwesome;*/
   /*letter-spacing: 1px;*/
 }
 
-.skillscolumn {
-  float: left;
-}
-.projectscolumn {
-  float: left;
-}
 .blogcolumn {
-  float: left;
-  width: 100%;
-}
-.contactcolumn {
-  float: left;
   width: 100%;
 }
 
@@ -474,9 +407,69 @@ footer {
 .columncontent {
   background: rgba(124, 124, 124, 0.116);
   box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.15), 0px 2px 3px 0px rgba(0, 0, 0, 0.1);
-  padding: 10px;
+  padding: 1px;
 }
 
 .columncontent:hover {
   box-shadow: inset 0px 0px 0px 1px rgba(89, 65, 234), 0px 2px 3px 0px rgb(0, 0, 0);
 }
+
+.projecttile {
+  background: rgba(124, 124, 124, 0.116); 
+  box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.15), 0px 2px 3px 0px rgba(0, 0, 0, 0.1);
+  padding: 1px;
+  transition: all .4s ease-in-out;
+}
+
+.projecttile:hover {
+  box-shadow: inset 0px 0px 0px 1px rgba(89, 65, 234), 0px 2px 3px 0px rgb(0, 0, 0);
+  transform: scale(1.1);
+}
+
+.projecttiletext {
+  opacity: 1;
+  transition: 0.5s ease;
+}
+
+.projecttilehiddentextcontainer {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.projecttilehiddentext {
+  color: white;
+  font-size: 20px;
+}
+
+.projecttilehiddentextcontainer {
+  width: 80%;
+  transition: 0.5s ease;
+  background-color: rgba(0, 0, 0, 0.71);
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.projecttileimage {
+  opacity: 1;
+  width: 100%;
+  transition: 0.5s ease;
+}
+
+.projecttile:hover .projecttileimage {
+  opacity: 0.3;
+}
+
+.projecttile:hover .projecttiletext {
+  opacity: 0.3;
+}
+
+.projecttile:hover .projecttilehiddentextcontainer {
+  opacity: 1;
+}
+
