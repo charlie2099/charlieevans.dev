@@ -144,7 +144,8 @@ nav {
   text-align: center;
   font-weight: bold;
   font-size: 13pt;
-  font-family: FontAwesome;
+  /*font-family: FontAwesome;*/
+  font-family: "MontserratLight";
   letter-spacing: 1px;
 }
 /* Style the top navigation bar */
