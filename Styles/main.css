@@ -302,38 +302,104 @@ footer {
     'footer';
 } 
 /*---------------------------------MEDIA QUERIES--------------------------------*/
-@media only screen and (max-width: 850px) {
-  /*.topnav {
-    background-color: rgb(5, 158, 0);
-  }*/
+
+/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+
+/* Portrait and Landscape */
+@media only screen
+and (max-device-width: 550px) {
   .Container {
     padding-left: 0px;
     padding-right: 0px;
     margin: 0px;
   }
-  .content img {
-    float: none;
+  .topnav {
+    background-color: rgb(180, 61, 61);
   }
+  #Pic {
+    float: none;
+    width: 250px;
+    border-radius: 20px;
+  }
+  .content h1,
+  .content h2,
+  .content p{
+    margin: 30px;
+    text-align: left;
+  }
+  h1 {
+    font-size: 40px;
+  }
+  h2 {
+    font-size: 24px;
+  }
+  p {
+    font-size: 16px;
+  }
+
   .skillscolumn {
     width: 100%;
   }
   .projectscolumn {
     width: 100%;
   }
-  .topnav a {
-    display: flex;
-    /*padding: 5px 5px;*/
-    
-    /*display: inline-block;
-    padding: 5px 5px;*/
-    /*border: 1px solid #ffffff8c;*/
+  #About {
+    padding: 3em 0 3em 0;
   }
 }
 
-@media only screen and (min-width: 850px) {
-  /*.topnav {
+@media only screen
+and (min-device-width: 550px)
+and (max-device-width: 850px) {
+  .Container {
+    padding-left: 0px;
+    padding-right: 0px;
+    margin: 0px;
+  }
+  .topnav {
+    background-color: rgb(5, 158, 0);
+  }
+  .topnav a {
+    display: flex;
+  }
+  #Pic {
+    float: right;
+    width: 250px;
+    border-radius: 20px;
+  }
+  .content h1,
+  .content h2,
+  .content p{
+    margin: 30px;
+    text-align: left;
+  }
+  h1 {
+    font-size: 40px;
+  }
+  h2 {
+    font-size: 24px;
+  }
+  p {
+    font-size: 16px;
+  }
+  
+  .skillscolumn {
+    width: 100%;
+  }
+  .projectscolumn {
+    width: 100%;
+  }
+  #About {
+    padding: 3em 0 3em 0;
+  }
+}
+
+@media only screen
+and (min-device-width: 850px)
+and (max-device-width: 1080px) {
+  .topnav {
     background-color: rgb(158, 0, 137);
-  }*/
+  }
   .Container {
     padding-left: 25px;
     padding-right: 25px;
@@ -346,10 +412,12 @@ footer {
   }
 }
 
-@media only screen and (min-width: 1080px) {
-  /*.topnav {
+@media only screen
+and (min-device-width: 1080px)
+and (max-device-width: 1600px) {
+  .topnav {
     background-color: rgb(194, 248, 0);
-  }*/
+  }
   .Container {
     padding-left: 175px;
     padding-right: 175px;
@@ -360,12 +428,14 @@ footer {
   .projectscolumn {
     width: 50%;
   }
-} 
+}
 
-@media only screen and (min-width: 1600px) {
-  /*.topnav {
+@media only screen
+and (min-device-width: 1600px)
+and (max-device-width: 2200px) {
+  .topnav {
     background-color: rgb(0, 81, 255);
-  }*/
+  }
   .Container {
     padding-left: 200px;
     padding-right: 200px;
@@ -376,12 +446,14 @@ footer {
   .projectscolumn {
     width: 33%;
   }
-} 
+}
 
-@media only screen and (min-width: 2200px) {
-  /*.topnav {
+@media only screen
+and (min-device-width: 2200px)
+and (max-device-width: 4000px) {
+  .topnav {
     background-color: rgb(255, 0, 0);
-  }*/
+  }
   .Container {
     padding-left: 525px;
     padding-right: 525px;
