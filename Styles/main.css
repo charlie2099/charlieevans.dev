@@ -49,8 +49,6 @@ body {
 }
 
 .Strip {
-  padding: 50px;
-  margin: 0px; /* change this? */
   text-align: center;
   box-shadow: inset 0px 1px 0px 0px rgb(89, 65, 234), inset 0px 2px 3px 0px rgb(0 0 0 / 10%);
 }
@@ -315,6 +313,9 @@ and (max-device-width: 550px) {
   }
   .topnav {
     background-color: rgb(180, 61, 61);
+  }
+  .topnav a {
+    display: flex;
   }
   #Pic {
     float: none;
