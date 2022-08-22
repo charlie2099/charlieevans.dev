@@ -144,7 +144,8 @@ nav {
   text-align: center;
   font-weight: bold;
   font-size: 13pt;
-  font-family: FontAwesome;
+  /*font-family: FontAwesome;*/
+  font-family: "MontserratLight";
   letter-spacing: 1px;
 }
 /* Style the top navigation bar */
@@ -168,7 +169,7 @@ nav {
   color: rgb(127,127,222);
   transition: 0.5s;
 }
-/*----------------------------------SCROLLING NAV-----------------------------------*/
+/*-----------------------------------SCROLLING NAV------------------------------------*/
 /* box */
 .headerToggle {
   position: fixed;
@@ -177,7 +178,7 @@ nav {
 .headerToggle + .grid-container {
   padding-top: 5px;
 }
-/*--------------------------------------ABOUT-------------------------------------*/
+/*--------------------------------------ABOUT---------------------------------------*/
 #Pic {
   grid-area: pic;
   width: 400px;
@@ -288,7 +289,6 @@ footer {
 .fa-file-pdf:hover {
   color: rgb(127,127,222 /*96, 255, 152*/);
 }
-
 /*-------------------------------------GRID-------------------------------------*/
 .grid-container {
   display: grid;
@@ -321,9 +321,12 @@ footer {
     width: 100%;
   }
   .topnav a {
-    display: inline-block;
-    padding: 5px 5px;
-    border: 1px solid #ffffff8c;
+    display: flex;
+    /*padding: 5px 5px;*/
+    
+    /*display: inline-block;
+    padding: 5px 5px;*/
+    /*border: 1px solid #ffffff8c;*/
   }
 }
 
