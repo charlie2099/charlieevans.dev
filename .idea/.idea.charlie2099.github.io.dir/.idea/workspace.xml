@@ -2,110 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="07074e9d-54a0-446b-aeb6-756ccf55e04c" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.charlie2099.github.io.dir/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.charlie2099.github.io.dir/.idea/discord.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.charlie2099.github.io.dir/.idea/discord.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.charlie2099.github.io.dir/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.charlie2099.github.io.dir/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/charlie2099.github.io.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ASGE Trek GDD and TDD.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MistsOfTurmoilDoc.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Styles/Fonts/Montserrat/Montserrat-Black.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Styles/Fonts/Montserrat/Montserrat-BlackItalic.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Styles/Fonts/Montserrat/Montserrat-Bold.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Styles/Fonts/Montserrat/Montserrat-BoldItalic.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Styles/Fonts/Montserrat/Montserrat-ExtraBold.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Styles/Fonts/Montserrat/Montserrat-ExtraBoldItalic.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Styles/Fonts/Montserrat/Montserrat-ExtraLight.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Styles/Fonts/Montserrat/Montserrat-ExtraLightItalic.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Styles/Fonts/Montserrat/Montserrat-Italic.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Styles/Fonts/Montserrat/Montserrat-Light.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Styles/Fonts/Montserrat/Montserrat-LightItalic.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Styles/Fonts/Montserrat/Montserrat-Medium.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Styles/Fonts/Montserrat/Montserrat-MediumItalic.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Styles/Fonts/Montserrat/Montserrat-Regular.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Styles/Fonts/Montserrat/Montserrat-SemiBold.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Styles/Fonts/Montserrat/Montserrat-SemiBoldItalic.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Styles/Fonts/Montserrat/Montserrat-Thin.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Styles/Fonts/Montserrat/Montserrat-ThinItalic.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Styles/Fonts/Montserrat/OFL.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Styles/Fonts/Montserrat/montserrat_bold/Montserrat-Bold.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Styles/Fonts/Montserrat/montserrat_bold/Montserrat-Bold.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Styles/Fonts/Montserrat/montserrat_bold/Montserrat-Bold.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Styles/Fonts/Montserrat/montserrat_bold/Montserrat-Bold.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Styles/Fonts/Montserrat/montserrat_light/Montserrat-Light.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Styles/Fonts/Montserrat/montserrat_light/Montserrat-Light.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Styles/Fonts/Montserrat/montserrat_light/Montserrat-Light.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Styles/Fonts/Montserrat/montserrat_light/Montserrat-Light.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Styles/Fonts/astron/Astron-Bold.otf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Styles/Fonts/astron/Astron-Light.otf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Styles/Fonts/astron/Astron.otf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Styles/Fonts/astron/astron_bold/AstronBold.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Styles/Fonts/astron/astron_bold/AstronBold.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Styles/Fonts/astron/astron_bold/AstronBold.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Styles/Fonts/astron/astron_bold/AstronBold.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Styles/Fonts/astron/astron_light/AstronLight.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Styles/Fonts/astron/astron_light/AstronLight.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Styles/Fonts/astron/astron_light/AstronLight.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Styles/Fonts/astron/astron_light/AstronLight.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Styles/main.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/headerNav.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/GIFS/DiceRunnerDemo1.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/GIFS/DirectorAiDemo1.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/GIFS/MistsOfTurmoilDemo10.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/GIFS/MistsOfTurmoilDemo11.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/GIFS/MistsOfTurmoilDemo12.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/GIFS/OpenWorldStreamingDemo1.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/GIFS/OpenWorldStreamingDemo2.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/GIFS/SquidstributionDemo1.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/Logos/Github-desktop-logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/Logos/Unreal-symbol.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/Logos/blender_logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/Logos/c-logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/Logos/c-sharp-logo.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/Logos/clion-logo.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/Logos/css3-logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/Logos/gitkraken-logo.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/Logos/html5-logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/Logos/maya-2017-logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/Logos/python-logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/Logos/rider_logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/Logos/sdl_logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/Logos/sfml-icon-small.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/Logos/unity-logo.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/Logos/unity_logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/Logos/unreal-engine-logo.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/Logos/visual-studio-2013-logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/Logos/visual-studio-code-logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/angrybirds.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/battleship.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/beach3.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/directorAiDemoPic.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/empty.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/game_programmer_salary_by_job_title.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/gameplayprogramming.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/jet_fighter.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/mists_of_turmoil1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/mists_of_turmoil2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/mists_of_turmoil3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/mists_of_turmoil4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/mists_of_turmoil5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/open_world_game.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/open_world_game2.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/platformer.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/platformer2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/programmer_salary_by_experience.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/space_race.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/space_race2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/squidstribution_game.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/starfleet_command.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/starfleet_command1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/starfleet_command2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/starfleet_command3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/starfleet_command4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/trek.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/trek2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.charlie2099.github.io.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.charlie2099.github.io.dir/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -137,7 +35,8 @@
       <option name="presentableId" value="Default" />
       <updated>1661288264914</updated>
       <workItem from="1661288267604" duration="7341000" />
-      <workItem from="1661364010741" duration="14020000" />
+      <workItem from="1661364010741" duration="14134000" />
+      <workItem from="1661462571392" duration="12283000" />
     </task>
     <servers />
   </component>
