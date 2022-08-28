@@ -1804,6 +1804,7 @@ input, select, textarea {
 		text-decoration: none;
 		border-bottom: none;
 		position: relative;
+		font-size: 2.5em;
 	}
 
 		.icon:before {
@@ -1834,35 +1835,6 @@ input, select, textarea {
 		.icon.brands:before {
 			font-family: 'Font Awesome 5 Brands';
 		}
-
-		.icon.style2 {
-			-moz-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
-			-webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
-			-ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
-			transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
-			background-color: transparent;
-			border: solid 1px #c9c9c9;
-			border-radius: 4px;
-			width: 2.65em;
-			height: 2.65em;
-			display: inline-block;
-			text-align: center;
-			line-height: 2.65em;
-			color: inherit;
-		}
-
-			.icon.style2:before {
-				font-size: 1.1em;
-			}
-
-			.icon.style2:hover {
-				color: #7e7edc;
-				border-color: #7e7edc;
-			}
-
-			.icon.style2:active {
-				background-color: rgba(242, 132, 158, 0.1);
-			}
 
 /* List */
 
@@ -2551,7 +2523,7 @@ input, select, textarea {
 /* Footer */
 
 	#footer {
-		padding: 2em 0 2em 0 ;
+		padding: 2em 0 2em 0;
 		background-color: #000000;
 	}
 
@@ -2584,7 +2556,7 @@ input, select, textarea {
 				margin-left: 2.5em;
 			}
 
-			#footer > .inner .copyright {
+			/*#footer > .inner .copyright {
 				width: 100%;
 				padding: 0;
 				margin-top: 5em;
@@ -2609,12 +2581,12 @@ input, select, textarea {
 						border-left: 0;
 						padding-left: 0;
 						margin-left: 0;
-					}
+					}*/
 
 		@media screen and (max-width: 1280px) {
 
 			#footer {
-				padding: 5em 0 3em 0 ;
+				padding: 2em 0 2em 0;
 			}
 
 				#footer > .inner section:nth-child(1) {
@@ -2644,11 +2616,7 @@ input, select, textarea {
 		}
 
 		@media screen and (max-width: 736px) {
-
-			#footer {
-				padding: 3em 0 1em 0 ;
-			}
-
+			
 				#footer > .inner {
 					-moz-flex-direction: column;
 					-webkit-flex-direction: column;
@@ -2678,8 +2646,16 @@ input, select, textarea {
 		}
 
 		@media screen and (max-width: 480px) {
+			
+			#footer .inner {
+				text-align: center;
+			}
 
-			#footer > .inner .copyright {
+			#footer > .inner section:nth-child(1) {
+				margin: 0;
+			}
+			
+			/*#footer > .inner .copyright {
 				margin-top: 3em;
 			}
 
@@ -2693,7 +2669,7 @@ input, select, textarea {
 
 					#footer > .inner .copyright li:first-child {
 						margin-top: 0;
-					}
+					}*/
 
 		}
 
@@ -2711,7 +2687,6 @@ input, select, textarea {
 			#wrapper > * > .inner {
 				padding: 0 1.25em;
 			}
-
 		}
 
 
@@ -2800,6 +2775,10 @@ input, select, textarea {
 }
 .uniprojectlabel {
 	color: rgb(76,203,80);
+	line-height: 0;
+}
+.modprojectlabel {
+	color: rgb(255, 252, 0);
 	line-height: 0;
 }
 
