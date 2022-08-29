@@ -2694,6 +2694,10 @@ input, select, textarea {
 
 
 
+.skillsicon {
+	width: 10%;
+}
+
 .projecttile {
 	background: rgba(0, 0, 0, 0.49);
 	padding: 0px;

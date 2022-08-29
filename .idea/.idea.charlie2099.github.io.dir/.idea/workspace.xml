@@ -2,14 +2,43 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="07074e9d-54a0-446b-aeb6-756ccf55e04c" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/blogpage.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/Logos/Github-desktop-logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/Logos/Unreal-symbol.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/Logos/blender_logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/Logos/c-logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/Logos/c-sharp-logo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/Logos/clion-logo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/Logos/css3-logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/Logos/gitkraken-logo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/Logos/html5-logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/Logos/maya-2017-logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/Logos/python-logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/Logos/rider_logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/Logos/sdl_logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/Logos/sfml-icon-small.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/Logos/unity-logo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/Logos/unity_logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/Logos/unreal-engine-logo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/Logos/visual-studio-2013-logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/Logos/visual-studio-code-logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/skillspage.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.charlie2099.github.io.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.charlie2099.github.io.dir/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index2.html" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
   </component>
   <component name="GitSEFilterConfiguration">
     <file-type-list>
@@ -29,6 +58,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -47,6 +77,7 @@
       <workItem from="1661462571392" duration="12283000" />
       <workItem from="1661697750644" duration="741000" />
       <workItem from="1661708323748" duration="4399000" />
+      <workItem from="1661732240656" duration="6114000" />
     </task>
     <servers />
   </component>
@@ -56,6 +87,17 @@
   <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
