@@ -2,31 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="07074e9d-54a0-446b-aeb6-756ccf55e04c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/blogpage.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/Logos/Github-desktop-logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/Logos/Unreal-symbol.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/Logos/blender_logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/Logos/c-logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/Logos/c-sharp-logo.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/Logos/clion-logo.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/Logos/css3-logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/Logos/gitkraken-logo.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/Logos/html5-logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/Logos/maya-2017-logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/Logos/python-logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/Logos/rider_logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/Logos/sdl_logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/Logos/sfml-icon-small.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/Logos/unity-logo.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/Logos/unity_logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/Logos/unreal-engine-logo.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/Logos/visual-studio-2013-logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/Logos/visual-studio-code-logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/skillspage.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.charlie2099.github.io.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.charlie2099.github.io.dir/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blogpage.html" beforeDir="false" afterPath="$PROJECT_DIR$/blogpage.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/skillspage.html" beforeDir="false" afterPath="$PROJECT_DIR$/skillspage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/starfleetcommandpage.html" beforeDir="false" afterPath="$PROJECT_DIR$/starfleetcommandpage.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,6 +43,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="settings.editor.selected.configurable" value="Errors" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -78,6 +60,11 @@
       <workItem from="1661697750644" duration="741000" />
       <workItem from="1661708323748" duration="4399000" />
       <workItem from="1661732240656" duration="6114000" />
+      <workItem from="1661785559199" duration="10978000" />
+      <workItem from="1661902245893" duration="563000" />
+      <workItem from="1661949471798" duration="599000" />
+      <workItem from="1662036255751" duration="786000" />
+      <workItem from="1662133320113" duration="12641000" />
     </task>
     <servers />
   </component>
