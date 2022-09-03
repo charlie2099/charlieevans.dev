@@ -18,7 +18,7 @@
             <!-- Logo -->
             <a href="index.html" class="logo"><span class="symbol"><img src="images/beach6.jpeg" alt="" /></span><span class="title">Portfolio</span></a>
             <a href="skillspage.html" class="logo"><span class="fa fa-list-alt"></span><span class="title">Skills</span></a>
-            <a href="blogpage.html" class="logo" style="border-bottom: 2px solid deeppink;"><span class="fa fa-edit"></span><span class="title">Blog</span></a>
+            <a href="blogpage.html" class="logo" style="border-bottom: 4px solid rgb(131,131,255);"><span class="fa fa-edit"></span><span class="title">Blog</span></a>
             <a href="Placeholder%20CV.pdf" target="_blank" class="logo"><span class="fa fa-file"></span><span class="title">CV</span></a>
             <!--<a href="index.html" class="logo"><span class="fa fa-envelope"></span><span class="title">Contact</span></a>-->
 
@@ -48,50 +48,68 @@
         <article class="inner">
             <!--<h1 style="text-align: center;">BLOG</h1>-->
 
-            <section class="tiles"> 
+            <div id="myBtnContainer">
+                <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+                <button class="btn" onclick="filterSelection('Design Pattern')"> Design Patterns</button>
+                <button class="btn" onclick="filterSelection('Ai')"> Ai</button>
+                <button class="btn" onclick="filterSelection('Dev Log')"> Dev Logs</button>
+            </div>
 
-                <article class="blogtile">
+            <section class="tiles">
+
+                <!--<article class="blogtile filterDiv Design Pattern">
+                    <a href="starfleetcommandpage.html"></a>
+                    <h4>29/08/2022</h4>
+                    &lt;!&ndash;<h4 style="float: right; color: orangered;">[ Learning Log ]</h4>&ndash;&gt;
+                    &lt;!&ndash;<br><br>&ndash;&gt;
+                    <h3 style="border-bottom: 4px solid rgb(131,131,255);"><strong style="color: #505098;">Learning Log | Design Patterns | <span style="color: #7d7dda;">State</span></strong></h3>
+                    <p>Read More.</p>
+                </article>-->
+
+                <!--<article class="blogtile filterDiv Design Pattern">
+                    <a href="starfleetcommandpage.html"></a>
+                    <h4>29/08/2022</h4>
+                    &lt;!&ndash;<h4 style="float: right; color: orangered;">[ Learning Log ]</h4>&ndash;&gt;
+                    &lt;!&ndash;<br><br>&ndash;&gt;
+                    <h3 style="border-bottom: 4px solid rgb(131,131,255);"><strong style="color: #505098;">Learning Log | Design Patterns | <span style="color: #7d7dda;">Observer</span></strong></h3>
+                    <p>Read More.</p>
+                </article>-->
+
+                <article class="blogtile filterDiv Design Pattern">
                     <a href="starfleetcommandpage.html"></a>
                     <h4>29/08/2022</h4>
                     <!--<h4 style="float: right; color: orangered;">[ Learning Log ]</h4>-->
                     <!--<br><br>-->
-                    <h3 style="border-bottom: 4px solid rgb(131,131,255);"><strong style="color: #505098;">Learning Log | Design Patterns | <span style="color: #7d7dda;">State</span></strong></h3>
-                    <p>A exploration into common applications of the state design pattern.</p>
+                    <h3 style="border-bottom: 4px solid rgb(131,131,255);"><strong style="color: #505098;">Learning Log | Design Patterns | <span style="color: #7d7dda;">Command</span></strong></h3>
+                    <p>Read More.</p>
                 </article>
 
-                <!--<article class="blogtile">
-                    <h4 style="float: left;">29/08/2022</h4>
-                    &lt;!&ndash;<h4 style="float: right; color: deeppink;">[ Tutorial ]</h4>&ndash;&gt;
-                    <br><br>
-                    <h3 style="border-bottom: 4px solid #75EA88FF;"><strong style="color: #50985c;">Design Patterns | <span style="color: #75EA88FF;">Observer</span></strong></h3>
+                <!--<article class="blogtile filterDiv Design Pattern">
+                    <a href="starfleetcommandpage.html"></a>
+                    <h4>29/08/2022</h4>
+                    &lt;!&ndash;<h4 style="float: right; color: orangered;">[ Learning Log ]</h4>&ndash;&gt;
+                    &lt;!&ndash;<br><br>&ndash;&gt;
+                    <h3 style="border-bottom: 4px solid rgb(131,131,255);"><strong style="color: #505098;">Learning Log | Design Patterns | <span style="color: #7d7dda;">Rule</span></strong></h3>
                     <p>Read More.</p>
                 </article>-->
 
-                <!--<article class="blogtile">
-                    <h4 style="float: left;">29/08/2022</h4>
-                    &lt;!&ndash;<h4 style="float: right; color: deepskyblue;">[ Placeholder ]</h4>&ndash;&gt;
-                    <br><br>
-                    <h3 style="border-bottom: 4px solid rgb(255,131,131);"><strong style="color: #BB5D5DFF;">Design Patterns | <span style="color: rgb(255,131,131);">Command</span></strong></h3>
+                <!--<article class="blogtile filterDiv Ai">
+                    <a href="starfleetcommandpage.html"></a>
+                    <h4>29/08/2022</h4>
+                    &lt;!&ndash;<h4 style="float: right; color: greenyellow;">[ Placeholder ]</h4>&ndash;&gt;
+                    <h3 style="border-bottom: 4px solid rgb(255,131,131);"><strong style="color: #9D4D4DFF;">Learning Log | Ai | <span style="color: rgb(255,131,131);">Behaviour Trees</span></strong></h3>
                     <p>Read More.</p>
                 </article>-->
 
-                <!--<article class="blogtile">
-                    <h4 style="float: left;">29/08/2022</h4>
-                    &lt;!&ndash;<h4 style="float: right; color: #7bd0c1;">[ Placeholder ]</h4>&ndash;&gt;
-                    <br><br>
-                    <h3><strong>Design Patterns | <span style="color: #7d7dda;">Rule</span></strong></h3>
-                    <p>Read More.</p>
-                </article>-->
-
-                <article class="blogtile">
+                <article class="blogtile filterDiv Ai">
                     <a href="starfleetcommandpage.html"></a>
                     <h4>29/08/2022</h4>
                     <!--<h4 style="float: right; color: greenyellow;">[ Placeholder ]</h4>-->
-                    <h3 style="border-bottom: 4px solid rgb(255,131,131);"><strong style="color: #9D4D4DFF;">Learning Log | Ai | <span style="color: rgb(255,131,131);">Behaviour Trees</span></strong></h3>
+                    <h3 style="border-bottom: 4px solid rgb(255,131,131);"><strong style="color: #9D4D4DFF;">Learning Log | Ai | <span style="color: rgb(255,131,131);">GOAP</span></strong></h3>
                     <p>Read More.</p>
                 </article>
 
-                <article class="blogtile">
+                <article class="blogtile filterDiv Dev Log">
                     <a href="starfleetcommandpage.html"></a>
                     <h4>29/08/2022</h4>
                     <!--<h4 style="float: right; color: greenyellow;">[ Placeholder ]</h4>-->
@@ -99,17 +117,11 @@
                     <p>Read More.</p>
                 </article>
 
-                <!--<article class="blogtile">
+                <!--<article class="blogtile filterDiv Ai">
+                    <a href="starfleetcommandpage.html"></a>
                     <h4>29/08/2022</h4>
-                    <h4 style="float: right; color: greenyellow;">[ Placeholder ]</h4>
-                    <h3><strong>Ai | <span style="color: #7d7dda;">GOAP</span></strong></h3>
-                    <p>Read More.</p>
-                </article>-->
-
-                <!--<article class="blogtile">
-                    <h4>29/08/2022</h4>
-                    <h4 style="float: right; color: greenyellow;">[ Placeholder ]</h4>
-                    <h3><strong>Ai | <span style="color: #7d7dda;">Pathfinding</span></strong></h3>
+                    &lt;!&ndash;<h4 style="float: right; color: greenyellow;">[ Placeholder ]</h4>&ndash;&gt;
+                    <h3 style="border-bottom: 4px solid rgb(255,131,131);"><strong style="color: #9D4D4DFF;">Learning Log | Ai | <span style="color: rgb(255,131,131);">Pathfinding</span></strong></h3>
                     <p>Read More.</p>
                 </article>-->
 
@@ -144,6 +156,51 @@
 <script src="assets/js/breakpoints.min.js"></script>
 <script src="assets/js/util.js"></script>
 <script src="assets/js/main.js"></script>
+
+<script>
+    filterSelection("all")
+    function filterSelection(c) {
+        var x, i;
+        x = document.getElementsByClassName("filterDiv");
+        if (c == "all") c = "";
+        for (i = 0; i < x.length; i++) {
+            w3RemoveClass(x[i], "show");
+            if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+        }
+    }
+
+    function w3AddClass(element, name) {
+        var i, arr1, arr2;
+        arr1 = element.className.split(" ");
+        arr2 = name.split(" ");
+        for (i = 0; i < arr2.length; i++) {
+            if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+        }
+    }
+
+    function w3RemoveClass(element, name) {
+        var i, arr1, arr2;
+        arr1 = element.className.split(" ");
+        arr2 = name.split(" ");
+        for (i = 0; i < arr2.length; i++) {
+            while (arr1.indexOf(arr2[i]) > -1) {
+                arr1.splice(arr1.indexOf(arr2[i]), 1);
+            }
+        }
+        element.className = arr1.join(" ");
+    }
+
+    // Add active class to the current button (highlight it)
+    var btnContainer = document.getElementById("myBtnContainer");
+    var btns = btnContainer.getElementsByClassName("btn");
+    for (var i = 0; i < btns.length; i++) {
+        btns[i].addEventListener("click", function(){
+            var current = document.getElementsByClassName("active");
+            current[0].className = current[0].className.replace(" active", "");
+            this.className += " active";
+        });
+    }
+</script>
 
 </body>
 </html>
