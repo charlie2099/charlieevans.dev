@@ -2813,7 +2813,7 @@ input, select, textarea {
 
 .buttonformat {
 	font-size: 26px;
-	margin: 100px;
+	margin: 0px;
 	border: none;
 	background: none;
 	color: rgba(134, 134, 134, 0.8);
