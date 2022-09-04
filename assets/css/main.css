@@ -2128,7 +2128,7 @@ input, select, textarea {
 		@media screen and (max-width: 1280px) {
 
 			.tiles {
-				margin: -1.25em 0 0 -1.25em;
+				margin: 0em 0 0 -1.25em;
 			}
 
 				.tiles article {
@@ -2140,7 +2140,7 @@ input, select, textarea {
 		@media screen and (max-width: 980px) {
 
 			.tiles {
-				margin: -2.5em 0 0 -2.5em;
+				margin: 0em 0 0 -2.5em;
 			}
 
 				.tiles article {
@@ -2153,7 +2153,7 @@ input, select, textarea {
 		@media screen and (max-width: 736px) {
 
 			.tiles {
-				margin: -1.25em 0 0 -1.25em;
+				margin: 0em 0 0 -1.25em;
 			}
 
 				.tiles article {
@@ -2783,19 +2783,22 @@ input, select, textarea {
 
 /* Media Queries */
 @media screen and (max-width: 1280px) {
+	.projecttilehiddentext {
+		font-size: 12px;
+		margin: 2px;
+	}
+}
+@media screen and (max-width: 980px) {
+	.skillstile li {
+		font-size: 18px;
+	}
 	
-	.projecttilehiddentext {
+	/*.projecttilehiddentext {
 		font-size: 12px;
 		margin: 2px;
-	}
+	}*/
 }
-/*@media screen and (max-width: 980px) {
-	.projecttilehiddentext {
-		font-size: 12px;
-		margin: 2px;
-	}
-}
-@media screen and (max-width: 736px) {
+/*@media screen and (max-width: 736px) {
 	.projecttilehiddentext {
 		font-size: 12px;
 		margin: 2px;
@@ -2810,7 +2813,7 @@ input, select, textarea {
 
 .buttonformat {
 	font-size: 26px;
-	margin: 0px;
+	margin: 100px;
 	border: none;
 	background: none;
 	color: rgba(134, 134, 134, 0.8);
@@ -2871,7 +2874,7 @@ input, select, textarea {
 .skillstile ul {
 	padding: 10%;
 	margin: 5%;
-	font-size: 24px;
+	font-size: 20px;
 	/*list-style-type: none;*/
 	/*border-bottom: 4px solid rgb(131,131,255);*/
 }
@@ -2937,6 +2940,16 @@ input, select, textarea {
 	color: #000000;
 }
 
+@media screen and (max-width: 1280px) {
+	.btn {
+		font-size: 16px;
+	}
+}
+@media screen and (max-width: 480px) {
+	.btn {
+		font-size: 12px;
+	}
+}
 
 
 
