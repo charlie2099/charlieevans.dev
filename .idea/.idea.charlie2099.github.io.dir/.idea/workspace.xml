@@ -2,15 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="07074e9d-54a0-446b-aeb6-756ccf55e04c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/images/Logos/html5-logo2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/Logos/unity-logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/Logos/unreal-engine-logo.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.charlie2099.github.io.dir/.idea/discord.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.charlie2099.github.io.dir/.idea/discord.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.charlie2099.github.io.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.charlie2099.github.io.dir/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/blogpage.html" beforeDir="false" afterPath="$PROJECT_DIR$/blogpage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/Logos/unreal-engine-logo.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/skillspage.html" beforeDir="false" afterPath="$PROJECT_DIR$/skillspage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/logo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/pic01.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/pic02.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/pic03.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/pic04.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/pic05.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/pic06.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/pic07.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/pic08.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/pic09.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/pic10.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/pic11.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/pic12.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/pic13.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/pic14.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/pic15.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/starfleetcommandpage.html" beforeDir="false" afterPath="$PROJECT_DIR$/starfleetcommandpage.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,6 +84,8 @@
       <workItem from="1662302794082" duration="236000" />
       <workItem from="1662303206636" duration="4269000" />
       <workItem from="1662308594324" duration="11000" />
+      <workItem from="1662311682315" duration="159000" />
+      <workItem from="1662334140896" duration="19521000" />
     </task>
     <servers />
   </component>
