@@ -39,10 +39,10 @@
     <!-- Main -->
     <div id="main">
         <div class="inner">
-
-            <a href="../../blogpage.html" style="float: right; margin: 15px; color: rgba(255, 255, 255, 0.5);"><span class="fa fa-edit"></span><span style="color: #50985c;"></span></a>
-            <a href="../../skillspage.html" style="float: right; margin: 15px; color: rgba(255, 255, 255, 0.5);"><span class="fa fa-list-alt"></span><span style="color: #50985c;"></span></a>
-            <a href="../../index.html" style="float: right; margin: 15px; color: rgba(255, 255, 255, 0.5);"><span class="fa fa-home"></span><span style="color: #50985c;"></span></a>
+            
+            <a href="../../blogpage.html" style="float: right; margin: 15px; color: rgba(255, 255, 255, 0.5);"><span class="tooltip fa fa-edit"><!--<span class="tooltiptext">Blog</span>--></span></a>
+            <a href="../../skillspage.html" style="float: right; margin: 15px; color: rgba(255, 255, 255, 0.5);"><span class="tooltip fa fa-list-alt"><!--<span class="tooltiptext">Skills</span>--></span></a>
+            <a href="../../index.html" style="float: right; margin: 15px; color: rgba(255, 255, 255, 0.5);"><span class="tooltip fa fa-home"><!--<span class="tooltiptext">Home</span>--></span></a>
 
             <h4 style="border-bottom: 4px solid rgb(255,131,131); padding: 20px;"><strong style="color: #9D4D4DFF">Behaviour Trees | Log 1 | <span style="color: rgb(255,131,131);">Research and Planning</span></strong></h4>
 
@@ -59,6 +59,51 @@
                 laborum."<!--tree of nodes for making ai decisons.--></p>
 
             <img src="../../images/behaviour_tree_example2.png" alt="Behaviour Tree Diagram">
+
+
+
+            
+            
+            
+            
+            
+            <br>
+            <br>
+         
+            <button type="button" class="collapsible">Game Mechanic, Feature or System<span class="fa fa-plus" style="float: right; font-size: 20px;"></span></button>
+            <div class="collapsiblecontent">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore 
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
+                    aliquip ex ea commodo consequat.</p>
+
+                <pre>
+                    <code>i = 0;
+while (!deck.isInOrder()) 
+{
+    print 'Iteration ' + i;
+    deck.shuffle();
+    i++;
+}
+
+print 'It took ' + i + ' iterations to sort the deck;</code>
+                </pre>
+            </div>
+
+            <br>
+            <br>
+
+            <button type="button" class="collapsible">Game Mechanic, Feature or System<span class="fa fa-plus" style="float: right; font-size: 20px;"></span></button>
+            <div class="collapsiblecontent">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat.</p>
+            </div>
+
+            
+            
+            
+            
+            
 
             <br>
             <br>
@@ -108,6 +153,23 @@
 </div>
 
 <!-- Scripts -->
+<script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+
+    for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.display === "block") {
+                content.style.display = "none";
+            } else {
+                content.style.display = "block";
+            }
+        });
+    }
+</script>
+
 <script src="../../assets/js/jquery.min.js"></script>
 <script src="../../assets/js/browser.min.js"></script>
 <script src="../../assets/js/breakpoints.min.js"></script>
