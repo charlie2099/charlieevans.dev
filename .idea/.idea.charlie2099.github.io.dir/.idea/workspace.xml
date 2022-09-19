@@ -2,10 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="07074e9d-54a0-446b-aeb6-756ccf55e04c" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/images/squidstributionremake1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/squidstributionremake2.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.charlie2099.github.io.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.charlie2099.github.io.dir/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/blogpage.html" beforeDir="false" afterPath="$PROJECT_DIR$/blogpage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blogpages/behaviourtreedevlogs/BehaviourTreeDevLogOne.html" beforeDir="false" afterPath="$PROJECT_DIR$/blogpages/behaviourtreedevlogs/BehaviourTreeDevLogOne.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blogpages/SquidstributionDevLogs.html" beforeDir="false" afterPath="$PROJECT_DIR$/blogpages/SquidstributionDevLogs.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/squidstributionremake.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/squidstributionremake3.png" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,6 +90,7 @@
       <workItem from="1663248507926" duration="980000" />
       <workItem from="1663279931092" duration="1503000" />
       <workItem from="1663541213325" duration="8874000" />
+      <workItem from="1663592743067" duration="5952000" />
     </task>
     <servers />
   </component>
