@@ -1,0 +1,244 @@
+﻿<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <title>Charlie Evans | Portfolio | Starfleet Command</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="../assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="../assets/css/noscript.css" /></noscript>
+</head>
+<body class="is-preload">
+<!-- Wrapper -->
+<div id="wrapper">
+
+    <!-- Header -->
+    <header id="header">
+        <div class="inner">
+
+            <!-- Nav -->
+            <nav>
+                <ul>
+                    <li><a href="#menu">Menu</a></li>
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+
+    <!-- Menu -->
+    <nav id="menu">
+        <h2>Menu</h2>
+        <ul>
+            <li><a href="../index.html">Portfolio</a></li>
+            <li><a href="../skillspage.html">Skills</a></li>
+            <li><a href="../blogpage.html">Blog</a></li>
+            <li><a href="../Placeholder%20CV.pdf" target="_blank">CV</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main -->
+    <div id="main">
+        <div class="inner">
+            
+            <a href="../blogpage.html" style="float: right; margin: 15px; color: rgba(255, 255, 255, 0.5);"><span class="fa fa-edit"></span><span style="color: #50985c;"></span></a>
+            <a href="../skillspage.html" style="float: right; margin: 15px; color: rgba(255, 255, 255, 0.5);"><span class="fa fa-list-alt"></span><span style="color: #50985c;"></span></a>
+            <a href="../index.html" style="float: right; margin: 15px; color: rgba(255, 255, 255, 0.5);"><span class="fa fa-home"></span><span style="color: #50985c;"></span></a>
+
+            <h4 style="border-bottom: 4px solid rgb(255,131,131); padding: 20px;"><strong style="color: #9D4D4DFF">Learning Journal | Ai | <span style="color: rgb(255,131,131);">Mathematics In Ai</span></strong></h4>
+
+            <br>
+            <a href="../blogpage.html"><h1 class="fa fa-arrow-alt-circle-left"></h1></a>
+
+            <h4>1st Sept, 2022</h4>
+
+            <h1 style="border-bottom: 2px solid rgb(255,131,131); padding: 20px;">Vectors</h1>
+            
+            <p>A point is a location in space. Movement in this space can be defined by a vector which is a <span style="color: rgb(255,131,131);">direction</span> and <span style="color: rgb(255,131,131);">length (magnitude)</span>, and has no starting point.</p>
+            <!--<p>In Unity a vector is used to describe a game objects <span style="color: rgb(255,131,131);">position</span> and to represent it's <span style="color: rgb(255,131,131);">speed</span> and <span style="color: rgb(255,131,131);">direction</span>.</p>-->
+            <p>By adding a vector to the position of a game character the character will be moved to a new position in space.</p>    
+            <p>We can perform this by using Unity's <span style="color: rgb(255,131,131);">Translate</span> method. E.g.</p>
+            <pre>
+                <code>transform.Translate(6f, 0, 2f);</code>
+            </pre>
+            <p>Adding this same vector to another game character will move it by the <span style="color: rgb(255,131,131);">same amount</span>, but they will <span style="color: rgb(255,131,131);">not end up in the same location</span> as they most likely have different starting points to each other.</p>
+            <br>
+            
+            <h2 style="font-size: 2em; letter-spacing: -0.035em; margin: 0 0 0.5em 0; text-transform: none;">Moving a Character Towards a Target</h2>
+            <p>To make a character go towards a target location we need to calculate the vector between the character and it's target.</p>
+            <p>We can find this vector by taking the character's position away from the target position.</p>
+            <pre>
+                <code>vector = target.position - character.position;</code>
+            </pre>
+            <p>However we cannot add this entire vector in one go as this will result in the character just teleporting to it's target location. We need to be able to add a shorter vector that points in the same direction after each update.</p>
+            <br>
+            <p>This can easily be achieved by dividing the vector. To get a vector that is half the size you would divide it by two. This would take the character two updates to reach it's goal.</p>
+            <p>If we divide a vector by a fixed number each time then the characters speed will change depending on the distance to it's target. Even if divided by the same number, the character will move much faster the longer the distance that
+                needs to be travelled.</p>
+            <p>Rather than dividing a vector by the same amount, we want to reduce the smaller vectors to a <span style="color: rgb(255,131,131);">standard size</span> such that they are all the same length. This standard size is one. This can be found by dividing the larger vector by it's
+               magnitude. This is called <span style="color: rgb(255,131,131);">normalisation</span>. This will result in the character now moving at a constant speed regardless of the distance that is needed to be travelled.</p>
+            <pre>
+                <code>direction = target.position - character.position;
+direction.magnitude   // length of the vector
+direction.normalised // vector of length 1</code>
+            </pre>
+            <!-- <p>Whereas a point is a single location, a vector can be anywhere in space.</p>
+            <p>It's just a direction and magnitude in space, it doesn't specify where it starts.</p>
+            <p>Using the Translate method, a vector can be added to a starting point.</p>
+            <p>Used to describe the position of a game object, and to determine its speed and direction.</p>
+            <p>Can be expressed in multiple dimensions such as 2D, 3D, and 4D vectors.</p>-->
+
+            <h2 style="font-size: 2em; letter-spacing: -0.035em; margin: 0 0 0.5em 0; text-transform: none;">Calculating The Distance Between Two Points</h2>
+            
+            <p>Using <span style="color: rgb(255,131,131);">Pythagoras Theorem</span> the distance between two points can be calcuated.</p>
+            <pre>
+                <code>float distance = Mathf.Sqrt(Mathf.Pow(zombie.transform.position.x - transform.position.x, 2) +
+                            Mathf.Pow(zombie.transform.position.y - transform.position.y, 2) +
+                            Mathf.Pow(zombie.transform.position.z - transform.position.z, 2));</code>
+            </pre>
+
+            <p>The above can also be achieved more simply by using Unity's built-in methods.</p>
+            <pre>
+                <code>float distance = Vector3.Distance(zombie.transform.position, transform.position);</code>
+            </pre>
+
+            <p>A third option for achieving this is to calculate the vector between two points which
+               we can then use to calculate the length of the vector (the length of the vector being the distance
+                between two points).</p>
+            <pre>
+                <code>Vector3 zombieToPlayer = (transform.position - zombie.transform.position).magnitude;</code>
+            </pre>
+            
+            <h2 style="font-size: 2em; letter-spacing: -0.035em; margin: 0 0 0.5em 0; text-transform: none;">Calculating The Dot Product</h2>
+            <p>The Dot Product is the sum of the multiplication of coordinate values in two vectors.</p>
+            <p>In the example below multiplying the x values 3 and 6, the y values 3 and -1, and then adding the result gives us the dot product.</p>
+            <p>i.e. v.x * w.x + v.y * w.y</p>
+            <p>i.e. 3 * 6 + 3 * -1 = 15</p>
+            <pre>
+                <code>v = (3,3)
+w = (6,-1)</code>
+            </pre>
+            
+            <ul>
+                <li>If the dot product is equal 0 then the angle is exactly 90 degrees.</li>
+                <li>If the dot product is greater than 0 then the angle is less than 90 degrees.</li>
+                <li>If the dot product is less than 0 then the angle is greater than 90 degrees.</li>
+            </ul>
+            
+            <br>
+            <p>Using the Dot Product allows us to determine where one game object is in relation to another. For example 
+                you can determine whether a game object is in front or behind something. If a game object is in front of
+                a game object then the Dot product will be greater than 0. If a game object is behind another game object 
+                then the Dot product will be less than zero.</p> 
+            <br>
+            
+            <p>To calculate the angle that a tank would need to turn towards some fuel the forward facing vector of the tank
+            is needed as well as the vector between the tank and the fuel. Getting the forward facing vector is easy in Unity. 
+            In a 2D environment the forward vector is stored in the tanks Up vector. In a 3D environment the tanks Forward 
+            vector would be used.</p>
+            <pre>
+                <code>Vector3 tankForward = tank.transform.up;
+Vector3 fuelDirection = fuel.transform.position - tank.transform.position;
+
+// Debug
+Debug.DrawRay(tank.transform.position, tankForward, Color.green, 2);
+Debug.DrawRay(tank.transform.position, fuelDirection, Color.red, 2);</code>
+            </pre>
+
+            <h2 style="font-size: 2em; letter-spacing: -0.035em; margin: 0 0 0.5em 0; text-transform: none;">Calculating The Cross Product</h2>
+            
+            <p>The cross product of two vectors results in another vector. It is perfomred on vectors in three dimensions.</p>
+            <p>If the cross products z value is less than zero or negative then a clockwise turn should be performed. If the cross products
+            z value is more than zero then a anticlockwise turn should be performed.</p>
+
+            <div style="width:100%;position:relative;padding-bottom:61.224%;">
+                <iframe src="https://streamable.com/e/zz02ni" style="width:100%;height:100%;position:absolute;"></iframe>
+            </div>
+            
+            <blockquote class="imgur-embed-pub" lang="en" data-id="a/6LzKPgI"  ><a href="//imgur.com/a/6LzKPgI">Squidstribution</a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
+            <!--<blockquote>Hello</blockquote>-->
+            
+            
+            
+            <!--<button type="button" class="collapsible">Game Mechanic, Feature or System<span class="fa fa-plus" style="float: right; font-size: 20px;"></span></button>
+            <div class="collapsibleblock">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat.</p>
+            </div>-->
+          
+            
+            <!--<p>A <span style="color: rgb(255,131,131);">Behaviour Tree</span> is a Lorem ipsum dolor sit amet,
+                consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+                ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+                laborum."&lt;!&ndash;tree of nodes for making ai decisons.&ndash;&gt;</p>-->
+
+            <!--<img src="../../images/behaviour_tree_example2.png" alt="Behaviour Tree Diagram">-->
+
+            <!--<br>
+            <br>
+
+            <button type="button" class="collapsible">Calculating Distance With Pythagoras Theorem<span class="fa fa-plus" style="float: right; font-size: 20px;"></span></button>
+            <div class="collapsibleblock">
+                <pre>
+                    <code>float distance = Mathf.Sqrt(Mathf.Pow(zombie.transform.position.x - transform.position.x, 2) +
+                            Mathf.Pow(zombie.transform.position.z - transform.position.z, 2));</code>
+                </pre>
+            </div>-->
+
+            <!--<button type="button" class="collapsible">Game Mechanic, Feature or System<span class="fa fa-plus" style="float: right; font-size: 20px;"></span></button>
+            <div class="collapsibleblock">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat.</p>
+            </div>-->
+            
+            
+            
+            
+
+            <!--<h1>Development Logs</h1>
+
+            <section style="width: 45%;">
+                <a href="../blogpages/behaviourtreedevlogs/BehaviourTreeDevLogOne.html" class="devloglink">
+                    <h4 style="border-bottom: 4px solid rgb(255,131,131); padding: 20px;"><strong style="color: #9D4D4DFF;">Sept 1st, 2022 | <span style="color: rgb(255,131,131);">Research and Planning <span style="float: right; color: #9D4D4DFF;">Log 1</span></span> </strong></h4>
+                </a>
+                <p>Learning about what Behaviour Trees are and how they are used in the professional industry.</p>
+            </section>-->
+
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="inner">
+            <section>
+                <h2>Contact</h2>
+                <ul class="icons">
+                    <li><a href="https://github.com/charlie2099" target="_blank" class="fab fa-github icon brands"><span class="label">GitHub</span></a></li>
+                    <li><a href="https://charlie2099.itch.io/" target="_blank" class="fab fa-itch-io icon brands"><span class="label">Itch Io</span></a></li>
+                    <li><a href="https://www.linkedin.com/in/charlie-evans-5bbaa3200" target="_blank" class="fab fa-linkedin icon brands"><span class="label">Linkedin</span></a></li>
+                    <li><a href="mailto:charlie.evans1899@outlook.com" target="_blank" class="fab fa-envelope icon"><span class="label">Email</span></a></li>
+                    <li><a href="https://twitter.com/charlieevans203" target="_blank" class="fab fa-twitter icon brands"><span class="label">Twitter</span></a></li>
+                    <li><a href="https://uwegames.slack.com/team/U02H9M78J6A" target="_blank" class="fab fa-slack icon brands"><span class="label">Slack</span></a></li>
+                </ul>
+            </section>
+            <!--<ul class="copyright">
+                <li>&copy; Charlie Evans. All rights reserved</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+            </ul>-->
+        </div>
+    </footer>
+
+</div>
+
+<!-- Scripts -->
+<script src="../assets/js/collapsiblecontent.js"></script>
+<script src="../assets/js/jquery.min.js"></script>
+<script src="../assets/js/browser.min.js"></script>
+<script src="../assets/js/breakpoints.min.js"></script>
+<script src="../assets/js/util.js"></script>
+<script src="../assets/js/main.js"></script>
+
+</body>
+</html>

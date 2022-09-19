@@ -4,6 +4,7 @@
     <list default="true" id="07074e9d-54a0-446b-aeb6-756ccf55e04c" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.charlie2099.github.io.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.charlie2099.github.io.dir/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blogpage.html" beforeDir="false" afterPath="$PROJECT_DIR$/blogpage.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/blogpages/behaviourtreedevlogs/BehaviourTreeDevLogOne.html" beforeDir="false" afterPath="$PROJECT_DIR$/blogpages/behaviourtreedevlogs/BehaviourTreeDevLogOne.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -14,6 +15,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="JavaScript File" />
         <option value="HTML File" />
       </list>
     </option>
@@ -75,6 +77,17 @@
       <workItem from="1662478481677" duration="5818000" />
       <workItem from="1662484517978" duration="1166000" />
       <workItem from="1662489024365" duration="10158000" />
+      <workItem from="1662591394935" duration="7550000" />
+      <workItem from="1662764110365" duration="17744000" />
+      <workItem from="1662933645796" duration="2374000" />
+      <workItem from="1662941839500" duration="723000" />
+      <workItem from="1663179591766" duration="1060000" />
+      <workItem from="1663195324888" duration="1445000" />
+      <workItem from="1663198440327" duration="2007000" />
+      <workItem from="1663243985388" duration="791000" />
+      <workItem from="1663248507926" duration="980000" />
+      <workItem from="1663279931092" duration="1503000" />
+      <workItem from="1663541213325" duration="8874000" />
     </task>
     <servers />
   </component>
