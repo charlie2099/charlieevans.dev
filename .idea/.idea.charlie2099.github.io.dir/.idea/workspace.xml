@@ -2,12 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="07074e9d-54a0-446b-aeb6-756ccf55e04c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/images/squidstributionremake1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/squidstributionremake2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/monopoly_clone.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.charlie2099.github.io.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.charlie2099.github.io.dir/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/blogpage.html" beforeDir="false" afterPath="$PROJECT_DIR$/blogpage.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/blogpages/SquidstributionDevLogs.html" beforeDir="false" afterPath="$PROJECT_DIR$/blogpages/SquidstributionDevLogs.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/squidstributionremake.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/squidstributionremake3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,6 +90,11 @@
       <workItem from="1663279931092" duration="1503000" />
       <workItem from="1663541213325" duration="8874000" />
       <workItem from="1663592743067" duration="5952000" />
+      <workItem from="1663710034089" duration="83000" />
+      <workItem from="1663710256014" duration="25000" />
+      <workItem from="1663864389141" duration="1365000" />
+      <workItem from="1665078273171" duration="3184000" />
+      <workItem from="1669319743152" duration="830000" />
     </task>
     <servers />
   </component>
