@@ -2,7 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="07074e9d-54a0-446b-aeb6-756ccf55e04c" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/blogpages/DroneInterceptionDevLogPage.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blogpages/droneinterceptiondevlogs/DroneInterceptionDevLogOne.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blogpages/monopolyclonedevlogs/MonopolyCloneDevLogOne.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blogpages/squidstributiondevlogs/SquidstributionDevLogOne.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/GIFS/KojimaWars.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/drone_interception_loadout.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/monopoly_dice_roll.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/placeholder_image.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.charlie2099.github.io.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.charlie2099.github.io.dir/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blogpage.html" beforeDir="false" afterPath="$PROJECT_DIR$/blogpage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blogpages/MathematicsInAiDevLogPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/blogpages/MathematicsInAiDevLogPage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blogpages/MonopolyCloneDevLogPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/blogpages/MonopolyCloneDevLogPage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blogpages/SquidstributionDevLogs.html" beforeDir="false" afterPath="$PROJECT_DIR$/blogpages/SquidstributionDevLogPage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blogpages/behaviourtreedevlogs/BehaviourTreeDevLogOne.html" beforeDir="false" afterPath="$PROJECT_DIR$/blogpages/behaviourtreedevlogs/BehaviourTreeDevLogOne.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -96,6 +109,9 @@
       <workItem from="1670443977610" duration="658000" />
       <workItem from="1670444992464" duration="459000" />
       <workItem from="1672227562160" duration="144000" />
+      <workItem from="1672498237468" duration="6481000" />
+      <workItem from="1672523790313" duration="12546000" />
+      <workItem from="1672579963493" duration="2880000" />
     </task>
     <servers />
   </component>

@@ -50,16 +50,29 @@
 								<br>
 								<h1>Hi, I'm Charlie<br> 
 								    and I'm a <span style="color: rgb(127,127,222);">Games Programmer</span>.</h1>
-								<p>I am a masters student studying Commercial Games Development at UWE Bristol with an enthusiasm 
-									for programming and game design. <!--When I'm not programming, I like to spend my time
-									...--></p>
+								<p>As a masters student studying Commercial Games Development at UWE, I am passionate 
+									about all aspects of game programming. With a strong focus on creating 
+									<span style="font-weight: bold;">clean</span>, <span style="font-weight: bold;">modular</span>, 
+									and <span style="font-weight: bold;">extensible code</span>, I am always looking for ways to 
+									improve my skills<!-- and contribute to the development of high-quality games-->. In my free 
+									time, I enjoy playing a variety of games, including real-time strategy games, first-person 
+									shooters, and story-focused games, which has sparked my interest in creating AI behavior.</p>
 							</header>
 							
 							<!--<h1>Projects</h1>-->
+
+							
+							<div id="myBtnContainer" style="padding-top: 100px;">
+								<button class="btn active" onclick="filterSelection('all')"> Show all</button>
+								<button class="btn" onclick="filterSelection('Hobby')"> Hobby Projects</button>
+								<button class="btn" onclick="filterSelection('GameJam')"> Game Jams</button>
+								<button class="btn" onclick="filterSelection('University')"> University</button>
+								<button class="btn" onclick="filterSelection('Dissertation')"> Dissertation</button>
+							</div>
 							
 							<section class="tiles">
 								
-								<article class="projecttile">
+								<article class="projecttile filterDiv Hobby">
 									<img style="border-bottom: 4px solid rgb(131,131,255);/*deeppink;*/" src="images/GIFS/StarfleetCommandDemo.gif" alt="Starfleet Command Demo Vid" class="projecttileimage">
 
 									<div class ="projecttiletext">
@@ -79,7 +92,7 @@
 									</div>
 								</article>
 							
-								<article class="projecttile">
+								<article class="projecttile filterDiv Dissertation">
 									<img style="border-bottom: 4px solid rgb(255,123,123);/*deeppink;*/" src="images/GIFS/DirectorAiDemo.gif" alt="Director Ai Demo Vid" class="projecttileimage">
 
 									<div class ="projecttiletext">
@@ -101,7 +114,7 @@
 									</div>
 								</article>
 							
-								<article class="projecttile">
+								<article class="projecttile filterDiv GameJam">
 									<img style="border-bottom: 4px solid rgb(212,129,255);" src="images/GIFS/DiceRunnerDemo.gif" alt="Dice Runner Demo Vid" class="projecttileimage">
 
 									<div class ="projecttiletext">
@@ -122,7 +135,7 @@
 									</div>
 								</article>
 							
-								<article class="projecttile">
+								<article class="projecttile filterDiv GameJam">
 									<img style="border-bottom: 4px solid rgb(212,129,255);" src="images/GIFS/SquidstributionDemo.gif" alt="Squidstribution Demo Vid" class="projecttileimage">
 
 									<div class ="projecttiletext">
@@ -144,7 +157,7 @@
 									</div>
 								</article>
 							
-								<article class="projecttile">
+								<article class="projecttile filterDiv University">
 									<img style="border-bottom: 4px solid rgb(76,203,80);" src="images/GIFS/OpenWorldStreamingDemo.gif" alt="Open World Streaming System Demo Vid" class="projecttileimage">
 
 									<div class ="projecttiletext">
@@ -164,7 +177,7 @@
 									</div>
 								</article>
 							
-								<!--<article class="projecttile">
+								<!--<article class="projecttile filterDiv University">
 									<img style="border-bottom: 4px solid rgb(76,203,80);" src="images/GIFS/MistsOfTurmoilDemo.gif" alt="Mists of Turmoil Demo Vid" class="projecttileimage">
 
 									<div class ="projecttiletext">
@@ -184,7 +197,7 @@
 									</div>
 								</article>-->
 							
-								<article class="projecttile">
+								<!--<article class="projecttile filterDiv University">
 									<img style="border-bottom: 4px solid rgb(76,203,80);" src="images/GIFS/ASGETrekDemo.gif" alt="ASGE Trek Demo Vid" class="projecttileimage">
 
 									<div class ="projecttiletext">
@@ -201,10 +214,10 @@
 										<a class = "buttonlink" href = "" target="_blank"><button class = "buttonformat"> <i class="fab fa-youtube fa-bounce fa-bounce-hover"></i></button></a>
 										<a class = "buttonlink" href = "" target="_blank"><button class = "buttonformat"> <i class="fa fa-file-pdf fa-bounce fa-bounce-hover"></i></button></a>
 									</div>
-								</article>
+								</article>-->
 
-								<article class="projecttile">
-									<img style="border-bottom: 4px solid rgb(76,203,80);" src="images/kojima_wars_logo2.png" alt="Kojima Wars Demo Vid" class="projecttileimage">
+								<article class="projecttile filterDiv University">
+									<img style="border-bottom: 4px solid rgb(76,203,80);" src="images/GIFS/KojimaWars.gif" alt="Kojima Wars Demo Vid" class="projecttileimage">
 
 									<div class ="projecttiletext">
 										<h3 class="projecttiletitle"><strong>Kojima Wars</strong></h3>
@@ -221,7 +234,7 @@
 									</div>
 								</article>
 
-								<!--<article class="projecttile">
+								<!--<article class="projecttile filterDiv University">
 									<img style="border-bottom: 4px solid rgb(255,241,0);" src="images/GIFS/ASGETrekDemo.gif" alt="ASGE Trek Demo Vid" class="projecttileimage">
 
 									<div class ="projecttiletext">
@@ -272,6 +285,49 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-
+			<script>
+				filterSelection("all")
+				function filterSelection(c) {
+					var x, i;
+					x = document.getElementsByClassName("filterDiv");
+					if (c == "all") c = "";
+					for (i = 0; i < x.length; i++) {
+						w3RemoveClass(x[i], "show");
+						if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+					}
+				}
+		
+				function w3AddClass(element, name) {
+					var i, arr1, arr2;
+					arr1 = element.className.split(" ");
+					arr2 = name.split(" ");
+					for (i = 0; i < arr2.length; i++) {
+						if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+					}
+				}
+		
+				function w3RemoveClass(element, name) {
+					var i, arr1, arr2;
+					arr1 = element.className.split(" ");
+					arr2 = name.split(" ");
+					for (i = 0; i < arr2.length; i++) {
+						while (arr1.indexOf(arr2[i]) > -1) {
+							arr1.splice(arr1.indexOf(arr2[i]), 1);
+						}
+					}
+					element.className = arr1.join(" ");
+				}
+		
+				// Add active class to the current button (highlight it)
+				var btnContainer = document.getElementById("myBtnContainer");
+				var btns = btnContainer.getElementsByClassName("btn");
+				for (var i = 0; i < btns.length; i++) {
+					btns[i].addEventListener("click", function(){
+						var current = document.getElementsByClassName("active");
+						current[0].className = current[0].className.replace(" active", "");
+						this.className += " active";
+					});
+				}
+			</script>
 	</body>
 </html>
