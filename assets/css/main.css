@@ -148,7 +148,7 @@ input, select, textarea {
 	}
 
 		a:hover {
-			color: #7d7dda !important;
+			color: rgb(131,255,193) !important;
 		}
 
 	strong, b {
@@ -1972,7 +1972,7 @@ input, select, textarea {
 		-webkit-flex-wrap: wrap;
 		-ms-flex-wrap: wrap;
 		flex-wrap: wrap;
-		postiion: relative;
+		position: relative;
 		margin: -2.5em 0 0 -2.5em;
 	}
 
@@ -2675,7 +2675,7 @@ input, select, textarea {
 
 	#wrapper > * > .inner {
 		width: 100%;
-		max-width: 68em;
+		max-width: 68em; /*68*/
 		margin: 0 auto;
 		padding: 0 2.5em;
 	}
@@ -2699,7 +2699,7 @@ input, select, textarea {
 }
 
 .projecttile:hover {
-	box-shadow: inset 0px 0px 0px 1px rgba(89, 65, 234), 0px 4px 6px 0px rgb(0, 0, 0);
+	box-shadow: inset 0px 0px 0px 1px rgb(131,255,193), 0px 4px 6px 0px rgb(0, 0, 0);
 	transform: scale(1.1);
 }
 
@@ -2732,7 +2732,7 @@ input, select, textarea {
 	padding: 10px;
 	text-align: center;
 	outline-style: solid;
-	outline-color: rgb(131,131,255);
+	outline-color: rgb(131,255,193);
 }
 
 .projecttileimage {
@@ -2828,25 +2828,25 @@ input, select, textarea {
 }
 
 .fa-twitter:hover {
-	color: rgb(127,127,222 /*48, 197, 255*/);
+	color: rgb(131,255,193 /*48, 197, 255*/); /*rgb(131,255,193)*/
 }
 .fa-github:hover {
-	color: rgb(127,127,222 /*255, 255, 255*/);
+	color: rgb(131,255,193 /*255, 255, 255*/);
 }
 .fa-linkedin:hover {
-	color: rgb(127,127,222 /*48, 103, 255*/);
+	color: rgb(131,255,193 /*48, 103, 255*/);
 }
 .fa-slack:hover {
-	color: rgb(127,127,222 /*255, 131, 48*/);
+	color: rgb(131,255,193 /*255, 131, 48*/);
 }
 .fa-itch-io:hover {
-	color: rgb(127,127,222 /*240, 88, 88*/);
+	color: rgb(131,255,193 /*240, 88, 88*/);
 }
 .fa-youtube:hover {
-	color: rgb(127,127,222 /*255, 48, 48*/);
+	color: rgb(131,255,193 /*255, 48, 48*/);
 }
 .fa-file-pdf:hover {
-	color: rgb(127,127,222 /*96, 255, 152*/);
+	color: rgb(131,255,193 /*96, 255, 152*/);
 }
 
 
@@ -2941,7 +2941,7 @@ input, select, textarea {
 }
 
 .btn.active {
-	background-color: rgb(131,131,255);
+	background-color: rgb(131,255,193);
 	color: #000000;
 }
 
@@ -2982,11 +2982,12 @@ input, select, textarea {
 }
 
 .active, .collapsible:hover {
-	background-color: #9D4D4DFF;
+	background-color: rgba(131,255,193,0.35);
 }
 
 .collapsibleblock {
 	padding: 50px;
+	padding-bottom: 0px;
 	display: none;
 	overflow: hidden;
 	background-color: rgba(0, 0, 0, 0.49);
