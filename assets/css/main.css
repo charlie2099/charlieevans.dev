@@ -2692,15 +2692,51 @@ input, select, textarea {
 
 /* Index page */
 
-.projecttile {
+.projecttiledefault {
+	background: rgba(0, 0, 0, 0.49);
+	padding: 0px;
+	transition: all .4s ease-in-out;
+}
+.projecttilehobby {
+	background: rgba(0, 0, 0, 0.49);
+	padding: 0px;
+	transition: all .4s ease-in-out;
+}
+.projecttiledissertation {
+	background: rgba(0, 0, 0, 0.49);
+	padding: 0px;
+	transition: all .4s ease-in-out;
+}
+.projecttilegamejam {
+	background: rgba(0, 0, 0, 0.49);
+	padding: 0px;
+	transition: all .4s ease-in-out;
+}
+.projecttileuniversity {
 	background: rgba(0, 0, 0, 0.49);
 	padding: 0px;
 	transition: all .4s ease-in-out;
 }
 
-.projecttile:hover {
+.projecttiledefault:hover {
 	box-shadow: inset 0px 0px 0px 1px rgb(131,255,193), 0px 4px 6px 0px rgb(0, 0, 0);
 	transform: scale(1.1);
+}
+.projecttilehobby:hover {
+	box-shadow: inset 0px 0px 0px 1px rgb(131,131,255), 0px 4px 6px 0px rgb(0, 0, 0);
+	transform: scale(1.1);
+}
+.projecttiledissertation:hover {
+	box-shadow: inset 0px 0px 0px 1px rgb(255,123,123), 0px 4px 6px 0px rgb(0, 0, 0);
+	transform: scale(1.1);
+}
+.projecttilegamejam:hover {
+	 box-shadow: inset 0px 0px 0px 1px rgb(212,129,255), 0px 4px 6px 0px rgb(0, 0, 0);
+	 transform: scale(1.1);
+}
+.projecttileuniversity:hover {
+	  box-shadow: inset 0px 0px 0px 1px rgb(131,255,193), 0px 4px 6px 0px rgb(0, 0, 0);
+	  transform: scale(1.1);
 }
 
 .projecttiletext {
@@ -2718,7 +2754,71 @@ input, select, textarea {
 	text-align: left;
 }
 
-.projecttilehiddentextcontainer {
+.projecttilehiddentextcontainerdefault {
+	opacity: 0;
+	width: 80%;
+	top: 50%;
+	left: 50%;
+	position: absolute;
+	transition: 0.5s ease;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	background-color: rgba(0, 0, 0, 0.71);
+	border-radius: 10px;
+	padding: 10px;
+	text-align: center;
+	outline-style: solid;
+	outline-color: rgb(131,255,193);
+}
+.projecttilehiddentextcontainerhobby {
+	opacity: 0;
+	width: 80%;
+	top: 50%;
+	left: 50%;
+	position: absolute;
+	transition: 0.5s ease;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	background-color: rgba(0, 0, 0, 0.71);
+	border-radius: 10px;
+	padding: 10px;
+	text-align: center;
+	outline-style: solid;
+	outline-color: rgb(131,131,255);
+}
+.projecttilehiddentextcontainerdissertation {
+	opacity: 0;
+	width: 80%;
+	top: 50%;
+	left: 50%;
+	position: absolute;
+	transition: 0.5s ease;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	background-color: rgba(0, 0, 0, 0.71);
+	border-radius: 10px;
+	padding: 10px;
+	text-align: center;
+	outline-style: solid;
+	outline-color: rgb(255,123,123);
+}
+.projecttilehiddentextcontainergamejam {
+	opacity: 0;
+	width: 80%;
+	top: 50%;
+	left: 50%;
+	position: absolute;
+	transition: 0.5s ease;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	background-color: rgba(0, 0, 0, 0.71);
+	border-radius: 10px;
+	padding: 10px;
+	text-align: center;
+	outline-style: solid;
+	outline-color: rgb(212,129,255);
+}
+.projecttilehiddentextcontaineruniversity {
 	opacity: 0;
 	width: 80%;
 	top: 50%;
@@ -2744,17 +2844,54 @@ input, select, textarea {
 	outline-color: rgb(131,131,255);*/
 }
 
-.projecttile:hover .projecttileimage {
+.projecttiledefault:hover .projecttileimage {
+	opacity: 0.3;
+}
+.projecttilehobby:hover .projecttileimage {
+	opacity: 0.3;
+}
+.projecttiledissertation:hover .projecttileimage {
+	opacity: 0.3;
+}
+.projecttilegamejam:hover .projecttileimage {
+	opacity: 0.3;
+}
+.projecttileuniversity:hover .projecttileimage {
 	opacity: 0.3;
 }
 
-.projecttile:hover .projecttiletext {
+.projecttiledefault:hover .projecttiletext {
+	opacity: 0.3;
+}
+.projecttilehobby:hover .projecttiletext {
+	opacity: 0.3;
+}
+.projecttiledissertation:hover .projecttiletext {
+	opacity: 0.3;
+}
+.projecttilegamejam:hover .projecttiletext {
+	opacity: 0.3;
+}
+.projecttileuniversity:hover .projecttiletext {
 	opacity: 0.3;
 }
 
-.projecttile:hover .projecttilehiddentextcontainer {
+.projecttiledefault:hover .projecttilehiddentextcontainerdefault {
 	opacity: 1;
 }
+.projecttilehobby:hover .projecttilehiddentextcontainerhobby {
+	opacity: 1;
+}
+.projecttiledissertation:hover .projecttilehiddentextcontainerdissertation {
+	opacity: 1;
+}
+.projecttilegamejam:hover .projecttilehiddentextcontainergamejam {
+	opacity: 1;
+}
+.projecttileuniversity:hover .projecttilehiddentextcontaineruniversity {
+	opacity: 1;
+}
+
 
 .projecttiletitle {
 	line-height: 0;
@@ -2772,7 +2909,7 @@ input, select, textarea {
 	line-height: 0;
 }
 .uniprojectlabel {
-	color: rgb(76,203,80);
+	color: rgb(131,255,193);
 	line-height: 0;
 }
 .modprojectlabel {
