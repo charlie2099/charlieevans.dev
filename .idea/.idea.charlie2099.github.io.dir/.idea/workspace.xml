@@ -3,6 +3,18 @@
   <component name="ChangeListManager">
     <list default="true" id="07074e9d-54a0-446b-aeb6-756ccf55e04c" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.charlie2099.github.io.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.charlie2099.github.io.dir/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/GIFS/AsgeTrekDemoVid.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/GIFS/DiceRunnerDemo.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/GIFS/DirectorAiDemo.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/GIFS/DroneInterceptionDemo.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/GIFS/KojimaWars.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/GIFS/OpenWorldStreamingDemo.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/GIFS/SquidstributionRemake4.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/GIFS/StarfleetCommandDemo.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/GIFS/StarfleetCommandDemo2.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/GIFS/StarfleetCommandDemoTest.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/GIFS/StarfleetCommandDemoTest2.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/GIFS/StarfleetCommandDemoTest3.gif" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -108,6 +120,8 @@
       <workItem from="1672926937216" duration="3467000" />
       <workItem from="1672931863607" duration="142000" />
       <workItem from="1672932888636" duration="5029000" />
+      <workItem from="1672947248503" duration="905000" />
+      <workItem from="1672967672080" duration="3235000" />
     </task>
     <servers />
   </component>
