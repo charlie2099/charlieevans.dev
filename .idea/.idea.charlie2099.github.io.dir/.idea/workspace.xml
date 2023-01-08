@@ -3,6 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="07074e9d-54a0-446b-aeb6-756ccf55e04c" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.charlie2099.github.io.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.charlie2099.github.io.dir/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blogpage.html" beforeDir="false" afterPath="$PROJECT_DIR$/blogpage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blogpages/DroneInterceptionDevLogPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/blogpages/DroneInterceptionDevLogPage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blogpages/droneinterceptiondevlogs/DroneInterceptionDevLogZero.html" beforeDir="false" afterPath="$PROJECT_DIR$/blogpages/droneinterceptiondevlogs/DroneInterceptionDevLogZero.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -114,6 +117,8 @@
       <workItem from="1673052696449" duration="5489000" />
       <workItem from="1673114658270" duration="2079000" />
       <workItem from="1673117141522" duration="174000" />
+      <workItem from="1673132765645" duration="1749000" />
+      <workItem from="1673138632145" duration="3572000" />
     </task>
     <servers />
   </component>
