@@ -2193,7 +2193,7 @@ input, select, textarea {
 			color: inherit;
 			font-weight: 900;
 			letter-spacing: 0.35em;
-			margin: 0 0 2.5em 0;
+			margin: 0 0.5em 2.5em 0;
 			text-decoration: none;
 			text-transform: uppercase;
 			display: inline-block;
@@ -2522,7 +2522,7 @@ input, select, textarea {
 
 	#footer {
 		padding: 2em 0 2em 0;
-		background-color: #000000;
+		background-color: rgba(0, 0, 0, 0.5);
 	}
 
 		#footer > .inner {
@@ -3129,7 +3129,5 @@ input, select, textarea {
 	overflow: hidden;
 	background-color: rgba(0, 0, 0, 0.49);
 }
-
-
 
 
