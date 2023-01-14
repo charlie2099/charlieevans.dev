@@ -2,23 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="07074e9d-54a0-446b-aeb6-756ccf55e04c" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/images/DRONE-the-game-customisation.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/DRONE-the-game-overview.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/MW-Gunsmith-Custom.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/call-of-duty-modern-warfare-classes.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/cod-custom-loadout.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/escape_from_tarkov_weapon_customisation.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/kerbal-space-program-customisation.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/robo-master.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/warzone-2-best-m4-loadout.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/warzone-2-custom-loadout.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.charlie2099.github.io.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.charlie2099.github.io.dir/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blogpage.html" beforeDir="false" afterPath="$PROJECT_DIR$/blogpage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blogpages/BehaviourTreeDevLogPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/blogpages/BehaviourTreeDevLogPage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blogpages/CommandPatternDevLogPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/blogpages/CommandPatternDevLogPage.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/blogpages/DroneInterceptionDevLogPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/blogpages/DroneInterceptionDevLogPage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blogpages/LevelEditorDevLogPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/blogpages/LevelEditorDevLogPage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blogpages/MathematicsInAiDevLogPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/blogpages/MathematicsInAiDevLogPage.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/blogpages/MonopolyCloneDevLogPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/blogpages/MonopolyCloneDevLogPage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blogpages/ProceduralGenerationDevLogPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/blogpages/ProceduralGenerationDevLogPage.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/blogpages/SquidstributionDevLogPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/blogpages/SquidstributionDevLogPage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blogpages/StarfleetCommandDevLogPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/blogpages/StarfleetCommandDevLogPage.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/blogpages/SteeringBehavioursPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/blogpages/SteeringBehavioursPage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blogpages/behaviourtreedevlogs/BehaviourTreeDevLogOne.html" beforeDir="false" afterPath="$PROJECT_DIR$/blogpages/behaviourtreedevlogs/BehaviourTreeDevLogOne.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/blogpages/droneinterceptiondevlogs/DroneInterceptionDevLogOne.html" beforeDir="false" afterPath="$PROJECT_DIR$/blogpages/droneinterceptiondevlogs/DroneInterceptionDevLogOne.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/blogpages/droneinterceptiondevlogs/DroneInterceptionDevLogZero.html" beforeDir="false" afterPath="$PROJECT_DIR$/blogpages/droneinterceptiondevlogs/DroneInterceptionDevLogZero.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blogpages/monopolyclonedevlogs/MonopolyCloneDevLogOne.html" beforeDir="false" afterPath="$PROJECT_DIR$/blogpages/monopolyclonedevlogs/MonopolyCloneDevLogOne.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blogpages/squidstributiondevlogs/SquidstributionDevLogOne.html" beforeDir="false" afterPath="$PROJECT_DIR$/blogpages/squidstributiondevlogs/SquidstributionDevLogOne.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -143,6 +143,8 @@
       <workItem from="1673455761878" duration="234000" />
       <workItem from="1673487658513" duration="3116000" />
       <workItem from="1673526332004" duration="6575000" />
+      <workItem from="1673571515550" duration="7116000" />
+      <workItem from="1673629344509" duration="2974000" />
     </task>
     <servers />
   </component>
