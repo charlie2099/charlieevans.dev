@@ -2,22 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="07074e9d-54a0-446b-aeb6-756ccf55e04c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/images/DRONE-the-game-customisation.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/DRONE-the-game-overview.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/MW-Gunsmith-Custom.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/call-of-duty-modern-warfare-classes.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/cod-custom-loadout.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/escape_from_tarkov_weapon_customisation.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/kerbal-space-program-customisation.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/robo-master.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/warzone-2-best-m4-loadout.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/warzone-2-custom-loadout.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.charlie2099.github.io.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.charlie2099.github.io.dir/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blogpage.html" beforeDir="false" afterPath="$PROJECT_DIR$/blogpage.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/blogpages/DroneInterceptionDevLogPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/blogpages/DroneInterceptionDevLogPage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blogpages/MonopolyCloneDevLogPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/blogpages/MonopolyCloneDevLogPage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blogpages/SquidstributionDevLogPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/blogpages/SquidstributionDevLogPage.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/blogpages/SteeringBehavioursPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/blogpages/SteeringBehavioursPage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blogpages/droneinterceptiondevlogs/DroneInterceptionDevLogOne.html" beforeDir="false" afterPath="$PROJECT_DIR$/blogpages/droneinterceptiondevlogs/DroneInterceptionDevLogOne.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/blogpages/droneinterceptiondevlogs/DroneInterceptionDevLogZero.html" beforeDir="false" afterPath="$PROJECT_DIR$/blogpages/droneinterceptiondevlogs/DroneInterceptionDevLogZero.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -58,7 +47,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File" value="yaml" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
-    <property name="settings.editor.selected.configurable" value="Errors" />
+    <property name="settings.editor.selected.configurable" value="xpath.settings" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -145,6 +134,7 @@
       <workItem from="1673526332004" duration="6575000" />
       <workItem from="1673571515550" duration="7116000" />
       <workItem from="1673629344509" duration="2974000" />
+      <workItem from="1673784245334" duration="8390000" />
     </task>
     <servers />
   </component>

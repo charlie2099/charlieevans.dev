@@ -9,6 +9,17 @@
     <noscript><link rel="stylesheet" href="../assets/css/noscript.css" /></noscript>
 </head>
 <style>
+    a:hover { color: rgb(245,255,0) !important; }
+
+    #header nav ul li a[href="#menu"]:hover:after {
+        filter: invert(87%) sepia(11%) saturate(3352%) hue-rotate(14deg) brightness(150%) contrast(180%); /* Hamburger icon colour: Yellow */
+    }
+
+    #menu > .close:hover:after {
+        filter: invert(87%) sepia(11%) saturate(3352%) hue-rotate(14deg) brightness(150%) contrast(180%); /* Hamburger icon colour: Yellow */
+    }
+</style>
+<!--<style>
     /* Style inputs with type="text", select elements and textareas */
     input[type=text], select, textarea {
         width: 100%; /* Full width */
@@ -34,7 +45,7 @@
     input[type=submit]:hover {
         background-color: rgb(186, 194, 6);
     }
-</style>
+</style>-->
 <body class="is-preload">
 <!-- Wrapper -->
 <div id="wrapper">
@@ -89,7 +100,7 @@
 
             <a href="../blogpage.html" style="color: rgba(255, 255, 255, 0.5);"><h1 class="fa fa-arrow-alt-circle-left" style="font-size: 1.25em;"></h1>Back</a>
 
-            <h1 style="border-bottom: 2px solid rgb(245,255,0); padding: 20px;">Steering Behaviours</h1>
+            <h1 style="font-size: 2.25em; border-bottom: 2px solid rgb(245,255,0); padding: 20px;">Steering Behaviours</h1>
             <h4 style="color: rgba(255,255,255,0.5); font-weight: normal; text-align: center;">Jan 9th, 2023</h4>
             
             <br>

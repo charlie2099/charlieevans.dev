@@ -2247,7 +2247,7 @@ input, select, textarea {
 						height: 3em;
 						line-height: 3em;
 						padding: 0 1.5em;
-						background-color: rgba(255, 255, 255, 0.5);
+						background-color: rgb(26, 28, 35);
 						border-radius: 4px;
 						border: 0;
 						font-size: 0.8em;
@@ -2284,8 +2284,8 @@ input, select, textarea {
 						}
 
 						#header nav ul li a[href="#menu"]:before {
-							background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cstyle%3Eline %7B stroke-width: 8px%3B stroke: %23f2849e%3B %7D%3C/style%3E%3Cline x1='0' y1='25' x2='100' y2='25' /%3E%3Cline x1='0' y1='50' x2='100' y2='50' /%3E%3Cline x1='0' y1='75' x2='100' y2='75' /%3E%3C/svg%3E");
-							opacity: 0;
+							/*background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cstyle%3Eline %7B stroke-width: 8px%3B stroke: %23f2849e%3B %7D%3C/style%3E%3Cline x1='0' y1='25' x2='100' y2='25' /%3E%3Cline x1='0' y1='50' x2='100' y2='50' /%3E%3Cline x1='0' y1='75' x2='100' y2='75' /%3E%3C/svg%3E");
+							opacity: 0;*/
 						}
 
 						#header nav ul li a[href="#menu"]:after {
@@ -2298,7 +2298,8 @@ input, select, textarea {
 						}
 
 						#header nav ul li a[href="#menu"]:hover:after {
-							opacity: 0;
+							opacity: 1;
+							filter: invert(90%) sepia(21%) saturate(832%) hue-rotate(81deg) brightness(150%) contrast(154%); /* Hamburger icon colour: Green */
 						}
 
 		@media screen and (max-width: 736px) {
@@ -2434,8 +2435,10 @@ input, select, textarea {
 			}
 
 			#menu > .close:before {
+				/*
 				background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cstyle%3Eline %7B stroke-width: 8px%3B stroke: %23f2849e%3B %7D%3C/style%3E%3Cline x1='15' y1='15' x2='85' y2='85' /%3E%3Cline x1='85' y1='15' x2='15' y2='85' /%3E%3C/svg%3E");
-				opacity: 0;
+				*/
+				/*opacity: 0;*/
 			}
 
 			#menu > .close:after {
@@ -2448,7 +2451,8 @@ input, select, textarea {
 			}
 
 			#menu > .close:hover:after {
-				opacity: 0;
+				opacity: 1;
+				filter: invert(90%) sepia(21%) saturate(832%) hue-rotate(81deg) brightness(150%) contrast(154%); /* Hamburger icon colour: Green */
 			}
 
 		@media screen and (max-width: 736px) {
@@ -3129,5 +3133,4 @@ input, select, textarea {
 	overflow: hidden;
 	background-color: rgba(0, 0, 0, 0.49);
 }
-
 
