@@ -3081,7 +3081,7 @@ input, select, textarea {
 	background-color: rgba(221, 221, 221, 0.23);
 }
 
-.btn.active {
+.btn.activeBtn {
 	background-color: rgb(131,255,193);
 	color: #000000;
 }
@@ -3099,11 +3099,6 @@ input, select, textarea {
 
 
 /* Dev log pages */
-
-.devloglink {
-	
-}
-
 .devloglink:hover {
 	transition: all .4s ease-in-out;
 	opacity: 0.5;
@@ -3132,10 +3127,6 @@ input, select, textarea {
 
 .active:after {
 	content: "\2796"; /* Unicode character for "minus" sign (-) */
-}
-
-.active, .collapsible:hover {
-	background-color: rgba(131,255,193,0.35);
 }
 
 .collapsibleblock {

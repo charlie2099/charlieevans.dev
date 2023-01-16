@@ -64,7 +64,7 @@
             <!--<h1 style="text-align: center;">BLOG</h1>-->
 
             <div id="myBtnContainer">
-                <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+                <button class="btn activeBtn" onclick="filterSelection('all')"> Show all</button>
                 <button class="btn" onclick="filterSelection('DevLog')"> Development Logs</button>
                 <button class="btn" onclick="filterSelection('Research')"> Research</button>
                 <!--<button class="btn" onclick="filterSelection('Tutorial')"> Tutorials</button>-->
@@ -375,9 +375,9 @@
     var btns = btnContainer.getElementsByClassName("btn");
     for (var i = 0; i < btns.length; i++) {
         btns[i].addEventListener("click", function(){
-            var current = document.getElementsByClassName("active");
-            current[0].className = current[0].className.replace(" active", "");
-            this.className += " active";
+            var current = document.getElementsByClassName("activeBtn");
+            current[0].className = current[0].className.replace(" activeBtn", "");
+            this.className += " activeBtn";
         });
     }
 </script>
