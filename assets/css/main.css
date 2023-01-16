@@ -3122,15 +3122,43 @@ input, select, textarea {
 	font-family: "Montserrat Light";
 }
 
+.collapsible:after {
+	content: '\02795'; /* Unicode character for "plus" sign (+) */
+	font-size: 13px;
+	color: white;
+	float: right;
+	margin-left: 5px;
+}
+
+.active:after {
+	content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+
 .active, .collapsible:hover {
 	background-color: rgba(131,255,193,0.35);
 }
 
 .collapsibleblock {
-	padding: 50px;
-	padding-bottom: 0px;
-	display: none;
 	overflow: hidden;
+	max-height: 0;
+	transition: max-height 0.5s ease-out;
 	background-color: rgba(0, 0, 0, 0.49);
+}
+
+collapsibleblock:after {
+	padding: 0px;
+}
+
+.proslist:before {
+	content: "+";
+	color: #9cff00;
+	font-size: 1.25em;
+	margin-right: 25px;
+}
+.conslist:before {
+	content: "-";
+	color: red;
+	font-size: 1.25em;
+	margin-right: 25px;
 }
 

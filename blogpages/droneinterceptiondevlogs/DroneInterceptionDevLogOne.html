@@ -58,69 +58,88 @@
             <a href="../../skillspage.html" style="float: right; margin: 15px; color: rgba(255, 255, 255, 0.5);"><span class="fa fa-list-alt"></span><span style="color: rgba(131,255,193,0.5);"></span></a>
             <a href="../../index.html" style="float: right; margin: 15px; color: rgba(255, 255, 255, 0.5);"><span class="fa fa-home"></span><span style="color: rgba(131,255,193,0.5);"></span></a>
 
-            <h4 style="border-bottom: 4px solid rgb(131,255,193); padding: 20px;"><strong style="color: rgba(131,255,193,0.5);">Development Log | Drone Interception RTS | <span style="color: rgb(131,255,193);">Log 1: Architecting a Drone Loadout System</span></strong></h4>
+            <h4 style="border-bottom: 4px solid rgb(131,255,193); padding: 20px;"><strong style="color: rgba(131,255,193,0.5);">Development Log | Drone Interception RTS | <span style="color: rgb(131,255,193);">Log 1</span></strong></h4>
 
             <a href="../DroneInterceptionDevLogPage.html" style="color: rgba(255, 255, 255, 0.5);"><h1 class="fa fa-arrow-alt-circle-left" style="font-size: 1.25em;"></h1>Back</a>
 
-            <h1 style="font-size: 2.25em; border-bottom: 2px solid rgb(131,255,193); padding: 20px;">Architecting a Drone Loadout System</h1>
+            <h1 style="font-size: 2.25em; border-bottom: 2px solid rgb(131,255,193); padding: 20px; color: rgb(255,255,255);">Architecting a Drone Loadout System</h1>
             <h4 style="color: rgba(255,255,255,0.5); font-weight: normal; text-align: center;">Jan 10th, 2023</h4>
 
             <br>
-            <h2 style="font-size: 1.75em; letter-spacing: -0.035em; margin: 0 0 0.5em 0; text-transform: none;">Intro</h2>
-            <p>Placeholder</p>
+            <h2 style="font-size: 1.75em; letter-spacing: -0.035em; margin: 0 0 0.5em 0; text-transform: none; color: rgb(255,255,255);">Introduction</h2>
+            <!--<p>Our clients are looking for ways to customize their drones before deploying them. By equipping drones with various components, 
+                they aim to test and improve the effectiveness of their drone intercept capabilities. They desire a playground in which to experiment with different
+                configurations and strategies for intercepting drone swarms. With the ability to easily add or remove components, they can fine-tune their drones to devise 
+                the most effective tactics for drone interception.</p>-->
+
+            <p>Our clients are looking for ways to customize their drones, so that they can easily add or remove components to fine-tune them before deploying them.
+                They desire a playground in which to experiment with different drone configurations in order to test and evaluate the most effective strategies for
+                intercepting drone swarms. To construct such a system it was crucial to gather information on existing approaches to loadout and customisation systems 
+                in published games and the techniques that were employed to build them.</p>
+            
+            <br>
+            <h2 style="font-size: 1.75em; letter-spacing: -0.035em; margin: 0 0 0.5em 0; text-transform: none; color: rgb(255,255,255);">Research</h2>
+            
+            <!--<p>Examples of loadout and customisation systems from published games:</p>-->
+
+            <button type="button" class="collapsible" style="width: 100%; background-color: black;"> <strong style="color: rgba(255,255,255,0.5);">Research | <span style="color: rgb(255, 255, 255);">Examples of Loadout and Customisation Systems</span> </strong></button>
+            <div class="collapsibleblock">
+                <!--<img src="../../images/drone_loadout_moodboard.png" alt="Loadout and Customisation System Examples" style="width: 100%;">-->
+                <img src="../../images/escape_from_tarkov_weapon_customisation.jpg" alt="Escape From Tarkov Weapon Customisation" style="width: 49.75%;">
+                <img src="../../images/DRONE-the-game-overview.jpg" alt="DRONE Overview" style="width: 49.75%;">
+                <img src="../../images/warzone-2-custom-loadout.jpg" alt="Warzone 2 Custom Loadout" style="width: 49.75%;">
+                <img src="../../images/call-of-duty-modern-warfare-classes.jpg" alt="Modern Warfare Custom Class" style="width: 49.75%">
+                <img src="../../images/MW-Gunsmith-Custom.jpg" alt="Modern Warfare Gunsmith" style="width: 49.75%;">
+                <img src="../../images/warzone-2-best-m4-loadout.jpg" alt="Warzone 2 Weapon Loadout" style="width: 49.75%;">
+                <img src="../../images/DRONE-the-game-customisation.jpg" alt="DRONE Customisation" style="width: 49.75%;">
+                <img src="../../images/kerbal-space-program-customisation.jpg" alt="Kerbal Space Program Customisation" style="width: 49.75%;">
+            </div>
+            
+            <br>
+            
+            <button type="button" class="collapsible" style="width: 100%; background-color: black;"> <strong style="color: rgba(255,255,255,0.5);">Research | <span style="color: rgb(255, 255, 255);">Moodboard</span> </strong></button>
+            <div class="collapsibleblock">
+                <img src="../../images/drone_loadout_moodboard.png" alt="Drone Loadout Moodboard" style="width: 100%;">
+            </div>
+            
+            <br>
+            <h2 style="font-size: 1.75em; letter-spacing: -0.035em; margin: 0 0 0.5em 0; text-transform: none; color: rgb(255,255,255);">The Decorator Pattern</h2>
+            <p>The Decorator pattern is part of the structural design pattern family. It permits the addition of new functionalities to an object
+            without altering the object iself. The Decorator wraps the original class making it easy to attach and detach new behaviours to an object.</p>
 
             <br>
-            <img src="../../images/escape_from_tarkov_weapon_customisation.jpg" alt="Escape From Tarkov Weapon Customisation" style="width: 75%;">
-
-            <br>
-            <img src="../../images/warzone-2-best-m4-loadout.jpg" alt="Warzone 2 Weapon Loadout" style="width: 75%;">
-
-            <br>
-            <img src="../../images/warzone-2-custom-loadout.jpg" alt="Warzone 2 Custom Loadout" style="width: 75%;">
-
-            <br>
-            <img src="../../images/MW-Gunsmith-Custom.jpg" alt="Modern Warfare Gunsmith" style="width: 75%;">
-
-            <br>
-            <img src="../../images/call-of-duty-modern-warfare-classes.jpg" alt="Modern Warfare Custom Class" style="width: 75%;">
-
-            <br>
-            <img src="../../images/DRONE-the-game-overview.jpg" alt="DRONE Overview" style="width: 75%;">
-
-            <br>
-            <img src="../../images/DRONE-the-game-customisation.jpg" alt="DRONE Customisation" style="width: 75%;">
-
-            <br>
-            <img src="../../images/kerbal-space-program-customisation.jpg" alt="Kerbal Space Program Customisation" style="width: 75%;">
-
-            <br>
-            <img src="../../images/robo-master.png" alt="RoboMaster" style="width: 50%;">
-
-            <br>
-            <br>
-            <h2 style="font-size: 1.75em; letter-spacing: -0.035em; margin: 0 0 0.5em 0; text-transform: none;">The Decorator Pattern</h2>
-            <p>Placeholder</p>
-
-            <br>
-            <h2 style="font-size: 1.75em; letter-spacing: -0.035em; margin: 0 0 0.5em 0; text-transform: none;">The Factory Pattern</h2>
+            <h3 style="font-size: 1.25em; letter-spacing: -0.035em; margin: 0 0 0.5em 0; text-transform: none; color: rgba(255,255,255,0.75);">Benefits and Drawbacks</h3>
+            <ul style="list-style: none;">
+                <li class="proslist"><span style="font-weight: bold;">Alternative to subclassing</span> - Inheritance doesn't permit extending an object's behaviour 
+                    at runtime</li>
+                <li class="proslist"><span style="font-weight: bold;">Runtime dynamics</span> - Add or remove functionality at runtime, even returning an object to 
+                    it's original form if necessary by removing its decorators</li>
+                
+                <li class="conslist"><span style="font-weight: bold;">Relationship complexity</span> - Can become complicated if there are multiple layers of
+                    decorators wrapped around an object making it difficult to keep track of the chain of initialisation</li>
+                <li class="conslist"><span style="font-weight: bold;">Code complexity</span> - Can add complexity to the code base if several decorator classes
+                    need to be maintained</li>
+            </ul>
+            
+            <h2 style="font-size: 1.75em; letter-spacing: -0.035em; margin: 0 0 0.5em 0; text-transform: none; color: rgb(255,255,255);">The Factory Pattern</h2>
             <p>Placeholder</p>
             
             <br>
-            <h2 style="font-size: 1.75em; letter-spacing: -0.035em; margin: 0 0 0.5em 0; text-transform: none;">Drone Carousel</h2>
+            <h2 style="font-size: 1.75em; letter-spacing: -0.035em; margin: 0 0 0.5em 0; text-transform: none; color: rgb(255,255,255);">Drone Carousel</h2>
             <p>Placeholder</p>
 
             <br>
-            <h2 style="font-size: 1.75em; letter-spacing: -0.035em; margin: 0 0 0.5em 0; text-transform: none;">Goals For Next Time</h2>
+            <h2 style="font-size: 1.75em; letter-spacing: -0.035em; margin: 0 0 0.5em 0; text-transform: none; color: rgb(255,255,255);">Goals Ahead</h2>
             <ul>
                 <li>Research into steering behaviours and play around with producing automonous behaviour for ai agents</li>
             </ul>
 
-            <h2 style="font-size: 1.75em; letter-spacing: -0.035em; margin: 0 0 0.5em 0; text-transform: none;">Assets Used</h2>
+            <h2 style="font-size: 1.75em; letter-spacing: -0.035em; margin: 0 0 0.5em 0; text-transform: none; color: rgb(255,255,255);">Assets Used</h2>
             <ul>
                 <li><a href="" target="_blank" style="text-decoration: underline; color: rgba(131,255,193,0.5);">Placeholder</a></li>
             </ul>
             
-            <h2 style="font-size: 1.75em; letter-spacing: -0.035em; margin: 0 0 0.5em 0; text-transform: none;">Related Works</h2>
+            <h2 style="font-size: 1.75em; letter-spacing: -0.035em; margin: 0 0 0.5em 0; text-transform: none; color: rgb(255,255,255);">Related Works</h2>
             <ul>
                 <li><a href="https://www.c-sharpcorner.com/UploadFile/20c06b/design-patterns-decorator/" target="_blank" style="text-decoration: underline; color: rgba(131,255,193,0.5);">https://www.c-sharpcorner.com/UploadFile/20c06b/design-patterns-decorator/</a></li>
             </ul>
