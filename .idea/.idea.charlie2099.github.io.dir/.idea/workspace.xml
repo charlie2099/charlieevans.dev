@@ -4,9 +4,7 @@
     <list default="true" id="07074e9d-54a0-446b-aeb6-756ccf55e04c" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.charlie2099.github.io.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.charlie2099.github.io.dir/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blogpage.html" beforeDir="false" afterPath="$PROJECT_DIR$/blogpage.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/blogpages/droneinterceptiondevlogs/DroneInterceptionDevLogOne.html" beforeDir="false" afterPath="$PROJECT_DIR$/blogpages/droneinterceptiondevlogs/DroneInterceptionDevLogOne.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -136,6 +134,7 @@
       <workItem from="1673784245334" duration="8390000" />
       <workItem from="1673875949123" duration="11482000" />
       <workItem from="1673888348443" duration="2002000" />
+      <workItem from="1673915720821" duration="6909000" />
     </task>
     <servers />
   </component>
