@@ -2930,7 +2930,7 @@ input, select, textarea {
 }
 @media screen and (max-width: 980px) {
 	.skillstile li {
-		font-size: 18px;
+		font-size: 16px;
 	}
 	
 	/*.projecttilehiddentext {
@@ -2938,6 +2938,12 @@ input, select, textarea {
 		margin: 2px;
 	}*/
 }
+@media screen and (max-width: 736px) {
+	.skillstile li {
+		font-size: 14px;
+	}
+}
+
 /*@media screen and (max-width: 736px) {
 	.projecttilehiddentext {
 		font-size: 12px;
@@ -3043,6 +3049,15 @@ input, select, textarea {
 	/*opacity: 1;*/
 }
 
+.blogtile img {
+	float:right;
+	width: 30%;
+	padding: 20px;
+}
+.blogtile h3 {
+	width: 65%;
+}
+
 .blogtile h3 {
 	padding: 1%;
 	margin: 1%;
@@ -3065,6 +3080,37 @@ input, select, textarea {
 .show {
 	display: block;
 }
+
+
+/* Media Queries */
+@media screen and (max-width: 1280px) {
+	.blogtile img {
+		float:right; 
+		width: 30%;
+		padding: 20px;
+	}
+	.blogtile h3 {
+		width: 65%;
+	}
+}
+@media screen and (max-width: 980px) {
+	
+}
+@media screen and (max-width: 736px) {
+	
+}
+@media screen and (max-width: 480px) {
+	.blogtile img {
+		float: none;
+		width: 100%;
+		padding: 10px;
+	}
+	.blogtile h3 {
+		width: 98%;
+	}
+}
+
+
 
 /* Style the buttons */
 .btn {
