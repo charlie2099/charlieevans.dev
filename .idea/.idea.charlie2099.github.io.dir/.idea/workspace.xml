@@ -5,6 +5,13 @@
       <change beforePath="$PROJECT_DIR$/.idea/.idea.charlie2099.github.io.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.charlie2099.github.io.dir/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/blogpage.html" beforeDir="false" afterPath="$PROJECT_DIR$/blogpage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blogpages/CommandPatternDevLogPage.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blogpages/DroneInterceptionDevLogPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/blogpages/DroneInterceptionDevLogPage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blogpages/LevelEditorDevLogPage.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blogpages/MonopolyCloneDevLogPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/blogpages/MonopolyCloneDevLogPage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blogpages/ProceduralGenerationDevLogPage.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blogpages/SquidstributionDevLogPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/blogpages/SquidstributionDevLogPage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blogpages/StarfleetCommandDevLogPage.html" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -138,6 +145,7 @@
       <workItem from="1673985021577" duration="9763000" />
       <workItem from="1674091065946" duration="5824000" />
       <workItem from="1674238242498" duration="4559000" />
+      <workItem from="1674253824548" duration="4653000" />
     </task>
     <servers />
   </component>
