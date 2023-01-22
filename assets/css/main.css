@@ -91,6 +91,7 @@ input, select, textarea {
 
 	html {
 		box-sizing: border-box;
+		scroll-behavior: smooth;
 	}
 
 	*, *:before, *:after {
@@ -3214,4 +3215,3 @@ collapsibleblock:after {
 	font-size: 1.25em;
 	margin-right: 25px;
 }
-
