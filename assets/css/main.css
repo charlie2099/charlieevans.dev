@@ -2728,7 +2728,7 @@ input, select, textarea {
 	transform: scale(1.1);
 }
 .projecttilehobby:hover {
-	box-shadow: inset 0px 0px 0px 1px rgb(131,131,255), 0px 4px 6px 0px rgb(0, 0, 0);
+	box-shadow: inset 0px 0px 0px 1px rgb(149,163,255), 0px 4px 6px 0px rgb(0, 0, 0);
 	transform: scale(1.1);
 }
 .projecttiledissertation:hover {
@@ -2789,7 +2789,7 @@ input, select, textarea {
 	padding: 10px;
 	text-align: center;
 	outline-style: solid;
-	outline-color: rgb(131,131,255);
+	outline-color: rgb(151,148,255);
 }
 .projecttilehiddentextcontainerdissertation {
 	opacity: 0;
@@ -2902,7 +2902,7 @@ input, select, textarea {
 	line-height: 0;
 }
 .hobbyprojectlabel {
-	color: rgb(131,131,255);
+	color: rgb(151,148,255);
 	line-height: 0;
 }
 .dissertationprojectlabel {
@@ -3126,6 +3126,7 @@ input, select, textarea {
 	color: white;
 	cursor: pointer;
 	font-size: 18px;
+	border-radius: 5px;
 }
 
 .btn:hover {
@@ -3133,8 +3134,9 @@ input, select, textarea {
 }
 
 .btn.activeBtn {
-	background-color: rgb(131,255,193);
-	color: #000000;
+	background-color: rgb(0, 0, 0);/*rgb(131,255,193);*/
+	color: white;
+	border-bottom: 2px solid rgb(131,255,193);
 }
 
 @media screen and (max-width: 1280px) {

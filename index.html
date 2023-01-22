@@ -92,44 +92,70 @@
 							<br>
 							<br>
 							<div id="myBtnContainer">
-								<button class="btn activeBtn" onclick="filterSelection('all')"> Show all</button>
-								<button class="btn" onclick="filterSelection('Hobby')"> Hobby</button>
-								<button class="btn" onclick="filterSelection('University')"> University</button>
-								<button class="btn" onclick="filterSelection('GameJam')"> Game Jams</button>
-								<button class="btn" onclick="filterSelection('WIP')"> Work-In-Progress</button> <!--Work In Progress-->
+								<button class="btn fa solid fa-folder-open activeBtn" onclick="filterSelection('all')"> <span style="font-family: Helvetica;">Show All</span></button>
+								<button class="btn fa solid fa-user" style="color: rgb(155,155,155);" onclick="filterSelection('Solo')"> <span style="color: white; font-family: Helvetica;">Solo</span></button>
+								<button class="btn fa solid fa-users" style="color: rgb(155,155,155);" onclick="filterSelection('Team')"> <span style="color: white; font-family: Helvetica;">Team</span></button>
+								<button class="btn fa solid fa-gamepad" style="color: rgb(151,148,255);" onclick="filterSelection('Hobby')"> <span style="color: white; font-family: Helvetica;">Hobby</span></button>
+								<button class="btn fa solid fa-university" style="color: rgb(131,255,193);" onclick="filterSelection('University')"> <span style="color: white; font-family: Helvetica;">University</span></button>
+								<button class="btn fa solid fa-clock" style="color: rgb(212,129,255);" onclick="filterSelection('GameJam')"> <span style="color: white; font-family: Helvetica;">Game Jams</span></button>
+								<button class="btn fa solid fa-hammer" style="color: #ffaa72;" onclick="filterSelection('WIP')"> <span style="color: white; font-family: Helvetica;">Work-In-Progress</span></button>
+
+								<!--<span class="fa solid fa-user" style="color: rgb(151,148,255); float: right; font-size:0.85em; margin-top: -7px;"><span style="font-family: Helvetica; padding-left: 6px;">1</span></span>-->
 							</div>
 
 							<br>
 							<blockquote>Project tiles may take a moment to load!</blockquote>
 							
 							<section class="tiles">
-								
-								<article class="projecttilehobby filterDiv Hobby WIP">
-									<img style="border-bottom: 4px solid rgb(131,131,255);/*deeppink;*/" src="images/GIFS/StarfleetCommandDemoNew.gif" alt="Starfleet Command Demo Vid" class="projecttileimage">
+
+								<!--<article class="projecttilehobby filterDiv Solo Hobby WIP">
+									<img style="border-bottom: 4px solid rgb(151,148,255);/*deeppink;*/" src="images/GIFS/StarfleetCommandDemoNew.gif" alt="Starfleet Command Demo Vid" class="projecttileimage">
 
 									<div class ="projecttiletext">
+										<span class="fa solid fa-user" style="color: rgb(155,155,155); float: right; font-size:0.85em; margin-top: -7px;"><span style="font-family: Helvetica; padding-left: 6px;">1</span></span>
+										<h3 class="projecttiletitle"><strong>Starfleet Command</strong></h3>
+										<img src="images/Logos/sfml-icon-small.png" alt="SFML logo" style="width: 8%; float: right; margin-top: -0px;">
+										<span class="fa solid fa-gamepad" style="color: rgb(151,148,255); font-size:1.25em;"></span>
+										<span class="fa solid fa-hammer" style="color: #ffaa72; font-size:1.1em; padding-left: 5px;"></span>
+									</div>
+
+									<div class ="projecttilehiddentextcontainerhobby">
+										<p class ="projecttilehiddentext">A 2D space combat RTS made with <span style="color: rgb(151,148,255); font-weight: bold;">C++</span> and the
+											<span style="color: rgb(151,148,255); font-weight: bold;">SFML</span> library. &lt;!&ndash;<a href="starfleetcommandpage.html" style="color: rgba(131,131,255, 0.75); font-weight: bold; text-decoration-line: underline;">Read More...</a>&ndash;&gt;</p>
+
+										<a class = "buttonlink" href = "https://charlie2099.itch.io/starfleet-command" target="_blank"><button class="buttonformat fab fa-itch-io"></button></a>
+										<a class = "buttonlink" href = "https://github.com/charlie2099/Starfleet-Command" target="_blank"><button class = "buttonformat fab fa-github"></button></a>
+									</div>
+								</article>-->
+								<article class="projecttilehobby filterDiv Solo Hobby WIP">
+									<img style="border-bottom: 4px solid rgb(151,148,255);/*deeppink;*/" src="images/GIFS/StarfleetCommandDemoNew.gif" alt="Starfleet Command Demo Vid" class="projecttileimage">
+
+									<div class ="projecttiletext">
+										<span class="fa solid fa-user" style="color: rgb(155,155,155); float: right; font-size:0.85em; margin-top: -7px;"><span style="font-family: Helvetica; padding-left: 6px;">1</span></span>
 										<h3 class="projecttiletitle"><strong>Starfleet Command</strong></h3>
 										<img src="images/Logos/sfml-icon-small.png" alt="SFML logo" style="width: 8%; float: right; margin-top: -10px; padding-bottom: 10px;">
-										<h4 class="hobbyprojectlabel">[ Hobby Project ] <span style="color: #ff9651;">[ WIP ]</span></h4>
+										<h4 class="hobbyprojectlabel">[ Hobby Project ] <span style="color: #ffaa72;">[ WIP ]</span></h4>
 										<!--<h4 style="color: rgb(92,92,255);">( Currently In Development )</h4>--> <!--( Early Development Stage )  ( Still In Development )-->
 									</div>
 
 									<div class ="projecttilehiddentextcontainerhobby">
-										<p class ="projecttilehiddentext">A 2D space combat RTS made with <span style="color: rgb(131,131,255); font-weight: bold;">C++</span> and the
-											<span style="color: rgb(131,131,255); font-weight: bold;">SFML</span> library. <!--<a href="starfleetcommandpage.html" style="color: rgba(131,131,255, 0.75); font-weight: bold; text-decoration-line: underline;">Read More...</a>--></p>
+										<p class ="projecttilehiddentext">A 2D space combat RTS made with <span style="color: rgb(151,148,255); font-weight: bold;">C++</span> and the
+											<span style="color: rgb(151,148,255); font-weight: bold;">SFML</span> library. <!--<a href="starfleetcommandpage.html" style="color: rgba(131,131,255, 0.75); font-weight: bold; text-decoration-line: underline;">Read More...</a>--></p>
 
 										<a class = "buttonlink" href = "https://charlie2099.itch.io/starfleet-command" target="_blank"><button class="buttonformat fab fa-itch-io"></button></a>
 										<a class = "buttonlink" href = "https://github.com/charlie2099/Starfleet-Command" target="_blank"><button class = "buttonformat fab fa-github"></button></a>
 									</div>
 								</article>
+								
 
-								<article class="projecttilehobby filterDiv Hobby WIP">
-									<img style="border-bottom: 4px solid rgb(131,131,255);" src="images/GIFS/SquidstributionRemakeDemoNew.gif" alt="Squidstribution Demo Vid" class="projecttileimage">
+								<article class="projecttilehobby filterDiv Solo Hobby WIP">
+									<img style="border-bottom: 4px solid rgb(151,148,255);" src="images/GIFS/SquidstributionRemakeDemoNew.gif" alt="Squidstribution Demo Vid" class="projecttileimage">
 
 									<div class ="projecttiletext">
+										<span class="fa solid fa-user" style="color: rgb(155,155,155); float: right; font-size:0.85em; margin-top: -7px;"><span style="font-family: Helvetica; padding-left: 6px;">1</span></span>
 										<h3 class="projecttiletitle"><strong>Squidstribution</strong></h3>
 										<img src="images/Logos/unity-logo.png" alt="Unity logo" style="width: 8%; float: right; margin-top: -10px; padding-bottom: 10px;">
-										<h4 class="hobbyprojectlabel">[ Hobby Project ] <span style="color: #ff9651;">[ WIP ]</span></h4>
+										<h4 class="hobbyprojectlabel">[ Hobby Project ] <span style="color: #ffaa72;">[ WIP ]</span></h4>
 									</div>
 
 									<div class ="projecttilehiddentextcontainerhobby">
@@ -137,18 +163,20 @@
 										<p class ="projecttilehiddentext"><span style="font-weight: bold;">Team Size:</span> <span style="color: rgb(131,255,193); font-weight: bold;">5</span></p>
 										<p class ="projecttilehiddentext"><span style="font-weight: bold;">Duration:</span> <span style="color: rgb(131,255,193); font-weight: bold;">3 Weeks</span></p>-->
 										<p class ="projecttilehiddentext">You play a giant kaiju squid that takes revenge on the city that wronged you. Made in
-											<span style="color: rgb(131,131,255); font-weight: bold;">Unity</span>.</p>
+											<span style="color: rgb(151,148,255); font-weight: bold;">Unity</span>.</p>
 
 										<a class = "buttonlink" href = "https://mrchilli.itch.io/squidstribution-remake" target="_blank"><button class = "buttonformat"> <i class="fab fa-itch-io"></i></button></a>
 										<a class = "buttonlink" href = "https://github.com/charlie2099/Squidstribution" target="_blank"><button class = "buttonformat"><i class="fab fa-github"></i></button></a>
 										<a class = "buttonlink" href = "blogpages/SquidstributionDevLogPage.html" target="_blank"><button class = "buttonformat"> <i class="fa fa-file-pdf"></i></button></a>
 									</div>
 								</article>
+								
 							
-								<article class="projecttiledissertation filterDiv University">
+								<article class="projecttiledissertation filterDiv Solo University">
 									<img style="border-bottom: 4px solid rgb(255,123,123);/*deeppink;*/" src="images/GIFS/DirectorAiDemoNew.gif" alt="Director Ai Demo Vid" class="projecttileimage">
 
 									<div class ="projecttiletext">
+										<span class="fa solid fa-user" style="color: rgb(155,155,155); float: right; font-size:0.85em; margin-top: -7px;"><span style="font-family: Helvetica; padding-left: 6px;">1</span></span>
 										<h3 class="projecttiletitle"><strong>Director AI</strong></h3>
 										<img src="images/Logos/unity-logo.png" alt="Unity logo" style="width: 8%; float: right; margin-top: -10px; padding-bottom: 10px;">
 										<h4 class="dissertationprojectlabel">[ Dissertation ]</h4>
@@ -166,11 +194,13 @@
 										<a class = "buttonlink" href = "documents/CCTPFinalReport.pdf" target="_blank"><button class = "buttonformat"> <i class="fa fa-file-pdf"></i></button></a>
 									</div>
 								</article>
+								
 							
-								<article class="projecttilegamejam filterDiv GameJam">
+								<article class="projecttilegamejam filterDiv Team GameJam">
 									<img style="border-bottom: 4px solid rgb(212,129,255);" src="images/GIFS/DiceRunnerDemoNew.gif" alt="Dice Runner Demo Vid" class="projecttileimage">
 
 									<div class ="projecttiletext">
+										<span class="fa solid fa-users" style="color: rgb(155,155,155); float: right; font-size:0.85em; margin-top: -7px;"><span style="font-family: Helvetica; padding-left: 6px;">4</span></span>
 										<h3 class="projecttiletitle"><strong>Dice Runner</strong></h3>
 										<img src="images/Logos/unity-logo.png" alt="Unity logo" style="width: 8%; float: right; margin-top: -10px; padding-bottom: 10px;">
 										<h4 class="gamejamprojectlabel">[ Game Jam ]</h4>
@@ -185,11 +215,13 @@
 										<a class = "buttonlink" href = "https://github.com/WilliamGameDev2000/-GMTK-jam-" target="_blank"><button class = "buttonformat"><i class="fab fa-github"></i></button></a>
 									</div>
 								</article>
+								
 							
-								<article class="projecttileuniversity filterDiv University">
+								<article class="projecttileuniversity filterDiv Solo University">
 									<img style="border-bottom: 4px solid rgb(131,255,193);" src="images/GIFS/OpenWorldStreamingDemoNew.gif" alt="Open World Streaming System Demo Vid" class="projecttileimage">
 
 									<div class ="projecttiletext">
+										<span class="fa solid fa-user" style="color: rgb(155,155,155); float: right; font-size:0.85em; margin-top: -7px;"><span style="font-family: Helvetica; padding-left: 6px;">1</span></span>
 										<h3 class="projecttiletitle"><strong>World Streamer</strong></h3> <!--World Streaming System-->
 										<img src="images/Logos/unity-logo.png" alt="Unity logo" style="width: 8%; float: right; margin-top: -10px; padding-bottom: 10px;">
 										<h4 class="uniprojectlabel">[ University Project ]</h4>
@@ -205,11 +237,13 @@
 										<a class = "buttonlink" href = "documents/OpenWorldStreamingReport.pdf" target="_blank"><button class = "buttonformat"> <i class="fa fa-file-pdf"></i></button></a>
 									</div>
 								</article>
+								
 							
-								<article class="projecttileuniversity filterDiv University">
+								<article class="projecttileuniversity filterDiv Solo University">
 									<img style="border-bottom: 4px solid rgb(131,255,193);" src="images/GIFS/MistsOfTurmoilDemoNew.gif" alt="Mists of Turmoil Demo Vid" class="projecttileimage">
 
 									<div class ="projecttiletext">
+										<span class="fa solid fa-user" style="color: rgb(155,155,155); float: right; font-size:0.85em; margin-top: -7px;"><span style="font-family: Helvetica; padding-left: 6px;">1</span></span>
 										<h3 class="projecttiletitle"><strong>Mists of Turmoil</strong></h3>
 										<img src="images/Logos/unreal-engine-logo.png" alt="Unreal Engine logo" style="width: 8%; float: right; margin-top: -10px; padding-bottom: 10px;">
 										<h4 class="uniprojectlabel">[ University Project ]</h4>
@@ -225,11 +259,13 @@
 										<a class = "buttonlink" href = "documents/MistsOfTurmoilDesignDocument.pdf" target="_blank"><button class = "buttonformat fa fa-file-pdf"></button></a>
 									</div>
 								</article>
+								
 							
-								<article class="projecttileuniversity filterDiv University">
+								<article class="projecttileuniversity filterDiv Solo University">
 									<img style="border-bottom: 4px solid rgb(131,255,193);" src="images/GIFS/ASGETrekDemo.gif" alt="ASGE Trek Demo Vid" class="projecttileimage">
 
 									<div class ="projecttiletext">
+										<span class="fa solid fa-user" style="color: rgb(155,155,155); float: right; font-size:0.85em; margin-top: -7px;"><span style="font-family: Helvetica; padding-left: 6px;">1</span></span>
 										<h3 class="projecttiletitle"><strong>ASGE Trek</strong></h3>
 										<h4 class="uniprojectlabel">[ University Project ]</h4>
 									</div>
@@ -243,11 +279,13 @@
 										<a class = "buttonlink" href = "documents/EGATrekGDDandTDD.pdf" target="_blank"><button class = "buttonformat fa fa-file-pdf"></button></a>
 									</div>
 								</article>
+								
 
-								<article class="projecttileuniversity filterDiv University">
+								<article class="projecttileuniversity filterDiv Team University">
 									<img style="border-bottom: 4px solid rgb(131,255,193);" src="images/GIFS/KojimaWarsDemoNew.gif" alt="Kojima Wars Demo Vid" class="projecttileimage">
 
 									<div class ="projecttiletext">
+										<span class="fa solid fa-users" style="color: rgb(155,155,155); float: right; font-size:0.85em; margin-top: -7px;"><span style="font-family: Helvetica; padding-left: 6px;">30+</span></span>
 										<h3 class="projecttiletitle"><strong>Kojima Wars</strong></h3>
 										<img src="images/Logos/unity-logo.png" alt="Unity logo" style="width: 8%; float: right; margin-top: -10px; padding-bottom: 10px;">
 										<h4 class="uniprojectlabel">[ University Project ]</h4>
@@ -259,16 +297,21 @@
 
 										<a class = "buttonlink" href = "https://github.com/charlie2099/Kojima-Wars" target="_blank"><button class = "buttonformat"><i class="fab fa-github"></i></button></a>
 										<a class = "buttonlink" href = "https://youtu.be/7OOz2uF6fp8" target="_blank"><button class = "buttonformat"> <i class="fab fa-youtube"></i></button></a>
+										
+										<!--<br>
+										<span class="fa solid fa-users" style="float: right; font-size:0.85em;"><span style="font-family: Helvetica; font-weight: normal; padding-left: 6px;">60+</span></span>-->
 									</div>
 								</article>
+								
 
-								<article class="projecttileuniversity filterDiv University WIP">
+								<article class="projecttileuniversity filterDiv Team University WIP">
 									<img style="border-bottom: 4px solid rgb(131,255,193);" src="images/GIFS/DroneInterceptionDemoNew.gif" alt="Drone Interception Demo Vid" class="projecttileimage">
 
 									<div class ="projecttiletext">
+										<span class="fa solid fa-users" style="color: rgb(155,155,155); float: right; font-size:0.85em; margin-top: -7px;"><span style="font-family: Helvetica; padding-left: 6px;">3</span></span>
 										<h3 class="projecttiletitle"><strong>Drone Interception RTS</strong></h3>
 										<img src="images/Logos/unity-logo.png" alt="Unity logo" style="width: 8%; float: right; margin-top: -10px; padding-bottom: 10px;">
-										<h4 class="uniprojectlabel">[ University Project ] <span style="color: #ff9651;">[ WIP ]</span></h4>
+										<h4 class="uniprojectlabel">[ University Project ] <span style="color: #ffaa72;">[ WIP ]</span></h4>
 									</div>
 
 									<div class ="projecttilehiddentextcontaineruniversity">
@@ -279,8 +322,9 @@
 										<a class = "buttonlink" href = "blogpages/DroneInterceptionDevLogPage.html" target="_blank"><button class = "buttonformat"> <i class="fa fa-file-pdf"></i></button></a>
 									</div>
 								</article>
+								
 
-								<!--<article class="projecttileuniversity filterDiv University">
+								<!--<article class="projecttileuniversity filterDiv Solo University">
 									<img style="border-bottom: 4px solid rgb(255,241,0);" src="" alt="ASGE Trek Demo Vid" class="projecttileimage">
 
 									<div class ="projecttiletext">
