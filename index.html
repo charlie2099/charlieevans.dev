@@ -92,19 +92,14 @@
 							<br>
 							<br>
 							<div id="myBtnContainer">
-								<button class="btn fa solid fa-folder-open activeBtn" onclick="filterSelection('all')"> <span style="font-family: Helvetica;">Show All</span></button>
-								<button class="btn fa solid fa-user" style="color: rgb(155,155,155);" onclick="filterSelection('Solo')"> <span style="color: white; font-family: Helvetica;">Solo</span></button>
-								<button class="btn fa solid fa-users" style="color: rgb(155,155,155);" onclick="filterSelection('Team')"> <span style="color: white; font-family: Helvetica;">Team</span></button>
-								<button class="btn fa solid fa-gamepad" style="color: rgb(151,148,255);" onclick="filterSelection('Hobby')"> <span style="color: white; font-family: Helvetica;">Hobby</span></button>
-								<button class="btn fa solid fa-university" style="color: rgb(131,255,193);" onclick="filterSelection('University')"> <span style="color: white; font-family: Helvetica;">University</span></button>
-								<button class="btn fa solid fa-clock" style="color: rgb(212,129,255);" onclick="filterSelection('GameJam')"> <span style="color: white; font-family: Helvetica;">Game Jams</span></button>
-								<button class="btn fa solid fa-hammer" style="color: #ffaa72;" onclick="filterSelection('WIP')"> <span style="color: white; font-family: Helvetica;">Work-In-Progress</span></button>
-
-								<!--<span class="fa solid fa-user" style="color: rgb(151,148,255); float: right; font-size:0.85em; margin-top: -7px;"><span style="font-family: Helvetica; padding-left: 6px;">1</span></span>-->
+								<button class="btn fa solid fa-folder-open activeBtn" onclick="filterSelection('all')"> <span style="font-family: Helvetica; font-weight: normal;">Show All</span></button>
+								<button class="btn fa solid fa-user" style="color: rgb(155,155,155);" onclick="filterSelection('Solo')"> <span style="color: white; font-family: Helvetica; font-weight: normal;">Solo</span></button>
+								<button class="btn fa solid fa-users" style="color: rgb(155,155,155);" onclick="filterSelection('Team')"> <span style="color: white; font-family: Helvetica; font-weight: normal;">Team</span></button>
+								<button class="btn fa solid fa-gamepad" style="color: rgb(151,148,255);" onclick="filterSelection('Hobby')"> <span style="color: white; font-family: Helvetica; font-weight: normal;">Hobby</span></button>
+								<button class="btn fa solid fa-university" style="color: rgb(131,255,193);" onclick="filterSelection('University')"> <span style="color: white; font-family: Helvetica; font-weight: normal;">University</span></button>
+								<button class="btn fa solid fa-clock" style="color: rgb(212,129,255);" onclick="filterSelection('GameJam')"> <span style="color: white; font-family: Helvetica; font-weight: normal;">Game Jams</span></button>
+								<button class="btn fa solid fa-hammer" style="color: #ffaa72;" onclick="filterSelection('WIP')"> <span style="color: white; font-family: Helvetica; font-weight: normal;">Work-In-Progress</span></button>
 							</div>
-
-							<br>
-							<blockquote>Project tiles may take a moment to load!</blockquote>
 							
 							<section class="tiles">
 
@@ -128,14 +123,15 @@
 									</div>
 								</article>-->
 								<article class="projecttilehobby filterDiv Solo Hobby WIP">
+									
 									<img style="border-bottom: 4px solid rgb(151,148,255);/*deeppink;*/" src="images/GIFS/StarfleetCommandDemoNew.gif" alt="Starfleet Command Demo Vid" class="projecttileimage">
 
-									<div class ="projecttiletext">
-										<span class="fa solid fa-user" style="color: rgb(155,155,155); float: right; font-size:0.85em; margin-top: -7px;"><span style="font-family: Helvetica; padding-left: 6px;">1</span></span>
-										<h3 class="projecttiletitle"><strong>Starfleet Command</strong></h3>
-										<img src="images/Logos/sfml-icon-small.png" alt="SFML logo" style="width: 8%; float: right; margin-top: -10px; padding-bottom: 10px;">
-										<h4 class="hobbyprojectlabel">[ Hobby Project ] <span style="color: #ffaa72;">[ WIP ]</span></h4>
-										<!--<h4 style="color: rgb(92,92,255);">( Currently In Development )</h4>--> <!--( Early Development Stage )  ( Still In Development )-->
+									<div class ="projecttiletext" style="margin-bottom: -10px;">
+										<h3 class="projecttiletitle" style="margin-bottom: 25px;"><strong>Starfleet Command</strong></h3>
+										<h4 style="display: inline-block; padding-right: 10px; color: rgb(151,148,255);"><span class="fa solid fa-gamepad" style="font-size:1.25em; padding-right: 5px;"></span>Hobby</h4>
+										<h4 style="display: inline-block; padding-right: 5px; color: #ffaa72;"><span class="fa solid fa-hammer" style="font-size:1.25em; padding-right: 5px;"></span>WIP</h4>
+										<h4 style="float: right; margin-top: 7px; margin-bottom: -10px; color: rgb(155,155,155);"><span class="fa solid fa-user" style="font-size:1.25em; padding-right: 5px;"></span>1</h4>
+										<img style=" float: right; margin-top: 4px; padding-right: 10px; margin-bottom: -6px; width: 10%;" src="images/Logos/sfml-icon-small.png" alt="SFML logo">
 									</div>
 
 									<div class ="projecttilehiddentextcontainerhobby">
@@ -151,11 +147,12 @@
 								<article class="projecttilehobby filterDiv Solo Hobby WIP">
 									<img style="border-bottom: 4px solid rgb(151,148,255);" src="images/GIFS/SquidstributionRemakeDemoNew.gif" alt="Squidstribution Demo Vid" class="projecttileimage">
 
-									<div class ="projecttiletext">
-										<span class="fa solid fa-user" style="color: rgb(155,155,155); float: right; font-size:0.85em; margin-top: -7px;"><span style="font-family: Helvetica; padding-left: 6px;">1</span></span>
-										<h3 class="projecttiletitle"><strong>Squidstribution</strong></h3>
-										<img src="images/Logos/unity-logo.png" alt="Unity logo" style="width: 8%; float: right; margin-top: -10px; padding-bottom: 10px;">
-										<h4 class="hobbyprojectlabel">[ Hobby Project ] <span style="color: #ffaa72;">[ WIP ]</span></h4>
+									<div class ="projecttiletext" style="margin-bottom: -10px;">
+										<h3 class="projecttiletitle" style="margin-bottom: 25px;"><strong>Squidstribution</strong></h3>
+										<h4 style="display: inline-block; padding-right: 10px; color: rgb(151,148,255);"><span class="fa solid fa-gamepad" style="font-size:1.25em; padding-right: 5px;"></span>Hobby</h4>
+										<h4 style="display: inline-block; padding-right: 5px; color: #ffaa72;"><span class="fa solid fa-hammer" style="font-size:1.25em; padding-right: 5px;"></span>WIP</h4>
+										<h4 style="float: right; margin-top: 7px; margin-bottom: -10px; color: rgb(155,155,155);"><span class="fa solid fa-user" style="font-size:1.25em; padding-right: 5px;"></span>1</h4>
+										<img style=" float: right; margin-top: 4px; padding-right: 10px; margin-bottom: -6px; width: 10%;" src="images/Logos/unity-logo.png" alt="Unity logo">
 									</div>
 
 									<div class ="projecttilehiddentextcontainerhobby">
@@ -175,11 +172,11 @@
 								<article class="projecttiledissertation filterDiv Solo University">
 									<img style="border-bottom: 4px solid rgb(255,123,123);/*deeppink;*/" src="images/GIFS/DirectorAiDemoNew.gif" alt="Director Ai Demo Vid" class="projecttileimage">
 
-									<div class ="projecttiletext">
-										<span class="fa solid fa-user" style="color: rgb(155,155,155); float: right; font-size:0.85em; margin-top: -7px;"><span style="font-family: Helvetica; padding-left: 6px;">1</span></span>
-										<h3 class="projecttiletitle"><strong>Director AI</strong></h3>
-										<img src="images/Logos/unity-logo.png" alt="Unity logo" style="width: 8%; float: right; margin-top: -10px; padding-bottom: 10px;">
-										<h4 class="dissertationprojectlabel">[ Dissertation ]</h4>
+									<div class ="projecttiletext" style="margin-bottom: -10px;">
+										<h3 class="projecttiletitle" style="margin-bottom: 25px;"><strong>Director Ai</strong></h3>
+										<h4 style="display: inline-block; padding-right: 5px; color: rgb(255,123,123);"><span class="fa solid fa-university" style="font-size:1.25em; padding-right: 5px;"></span>Bachelor's Thesis</h4>
+										<h4 style="float: right; margin-top: 7px; margin-bottom: -5px; color: rgb(155,155,155);"><span class="fa solid fa-user" style="font-size:1.25em; padding-right: 5px;"></span>1</h4>
+										<img style=" float: right; margin-top: 4px; padding-right: 10px; margin-bottom: -6px; width: 10%;" src="images/Logos/unity-logo.png" alt="Unity logo">
 									</div>
 
 									<div class ="projecttilehiddentextcontainerdissertation">
@@ -199,11 +196,11 @@
 								<article class="projecttilegamejam filterDiv Team GameJam">
 									<img style="border-bottom: 4px solid rgb(212,129,255);" src="images/GIFS/DiceRunnerDemoNew.gif" alt="Dice Runner Demo Vid" class="projecttileimage">
 
-									<div class ="projecttiletext">
-										<span class="fa solid fa-users" style="color: rgb(155,155,155); float: right; font-size:0.85em; margin-top: -7px;"><span style="font-family: Helvetica; padding-left: 6px;">4</span></span>
-										<h3 class="projecttiletitle"><strong>Dice Runner</strong></h3>
-										<img src="images/Logos/unity-logo.png" alt="Unity logo" style="width: 8%; float: right; margin-top: -10px; padding-bottom: 10px;">
-										<h4 class="gamejamprojectlabel">[ Game Jam ]</h4>
+									<div class ="projecttiletext" style="margin-bottom: -10px;">
+										<h3 class="projecttiletitle" style="margin-bottom: 25px;"><strong>Dice Runner</strong></h3>
+										<h4 style="display: inline-block; padding-right: 5px; color: rgb(212,129,255);"><span class="fa solid fa-clock" style="font-size:1.25em; padding-right: 5px;"></span>Game Jam</h4>
+										<h4 style="float: right; margin-top: 7px; margin-bottom: -5px; color: rgb(155,155,155);"><span class="fa solid fa-users" style="font-size:1.25em; padding-right: 5px;"></span>4</h4>
+										<img style=" float: right; margin-top: 4px; padding-right: 10px; margin-bottom: -6px; width: 10%;" src="images/Logos/unity-logo.png" alt="Unity logo">
 									</div>
 
 									<div class ="projecttilehiddentextcontainergamejam">
@@ -220,11 +217,11 @@
 								<article class="projecttileuniversity filterDiv Solo University">
 									<img style="border-bottom: 4px solid rgb(131,255,193);" src="images/GIFS/OpenWorldStreamingDemoNew.gif" alt="Open World Streaming System Demo Vid" class="projecttileimage">
 
-									<div class ="projecttiletext">
-										<span class="fa solid fa-user" style="color: rgb(155,155,155); float: right; font-size:0.85em; margin-top: -7px;"><span style="font-family: Helvetica; padding-left: 6px;">1</span></span>
-										<h3 class="projecttiletitle"><strong>World Streamer</strong></h3> <!--World Streaming System-->
-										<img src="images/Logos/unity-logo.png" alt="Unity logo" style="width: 8%; float: right; margin-top: -10px; padding-bottom: 10px;">
-										<h4 class="uniprojectlabel">[ University Project ]</h4>
+									<div class ="projecttiletext" style="margin-bottom: -10px;">
+										<h3 class="projecttiletitle" style="margin-bottom: 25px;"><strong>World Streamer</strong></h3>
+										<h4 style="display: inline-block; padding-right: 5px; color: rgb(131,255,193);"><span class="fa solid fa-university" style="font-size:1.25em; padding-right: 5px;"></span>University</h4>
+										<h4 style="float: right; margin-top: 7px; margin-bottom: -5px; color: rgb(155,155,155);"><span class="fa solid fa-user" style="font-size:1.25em; padding-right: 5px;"></span>1</h4>
+										<img style=" float: right; margin-top: 4px; padding-right: 10px; margin-bottom: -6px; width: 10%;" src="images/Logos/unity-logo.png" alt="Unity logo">
 									</div>
 
 									<div class ="projecttilehiddentextcontaineruniversity">
@@ -242,11 +239,11 @@
 								<article class="projecttileuniversity filterDiv Solo University">
 									<img style="border-bottom: 4px solid rgb(131,255,193);" src="images/GIFS/MistsOfTurmoilDemoNew.gif" alt="Mists of Turmoil Demo Vid" class="projecttileimage">
 
-									<div class ="projecttiletext">
-										<span class="fa solid fa-user" style="color: rgb(155,155,155); float: right; font-size:0.85em; margin-top: -7px;"><span style="font-family: Helvetica; padding-left: 6px;">1</span></span>
-										<h3 class="projecttiletitle"><strong>Mists of Turmoil</strong></h3>
-										<img src="images/Logos/unreal-engine-logo.png" alt="Unreal Engine logo" style="width: 8%; float: right; margin-top: -10px; padding-bottom: 10px;">
-										<h4 class="uniprojectlabel">[ University Project ]</h4>
+									<div class ="projecttiletext" style="margin-bottom: -10px;">
+										<h3 class="projecttiletitle" style="margin-bottom: 25px;"><strong>Mists of Turmoil</strong></h3>
+										<h4 style="display: inline-block; padding-right: 5px; color: rgb(131,255,193);"><span class="fa solid fa-university" style="font-size:1.25em; padding-right: 5px;"></span>University</h4>
+										<h4 style="float: right; margin-top: 7px; margin-bottom: -5px; color: rgb(155,155,155);"><span class="fa solid fa-user" style="font-size:1.25em; padding-right: 5px;"></span>1</h4>
+										<img style=" float: right; margin-top: 4px; padding-right: 10px; margin-bottom: -6px; width: 10%;" src="images/Logos/unreal-engine-logo.png" alt="Unreal logo">
 									</div>
 
 									<div class ="projecttilehiddentextcontaineruniversity">
@@ -264,10 +261,10 @@
 								<article class="projecttileuniversity filterDiv Solo University">
 									<img style="border-bottom: 4px solid rgb(131,255,193);" src="images/GIFS/ASGETrekDemo.gif" alt="ASGE Trek Demo Vid" class="projecttileimage">
 
-									<div class ="projecttiletext">
-										<span class="fa solid fa-user" style="color: rgb(155,155,155); float: right; font-size:0.85em; margin-top: -7px;"><span style="font-family: Helvetica; padding-left: 6px;">1</span></span>
-										<h3 class="projecttiletitle"><strong>ASGE Trek</strong></h3>
-										<h4 class="uniprojectlabel">[ University Project ]</h4>
+									<div class ="projecttiletext" style="margin-bottom: -10px;">
+										<h3 class="projecttiletitle" style="margin-bottom: 25px;"><strong>ASGE Trek</strong></h3>
+										<h4 style="display: inline-block; padding-right: 5px; color: rgb(131,255,193);"><span class="fa solid fa-university" style="font-size:1.25em; padding-right: 5px;"></span>University</h4>
+										<h4 style="float: right; margin-top: 7px; margin-bottom: -5px; color: rgb(155,155,155);"><span class="fa solid fa-user" style="font-size:1.25em; padding-right: 5px;"></span>1</h4>
 									</div>
 
 									<div class ="projecttilehiddentextcontaineruniversity">
@@ -284,11 +281,11 @@
 								<article class="projecttileuniversity filterDiv Team University">
 									<img style="border-bottom: 4px solid rgb(131,255,193);" src="images/GIFS/KojimaWarsDemoNew.gif" alt="Kojima Wars Demo Vid" class="projecttileimage">
 
-									<div class ="projecttiletext">
-										<span class="fa solid fa-users" style="color: rgb(155,155,155); float: right; font-size:0.85em; margin-top: -7px;"><span style="font-family: Helvetica; padding-left: 6px;">30+</span></span>
-										<h3 class="projecttiletitle"><strong>Kojima Wars</strong></h3>
-										<img src="images/Logos/unity-logo.png" alt="Unity logo" style="width: 8%; float: right; margin-top: -10px; padding-bottom: 10px;">
-										<h4 class="uniprojectlabel">[ University Project ]</h4>
+									<div class ="projecttiletext" style="margin-bottom: -10px;">
+										<h3 class="projecttiletitle" style="margin-bottom: 25px;"><strong>Kojima Wars</strong></h3>
+										<h4 style="display: inline-block; padding-right: 5px; color: rgb(131,255,193);"><span class="fa solid fa-university" style="font-size:1.25em; padding-right: 5px;"></span>University</h4>
+										<h4 style="float: right; margin-top: 7px; margin-bottom: -5px; color: rgb(155,155,155);"><span class="fa solid fa-users" style="font-size:1.25em; padding-right: 5px;"></span>30+</h4>
+										<img style=" float: right; margin-top: 4px; padding-right: 10px; margin-bottom: -6px; width: 10%;" src="images/Logos/unity-logo.png" alt="Unity logo">
 									</div>
 
 									<div class ="projecttilehiddentextcontaineruniversity">
@@ -297,9 +294,6 @@
 
 										<a class = "buttonlink" href = "https://github.com/charlie2099/Kojima-Wars" target="_blank"><button class = "buttonformat"><i class="fab fa-github"></i></button></a>
 										<a class = "buttonlink" href = "https://youtu.be/7OOz2uF6fp8" target="_blank"><button class = "buttonformat"> <i class="fab fa-youtube"></i></button></a>
-										
-										<!--<br>
-										<span class="fa solid fa-users" style="float: right; font-size:0.85em;"><span style="font-family: Helvetica; font-weight: normal; padding-left: 6px;">60+</span></span>-->
 									</div>
 								</article>
 								
@@ -307,11 +301,12 @@
 								<article class="projecttileuniversity filterDiv Team University WIP">
 									<img style="border-bottom: 4px solid rgb(131,255,193);" src="images/GIFS/DroneInterceptionDemoNew.gif" alt="Drone Interception Demo Vid" class="projecttileimage">
 
-									<div class ="projecttiletext">
-										<span class="fa solid fa-users" style="color: rgb(155,155,155); float: right; font-size:0.85em; margin-top: -7px;"><span style="font-family: Helvetica; padding-left: 6px;">3</span></span>
-										<h3 class="projecttiletitle"><strong>Drone Interception RTS</strong></h3>
-										<img src="images/Logos/unity-logo.png" alt="Unity logo" style="width: 8%; float: right; margin-top: -10px; padding-bottom: 10px;">
-										<h4 class="uniprojectlabel">[ University Project ] <span style="color: #ffaa72;">[ WIP ]</span></h4>
+									<div class ="projecttiletext" style="margin-bottom: -10px;">
+										<h3 class="projecttiletitle" style="margin-bottom: 25px;"><strong>Drone Interception RTS</strong></h3>
+										<h4 style="display: inline-block; padding-right: 5px; color: rgb(131,255,193);"><span class="fa solid fa-university" style="font-size:1.25em; padding-right: 5px;"></span>University</h4>
+										<h4 style="display: inline-block; padding-right: 5px; color: #ffaa72;"><span class="fa solid fa-hammer" style="font-size:1.25em; padding-right: 5px;"></span>WIP</h4>
+										<h4 style="float: right; margin-top: 7px; margin-bottom: -5px; color: rgb(155,155,155);"><span class="fa solid fa-users" style="font-size:1.25em; padding-right: 5px;"></span>3</h4>
+										<img style=" float: right; margin-top: 4px; padding-right: 10px; margin-bottom: -6px; width: 10%;" src="images/Logos/unity-logo.png" alt="Unity logo">
 									</div>
 
 									<div class ="projecttilehiddentextcontaineruniversity">
