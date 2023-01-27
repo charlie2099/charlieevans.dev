@@ -1,5 +1,15 @@
 @import url(fontawesome-all.min.css);
-@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,700,900");
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,700,900"); /*&display=swap*/
+
+/*@font-face {
+	font-family: 'Pacifico';
+	font-style: normal;
+	font-weight: 400;
+	src: local('Pacifico Regular'), local('Pacifico-Regular'),
+	url(https://fonts.gstatic.com/s/pacifico/v12/FwZY7-Qmy14u9lezJ-6H6MmBp0u-.woff2)
+	format('woff2');
+	font-display: swap;
+}*/
 
 /*
 	Phantom by HTML5 UP
@@ -22,6 +32,7 @@ section, summary, time, mark, audio, video {
 	padding: 0;
 	border: 0;
 	font-size: 0.975em; /*100%*/
+	/*font-family: Pacifico;*/
 	vertical-align: baseline;}
 
 article, aside, details, figcaption, figure,
@@ -162,6 +173,7 @@ input, select, textarea {
 
 	p {
 		/*margin: 0 0 2em 0;*/
+		/*font-family: Helvetica;*/
 	}
 
 	h1 {
@@ -3038,7 +3050,31 @@ input, select, textarea {
 	/*border-bottom: 4px solid rgb(131,131,255);*/
 }
 
+/* Blog Pages */
+.blogheader1 {
+	font-size: 2.25em;
+	text-align: center;
+	border-bottom: 2px solid rgb(255,255,255);
+	padding: 20px;
+	color: rgb(255,255,255);
+}
 
+.blogheader2 {
+	font-size: 1.75em;
+	letter-spacing: -0.035em;
+	margin: 0 0 0.5em 0;
+	text-transform: none;
+	color: rgb(255,255,255);
+	
+	/*width: 100%; 
+	border-bottom: 2px solid rgb(255,255,255);
+	padding: 10px;
+	font-size: 1.75em;
+	letter-spacing: -0.035em; 
+	margin: 0 0 0.5em 0;
+	text-transform: none;
+	color: rgb(255,255,255);*/
+}
 
 /* Blog page */
 
@@ -3056,6 +3092,13 @@ input, select, textarea {
 	/*opacity: 1;*/
 }
 
+.blogtile video {
+	float:right;
+	width: 30%;
+	margin: 15px;
+	/*margin: 15px;*/
+	/*padding: 20px;*/
+}
 .blogtile img {
 	float:right;
 	width: 30%;
@@ -3088,6 +3131,11 @@ input, select, textarea {
 
 /* Media Queries */
 @media screen and (max-width: 1280px) {
+	.blogtile video {
+		float:right;
+		width: 30%;
+		margin: 15px;
+	}
 	.blogtile img {
 		float:right; 
 		width: 30%;
@@ -3103,6 +3151,11 @@ input, select, textarea {
 @media screen and (max-width: 736px) {
 	.tiles .blogtile {
 		width: 46.2%;
+	}
+	.blogtile video {
+		width: 100%;
+		margin: 0px;
+		padding: 10px;
 	}
 	.blogtile img {
 		width: 100%;
