@@ -159,7 +159,7 @@ input, select, textarea {
 	}
 
 		a:hover {
-			color: rgb(131,255,193) !important;
+			color: rgb(255, 255, 255) !important;
 		}
 
 	strong, b {
@@ -2204,7 +2204,7 @@ input, select, textarea {
 			border-bottom: 0;
 			color: inherit;
 			font-weight: 900;
-			letter-spacing: 0.35em;
+			letter-spacing: 0.15em;
 			margin: 0 0.5em 2.5em 0;
 			text-decoration: none;
 			text-transform: uppercase;
@@ -2311,7 +2311,7 @@ input, select, textarea {
 
 						#header nav ul li a[href="#menu"]:hover:after {
 							opacity: 1;
-							filter: invert(90%) sepia(21%) saturate(832%) hue-rotate(81deg) brightness(150%) contrast(154%); /* Hamburger icon colour: Green */
+							filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(159deg) brightness(106%) contrast(101%); /* Hamburger icon colour: White */
 						}
 
 		@media screen and (max-width: 736px) {
@@ -2357,8 +2357,8 @@ input, select, textarea {
 		max-width: 80%;
 		height: 100%;
 		-webkit-overflow-scrolling: touch;
-		background: #353948;
-		color: #ffffff;
+		background: #191a21;
+		color: inherit;
 		cursor: default;
 		visibility: hidden;
 		z-index: 10002;
@@ -2464,7 +2464,7 @@ input, select, textarea {
 
 			#menu > .close:hover:after {
 				opacity: 1;
-				filter: invert(90%) sepia(21%) saturate(832%) hue-rotate(81deg) brightness(150%) contrast(154%); /* Hamburger icon colour: Green */
+				filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(159deg) brightness(106%) contrast(101%); /* Hamburger icon colour: White */
 			}
 
 		@media screen and (max-width: 736px) {
@@ -2990,28 +2990,28 @@ input, select, textarea {
 }
 
 .fa-twitter:hover {
-	color: rgb(131,255,193 /*48, 197, 255*/); /*rgb(131,255,193)*/
+	color: rgb(255, 255, 255); /*rgb(131,255,193)*/
 }
 .fa-github:hover {
-	color: rgb(131,255,193 /*255, 255, 255*/);
+	color: rgb(255, 255, 255);
 }
 .fa-linkedin:hover {
-	color: rgb(131,255,193 /*48, 103, 255*/);
+	color: rgb(255, 255, 255);
 }
 .fa-slack:hover {
-	color: rgb(131,255,193 /*255, 131, 48*/);
+	color: rgb(255, 255, 255);
 }
 .fa-itch-io:hover {
-	color: rgb(131,255,193 /*240, 88, 88*/);
+	color: rgb(255, 255, 255);
 }
 .fa-youtube:hover {
-	color: rgb(131,255,193 /*255, 48, 48*/);
+	color: rgb(255, 255, 255);
 }
 .fa-file-pdf:hover {
-	color: rgb(131,255,193 /*96, 255, 152*/);
+	color: rgb(255, 255, 255);
 }
 .fa-file-lines:hover {
-	color: rgb(131,255,193 /*96, 255, 152*/);
+	color: rgb(255, 255, 255);
 }
 
 
@@ -3202,7 +3202,7 @@ input, select, textarea {
 .btn.activeBtn {
 	background-color: rgb(0, 0, 0);/*rgb(131,255,193);*/
 	color: white;
-	border-bottom: 2px solid rgb(131,255,193);
+	border-bottom: 2px solid rgb(255, 255, 255);
 }
 
 @media screen and (max-width: 1280px) {
