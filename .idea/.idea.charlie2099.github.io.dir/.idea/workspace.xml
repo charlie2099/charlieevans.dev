@@ -3,12 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="07074e9d-54a0-446b-aeb6-756ccf55e04c" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.charlie2099.github.io.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.charlie2099.github.io.dir/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/blogpage.html" beforeDir="false" afterPath="$PROJECT_DIR$/blogpage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gamepages/DirectorAiGamePage.html" beforeDir="false" afterPath="$PROJECT_DIR$/gamepages/DirectorAiGamePage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/GIFS/MistsOfTurmoilDemo.webm" beforeDir="false" afterPath="$PROJECT_DIR$/images/GIFS/MistsOfTurmoilDemo.webm" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/skillspage.html" beforeDir="false" afterPath="$PROJECT_DIR$/skillspage.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -159,6 +155,7 @@
       <workItem from="1674868154299" duration="1964000" />
       <workItem from="1675039598632" duration="8196000" />
       <workItem from="1675093828074" duration="4560000" />
+      <workItem from="1675125772213" duration="1621000" />
     </task>
     <servers />
   </component>
