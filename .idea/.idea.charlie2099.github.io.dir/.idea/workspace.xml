@@ -3,23 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="07074e9d-54a0-446b-aeb6-756ccf55e04c" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.charlie2099.github.io.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.charlie2099.github.io.dir/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blogpage.html" beforeDir="false" afterPath="$PROJECT_DIR$/blogpage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blogpages/BehaviourTreeDevLogPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/blogpages/BehaviourTreeDevLogPage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blogpages/DroneInterceptionDevLogPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/blogpages/DroneInterceptionDevLogPage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blogpages/MathematicsInAiDevLogPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/blogpages/MathematicsInAiDevLogPage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blogpages/MonopolyCloneDevLogPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/blogpages/MonopolyCloneDevLogPage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blogpages/SquidstributionDevLogPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/blogpages/SquidstributionDevLogPage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blogpages/SteeringBehavioursPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/blogpages/SteeringBehavioursPage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blogpages/behaviourtreedevlogs/BehaviourTreeDevLogOne.html" beforeDir="false" afterPath="$PROJECT_DIR$/blogpages/behaviourtreedevlogs/BehaviourTreeDevLogOne.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blogpages/droneinterceptiondevlogs/DroneInterceptionDevLogOne.html" beforeDir="false" afterPath="$PROJECT_DIR$/blogpages/droneinterceptiondevlogs/DroneInterceptionDevLogOne.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blogpages/droneinterceptiondevlogs/DroneInterceptionDevLogZero.html" beforeDir="false" afterPath="$PROJECT_DIR$/blogpages/droneinterceptiondevlogs/DroneInterceptionDevLogZero.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blogpages/monopolyclonedevlogs/MonopolyCloneDevLogOne.html" beforeDir="false" afterPath="$PROJECT_DIR$/blogpages/monopolyclonedevlogs/MonopolyCloneDevLogOne.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blogpages/squidstributiondevlogs/SquidstributionDevLogOne.html" beforeDir="false" afterPath="$PROJECT_DIR$/blogpages/squidstributiondevlogs/SquidstributionDevLogOne.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gamepages/DirectorAiGamePage.html" beforeDir="false" afterPath="$PROJECT_DIR$/gamepages/DirectorAiGamePage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gamepages/KojimaWarsGamePage.html" beforeDir="false" afterPath="$PROJECT_DIR$/gamepages/KojimaWarsGamePage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gamepages/WorldStreamerGamePage.html" beforeDir="false" afterPath="$PROJECT_DIR$/gamepages/WorldStreamerGamePage.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/skillspage.html" beforeDir="false" afterPath="$PROJECT_DIR$/skillspage.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -173,6 +157,10 @@
       <workItem from="1675125772213" duration="1621000" />
       <workItem from="1675211146236" duration="217000" />
       <workItem from="1675344969028" duration="650000" />
+      <workItem from="1675468735398" duration="130000" />
+      <workItem from="1675468878883" duration="102000" />
+      <workItem from="1675468993896" duration="87000" />
+      <workItem from="1675469092598" duration="1687000" />
     </task>
     <servers />
   </component>
