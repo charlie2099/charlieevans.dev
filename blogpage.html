@@ -66,7 +66,7 @@
                 <li><a href="https://uwegames.slack.com/team/U02H9M78J6A" target="_blank" class="fab fa-slack icon brands"><span class="label">Slack</span></a></li>
                 <li><a href="mailto:charlie.evans2499@gmail.com" target="_blank" class="fab fa-envelope icon"><span class="label">Email</span></a></li>
             </ul>
-            <p style="text-align: center;">&copy; Charlie Evans. All rights reserved. | Design: <a href="https://html5up.net/phantom" target="_blank">Phantom HTML5 UP</a></p>
+            <p style="text-align: center;">&copy; Charlie Evans. All rights reserved. | Homepage Design Template: <a href="https://html5up.net/phantom" target="_blank">Phantom HTML5 UP</a></p>
         </section>
     </nav>
 
@@ -77,7 +77,7 @@
 
             <div id="myBtnContainer">
                 <button class="btn fa solid fa-folder-open activeBtn" onclick="filterSelection('all')"> <span style="font-family: Helvetica; font-weight: normal;">Show All</span></button>
-                <button class="btn fa solid fa-file-lines" style="color: rgb(132,255,128);" onclick="filterSelection('Gamepage')"> <span style="color: white; font-family: Helvetica; font-weight: normal;">Project Pages</span></button>
+                <button class="btn fa solid fa-file-lines" style="color: rgb(132,255,128);" onclick="filterSelection('GamePage')"> <span style="color: white; font-family: Helvetica; font-weight: normal;">Project Pages</span></button>
                 <button class="btn fa solid fa-file-code" style="color: rgb(128,139,255);" onclick="filterSelection('DevLog')"> <span style="color: white; font-family: Helvetica; font-weight: normal;">Development Logs</span></button>
                 <button class="btn fa solid fa-book" style="color: rgb(255,216,128);" onclick="filterSelection('Research')"> <span style="color: white; font-family: Helvetica; font-weight: normal;">Research</span></button>
                 <button class="btn fa solid fa-pen" style="color: rgb(255,128,219);" onclick="filterSelection('Tutorial')"> <span style="color: white; font-family: Helvetica;">Tutorials</span></button>
@@ -85,12 +85,34 @@
 
             <section class="tiles">
 
+                <article class="blogtile filterDiv GamePage">
+                    <a href="gamepages/DirectorAiGamePage.html"></a>
+                    <video autoplay muted loop>
+                        <source src="images/GIFS/DirectorAiDemo.webm" type=video/webm>
+                    </video>
+                    <h3><span style="color: rgb(255,255,255); font-weight: bold;">Director Ai System</span></h3>
+                    <h4 style="color: rgb(132,255,128); font-weight: normal;"><span class="fa solid fa-file-lines"></span> Project Page </h4>
+                    <h4 style="color: rgba(255,255,255,0.5); font-weight: normal;">Jan 30th, 2023 <span style="color: rgb(131,255,193);">(Last Updated: Feb 11th)</span></h4>
+                </article>
+
+                <article class="blogtile filterDiv GamePage" style="opacity: 50%;">
+                    <!--<a href="gamepages/KojimaWarsGamePage.html"></a>-->
+                    <video autoplay muted loop>
+                        <source src="images/GIFS/KojimaWarsDemo.webm" type=video/webm>
+                    </video>
+                    <h3><span style="color: rgb(255,255,255); font-weight: bold;">Kojima Wars</span></h3>
+                    <h4 style="color: rgb(132,255,128); font-weight: normal;"><span class="fa solid fa-file-lines"></span> Project Page </h4>
+                    <h4 style="color: rgba(255,255,255,0.5); font-weight: normal;">Jan 31st, 2023 <span style="color: rgb(131,255,193);">(Last Updated: Jan 31st)</span></h4>
+                </article>
+
                 <article class="blogtile filterDiv DevLog">
                     <a href="blogpages/DroneInterceptionDevLogPage.html"></a>
-                    <img src="images/DroneInterceptionDiagram.png" alt="DroneInterception">
+                    <video autoplay muted loop>
+                        <source src="images/GIFS/DroneInterceptionLoadout.webm" type=video/webm>
+                    </video>
+                    <h3><span style="color: rgb(255,255,255); font-weight: bold;">Drone Interception RTS</span></h3>
+                    <h4 style="color: rgb(128,139,255); font-weight: normal;"><span class="fa solid fa-file-code"></span> Development Log </h4>
                     <h4 style="color: rgba(255,255,255,0.5); font-weight: normal;">Jan 4th, 2023 <span style="color: rgb(131,255,193);">(Last Updated: Jan 16th)</span></h4>
-                    <h3 style="border-bottom: 4px solid rgb(255,255,255);"><strong style="color: rgb(128,139,255); font-weight: normal;"><span class="fa solid fa-file-code"></span> Development Log <span style="color: rgb(255,255,255); font-weight: bold;">| Drone Interception RTS</span></strong></h3>
-                    <p>A two-player strategy game where players outfit drones to attack or defend against each others drone swarms.</p>
                 </article>
 
                 <!--<article class="blogtile filterDiv DevLog">
@@ -127,7 +149,7 @@
                     <p>A networked first-person shooter tackled by a cohort-led team, made with Unity.</p>
                 </article>
 
-                <article class="blogtile filterDiv Gamepage">
+                <article class="blogtile filterDiv GamePage">
                     <a href="gamepages/WorldStreamerGamePage.html"></a>
                     <video autoplay muted loop>
                         <source src="images/GIFS/WorldStreamerDemo.webm" type=video/webm>
@@ -135,17 +157,6 @@
                     <h4 style="color: rgba(255,255,255,0.5); font-weight: normal;">Jan 31st, 2023 <span style="color: rgb(131,255,193);">(Last Updated: Jan 31st)</span></h4>
                     <h3 style="border-bottom: 4px solid rgb(255,255,255);"><strong style="color: rgb(132,255,128); font-weight: normal;"><span class="fa solid fa-file-lines"></span> Project Page <span style="color: rgb(255,255,255); font-weight: bold;">| World Streamer</span></strong></h3>
                     <p>An open-world streaming system for loading assets at runtime made with Unity.</p>
-                </article>
-
-                <article class="blogtile filterDiv Gamepage">
-                    <a href="gamepages/DirectorAiGamePage.html"></a>
-                    <video autoplay muted loop>
-                        <source src="images/GIFS/DirectorAiDemo.webm" type=video/webm>
-                    </video>
-                    <h4 style="color: rgba(255,255,255,0.5); font-weight: normal;">Jan 30th, 2023 <span style="color: rgb(131,255,193);">(Last Updated: Jan 30th)</span></h4>
-                    <h3 style="border-bottom: 4px solid rgb(255,255,255);"><strong style="color: rgb(132,255,128); font-weight: normal;"><span class="fa solid fa-file-lines"></span> Project Page <span style="color: rgb(255,255,255); font-weight: bold;">| Director Ai System</span></strong></h3>
-                    <p>A rule-based ai system that manages the intensity of gameplay and allows designers to define 
-                        their own rules for shooter and survival games.</p>
                 </article>-->
                 
                 
@@ -381,7 +392,7 @@
                     <li><a href="https://twitter.com/charlieevans203" target="_blank" class="fab fa-twitter icon brands"><span class="label">Twitter</span></a></li>
                     <li><a href="https://uwegames.slack.com/team/U02H9M78J6A" target="_blank" class="fab fa-slack icon brands"><span class="label">Slack</span></a></li>
                 </ul>
-                <p>&copy; Charlie Evans. All rights reserved. | Design: <a href="https://html5up.net/phantom" target="_blank">Phantom HTML5 UP</a></p>
+                <p>&copy; Charlie Evans. All rights reserved. | Homepage Design Template: <a href="https://html5up.net/phantom" target="_blank">Phantom HTML5 UP</a></p>
             </section>
         </div>
     </footer>
