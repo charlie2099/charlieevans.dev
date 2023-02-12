@@ -78,16 +78,14 @@
     <div id="main" style="max-width: 50em; margin: 0 auto;">
         <div class="inner">
 
-            <a href="../../blogpage.html" style="float: right; margin: 15px; color: rgba(255, 255, 255, 0.5);"><span class="fa fa-edit"></span><span style="color: rgba(131,255,193,0.5);"></span></a>
-            <a href="../../skillspage.html" style="float: right; margin: 15px; color: rgba(255, 255, 255, 0.5);"><span class="fa fa-list-alt"></span><span style="color: rgba(131,255,193,0.5);"></span></a>
-            <a href="../../index.html" style="float: right; margin: 15px; color: rgba(255, 255, 255, 0.5);"><span class="fa fa-home"></span><span style="color: rgba(131,255,193,0.5);"></span></a>
+            <a href="../../blogpage.html" style="float: right; margin-top: 10px; margin-left: 3px; margin-right: 3px; color: rgba(255, 255, 255, 0.5);"><button class="btn fa fa-edit"></button></a>
+            <a href="../../skillspage.html" style="float: right; margin-top: 10px; margin-left: 3px; margin-right: 3px; color: rgba(255, 255, 255, 0.5);"><button class="btn fa fa-list-alt"></button></a>
+            <a href="../../index.html" style="float: right; margin-top: 10px; margin-left: 3px; margin-right: 3px; color: rgba(255, 255, 255, 0.5);"><button class="btn fa fa-home"></button></a>
 
-            <h3 style="border-bottom: 4px solid rgb(255,255,255); padding: 20px; font-size: 0.85em;"><strong style="color: rgb(128,139,255); font-weight: normal;"><span class="fa solid fa-file-code"></span> Development Log <span style="color: rgba(255, 255, 255, 0.5); font-weight: bold;">| Drone Interception RTS </span> <span style="color: rgba(255, 255, 255, 1); font-weight: bold;">| Log 1</span> </strong></h3>
+            <h3 style="border-bottom: 4px solid rgb(255,255,255); padding: 20px; font-size: 0.85em;"><strong style="color: rgb(128,139,255); font-weight: normal;"><span class="fa solid fa-file-code"></span> Development Log <span style="color: rgba(255, 255, 255, 0.5); font-weight: bold;">| Drone Interception RTS </span> <span style="color: rgba(255, 255, 255, 1); font-weight: bold;">| Log 2</span> </strong></h3>
 
-            <a href="../DroneInterceptionDevLogPage.html" style="color: rgba(255, 255, 255, 0.5);"><h1 style="font-size: 1.25em; text-decoration: underline; float: left;">Back</h1></a>
-           
-            <br>
-            <br>
+            <a href="../DroneInterceptionDevLogPage.html"><button class="btn"> <span style="font-family: 'Lato', sans-serif; font-weight: normal; font-size: 1.1em; text-decoration: underline;">Back</span></button></a>
+            
             <h1 class="blogheader1">Architecting a Drone Loadout System</h1>
             <h4 style="color: rgba(255,255,255,0.5); font-weight: normal; text-align: center;">Jan 10th, 2023</h4>
 
@@ -124,16 +122,16 @@
             </div>
             
             <br>
-            <h3 style="font-size: 1.25em; letter-spacing: -0.035em; margin: 0 0 0.5em 0; text-transform: none; color: rgba(255,255,255,0.75);">The Decorator Pattern</h3>
+            <h3 class="blogheader3">The Decorator Pattern</h3>
             <p>The Decorator pattern is part of the structural design pattern family. It permits the addition of new functionalities to an object
             without altering the object iself. The Decorator wraps the original class making it easy to attach and detach new behaviours to an object.</p>
-            <br>
+            
             <p>The Decorator pattern is heavily dependant on using a class constructor. With native Unity API classes however (Monobehaviour, ScriptableObject)
                 the engine takes care of initialising classes that are attached to GameObjects (in the case of MonoBehaviours). Initialisation code is expected 
                 to be used in Unity's Awake() and Start() callbacks. Therefore, to use the Decorator pattern while still taking advantage of the core Unity API 
                 features, it must be adapted.</p>
             
-            <h4 style="font-size: 1.10em; letter-spacing: -0.035em; margin: 0 0 0.5em 0; text-transform: none; color: rgba(255,255,255,0.75);">Benefits and Drawbacks</h4>
+            <h4 class="blogheader4">Benefits and Drawbacks</h4>
             <ul style="list-style: none;">
                 <li class="proslist"><span style="font-weight: bold;">Alternative to subclassing</span> - Inheritance doesn't permit extending an object's behaviour 
                     at runtime</li>
@@ -146,7 +144,7 @@
                     need to be maintained</li>
             </ul>
 
-            <h4 style="font-size: 1.10em; letter-spacing: -0.035em; margin: 0 0 0.5em 0; text-transform: none; color: rgba(255,255,255,0.75);">Decorator Use Cases</h4>
+            <h4 class="blogheader4">Decorator Use Cases</h4>
             <ul>
                 <li><span style="font-weight: bold;">Collectible card game</span> - Augmenting base card powers with artifact cards</li>
                 <li><span style="font-weight: bold;">Wardrobe system</span> - Decorating player characters with armour and accessories to buff specific stats</li>
@@ -199,8 +197,8 @@
             <a href="" style="color: rgba(255, 255, 255, 0.5);"><h1 class="fa fa-arrow-alt-circle-right" style="font-size: 1.25em; display: inline; float: right;">Next Post</h1></a>-->
             
             <br>
-            <a href="DroneInterceptionDevLogZero.html" style="color: rgba(255, 255, 255, 0.5);"><h1 style="font-size: 1.25em; text-decoration: underline; display: inline; float: left;">Previous Post</h1></a>
-            <a href="" style="color: rgba(255, 255, 255, 0.5);"><h1 style="font-size: 1.25em; text-decoration: underline; display: inline; float: right;">Next Post</h1></a>
+            <a href="DroneInterceptionDevLogOne.html" style="display: inline; float: left;"><button class="btn"> <span style="font-family: 'Lato', sans-serif; font-weight: normal; font-size: 1.1em; text-decoration: underline;">Previous Post</span></button></a>
+            <a href="" style="display: inline; float: right;"><button class="btn"> <span style="font-family: 'Lato', sans-serif; font-weight: normal; font-size: 1.1em; text-decoration: underline;">Next Post</span></button></a>
 
             <br>
             <br>
