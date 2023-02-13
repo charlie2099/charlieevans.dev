@@ -32,8 +32,10 @@ section, summary, time, mark, audio /*, video*/ {
 	padding: 0;
 	border: 0;
 	font-size: 0.975em; /*100%*/
+	letter-spacing: 0.05em;
 	/*font-family: Pacifico;*/
-	vertical-align: baseline;}
+	vertical-align: baseline;
+}
 
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
@@ -171,8 +173,13 @@ input, select, textarea {
 	}
 
 	p {
+		font-size: 0.9em;
+		/*letter-spacing: 0.05em;*/
 		/*margin: 0 0 2em 0;*/
 		/*font-family: Helvetica;*/
+	}
+	li {
+		font-size: 0.93em;
 	}
 
 	h1 {
@@ -272,6 +279,7 @@ input, select, textarea {
 	blockquote {
 		border-left: solid 4px #c9c9c9;
 		font-style: italic;
+		font-size: 0.9em;
 		margin: 0 0 2em 0;
 		padding: 0.5em 0 0.5em 2em;
 	}
@@ -2200,10 +2208,8 @@ input, select, textarea {
 	}
 
 		#header .logo {
-			display: block;
 			border-bottom: 0;
 			color: inherit;
-			font-weight: 900;
 			letter-spacing: 0.15em;
 			margin: 0 0.5em 2.5em 0;
 			text-decoration: none;
@@ -2761,6 +2767,7 @@ input, select, textarea {
 	text-align: left;
 	margin: 20px;
 	color: rgb(255, 255, 255);
+	font-size: medium;
 }
 
 .projecttilehiddentext {
@@ -2911,6 +2918,8 @@ input, select, textarea {
 
 .projecttiletitle {
 	line-height: 0;
+	margin-bottom: 25px;
+	font-weight: normal;
 }
 .hobbyprojectlabel {
 	color: rgb(151,148,255);
@@ -3053,14 +3062,17 @@ input, select, textarea {
 /* Blog Pages */
 .blogheader1 {
 	font-size: 2.25em;
+	font-weight: normal;
 	text-align: center;
 	border-bottom: 2px solid rgb(255,255,255);
 	padding: 20px;
 	color: rgb(255,255,255);
+	letter-spacing: 0.05em;
 }
 
 .blogheader2 {
 	font-size: 1.5em;
+	font-weight: normal;
 	letter-spacing: -0.035em;
 	margin: 0 0 0.5em 0;
 	text-transform: none;
@@ -3068,7 +3080,8 @@ input, select, textarea {
 }
 
 .blogheader3 {
-	font-size: 1.15em; 
+	font-size: 1.15em;
+	font-weight: normal;
 	letter-spacing: -0.035em;
 	margin: 0 0 0.5em 0; 
 	text-transform: none;
@@ -3077,6 +3090,7 @@ input, select, textarea {
 
 .blogheader4 {
 	font-size: 1em;
+	font-weight: normal;
 	letter-spacing: -0.035em;
 	margin: 0 0 0.5em 0;
 	text-transform: none; 
@@ -3173,6 +3187,8 @@ input, select, textarea {
 	cursor: pointer;
 	font-size: 18px;
 	border-radius: 5px;
+	letter-spacing: 0.10em;
+	margin-bottom: 10px;
 }
 
 .btn:hover {

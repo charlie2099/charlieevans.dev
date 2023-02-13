@@ -32,7 +32,7 @@
     }
 </style>
 
-<body> <!--class="is-preload"-->
+<body><!--class="is-preload"-->
 <!-- Wrapper -->
 <div id="wrapper">
 
@@ -81,124 +81,71 @@
             <a href="../../blogpage.html" style="float: right; margin-top: 10px; margin-left: 3px; margin-right: 3px; color: rgba(255, 255, 255, 0.5);"><button class="btn fa fa-edit"></button></a>
             <a href="../../skillspage.html" style="float: right; margin-top: 10px; margin-left: 3px; margin-right: 3px; color: rgba(255, 255, 255, 0.5);"><button class="btn fa fa-list-alt"></button></a>
             <a href="../../index.html" style="float: right; margin-top: 10px; margin-left: 3px; margin-right: 3px; color: rgba(255, 255, 255, 0.5);"><button class="btn fa fa-home"></button></a>
-
-            <h3 style="border-bottom: 4px solid rgb(255,255,255); padding: 20px; font-size: 0.85em;"><strong style="color: rgb(128,139,255); font-weight: normal;"><span class="fa solid fa-file-code"></span> Development Log <span style="color: rgba(255, 255, 255, 0.5); font-weight: bold;">| Drone Interception RTS </span> <span style="color: rgba(255, 255, 255, 1); font-weight: bold;">| Log 2</span> </strong></h3>
-
+            
+            <h3 style="border-bottom: 4px solid rgb(255,255,255); padding: 20px; font-size: 0.85em;"><strong style="color: rgb(128,139,255); font-weight: normal;"><span class="fa solid fa-file-code"></span> Development Log <span style="color: rgba(255, 255, 255, 0.5);">| Drone Interception RTS </span> <span style="color: rgba(255, 255, 255, 1);">| Log 1</span> </strong></h3>
+            
             <a href="../DroneInterceptionDevLogPage.html"><button class="btn"> <span style="font-family: 'Lato', sans-serif; font-weight: normal; font-size: 1.1em; text-decoration: underline;">Back</span></button></a>
-            
-            <h1 class="blogheader1">Architecting a Drone Loadout System</h1>
-            <h4 style="color: rgba(255,255,255,0.5); font-weight: normal; text-align: center;">Jan 10th, 2023</h4>
+          
+            <h1 class="blogheader1">Project Introduction</h1>
+            <h4 style="color: rgba(255,255,255,0.5); font-weight: normal; text-align: center;">Jan 4th, 2023</h4>
+            <blockquote>A group project undertaken at University as part of our Research and Development module.</blockquote>
 
-            <br>
-            <h2 class="blogheader2">Introduction</h2>
+            <!-- Brief -->
+            <h2 class="blogheader2">The Brief</h2>
+            <blockquote>"Lots of interception strategies have been proposed from one-on-one to launch everything. The best way to
+                evaluate the most effective interception strategy is for people to play a simulation or game in which ‘offensive’ 
+                player(s) try ideas to get through and ‘defensive’ player(s) try to intercept them. A simulation/game could allow 
+                players to customise their drones with different capabilities. However, a player’s resources are limited so 
+                larger/more complex drones means fewer drones. What is the optimal balance? Devise a game/simulator which 
+                demonstrates how a swarm of drones can be intercepted by another swarm of drones."</blockquote>
 
-            <p>Our clients are looking for ways to customize their drones, so that they can easily add or remove components to fine-tune them before deploying them.
-                They desire a playground in which to experiment with different drone configurations in order to test and evaluate the most effective strategies for
-                intercepting drone swarms. To construct such a system it was crucial to gather information on existing approaches to loadout and customisation systems 
-                in published games and the techniques that were employed to build them.</p>
-            
-            <h2 class="blogheader2">Research</h2>
-            
-            <!--<p>Examples of loadout and customisation systems from published games:</p>-->
-
-            <!--<button type="button" class="collapsible" style="width: 100%; background-color: black;"> <strong style="color: rgba(255,255,255,0.5);">Research | <span style="color: rgb(255, 255, 255);">Examples of Loadout and Customisation Systems</span> </strong></button>
-            <div class="collapsibleblock">
-                &lt;!&ndash;<img src="../../images/drone_loadout_moodboard.png" alt="Loadout and Customisation System Examples" style="width: 100%;">&ndash;&gt;
-                <img src="../../images/escape_from_tarkov_weapon_customisation.jpg" alt="Escape From Tarkov Weapon Customisation" style="width: 49.75%;">
-                <img src="../../images/DRONE-the-game-overview.jpg" alt="DRONE Overview" style="width: 49.75%;">
-                <img src="../../images/warzone-2-custom-loadout.jpg" alt="Warzone 2 Custom Loadout" style="width: 49.75%;">
-                <img src="../../images/call-of-duty-modern-warfare-classes.jpg" alt="Modern Warfare Custom Class" style="width: 49.75%">
-                <img src="../../images/MW-Gunsmith-Custom.jpg" alt="Modern Warfare Gunsmith" style="width: 49.75%;">
-                <img src="../../images/warzone-2-best-m4-loadout.jpg" alt="Warzone 2 Weapon Loadout" style="width: 49.75%;">
-                <img src="../../images/DRONE-the-game-customisation.jpg" alt="DRONE Customisation" style="width: 49.75%;">
-                <img src="../../images/kerbal-space-program-customisation.jpg" alt="Kerbal Space Program Customisation" style="width: 49.75%;">
-            </div>
-            
-            <br>-->
-            
-            <button type="button" class="collapsible" style="width: 100%;"> <strong style="color: rgba(255,255,255,0.5);">Research | <span style="color: rgb(255, 255, 255);">Moodboard</span> </strong></button>
-            <div class="collapsibleblock">
-                <img src="../../images/drone_loadout_moodboard_new.png" alt="Drone Loadout Moodboard" style="width: 100%;">
-            </div>
-            
-            <br>
-            <h3 class="blogheader3">The Decorator Pattern</h3>
-            <p>The Decorator pattern is part of the structural design pattern family. It permits the addition of new functionalities to an object
-            without altering the object iself. The Decorator wraps the original class making it easy to attach and detach new behaviours to an object.</p>
-            
-            <p>The Decorator pattern is heavily dependant on using a class constructor. With native Unity API classes however (Monobehaviour, ScriptableObject)
-                the engine takes care of initialising classes that are attached to GameObjects (in the case of MonoBehaviours). Initialisation code is expected 
-                to be used in Unity's Awake() and Start() callbacks. Therefore, to use the Decorator pattern while still taking advantage of the core Unity API 
-                features, it must be adapted.</p>
-            
-            <h4 class="blogheader4">Benefits and Drawbacks</h4>
-            <ul style="list-style: none;">
-                <li class="proslist"><span style="font-weight: bold;">Alternative to subclassing</span> - Inheritance doesn't permit extending an object's behaviour 
-                    at runtime</li>
-                <li class="proslist"><span style="font-weight: bold;">Runtime dynamics</span> - Add or remove functionality at runtime, even returning an object to 
-                    it's original form if necessary by removing its decorators</li>
-                
-                <li class="conslist"><span style="font-weight: bold;">Relationship complexity</span> - Can become complicated if there are multiple layers of
-                    decorators wrapped around an object making it difficult to keep track of the chain of initialisation</li>
-                <li class="conslist"><span style="font-weight: bold;">Code complexity</span> - Can add complexity to the code base if several decorator classes
-                    need to be maintained</li>
-            </ul>
-
-            <h4 class="blogheader4">Decorator Use Cases</h4>
-            <ul>
-                <li><span style="font-weight: bold;">Collectible card game</span> - Augmenting base card powers with artifact cards</li>
-                <li><span style="font-weight: bold;">Wardrobe system</span> - Decorating player characters with armour and accessories to buff specific stats</li>
-            </ul>
-            
-            <!--<h3 style="font-size: 1.25em; letter-spacing: -0.035em; margin: 0 0 0.5em 0; text-transform: none; color: rgba(255,255,255,0.75);">The Factory Pattern</h3>
-            <p>Text</p>-->
-            
-            <h2 class="blogheader2">Implementation</h2>
-            
-            <button type="button" class="collapsible" style="width: 100%;"> <strong style="color: rgba(255,255,255,0.5);">Code Snippet | <span style="color: rgb(255, 255, 255);">Drone Decorator</span> </strong></button>
-            <div class="collapsibleblock">
-                <pre>
-                    <code>// code</code>
-                </pre>
-            </div>
-            
-            <button type="button" class="collapsible" style="width: 100%;"> <strong style="color: rgba(255,255,255,0.5);">Code Snippet | <span style="color: rgb(255, 255, 255);">Drone Carousel</span> </strong></button>
-            <div class="collapsibleblock">
-                <pre>
-                    <code>// code</code>
-                </pre>
-            </div>
-
+            <!--<img src="../../images/DroneInterceptionDiagram.png" alt="DroneInterception" style="width: 100%;">-->
             <!--<br>
-            <h3 style="font-size: 1.25em; letter-spacing: -0.035em; margin: 0 0 0.5em 0; text-transform: none; color: rgba(255,255,255,0.75);">Drone Carousel</h3>
-            <p>Text</p>
             <br>-->
-            
+
+            <!-- Intro -->
+            <!--<p>We were tasked with designing a game or simulation that will allow drones to be effectively tested in a virtual 
+                environment to evaluate the best strategies for <span style="color: rgb(255,255,255);">intercepting drone swarms</span>.</p>
+            <br>-->
+
+            <!-- Finalised Concept -->
+            <h2 class="blogheader2">Finalised Concept</h2>
+            <p>As a group we decided on the following idea: a <span style="color: rgb(255,255,255);">two-player strategy game</span> where
+                players <span style="color: rgb(255,255,255);">outfit drones</span> to attack or defend against each others drone swarms.
+                Both players are given <span style="color: rgb(255,255,255);">limited resources</span> to outfit their arsenal of drones. 
+                The drones are mostly <span style="color: rgb(255,255,255);">self-autonomous</span>, but each player is given some
+                <span style="color: rgb(255,255,255);">high-level of control</span> to issue basic commands. <!--Drones are utilised in
+                streamed-in, real-world environments.--></p>
             <!--<br>
-            <h2 style="width: 100%; border-bottom: 2px solid rgb(255,255,255); padding: 10px; font-size: 1.75em; letter-spacing: -0.035em; margin: 0 0 0.5em 0; text-transform: none; color: rgb(255,255,255);">Goals Ahead</h2>
-            <ul>
-                <li>Research into steering behaviours and play around with producing automonous behaviour for ai agents</li>
-            </ul>
+            <p>After discussion with the clients we narrowed down the requirements for the alpha stage.</p>-->
 
-            <h2 style="width: 100%; border-bottom: 2px solid rgb(255,255,255); padding: 10px; font-size: 1.75em; letter-spacing: -0.035em; margin: 0 0 0.5em 0; text-transform: none; color: rgb(255,255,255);">Assets Used</h2>
-            <ul>
-                <li><a href="" target="_blank" style="text-decoration: underline; color: rgba(131,255,193,0.5);">Placeholder</a></li>
-            </ul>
-            
-            <h2 style="width: 100%; border-bottom: 2px solid rgb(255,255,255); padding: 10px; font-size: 1.75em; letter-spacing: -0.035em; margin: 0 0 0.5em 0; text-transform: none; color: rgb(255,255,255);">Related Works</h2>
-            <ul>
-                <li><a href="https://www.c-sharpcorner.com/UploadFile/20c06b/design-patterns-decorator/" target="_blank" style="text-decoration: underline; color: rgba(131,255,193,0.5);">https://www.c-sharpcorner.com/UploadFile/20c06b/design-patterns-decorator/</a></li>
-            </ul>-->
-            
-            <!--<a href="DroneInterceptionDevLogZero.html" style="color: rgba(255, 255, 255, 0.5);"><h1 class="fa fa-arrow-alt-circle-left" style="font-size: 1.25em;"></h1>Project Introduction</a>
-            <a href="" style="color: rgba(255, 255, 255, 0.5);">Drone Movement Using Steering Behaviours<h1 class="fa fa-arrow-alt-circle-right" style="font-size: 1.25em;"></h1></a>-->
-
-            <!--<a href="DroneInterceptionDevLogZero.html" style="color: rgba(255, 255, 255, 0.5);"><h1 class="fa fa-arrow-alt-circle-left" style="font-size: 1.25em; display: inline; float: left;">Previous Post</h1></a>
-            <a href="" style="color: rgba(255, 255, 255, 0.5);"><h1 class="fa fa-arrow-alt-circle-right" style="font-size: 1.25em; display: inline; float: right;">Next Post</h1></a>-->
-            
+            <!-- Key Objectives -->
             <br>
-            <a href="DroneInterceptionDevLogOne.html" style="display: inline; float: left;"><button class="btn"> <span style="font-family: 'Lato', sans-serif; font-weight: normal; font-size: 1.1em; text-decoration: underline;">Previous Post</span></button></a>
-            <a href="" style="display: inline; float: right;"><button class="btn"> <span style="font-family: 'Lato', sans-serif; font-weight: normal; font-size: 1.1em; text-decoration: underline;">Next Post</span></button></a>
+            <h2 class="blogheader2">Key Objectives</h2>
+            <ul>
+                <li>Stream in <span style="color: rgb(255,255,255);">real-world locations</span> to test drones more effectively</li>
+                <li>Build a <span style="color: rgb(255,255,255);">loadout system</span> that enables drones to be outfitted with components</li>
+                <li>Be able to <span style="color: rgb(255,255,255);">issue commands</span> to drones to control their behaviour</li>
+                <li>Develop a replayability system to provide <span style="color: rgb(255,255,255);">post-match analytics</span></li>
+                <li>Utilise both <span style="color: rgb(255,255,255);">PvE</span> and <span style="color: rgb(255,255,255);">PvP</span> game environments for testing drones against</li>
+            </ul>
+
+            <!-- Mechanics -->
+            <h2 class="blogheader2">Game Mechanics</h2>
+            <ul>
+                <li>Drone Classes</li>
+                <li>Drone Swarm Movement - Flocking Behaviour</li>
+                <li>Drone Swarm Combat - Decision-making Techniques To Control Ai Behaviour</li>
+                <li>Drone Customisation</li>
+                <li>Resource Budgeting</li>
+                <li>Strategic Drone/Defense Placement - Tactical Map</li>
+                <li>Replayability System</li>
+                <li>PvE and PvP Game Environments</li>
+                <li>Mission System</li>
+                <li>Dynamic Weather - Strong Winds, Heavy Fog</li>
+            </ul>
+            
+            <a href="DroneInterceptionDevLogTwo.html" style="display: inline; float: right;"><button class="btn"> <span style="font-family: 'Lato', sans-serif; font-weight: normal; font-size: 1.1em; text-decoration: underline;">Next Post</span></button></a>
 
             <br>
             <br>
@@ -220,6 +167,48 @@
                     crossorigin="anonymous"
                     async>
             </script>
+
+
+
+
+
+            <!--<pre>
+                <code>transform.Translate(6f, 0, 2f);</code>
+            </pre>-->
+
+            <!--<br>
+            <h2 style="font-size: 2em; letter-spacing: -0.035em; margin: 0 0 0.5em 0; text-transform: none;">Objectives</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+
+            <br>
+            <h2 style="font-size: 1.5em; letter-spacing: -0.035em; margin: 0 0 0.5em 0; text-transform: none;">Sub-heading</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>-->
+
+            <!--<button type="button" class="collapsible">Game Mechanic, Feature, or System<span class="fa fa-plus" style="float: right; font-size: 20px;"></span></button>
+            <div class="collapsibleblock">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat.</p>
+                <pre>
+                    <code>i = 0;
+while (!deck.isInOrder()) 
+{
+    print 'Iteration ' + i;
+    deck.shuffle();
+    i++;
+}
+
+print 'It took ' + i + ' iterations to sort the deck;</code>
+                </pre>
+            </div>-->
+
+            <!--<br>
+            <br>-->
+
+            <!--<blockquote>Hello</blockquote>-->
+
+            <!--<img src="../../images/drone_interception_loadout.png" alt="Drone Loadout Demo" class="projecttileimage">-->
+
         </div>
     </div>
 
