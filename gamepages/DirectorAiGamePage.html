@@ -116,15 +116,27 @@
         
       <br>
       <span class="fa-solid fa-exclamation-triangle" style="color: rgb(255,255,255); margin-top: 0.45em; margin-right: 0.5em; float: left; font-size: 1.3em;"></span><h2 class="blogheader2">Technical Challenges</h2>
-      <p>Lorem ipsum.</p>
+      <p>Constructing a flexible rules system for the Director to utilise effectively for both shooter and survival games proved to be a challenging task. It was important that rules could be processed for both game
+      genres could be processed by one system.</p>
+      <p>...</p>
 
       <br>
       <span class="fa-solid fa-face-smile" style="color: rgb(123,255,134); margin-top: 0.425em; margin-right: 0.5em; float: left; font-size: 1.3em;"></span><h2 class="blogheader2">Features</h2> <!--What Went Well?-->
-      <p>Lorem ipsum.</p>
-
-      <br>
+      <ul>
+          <li><span style="color: white; font-weight: bold;">Highly Customisable<!--and Data-driven--></span> - Designers can tweak and customise the director according to their own needs and preferences.</li>
+          <li><span style="color: white; font-weight: bold;">Flexible Rule Processing System</span> - Rules for both shooter and survival games can be processed by the system with the capability to adapt to other genre types.</li>
+          <li><span style="color: white; font-weight: bold;">Easy Deployment</span> - Simply drop the director prefab into the scene and then drag-and-drop the necessary requirements for the inspector (such as a reference to the player).</li>
+      </ul>
+        
       <span class="fa-solid fa-face-frown" style="color: rgb(255,123,123); margin-top: 0.4em; margin-right: 0.5em; float: left; font-size: 1.3em;"></span><h2 class="blogheader2">Limitations</h2> <!--What Didn't Go So Well?-->
-        <p>A limitation of the existing rules system is that it requires designers to
+        <ul>
+            <li><span style="color: white; font-weight: bold;">Rules Must Be Manually Added<!--and Data-driven--></span> - Designers are required to access the code directly to write rules and add them to the rules list.
+                A custom editor tool should be built that will allow a designer to easily create and add rules to the rule engine without having to access the code directly.</li>
+            <li><span style="color: white; font-weight: bold;">Lack of Rule Evaluation Techniques</span> - Intensity rules are only fired based on the highest weighting output. Further techniques could be employed such 
+                as executing rules sequentially, at random, based on priority, or firing the first to match a condition.</li>
+        </ul>
+        
+        <!--<p>A limitation of the existing rules system is that it requires designers to
             <span style="color: white;">manually add their rules</span> to to the rule 
             calculator class so that it can be used in the rule engine calculation. Ideally a 
             <span style="color: white;">custom editor tool should be built</span> that will
@@ -138,13 +150,13 @@
             examples include <span style="color: white;">executing rules sequentially</span>, 
             <span style="color: white;">at random</span>, 
             <span style="color: white;">based on priority</span>, or firing the
-            <span style="color: white;">first to match a condition</span>.</p>
-
-      <br>  
+            <span style="color: white;">first to match a condition</span>.</p>-->
+        
       <span class="fa-solid fa-lightbulb" style="color: rgb(255,237,123); margin-top: 0.4em; margin-right: 0.5em; float: left; font-size: 1.3em;"></span><h2 class="blogheader2">What I Learnt</h2>
       <ul>
           <li>The Rule Pattern - Abstracting messy logic into their own respective rule classes.</li>
           <li>The State Pattern</li>
+          <li>...</li>
       </ul>
         
       <span class="fa-solid fa-pencil" style="color: rgb(255,255,255); margin-top: 0.45em; margin-right: 0.5em; float: left; font-size: 1.3em;"></span><h2 class="blogheader2">Future Improvements</h2>
