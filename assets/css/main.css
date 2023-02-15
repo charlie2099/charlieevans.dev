@@ -3223,14 +3223,14 @@ input, select, textarea {
 	background-color: black;
 	color: white;
 	cursor: pointer;
-	padding: 13px;
+	padding: 8px;
 	margin: 10px 0 0 0;
 	width: 100%;
 	border: none;
 	border-radius: 10px;
 	text-align: left;
 	outline: none;
-	font-size: 18px;
+	font-size: 16px;
 	font-family: 'Lato', sans-serif;
 }
 
@@ -3240,7 +3240,7 @@ input, select, textarea {
 
 .collapsible:after {
 	content: '\02795'; /* Unicode character for "plus" sign (+) */
-	font-size: 13px;
+	font-size: 12px;
 	color: white;
 	float: right;
 	margin-left: 5px;
