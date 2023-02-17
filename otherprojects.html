@@ -1,0 +1,197 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <title>Charlie Evans | Portfolio</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="shortcut icon" type="image/png" href="images/favicon_icon.png">
+    <script src="https://kit.fontawesome.com/df8cc90f86.js" crossorigin="anonymous"></script>
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+</head>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-35MEBTFD4P"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-35MEBTFD4P');
+</script>
+
+<body><!--<body class="is-preload">-->
+<!-- Wrapper -->
+<div id="wrapper">
+
+    <!-- Header -->
+    <header id="header">
+        <div class="inner">
+
+            <!-- Logo -->
+            <a href="index.html" class="logo"><span class="symbol"><img src="images/beach6.jpeg" alt="" /></span><span class="title">Portfolio</span></a>
+            <!--<a href="" class="logo"><span class="fa fa-user"></span><span class="title">About</span></a>-->
+            <a href="skillspage.html" class="logo"><span class="fa fa-list-alt" style="color: rgb(255,255,255); margin-right: 0.25em;"></span><span class="title">Skills</span></a>
+            <a href="blogpage.html" class="logo"><span class="fa fa-edit" style="color: rgb(255,255,255); margin-right: 0.25em;"></span><span class="title">Game Documents</span></a>
+            <a href="#footer" class="logo"><span class="fa fa-address-card" style="color: rgb(255,255,255); margin-right: 0.25em;"></span><span class="title">Contact</span></a>
+            <a href="documents/CV.pdf" target="_blank" class="logo"><span class="fa fa-file-lines" style="color: rgb(255,255,255); margin-right: 0.25em;"></span><span class="title">CV</span></a>
+
+            <!-- Nav -->
+            <nav>
+                <ul>
+                    <li><a href="#menu">Menu</a></li>
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+
+    <!-- Menu -->
+    <nav id="menu">
+        <h2>Menu</h2>
+        <ul>
+            <li><a href="index.html">Portfolio</a></li>
+            <li><a href="skillspage.html">Skills</a></li>
+            <li><a href="blogpage.html">Game Documents</a></li>
+            <li><a href="documents/CV.pdf" target="_blank">CV</a></li>
+        </ul>
+
+        <br>
+        <section>
+            <ul class="icons" style="font-size: 0.75em; text-align: center;">
+                <li><a href="https://github.com/charlie2099" target="_blank" class="fab fa-github icon brands"><span class="label">GitHub</span></a></li>
+                <li><a href="https://charlie2099.itch.io/" target="_blank" class="fab fa-itch-io icon brands"><span class="label">Itch Io</span></a></li>
+                <li><a href="https://www.linkedin.com/in/charlie-evans-5bbaa3200" target="_blank" class="fab fa-linkedin icon brands"><span class="label">Linkedin</span></a></li>
+                <li><a href="https://twitter.com/charlieevans203" target="_blank" class="fab fa-twitter icon brands"><span class="label">Twitter</span></a></li>
+                <li><a href="https://uwegames.slack.com/team/U02H9M78J6A" target="_blank" class="fab fa-slack icon brands"><span class="label">Slack</span></a></li>
+                <li><a href="mailto:charlie.evans2499@gmail.com" target="_blank" class="fab fa-envelope icon"><span class="label">Email</span></a></li>
+            </ul>
+            <p style="text-align: center;">&copy; Charlie Evans. All rights reserved. | Homepage Design Template: <a href="https://html5up.net/phantom" target="_blank">Phantom HTML5 UP</a></p>
+        </section>
+    </nav>
+
+    <!-- Main -->
+    <div id="main">
+        <article class="inner">
+            <header>
+                <a href="index.html"><button class="btn"><span class="fa-solid fa-arrow-circle-left"></span> <span style="font-family: 'Lato', sans-serif; font-weight: normal; font-size: 1.1em; text-decoration: underline;">Back</span></button></a>
+                <br>
+                <h1 style="text-align: center;">Other Projects</h1>
+            </header>
+            
+            <br>
+            <div id="myBtnContainer" style="text-align: center;">
+                <button class="btn fa solid fa-folder-open activeBtn" onclick="filterSelection('all')"> <span style="font-family: 'Lato', sans-serif; font-weight: normal;">Show All</span></button>
+                <button class="btn fa solid fa-user" style="color: rgb(155,155,155);" onclick="filterSelection('Solo')"> <span style="color: white; font-family: 'Lato', sans-serif; font-weight: normal;">Solo</span></button>
+                <button class="btn fa solid fa-users" style="color: rgb(155,155,155);" onclick="filterSelection('Team')"> <span style="color: white; font-family: 'Lato', sans-serif; font-weight: normal;">Team</span></button>
+                <button class="btn fa solid fa-gamepad" style="color: rgb(151,148,255);" onclick="filterSelection('Hobby')"> <span style="color: white; font-family: 'Lato', sans-serif; font-weight: normal;">Hobby</span></button>
+                <button class="btn fa solid fa-university" style="color: rgb(131,255,193);" onclick="filterSelection('University')"> <span style="color: white; font-family: 'Lato', sans-serif; font-weight: normal;">University</span></button>
+                <button class="btn fa solid fa-clock" style="color: rgb(212,129,255);" onclick="filterSelection('GameJam')"> <span style="color: white; font-family: 'Lato', sans-serif; font-weight: normal;">Game Jams</span></button>
+                <button class="btn fa solid fa-wrench" style="color: #ffaa72;" onclick="filterSelection('WIP')"> <span style="color: white; font-family: 'Lato', sans-serif; font-weight: normal;">Work-In-Progress</span></button>
+                <button class="btn fa solid fa-code" style="color: #ffec72;" onclick="filterSelection('CPlusPlus')"> <span style="color: white; font-family: 'Lato', sans-serif; font-weight: normal;">C++</span></button>
+            </div>
+
+            <section class="tiles">
+
+                <article class="projecttileuniversity filterDiv Team University WIP">
+                    <video style="border-bottom: 4px solid rgb(131,255,193);" class="projecttileimage" autoplay muted loop>
+                        <source src="images/GIFS/HauntedHouseDemo.webm" type=video/webm>
+                    </video>
+
+                    <div class ="projecttiletext" style="margin-bottom: -10px;">
+                        <h3 class="projecttiletitle">Haunted House VR</h3>
+                        <h4 style="display: inline-block; color: rgb(131,255,193);"><span class="fa solid fa-university" style="font-size:1.25em; padding-right: 5px;"></span></h4>
+                        <h4 style="display: inline-block; color: #ffaa72;"><span class="fa solid fa-wrench" style="font-size:1.25em; padding-right: 5px;"></span></h4>
+                        <h4 style="display: inline-block; color: rgb(155,155,155);"><span class="fa solid fa-users" style="font-size:1.25em; padding-right: 5px;"></span>5</h4>
+                        <img style="display: inline-block; float: right; width: 1.75em; margin-left: 10px;" src="images/Logos/c-sharp-logo.svg" alt="C# logo">
+                        <img style="display: inline-block; float: right; width: 1.75em;" src="images/Logos/unity-logo.png" alt="Unity logo">
+                    </div>
+
+                    <div class ="projecttilehiddentextcontaineruniversity">
+                        <p class ="projecttilehiddentext">A ghost hunting <span style="color: rgb(116,227,172);">party game</span>
+                            in <span style="color: rgb(116,227,172);">VR</span> that utilises
+                            <span style="color: rgb(116,227,172);">passthrough technology</span> to complete puzzles to banish
+                            ghosts.</p>
+
+                        <a class = "buttonlink" href = "https://github.com/HoppiStudio/HauntMyHouse" target="_blank"><button class = "buttonformat"><i class="fab fa-github"></i></button></a>
+                        <a class = "buttonlink" href = "blogpages/" target="_blank"><button class = "buttonformat"> <i class="fa fa-file-pdf"></i></button></a>
+                    </div>
+                </article>
+
+                <article class="projecttilegamejam filterDiv Team GameJam">
+                    <img style="border-bottom: 4px solid rgb(212,129,255);" src="images/GIFS/DiceRunnerDemoNew.gif" alt="Dice Runner Demo Vid" class="projecttileimage">
+
+                    <div class ="projecttiletext" style="margin-bottom: -10px;">
+                        <h3 class="projecttiletitle">Dice Runner</h3>
+                        <h4 style="display: inline-block; color: rgb(212,129,255);"><span class="fa solid fa-clock" style="font-size:1.25em; padding-right: 5px;"></span></h4>
+                        <h4 style="display: inline-block; color: rgb(155,155,155);"><span class="fa solid fa-users" style="font-size:1.25em; padding-right: 5px;"></span>3</h4>
+                        <img style="display: inline-block; float: right; width: 1.75em; margin-left: 10px;" src="images/Logos/c-sharp-logo.svg" alt="C# logo">
+                        <img style="display: inline-block; float: right; width: 1.75em;" src="images/Logos/unity-logo.png" alt="Unity logo">
+                    </div>
+
+                    <div class ="projecttilehiddentextcontainergamejam">
+                        <p class ="projecttilehiddentext"><span style="font-weight: bold;">Theme:</span> <span style="color: rgb(212,129,255);">Roll of The Dice</span></p>
+                        <p class ="projecttilehiddentext"><span style="font-weight: bold;">Team Size:</span> <span style="color: rgb(212,129,255);">3</span></p>
+                        <p class ="projecttilehiddentext"><span style="font-weight: bold;">Duration:</span> <span style="color: rgb(212,129,255);">48 Hours</span></p>
+                        <p class ="projecttilehiddentext">A Mario Party Boulder Ball-inspired minigame with dynamic gameplay events.</p>
+                        <a class = "buttonlink" href = "https://github.com/WilliamGameDev2000/-GMTK-jam-" target="_blank"><button class = "buttonformat"><i class="fab fa-github"></i></button></a>
+                    </div>
+                </article>
+
+
+                <article class="projecttilehobby filterDiv Solo Hobby WIP Extra">
+                    <img style="border-bottom: 4px solid rgb(151,148,255); height: 225px;" src="images/monopoly_clone.png" alt="Monopoly Game" class="projecttileimage">
+
+                    <div class ="projecttiletext" style="margin-bottom: -10px;">
+                        <h3 class="projecttiletitle">Monopoly</h3>
+                        <h4 style="display: inline-block; color: rgb(151,148,255);"><span class="fa solid fa-gamepad" style="font-size:1.25em; padding-right: 5px;"></span></h4>
+                        <h4 style="display: inline-block; color: #ffaa72;"><span class="fa solid fa-wrench" style="font-size:1.25em; padding-right: 5px;"></span></h4>
+                        <h4 style="display: inline-block; color: rgb(155,155,155);"><span class="fa solid fa-user" style="font-size:1.25em; padding-right: 5px;"></span>1</h4>
+                        <img style="display: inline-block; float: right; width: 1.75em; margin-left: 10px;" src="images/Logos/c-sharp-logo.svg" alt="C# logo">
+                        <img style="display: inline-block; float: right; width: 1.75em;" src="images/Logos/unity-logo.png" alt="Unity logo">
+                    </div>
+
+                    <div class ="projecttilehiddentextcontainerhobby">
+                        <p class ="projecttilehiddentext">Lorem <span style="color: rgb(151,148,255);">ipsum</span>.</p>
+                        <a class = "buttonlink" href = "" target="_blank"><button class = "buttonformat"><i class="fab fa-github"></i></button></a>
+                        <a class = "buttonlink" href = "" target="_blank"><button class = "buttonformat"> <i class="fa fa-file-pdf"></i></button></a>
+                    </div>
+                </article>
+                
+            </section>
+            
+
+
+        </article>
+    </div>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="inner">
+            <section>
+                <h2>Contact</h2>
+
+                <ul class="icons">
+                    <li><a href="https://github.com/charlie2099" target="_blank" class="fab fa-github icon brands"><span class="label">GitHub</span></a></li>
+                    <li><a href="https://charlie2099.itch.io/" target="_blank" class="fab fa-itch-io icon brands"><span class="label">Itch Io</span></a></li>
+                    <li><a href="https://www.linkedin.com/in/charlie-evans-5bbaa3200" target="_blank" class="fab fa-linkedin icon brands"><span class="label">Linkedin</span></a></li>
+                    <li><a href="https://twitter.com/charlieevans203" target="_blank" class="fab fa-twitter icon brands"><span class="label">Twitter</span></a></li>
+                    <li><a href="https://uwegames.slack.com/team/U02H9M78J6A" target="_blank" class="fab fa-slack icon brands"><span class="label">Slack</span></a></li>
+                    <li><a href="mailto:charlie.evans2499@gmail.com" target="_blank" class="fab fa-envelope icon"><span class="label">Email</span></a></li>
+                </ul>
+                <p>&copy; Charlie Evans. All rights reserved. | Homepage Design Template: <a href="https://html5up.net/phantom" target="_blank">Phantom HTML5 UP</a></p>
+            </section>
+        </div>
+    </footer>
+</div>
+
+<!-- Scripts -->
+<script src="assets/js/collapsiblecontent.js"></script>
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/browser.min.js"></script>
+<script src="assets/js/breakpoints.min.js"></script>
+<script src="assets/js/util.js"></script>
+<script src="assets/js/main.js"></script>
+<script src="assets/js/filterbuttons.js"></script>
+</body>
+</html>

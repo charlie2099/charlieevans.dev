@@ -74,6 +74,8 @@
 					<div id="main">
 						<article class="inner">
 							<header>
+								
+								<br>
 								<h1>Hi I'm Charlie,<br> 
 								    and I'm a <span style="color: rgb(255, 255, 255);">Games Programmer</span>.</h1>
 								
@@ -88,19 +90,22 @@
 								<!--<button onclick="toggleDarkMode()">Toggle dark mode</button>-->
 							</header>
 							
-							<!--<h1>Projects</h1>-->
 							
 							<br>
-							<div id="myBtnContainer">
+							<br>
+							<div id="myBtnContainer" style="text-align: center;">
 								<button class="btn fa solid fa-folder-open activeBtn" onclick="filterSelection('all')"> <span style="font-family: 'Lato', sans-serif; font-weight: normal;">Show All</span></button>
 								<button class="btn fa solid fa-user" style="color: rgb(155,155,155);" onclick="filterSelection('Solo')"> <span style="color: white; font-family: 'Lato', sans-serif; font-weight: normal;">Solo</span></button>
 								<button class="btn fa solid fa-users" style="color: rgb(155,155,155);" onclick="filterSelection('Team')"> <span style="color: white; font-family: 'Lato', sans-serif; font-weight: normal;">Team</span></button>
 								<button class="btn fa solid fa-gamepad" style="color: rgb(151,148,255);" onclick="filterSelection('Hobby')"> <span style="color: white; font-family: 'Lato', sans-serif; font-weight: normal;">Hobby</span></button>
 								<button class="btn fa solid fa-university" style="color: rgb(131,255,193);" onclick="filterSelection('University')"> <span style="color: white; font-family: 'Lato', sans-serif; font-weight: normal;">University</span></button>
-								<button class="btn fa solid fa-clock" style="color: rgb(212,129,255);" onclick="filterSelection('GameJam')"> <span style="color: white; font-family: 'Lato', sans-serif; font-weight: normal;">Game Jams</span></button>
 								<button class="btn fa solid fa-wrench" style="color: #ffaa72;" onclick="filterSelection('WIP')"> <span style="color: white; font-family: 'Lato', sans-serif; font-weight: normal;">Work-In-Progress</span></button>
 								<button class="btn fa solid fa-code" style="color: #ffec72;" onclick="filterSelection('CPlusPlus')"> <span style="color: white; font-family: 'Lato', sans-serif; font-weight: normal;">C++</span></button>
 							</div>
+
+							<br>
+							<br>
+							<h2 style="text-align: center;">Project Highlights</h2>
 							
 							<section class="tiles">
 								
@@ -305,32 +310,6 @@
 										<a class = "buttonlink" href = "blogpages/DroneInterceptionDevLogPage.html" target="_blank"><button class = "buttonformat"> <i class="fa fa-file-pdf"></i></button></a>
 									</div>
 								</article>
-
-								
-								<article class="projecttileuniversity filterDiv Team University WIP">
-									<video style="border-bottom: 4px solid rgb(131,255,193);" class="projecttileimage" autoplay muted loop>
-										<source src="images/GIFS/HauntedHouseDemo.webm" type=video/webm>
-									</video>
-
-									<div class ="projecttiletext" style="margin-bottom: -10px;">
-										<h3 class="projecttiletitle">Haunted House VR</h3>
-										<h4 style="display: inline-block; color: rgb(131,255,193);"><span class="fa solid fa-university" style="font-size:1.25em; padding-right: 5px;"></span></h4>
-										<h4 style="display: inline-block; color: #ffaa72;"><span class="fa solid fa-wrench" style="font-size:1.25em; padding-right: 5px;"></span></h4>
-										<h4 style="display: inline-block; color: rgb(155,155,155);"><span class="fa solid fa-users" style="font-size:1.25em; padding-right: 5px;"></span>5</h4>
-										<img style="display: inline-block; float: right; width: 1.75em; margin-left: 10px;" src="images/Logos/c-sharp-logo.svg" alt="C# logo">
-										<img style="display: inline-block; float: right; width: 1.75em;" src="images/Logos/unity-logo.png" alt="Unity logo">
-									</div>
-
-									<div class ="projecttilehiddentextcontaineruniversity">
-										<p class ="projecttilehiddentext">A ghost hunting <span style="color: rgb(116,227,172);">party game</span>
-											in <span style="color: rgb(116,227,172);">VR</span> that utilises 
-											<span style="color: rgb(116,227,172);">passthrough technology</span> to complete puzzles to banish 
-											ghosts.</p>
-
-										<a class = "buttonlink" href = "https://github.com/HoppiStudio/HauntMyHouse" target="_blank"><button class = "buttonformat"><i class="fab fa-github"></i></button></a>
-										<a class = "buttonlink" href = "blogpages/" target="_blank"><button class = "buttonformat"> <i class="fa fa-file-pdf"></i></button></a>
-									</div>
-								</article>
 								
 								
 								<!--<article class="projecttileuniversity filterDiv Solo University">
@@ -354,11 +333,12 @@
 								
 							</section>
 							
-							<!--<br>
-							<a href=""><button class="btn" style="display: block; margin-left: auto; margin-right: auto;"> <span style="font-family: 'Lato', sans-serif; font-weight: normal; font-size: 1.1em;">More Games </span><span class="fa-solid fa fa-arrow-circle-right"></span></button></a>-->
-
 							<br>
-							<button type="button" class="btn collapsible" style="width: 100%;"><span class="fa-solid fa-folder-plus" style="color: rgb(132,123,255); margin-top: 0.1em; margin-right: 0.5em; float: left; font-size: 1em;"></span>Other Games</button>
+							<br>
+							<a href="otherprojects.html"><button class="btn" style="display: block; margin-left: auto; margin-right: auto;"> <span style="font-family: 'Lato', sans-serif; font-weight: normal; font-size: 1.1em;">Other Projects </span><span class="fa-solid fa fa-arrow-circle-right"></span></button></a>
+
+							<!--<br>
+							<button type="button" class="btn collapsible" style="width: 19%;">Other Projects</button>
       						<div class="collapsibleblock" style="margin: -1.7em; padding: 2em;">
 								
 								<span></span>
@@ -390,9 +370,9 @@
 									
 									<article class="projecttilehobby filterDiv Solo Hobby WIP Extra">
 										<img style="border-bottom: 4px solid rgb(151,148,255); height: 225px;" src="images/monopoly_clone.png" alt="Monopoly Game" class="projecttileimage">
-										<!--<video style="border-bottom: 4px solid rgb(131,255,193);" class="projecttileimage" autoplay muted loop>
+										&lt;!&ndash;<video style="border-bottom: 4px solid rgb(131,255,193);" class="projecttileimage" autoplay muted loop>
                                             <source src="images/monopoly_clone.png" type=video/webm>
-                                        </video>-->
+                                        </video>&ndash;&gt;
 
 										<div class ="projecttiletext" style="margin-bottom: -10px;">
 											<h3 class="projecttiletitle">Monopoly</h3>
@@ -413,7 +393,7 @@
 									
 									
 								</section>
-      						</div>
+      						</div>-->
 							
 							
 						</article>
