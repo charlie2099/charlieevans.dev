@@ -2735,6 +2735,8 @@ input, select, textarea {
 }
 .projecttileuniversity {
 	/*background: rgba(0, 0, 0, 0.49);*/
+	/*border: 4px solid #595959;
+	border-radius: 10px;*/
 	transition: all .4s ease-in-out;
 }
 
