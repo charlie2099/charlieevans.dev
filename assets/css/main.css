@@ -2712,50 +2712,13 @@ input, select, textarea {
 
 
 /* Index page */
-
-.projecttiledefault {
-	background: rgba(0, 0, 0, 0.49);
-	padding: 0px;
-	transition: all .4s ease-in-out;
-}
-.projecttilehobby {
-	background: rgba(0, 0, 0, 0.49);
-	padding: 0px;
-	transition: all .4s ease-in-out;
-}
-.projecttiledissertation {
-	background: rgba(0, 0, 0, 0.49);
-	padding: 0px;
-	transition: all .4s ease-in-out;
-}
-.projecttilegamejam {
-	background: rgba(0, 0, 0, 0.49);
-	padding: 0px;
-	transition: all .4s ease-in-out;
-}
-.projecttileuniversity {
-	/*background: rgba(0, 0, 0, 0.49);*/
-	/*border: 4px solid #595959;
+.projecttileuniversity {  /* TODO: Rename */
+	/*border: 3px solid #595959;
 	border-radius: 10px;*/
+	box-shadow: inset 0px 0px 0px 1px rgb(0, 0, 0), 0px 4px 6px 0px rgb(0, 0, 0);
 	transition: all .4s ease-in-out;
 }
 
-.projecttiledefault:hover {
-	box-shadow: inset 0px 0px 0px 1px rgb(131,255,193), 0px 4px 6px 0px rgb(0, 0, 0);
-	transform: scale(1.1);
-}
-.projecttilehobby:hover {
-	box-shadow: inset 0px 0px 0px 1px rgb(149,163,255), 0px 4px 6px 0px rgb(0, 0, 0);
-	transform: scale(1.1);
-}
-.projecttiledissertation:hover {
-	box-shadow: inset 0px 0px 0px 1px rgb(255,123,123), 0px 4px 6px 0px rgb(0, 0, 0);
-	transform: scale(1.1);
-}
-.projecttilegamejam:hover {
-	 box-shadow: inset 0px 0px 0px 1px rgb(212,129,255), 0px 4px 6px 0px rgb(0, 0, 0);
-	 transform: scale(1.1);
-}
 .projecttileuniversity:hover {
 	  /*box-shadow: inset 0px 0px 0px 1px rgb(131,255,193), 0px 4px 6px 0px rgb(0, 0, 0);*/
 	  transform: scale(1.1);
@@ -2783,70 +2746,6 @@ input, select, textarea {
 	text-align: center;
 }
 
-.projecttilehiddentextcontainerdefault {
-	opacity: 0;
-	width: 80%;
-	top: 50%;
-	left: 50%;
-	position: absolute;
-	transition: 0.5s ease;
-	transform: translate(-50%, -50%);
-	-ms-transform: translate(-50%, -50%);
-	background-color: rgba(0, 0, 0, 0.71);
-	border-radius: 10px;
-	padding: 10px;
-	text-align: center;
-	outline-style: solid;
-	outline-color: rgb(131,255,193);
-}
-.projecttilehiddentextcontainerhobby {
-	opacity: 0;
-	width: 80%;
-	top: 50%;
-	left: 50%;
-	position: absolute;
-	transition: 0.5s ease;
-	transform: translate(-50%, -50%);
-	-ms-transform: translate(-50%, -50%);
-	background-color: rgba(0, 0, 0, 0.71);
-	border-radius: 10px;
-	padding: 10px;
-	text-align: center;
-	outline-style: solid;
-	outline-color: rgb(151,148,255);
-}
-.projecttilehiddentextcontainerdissertation {
-	opacity: 0;
-	width: 80%;
-	top: 50%;
-	left: 50%;
-	position: absolute;
-	transition: 0.5s ease;
-	transform: translate(-50%, -50%);
-	-ms-transform: translate(-50%, -50%);
-	background-color: rgba(0, 0, 0, 0.71);
-	border-radius: 10px;
-	padding: 10px;
-	text-align: center;
-	outline-style: solid;
-	outline-color: rgb(255,123,123);
-}
-.projecttilehiddentextcontainergamejam {
-	opacity: 0;
-	width: 80%;
-	top: 50%;
-	left: 50%;
-	position: absolute;
-	transition: 0.5s ease;
-	transform: translate(-50%, -50%);
-	-ms-transform: translate(-50%, -50%);
-	background-color: rgba(0, 0, 0, 0.71);
-	border-radius: 10px;
-	padding: 10px;
-	text-align: center;
-	outline-style: solid;
-	outline-color: rgb(212,129,255);
-}
 .projecttilehiddentextcontaineruniversity {
 	opacity: 0;
 	width: 80%;
@@ -2856,7 +2755,6 @@ input, select, textarea {
 	transition: 0.5s ease;
 	transform: translate(-50%, -50%);
 	-ms-transform: translate(-50%, -50%);
-	padding: 10px;
 	text-align: center;
 }
 
@@ -2864,55 +2762,20 @@ input, select, textarea {
 	opacity: 1;
 	width: 100%;
 	transition: 0.5s ease;
+	margin-bottom: -10px;
 	/*border-bottom: 4px solid rgb(131,131,255)!*deeppink;*!*/
 	/*outline-style: solid;
 	outline-color: rgb(131,131,255);*/
 }
 
-.projecttiledefault:hover .projecttileimage {
-	opacity: 0.3;
-}
-.projecttilehobby:hover .projecttileimage {
-	opacity: 0.3;
-}
-.projecttiledissertation:hover .projecttileimage {
-	opacity: 0.3;
-}
-.projecttilegamejam:hover .projecttileimage {
-	opacity: 0.3;
-}
 .projecttileuniversity:hover .projecttileimage {
 	opacity: 0.15;
 }
 
-.projecttiledefault:hover .projecttiletext {
-	opacity: 0.3;
-}
-.projecttilehobby:hover .projecttiletext {
-	opacity: 0.3;
-}
-.projecttiledissertation:hover .projecttiletext {
-	opacity: 0.3;
-}
-.projecttilegamejam:hover .projecttiletext {
-	opacity: 0.3;
-}
 .projecttileuniversity:hover .projecttiletext {
 	opacity: 0;
 }
 
-.projecttiledefault:hover .projecttilehiddentextcontainerdefault {
-	opacity: 1;
-}
-.projecttilehobby:hover .projecttilehiddentextcontainerhobby {
-	opacity: 1;
-}
-.projecttiledissertation:hover .projecttilehiddentextcontainerdissertation {
-	opacity: 1;
-}
-.projecttilegamejam:hover .projecttilehiddentextcontainergamejam {
-	opacity: 1;
-}
 .projecttileuniversity:hover .projecttilehiddentextcontaineruniversity {
 	opacity: 1;
 }
@@ -2922,26 +2785,6 @@ input, select, textarea {
 	line-height: 0;
 	margin-bottom: 25px;
 	font-weight: normal;
-}
-.hobbyprojectlabel {
-	color: rgb(151,148,255);
-	line-height: 0;
-}
-.dissertationprojectlabel {
-	color: rgb(255,123,123);
-	line-height: 0;
-}
-.gamejamprojectlabel {
-	color: rgb(212,129,255);
-	line-height: 0;
-}
-.uniprojectlabel {
-	color: rgb(131,255,193);
-	line-height: 0;
-}
-.modprojectlabel {
-	color: rgb(255, 252, 0);
-	line-height: 0;
 }
 
 /* Media Queries */
