@@ -2949,12 +2949,13 @@ input, select, textarea {
 	background-color: rgba(0, 0, 0, 0.49);
 	color: rgb(255, 255, 255);
 	transition: all .3s ease-in-out;
+	box-shadow: inset 0px 0px 0px 1px rgb(0, 0, 0), 0px 2px 4px 0px rgb(0, 0, 0);
 	/*opacity: 0.8;*/
 }
 
 .tiles .blogtile:hover {
 	transform: scale(1.1);
-	box-shadow: inset 0px 0px 0px 1px rgb(255, 255, 255), 0px 4px 6px 0px rgb(0, 0, 0);
+	/*box-shadow: inset 0px 0px 0px 1px rgb(255, 255, 255), 0px 4px 6px 0px rgb(0, 0, 0);*/
 	/*opacity: 1;*/
 }
 
