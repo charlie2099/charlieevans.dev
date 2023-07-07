@@ -129,7 +129,7 @@ input, select, textarea {
 /* Type */
 
 	body, input, select, textarea {
-		color: #9a9a9a;
+		color: #b6b6b6;
 		font-family: 'Lato', sans-serif;
 		/*font-family: "Source Sans Pro", Helvetica, sans-serif;*/
 		font-size: 16pt;
@@ -161,7 +161,7 @@ input, select, textarea {
 	}
 
 		a:hover {
-			color: rgb(255, 255, 255) !important;
+			color: rgb(156,171,213) !important;
 		}
 
 	strong, b {
