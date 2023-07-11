@@ -11,6 +11,43 @@
 	font-display: swap;
 }*/
 
+@font-face {
+	font-family: 'sansation_light';
+	src: url('Sansation-Light-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'sansation_lightitalic';
+	src: url('Sansation-LightItalic-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'sansation_bold';
+	src: url('Sansation-Bold-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'sansation_bolditalic';
+	src: url('Sansation-BoldItalic-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'sansation_regular';
+	src: url('Sansation-Regular-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'sansation_italic';
+	src: url('Sansation-Italic-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
 /*
 	Phantom by HTML5 UP
 	html5up.net | @ajlkn
@@ -34,6 +71,8 @@ section, summary, time, mark, audio /*, video*/ {
 	font-size: 0.975em; /*100%*/
 	letter-spacing: 0.05em;
 	/*font-family: Pacifico;*/
+	/*font-family: "Montserrat";*/
+	font-family: sansation_light;
 	vertical-align: baseline;
 }
 
@@ -130,7 +169,8 @@ input, select, textarea {
 
 	body, input, select, textarea {
 		color: #b6b6b6;
-		font-family: 'Lato', sans-serif;
+		/*font-family: sansation_light;*/
+		font-family: sansation_light;
 		/*font-family: "Source Sans Pro", Helvetica, sans-serif;*/
 		font-size: 16pt;
 		font-weight: 300;
@@ -3122,7 +3162,7 @@ input, select, textarea {
 	text-align: left;
 	outline: none;
 	font-size: 16px;
-	font-family: 'Lato', sans-serif;
+	font-family: sansation_light;
 }
 
 .collapsible:hover {
