@@ -201,7 +201,7 @@ input, select, textarea {
 	}
 
 		a:hover {
-			color: #ff916f !important;
+			color: #6fffbe !important;
 		}
 
 	strong, b {
@@ -2356,7 +2356,7 @@ input, select, textarea {
 
 						#header nav ul li a[href="#menu"]:hover:after {
 							opacity: 1;
-							filter: invert(68%) sepia(45%) saturate(844%) hue-rotate(315deg) brightness(103%) contrast(101%); /* Hamburger icon colour: White */
+							filter: invert(84%) sepia(21%) saturate(967%) hue-rotate(89deg) brightness(106%) contrast(101%); /* Hamburger icon colour */
 						}
 
 		@media screen and (max-width: 736px) {
@@ -2509,7 +2509,7 @@ input, select, textarea {
 
 			#menu > .close:hover:after {
 				opacity: 1;
-				filter: invert(68%) sepia(45%) saturate(844%) hue-rotate(315deg) brightness(103%) contrast(101%); /* Hamburger icon colour: White */
+				filter: invert(84%) sepia(21%) saturate(967%) hue-rotate(89deg) brightness(106%) contrast(101%); /* Hamburger icon colour */
 			}
 
 		@media screen and (max-width: 736px) {
@@ -2886,28 +2886,28 @@ input, select, textarea {
 }
 
 .fa-twitter:hover {
-	color: #ff916f; /*rgb(131,255,193)*/
+	color: #6fffbe; /*rgb(131,255,193)*/
 }
 .fa-github:hover {
-	color: #ff916f;
+	color: #6fffbe;
 }
 .fa-linkedin:hover {
-	color: #ff916f;
+	color: #6fffbe;
 }
 .fa-slack:hover {
-	color: #ff916f;
+	color: #6fffbe;
 }
 .fa-itch-io:hover {
-	color: #ff916f;
+	color: #6fffbe;
 }
 .fa-youtube:hover {
-	color: #ff916f;
+	color: #6fffbe;
 }
 .fa-file-pdf:hover {
-	color: #ff916f;
+	color: #6fffbe;
 }
 .fa-file-lines:hover {
-	color: #ff916f;
+	color: #6fffbe;
 }
 
 
@@ -2933,7 +2933,7 @@ input, select, textarea {
 	padding: 5%;
 	margin: 5%;
 	text-align: center;
-	border-bottom: 2px solid rgb(131,131,255);
+	border-bottom: 2px solid #6fffbe;
 }
 
 .skillstile ul {
@@ -2953,9 +2953,9 @@ input, select, textarea {
 	font-size: 2em;
 	font-weight: bold;
 	text-align: center;
-	border-bottom: 2px solid #ff916f;;
+	border-bottom: 2px solid #6fffbe;;
 	padding: 20px;
-	color: #ff916f;;
+	color: #6fffbe;;
 	letter-spacing: 0.05em;
 }
 
@@ -2965,7 +2965,7 @@ input, select, textarea {
 	letter-spacing: -0.035em;
 	margin: 0 0 0.5em 0;
 	text-transform: none;
-	color: #ff916f;
+	color: #6fffbe;
 }
 
 .blogheader3 {
