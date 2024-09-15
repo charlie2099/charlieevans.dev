@@ -213,13 +213,13 @@ input, select, textarea {
 	}
 
 	p {
-		font-size: 0.9em;
+		font-size: 0.8em; /* 0.9em = ~18px, 0.8em = ~16px*/
 		/*letter-spacing: 0.05em;*/
 		/*margin: 0 0 2em 0;*/
 		/*font-family: Helvetica;*/
 	}
 	li {
-		font-size: 0.93em;
+		font-size: 0.8em;
 	}
 
 	h1 {

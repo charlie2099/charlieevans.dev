@@ -95,34 +95,97 @@
 
       <h3 style="border-bottom: 2px solid cyan; padding: 20px; font-size: 0.85em;"><strong style="color: rgb(128,139,255); font-weight: normal;"><span class="fa solid fa-file-code"></span> Development Log <span style="color: rgba(255, 255, 255, 0.5);">| Starfleet Command </span> <span style="color: rgba(255, 255, 255, 1);">| Log 1</span> </strong></h3>
 
-      <a href="../StarfleetCommandDevLogPage.html"><button class="btn">  <span class="fa-solid fa-arrow-circle-left"></span> <span style="font-family: sansation_light; font-weight: normal; font-size: 1.1em; ">Back</span></button></a>
-
+      <a href="../StarfleetCommandDevLogPage.html"><button class="btn">  <span class="fa-solid fa-arrow-circle-left"></span> <span style="font-family: sansation_light; font-weight: normal; font-size: 1em; ">Back</span></button></a>
+      
+      <!-------------------------->
+      <!-- Project Introduction -->
+      <!-------------------------->
       <h1 class="blogheader1">Project Introduction</h1>
       <h4 style="color: rgba(255,255,255,0.5); font-weight: normal; text-align: center;">Sept 11th, 2024</h4>
 
+      <p>Welcome to the first dev log for my game <span style="color: white; font-weight: bold; font-style: italic;">Starfleet Command</span>, a
+        <span style="color: white; font-weight: bold;">2D top-down space strategy</span> game I'm developing with the 
+        <span style="color: white; font-weight: bold;">SFML</span> library and <span style="color: white; font-weight: bold;">C++</span>. In this
+        post, I will introduce the core concept and vision behind the game, along with outlining some of the planned gameplay mechanics. Let's begin!</p>
+
+      <!------------------------->
       <!-- Preliminary Concept -->
+      <!------------------------->
       <h2 class="blogheader2">Preliminary Concept</h2>
-      <p>Drawing inspiration from two popular strategy defence games <a href="https://ageofwargame.io/" target="_blank" style="color: rgb(255,255,255); text-decoration: underline;">Age of War</a> and 
-        <a href="https://en.wikipedia.org/wiki/Plants_vs._Zombies" target="_blank" style="color: rgb(255,255,255); text-decoration: underline;">Plants Vs Zombies</a>, Starfleet Command combines the best of both to create...</p>
-
-      <!--<img src="../../images/age_of_war.png" style="width: 49.65%;" alt="Age of War Image">
-      <img src="../../images/plants_vs_zombies.png" style="width: 49.65%;" alt="Plants vs Zombies Image">-->
       
-      <!-- Key Aims -->
-      <br>
-      <br>
-      <h2 class="blogheader2">Key Aims</h2>
-      <ul>
-        <li>Text <span style="color: rgb(255,255,255);">text</span>.</li>
-      </ul>
+      <p>Starfleet Command pits the player against an AI opponent in an intense
+        battle for supremacy. The goal is simple: <span style="color: white; font-weight: bold;">defend your capital ship</span> at all costs while 
+        battling to <span style="color: white; font-weight: bold;">destroy your enemy's capital ship</span>. Battles unfold across five "space lanes",
+        in which the player must strategically deploy starships, manage resources, and make tactical decisions in real-time to outmaneuver their adaptive
+        AI opponent.</p>
 
-      <!-- Mechanics -->
+      <!----------------->
+      <!-- Inspiration -->
+      <!----------------->
+      <h2 class="blogheader2">Inspiration</h2>
+
+      <p>Initially I set out to create a game similar to <span style="color: white; font-weight: bold;">Age of War</span> but with a focus on 
+        <span style="color: white; font-weight: bold;">improving replayability</span>. To achieve this, I wanted to implement two key systems, 
+        a <span style="color: white; font-weight: bold;">roguelike/roguelite reward system</span> and an
+        <span style="color: white; font-weight: bold;">AI Director</span>. These systems would keep the experience fresh and dynamic so that no two 
+        plays are the same.</p>
+
+      <figure style="display: inline-block; width: 49.65%;">
+        <img src="../../images/age_of_war.png" style="width: 100%;" alt="Age of War Image">
+        <figcaption style="text-align: center; font-size: 0.8em;">Age of War</figcaption>
+      </figure>
+
+      <figure style="display: inline-block; width: 49.65%;">
+        <img src="../../images/plants_vs_zombies.png" style="width: 100%;" alt="Plants vs Zombies Image">
+        <figcaption style="text-align: center; font-size: 0.8em;">Plants vs. Zombies</figcaption>
+      </figure>
+      
+      <p>As the concept developed, I also began to draw inspiration from <span style="color: white; font-weight: bold;">Plants vs. Zombies</span>, 
+        particularly it's lane-based strategy mechanics and last line of defence mechanic.</p>
+
+      <!--<p>Drawing inspiration from two popular strategy defence games <a href="https://ageofwargame.io/" target="_blank" style="color: rgb(255,255,255); text-decoration: underline;">Age of War</a> and
+        <a href="https://en.wikipedia.org/wiki/Plants_vs._Zombies" target="_blank" style="color: rgb(255,255,255); text-decoration: underline;">Plants Vs Zombies</a>, Starfleet Command combines the
+        best of both to create...</p>-->
+
+      <!--<img src="../../images/age_of_war.png" style="width: 49.65%; margin-bottom: 15px;" alt="Age of War Image">
+      <img src="../../images/plants_vs_zombies.png" style="width: 49.65%; margin-bottom: 15px;" alt="Plants vs Zombies Image">-->
+
+      <!----------------------------->
+      <!-- Proposed Game Mechanics -->
+      <!----------------------------->
       <h2 class="blogheader2">Proposed Game Mechanics</h2>
       <ul>
-        <li>Text</li>
+        <li>Lane-based combat</li>
+        <li>Wave-based combat</li>
+        <li>Unit selection and placement</li>
+        <li>Unit training
+        <li>Unit types & abilities</li>
+        <li>Scrap resource collection</li>
+        <li>Adaptive AI via an AI Director system</li>
+        <li>Last-line-of-defence system</li>
+        <li>Perk & upgrades selection system</li>
+        <li>Dynamic events</li>
       </ul>
 
-      <a href="" style="display: inline; float: right;"><button class="btn"> <span style="font-family: sansation_light; font-weight: normal; font-size: 1.1em;">Next Post</span> <span class="fa-solid fa-arrow-circle-right"></span> </button></a>
+      <!---------------->
+      <!-- Tech Stack -->
+      <!---------------->
+      <h2 class="blogheader2">Tech Stack</h2>
+      <ul>
+        <li>Engine/Framework/Library: <span style="color: white; font-weight: bold;">SFML 2.0</span></li>
+        <li>Programming Language: <span style="color: white; font-weight: bold;">C++</span></li>
+        <li>IDE: <span style="color: white; font-weight: bold;">JetBrains CLion</span></li>
+        <li>Operating System: <span style="color: white; font-weight: bold;">Windows</span></li>
+      </ul>
+
+      <!---------------->
+      <!-- Next Steps -->
+      <!---------------->
+      <!--<h2 class="blogheader2">Next Steps</h2>
+      <p>Text</p>-->
+
+      <!--<a href="DroneInterceptionDevLogOne.html" style="display: inline; float: left;"><button class="btn"> <span class="fa-solid fa-arrow-circle-left"></span> <span style="font-family: sansation_light; font-weight: normal; font-size: 1em;">Log 0: Placeholder</span></button></a>-->
+      <a href="" style="display: inline; float: right;"><button class="btn"> <span style="font-family: sansation_light; font-weight: normal; font-size: 1em;">Log 2: Architecture & Planning</span> <span class="fa-solid fa-arrow-circle-right"></span> </button></a>
 
       <br>
       <br>
