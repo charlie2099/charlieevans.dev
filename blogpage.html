@@ -78,8 +78,9 @@
             <br>
             <div id="myBtnContainer" style="text-align: center;">
                 <button class="btn fa solid fa-folder-open activeBtn" onclick="filterSelection('all')"> <span style="font-weight: normal;">Show All</span></button>
-                <button class="btn fa solid fa-file-lines" style="color: rgb(132,255,128);" onclick="filterSelection('GamePage')"> <span style="color: white; font-weight: normal;">Project Pages</span></button>
-                <button class="btn fa solid fa-file-code" style="color: rgb(128,139,255);" onclick="filterSelection('DevLog')"> <span style="color: white; font-weight: normal;">Development Logs</span></button>
+                <button class="btn fa solid fa-file-lines" style="color: rgb(132,255,128);" onclick="filterSelection('ProjectPage')"> <span style="color: white; font-weight: normal;">Project Pages</span></button>
+                <button class="btn fa solid fa-file-code" style="color: rgb(128,139,255);" onclick="filterSelection('DevDiary')"> <span style="color: white; font-weight: normal;">Development Diaries</span></button>
+                <button class="btn fa solid fa-code" style="color: rgb(255,128,128);" onclick="filterSelection('DeepDive')"> <span style="color: white; font-weight: normal;">Feature Deep Dives</span></button>
                 <button class="btn fa solid fa-book" style="color: rgb(255,216,128);" onclick="filterSelection('Research')"> <span style="color: white; font-weight: normal;">Research</span></button>
                 <button class="btn fa solid fa-pen" style="color: rgb(255,128,219);" onclick="filterSelection('Tutorial')"> <span style="color: white; font-weight: normal;">Tutorials</span></button>
             </div>
@@ -94,7 +95,7 @@
                     <h4 style="color: rgba(255,255,255,0.5); font-weight: normal;">July 30th, 2023 &lt;!&ndash;<span style="color: #6fffbe;">(?)</span>&ndash;&gt;</h4>
                 </article>-->
 
-                <!--<article class="blogtile filterDiv GamePage">
+                <!--<article class="blogtile filterDiv ProjectPage">
                     <a href="gamepages/StarfleetCommandGamePage.html"></a>
                     &lt;!&ndash;<video autoplay muted loop>
                         <source src="images/GIFS/StarfleetCommandDemo.webm" type=video/webm>
@@ -106,7 +107,7 @@
                     <h4 style="color: rgba(255,255,255,0.5); font-weight: normal;">Sept 9th, 2024 &lt;!&ndash;<span style="color: rgb(131,255,193);">(Updated: ?)</span>&ndash;&gt;</h4>
                 </article>-->
 
-                <article class="blogtile filterDiv DevLog">
+                <article class="blogtile filterDiv DeepDive">
                     <a href="blogpages/StarfleetCommandDevLogPage.html"></a>
                     <!--<video autoplay muted loop>
                         <source src="images/GIFS/StarfleetCommandDemo.webm" type=video/webm>
@@ -114,12 +115,13 @@
                     <img style="width: 100%;" src="images/starfleet_command_game_smallsize.png" alt="Starfleet Command Gameplay Screen">
                     <img style="width: 55%; margin-bottom: 2%; display: block; margin-left: auto; margin-right: auto;" src="images/Logos/StarfleetCommandLogo3.png" alt="Starfleet Command Logo">
                     <!--<h3 style="color: white;">Starfleet Command</h3>-->
-                    <h4 style="color: rgb(128,139,255); font-weight: normal;"><span class="fa solid fa-file-code"></span> Dev Log </h4>
-                    <h4 style="color: rgba(255,255,255,0.5); font-weight: normal;">COMING SOON</h4>
+                    <!--<h4 style="color: rgb(128,139,255); font-weight: normal;"><span class="fa solid fa-file-code"></span> Dev Diary </h4>-->
+                    <h4 style="color: rgb(255,128,128); font-weight: normal;"><span class="fa solid fa-code"></span> Feature Deep Dive </h4>
+                    <h4 style="color: rgba(255,255,255,0.5); font-weight: normal;">Sept 11th, 2024</h4>
                     <!--<h4 style="color: rgba(255,255,255,0.5); font-weight: normal;">Jan 31st, 2023 <span style="color: rgb(131,255,193);">(Updated: Jan 31st)</span></h4>-->
                 </article>
                 
-                <article class="blogtile filterDiv GamePage">
+                <article class="blogtile filterDiv ProjectPage">
                     <a href="gamepages/DirectorAiGamePage.html"></a>
                     <video autoplay muted loop>
                         <source src="images/GIFS/DirectorAiDemo.webm" type=video/webm>
@@ -131,7 +133,7 @@
                 </article>
 
                 
-                <!--<article class="blogtile filterDiv DevLog">
+                <!--<article class="blogtile filterDiv DevDiary">
                     <a href="blogpages/DroneInterceptionDevLogPage.html"></a>
                     <video autoplay muted loop>
                         <source src="images/GIFS/DroneInterceptionDemo.webm" type=video/webm>
@@ -143,7 +145,7 @@
                 </article>-->
 
 
-                <!--<article class="blogtile filterDiv DevLog">
+                <!--<article class="blogtile filterDiv DevDiary">
                     <a href="blogpages/MonopolyCloneDevLogPage.html"></a>
                     <video autoplay muted loop>
                         <source src="images/GIFS/MonopolyDemo.webm" type=video/webm>
@@ -155,7 +157,7 @@
                 </article>
 
 
-                <article class="blogtile filterDiv DevLog">
+                <article class="blogtile filterDiv DevDiary">
                     <a href="blogpages/SquadAiDevLogPage.html"></a>
                     <img style="width: 100%;" src="images/squad_ai_image.png" alt="Squad Ai Logo">
                     &lt;!&ndash;<video autoplay muted loop>
@@ -186,7 +188,7 @@
                 </article>
                 
                 
-                <article class="blogtile filterDiv GamePage" style="opacity: 35%;">
+                <article class="blogtile filterDiv ProjectPage" style="opacity: 35%;">
                     &lt;!&ndash;<a href="gamepages/KojimaWarsGamePage.html"></a>&ndash;&gt;
                     <video autoplay muted loop>
                         <source src="images/GIFS/KojimaWarsDemo.webm" type=video/webm>
@@ -199,7 +201,7 @@
                 </article>
                 
 
-                <article class="blogtile filterDiv GamePage" style="opacity: 35%;">
+                <article class="blogtile filterDiv ProjectPage" style="opacity: 35%;">
                     &lt;!&ndash;<a href="gamepages/KojimaWarsGamePage.html"></a>&ndash;&gt;
                     <video autoplay muted loop>
                         <source src="images/GIFS/WorldStreamerDemo.webm" type=video/webm>
@@ -212,7 +214,7 @@
                 </article>
 
 
-                <article class="blogtile filterDiv DevLog" style="opacity: 35%;">
+                <article class="blogtile filterDiv DevDiary" style="opacity: 35%;">
                     &lt;!&ndash;<a href="blogpages/SquidstributionDevLogPage.html"></a>&ndash;&gt;
                     <img src="images/squidstributionremake3.png" alt="Squidstribution">
                     <img style="width: 60%; margin-top: 2%; display: block; margin-left: auto; margin-right: auto;" src="images/Logos/squidstribution_logo_5.png" alt="Squidstribution Logo">
