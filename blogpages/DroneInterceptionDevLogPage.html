@@ -30,6 +30,16 @@
     #menu > .close:hover:after {
         filter: invert(53%) sepia(29%) saturate(973%) hue-rotate(197deg) brightness(102%) contrast(101%); /* Hamburger icon colour: Yellow */
     }
+
+    #main {
+        max-width: 55em;
+        margin: 0 auto;
+    }
+
+    .blogheader1 {
+        border-bottom: 2px solid cyan;
+        color: cyan;
+    }
 </style>
 
 <body><!--<body class="is-preload">-->
@@ -75,7 +85,7 @@
     </nav>
 
     <!-- Main -->
-    <div id="main" style="max-width: 55em; margin: 0 auto;">
+    <div id="main">
         <div class="inner" style="box-shadow: inset 0px 0px 0px 1px rgb(0, 0, 0), 0px 2px 4px 0px rgb(0, 0, 0); background-color: #1b1c26; border-radius: 10px;"> <!--#272938--> <!--#1b1c26-->
 
             <br>
@@ -83,16 +93,42 @@
             <a href="../blogpage.html" style="float: right; margin-top: 10px; margin-left: 3px; margin-right: 3px; color: rgba(255, 255, 255, 0.5);"><button class="btn fa fa-edit"></button></a>
             <a href="../skillspage.html" style="float: right; margin-top: 10px; margin-left: 3px; margin-right: 3px; color: rgba(255, 255, 255, 0.5);"><button class="btn fa fa-list-alt"></button></a>
             <a href="../index.html" style="float: right; margin-top: 10px; margin-left: 3px; margin-right: 3px; color: rgba(255, 255, 255, 0.5);"><button class="btn fa fa-home"></button></a>
-            
-            <h3 style="border-bottom: 2px solid #6fffbe; padding: 20px; font-size: 0.85em;"><strong style="color: rgb(128,139,255); font-weight: normal;"><span class="fa solid fa-file-code"></span> Development Log <span style="color: rgb(255,255,255);">| Drone Interception RTS</span></strong></h3>
 
-            <a href="../blogpage.html"><button class="btn"> <span class="fa-solid fa-arrow-circle-left"></span> <span style="font-family: sansation_light; font-weight: normal; font-size: 1.1em; ">Back</span></button></a>
+            <h3 style="border-bottom: 2px solid cyan; padding: 20px; font-size: 0.85em;"><strong style="color: rgb(128,240,255, 0.5);"><span class="fa-solid fa-gears"></span> Mechanics Analyses <span style="color: rgb(255,255,255);">| Drone Interceptors </span></strong></h3>
+
+            <a href="../blogpage.html"><button class="btn"> <span class="fa-solid fa-arrow-circle-left"></span> <span style="font-family: sansation_light; font-weight: normal; font-size: 1em; ">Back</span></button></a>
             
-            <h1 class="blogheader1">Log Entries</h1>
+            <!--<h1 class="blogheader1">Log Entries</h1>-->
 
             <section class="tiles">
 
                 <article class="blogtile">
+                    <a href="../blogpages/droneinterceptiondevlogs/DroneInterceptionDevLogOne.html"></a>
+                    <img class="blogtileimage" src="../images/DroneInterceptionDiagram2.png" alt="Drone Interception Image">
+                    <h3 class="blogtiletext"><span style="color: rgb(255,255,255); font-weight: bold;">Project Overview</span></h3>
+                    <h4 class="" style="color: rgb(128,240,255);"><span class="fa-solid fa-gears"></span> Log 1 </h4>
+                    <h4 class="" style="color: rgba(255,255,255,0.5); font-weight: normal;">Jan 4th, 2023</h4>
+
+                    <div class ="blogtilehiddentextcontainer">
+                        <p class ="blogtilehiddentext">A brief overview of the project.</p>
+                    </div>
+                </article>
+
+                <article class="blogtile">
+                    <a href="../blogpages/droneinterceptiondevlogs/DroneInterceptionDevLogTwo.html"></a>
+                    <video class="blogtileimage" autoplay muted loop>
+                        <source src="../images/GIFS/DroneInterceptionDemo.webm" type=video/webm>
+                    </video>
+                    <h3 class="blogtiletext"><span style="color: rgb(255,255,255); font-weight: bold;">Drone loadout System</span></h3>
+                    <h4 class="" style="color: rgb(128,240,255);"><span class="fa-solid fa-gears"></span> Log 2 </h4>
+                    <h4 class="" style="color: rgba(255,255,255,0.5); font-weight: normal;">Jan 10th, 2023</h4>
+
+                    <div class ="blogtilehiddentextcontainer">
+                        <p class ="blogtilehiddentext">Building a system for outfiting drones with different components at runtime.</p>
+                    </div>
+                </article>
+                
+                <!--<article class="blogtile">
                     <a href="../blogpages/droneinterceptiondevlogs/DroneInterceptionDevLogOne.html"></a>
                     <img class="blogtileimage" src="../images/DroneInterceptionDiagram2.png" alt="Drone Interception Image">
                     <h3 class="blogtiletext"><span style="color: rgb(255,255,255); font-weight: bold;">Project Introduction</span></h3>
@@ -102,10 +138,10 @@
                     <div class ="blogtilehiddentextcontainer">
                         <p class ="blogtilehiddentext">A brief introduction to the project.</p>
                     </div>
-                </article>
+                </article>-->
 
 
-                <article class="blogtile">
+                <!--<article class="blogtile">
                     <a href="../blogpages/droneinterceptiondevlogs/DroneInterceptionDevLogTwo.html"></a>
                     <video class="blogtileimage" autoplay muted loop>
                         <source src="../images/GIFS/DroneInterceptionDemo.webm" type=video/webm>
@@ -117,9 +153,11 @@
                     <div class ="blogtilehiddentextcontainer">
                         <p class ="blogtilehiddentext">Building a system for outfiting drones with different components at runtime.</p>
                     </div>
-                </article>
+                </article>-->
                 
                 
+                <article></article>
+                <article></article>
                 <article></article>
                 <article></article>
 
