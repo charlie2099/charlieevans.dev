@@ -3176,12 +3176,11 @@ input, select, textarea {
 
 .collapsible:after {
 	content: '\02795'; /* Unicode character for "plus" sign (+) */
+	/*background-color: rgb(179,255,107);*/
 	font-size: 12px;
-	color: white;
 	float: right;
 	margin-left: 5px;
-	margin-top: 3px;
-	background-color: #349800;
+	margin-top: 1px;
 }
 
 .active {
@@ -3190,8 +3189,8 @@ input, select, textarea {
 }
 
 .active:after {
-	background-color: #af0000;
 	content: "\2796"; /* Unicode character for "minus" sign (-) */
+	/*background-color: #af0000;*/
 }
 
 .collapsibleblock {

@@ -77,35 +77,46 @@
     <div class="inner" style="box-shadow: inset 0px 0px 0px 1px rgb(0, 0, 0), 0px 2px 4px 0px rgb(0, 0, 0); background-color: #1b1c26; border-radius: 10px;"> <!--#272938--> <!--#1b1c26-->
         
       <br>
+      <div class="icon-container" style="float: right; display: flex;">
+          <a href="../index.html" style="margin: 0 3px; color: rgba(255, 255, 255, 0.5); text-decoration: none;"><button class="btn" style="display: flex; flex-direction: column; align-items: center; padding: 8px 11px;"><i class="fa fa-home" style="font-size: 18px;"></i><span style="font-size: 0.6em; margin-top: 6px;">Home</span></button></a>
+          <a href="../skillspage.html" style="margin: 0 3px; color: rgba(255, 255, 255, 0.5); text-decoration: none;"><button class="btn" style="display: flex; flex-direction: column; align-items: center; padding: 8px 12px;"><i class="fa fa-list-alt" style="font-size: 18px;"></i><span style="font-size: 0.6em; margin-top: 6px;">Skills</span></button></a>
+          <a href="../blogpage.html" style="margin: 0 3px; color: rgba(255, 255, 255, 0.5); text-decoration: none;"><button class="btn" style="display: flex; flex-direction: column; align-items: center; padding: 8px 14px;"><i class="fa fa-edit" style="font-size: 18px;"></i><span style="font-size: 0.6em; margin-top: 6px;">Blog</span></button></a>
+      </div>
         
-      <a href="../blogpage.html" style="float: right; margin-top: 10px; margin-left: 3px; margin-right: 3px; color: rgba(255, 255, 255, 0.5);"><button class="btn fa fa-edit"></button></a>
-      <a href="../skillspage.html" style="float: right; margin-top: 10px; margin-left: 3px; margin-right: 3px; color: rgba(255, 255, 255, 0.5);"><button class="btn fa fa-list-alt"></button></a>
-      <a href="../index.html" style="float: right; margin-top: 10px; margin-left: 3px; margin-right: 3px; color: rgba(255, 255, 255, 0.5);"><button class="btn fa fa-home"></button></a>
-
       <h3 style="border-bottom: 2px solid rgb(179,255,107); padding: 20px; font-size: 0.85em;"><strong style="color: rgb(179,255,107, 0.5);"><span class="fa solid fa-gamepad"></span> Project Page <span style="color: rgba(255, 255, 255, 1);">| Director Ai</span> </strong></h3>
         
-      <a href="../blogpage.html"><button class="btn"> <span class="fa-solid fa-arrow-circle-left"></span> <span style="font-family: sansation_light; font-weight: normal; font-size: 1em;">Back</span></button></a>
+      <a href="../blogpage.html"><button class="btn"> <span class="fa-solid fa-arrow-circle-left" style="font-size: 0.9em;"></span> <span style="font-weight: normal; font-size: 0.9em;">Back</span></button></a>
 
       <h1 class="blogheader1">Director Ai for Shooter and Survival Games</h1>
       <h4 style="color: rgba(255,255,255,0.5); font-weight: normal; text-align: center;">Jan 30th, 2023 <span style="color: #6fffbe;">(Updated: Feb 15th)</span></h4>
+
+      <p>Welcome to the <span style="color: rgb(179,255,107); font-style: italic;">Project Page</span> for my 
+          <span style="font-style: italic;">Director AI</span> system, a dissertation project I undertook as part of my bachelor's degree.
+          The following sections will give an overview of the project such as it's core features and limitations, the technical challneges
+          faced and how I overcame them, before concluding with a reflection on what I learnt and future plans for the project. Code samples
+          can be found at the bottom of this page.</p>
+
+      <a href="#codesamples"><button class="btn fa solid fa-code" style="color: rgb(132,123,255); font-size: 0.8em;"> <span style="color: white; font-weight: normal; font-size: 1em;">Code Samples</span></button></a>
         
       <br>
-      <video class="projecttileimage" autoplay muted loop>
-        <source src="../images/GIFS/DirectorAiDemo.webm" type=video/webm>
-      </video>
-
+      <br>
+        
+      <figure style="display: inline-block;">
+          <video class="projecttileimage" autoplay muted loop style="width: 85%; border: 1px solid rgb(179,255,107); border-radius: 20px; display: block; margin-left: auto; margin-right: auto; margin-bottom: 0.5em;">
+              <source src="../images/GIFS/DirectorAiDemo.webm" type=video/webm>
+          </video>
+          <figcaption style="text-align: center; font-size: 0.8em;">Gameplay preview of the AI Director in action.</figcaption>
+      </figure>  
+        
       <br>
       <br>
-      <a href="#codesamples"><button class="btn fa solid fa-code" style="color: rgb(132,123,255);"> <span style="color: white; font-family: sansation_light; font-weight: normal;">Code Samples</span></button></a>
-      
-      <br>
-      <br>
-      <h2 class="blogheader2">Project Overview</h2>
-      <p>An Ai Director is a system that manages the intensity and flow of the player's experience. It is used to 
-          dynamically control the difficulty and progression of the game in real time based on player performance, 
-          and aims to create a unique and challenging experience on each play so that no two games are the same.
-          This typically involves the Director deciding when and where to spawn enemies, how many enemies should 
-          be in play at any one time, and modifying the level layout to open up new paths dynamically. 
+      <h2 class="blogheader2">What is an AI Director?</h2>
+      <p>An <span style="font-style: italic;">AI Director</span> is a system that manages the intensity and flow of 
+          the player's experience. It is used to dynamically control the difficulty and progression of the game in 
+          real time based on player performance, and aims to create a unique and challenging experience on each play 
+          so that no two games are the same. This typically involves the Director deciding when and where to spawn 
+          enemies, how many enemies should be in play at any one time, and modifying the level layout to open up new 
+          paths dynamically. 
         <!--Such a system is popularly employed in the survival horror genre, with Left 4 Dead being a perfect example
         of how such a system can be successful deployed to create novel experiences.--></p>
       
@@ -189,7 +200,7 @@
       <!--===================================-->
       <!--Code Snippet 4 - Director Singleton-->
       <!--===================================-->
-      <button type="button" class="collapsible"><span class="fa-solid fa-code" style="color: rgb(132,123,255); margin-top: 0.15em; margin-right: 0.5em; float: left; font-size: 1em;"></span>Director</button>
+      <button type="button" class="collapsible"><span class="fa-solid fa-code" style="color: rgb(132,123,255); margin-top: 0.15em; margin-right: 0.5em; float: left; font-size: 0.95em;"></span>Director</button>
       <div class="collapsibleblock">
 
       <br>
@@ -362,7 +373,7 @@
       <!--==========================-->
       <!--Code Snippet x - Event Bus-->
       <!--==========================-->
-      <button type="button" class="collapsible"><span class="fa-solid fa-code" style="color: rgb(132,123,255); margin-top: 0.15em; margin-right: 0.5em; float: left; font-size: 1em;"></span>Director Event Bus</button>
+      <button type="button" class="collapsible"><span class="fa-solid fa-code" style="color: rgb(132,123,255); margin-top: 0.15em; margin-right: 0.5em; float: left; font-size: 0.95em;"></span>Director Event Bus</button>
       <div class="collapsibleblock">
 
       <br>
@@ -423,7 +434,7 @@
       <!--==================================================-->
       <!--Code Snippet 1 - Director Intensity Rule Interface-->
       <!--==================================================-->
-      <button type="button" class="collapsible"><span class="fa-solid fa-code" style="color: rgb(132,123,255); margin-top: 0.15em; margin-right: 0.5em; float: left; font-size: 1em;"></span>Director Intensity Rule Interface</button>
+      <button type="button" class="collapsible"><span class="fa-solid fa-code" style="color: rgb(132,123,255); margin-top: 0.15em; margin-right: 0.5em; float: left; font-size: 0.95em;"></span>Director Intensity Rule Interface</button>
       <div class="collapsibleblock">
           
         <br>
@@ -438,7 +449,7 @@
       <!--===================================================-->
       <!--Code Snippet x - Director Intensity Rule Calculator-->
       <!--===================================================-->
-      <button type="button" class="collapsible"><span class="fa-solid fa-code" style="color: rgb(132,123,255); margin-top: 0.15em; margin-right: 0.5em; float: left; font-size: 1em;"></span>Director Intensity Rule Calculator</button>
+      <button type="button" class="collapsible"><span class="fa-solid fa-code" style="color: rgb(132,123,255); margin-top: 0.15em; margin-right: 0.5em; float: left; font-size: 0.95em;"></span>Director Intensity Rule Calculator</button>
       <div class="collapsibleblock">
 
       <br>
@@ -470,7 +481,7 @@
       <!--===============================================-->
       <!--Code Snippet x - Director Intensity Rule Engine -->
       <!--===============================================-->
-      <button type="button" class="collapsible"><span class="fa-solid fa-code" style="color: rgb(132,123,255); margin-top: 0.15em; margin-right: 0.5em; float: left; font-size: 1em;"></span>Director Intensity Rule Engine</button>
+      <button type="button" class="collapsible"><span class="fa-solid fa-code" style="color: rgb(132,123,255); margin-top: 0.15em; margin-right: 0.5em; float: left; font-size: 0.95em;"></span>Director Intensity Rule Engine</button>
       <div class="collapsibleblock">
 
       <br>
@@ -503,7 +514,7 @@
       <!--==============================-->
       <!--Code Snippet x - State Machine-->
       <!--==============================-->
-      <button type="button" class="collapsible"><span class="fa-solid fa-code" style="color: rgb(132,123,255); margin-top: 0.15em; margin-right: 0.5em; float: left; font-size: 1em;"></span>State Machine</button>
+      <button type="button" class="collapsible"><span class="fa-solid fa-code" style="color: rgb(132,123,255); margin-top: 0.15em; margin-right: 0.5em; float: left; font-size: 0.95em;"></span>State Machine</button>
       <div class="collapsibleblock">
 
           <br>
@@ -558,7 +569,7 @@
       <!--========================================-->
       <!--Code Snippet x - Director Respite State-->
       <!--========================================-->
-      <button type="button" class="collapsible"><span class="fa-solid fa-code" style="color: rgb(132,123,255); margin-top: 0.15em; margin-right: 0.5em; float: left; font-size: 1em;"></span>Director Respite State</button>
+      <button type="button" class="collapsible"><span class="fa-solid fa-code" style="color: rgb(132,123,255); margin-top: 0.15em; margin-right: 0.5em; float: left; font-size: 0.95em;"></span>Director Respite State</button>
       <div class="collapsibleblock">
 
       <br>
@@ -596,7 +607,7 @@
       <!--========================================-->
       <!--Code Snippet x - Director Build-up State-->
       <!--========================================-->
-      <button type="button" class="collapsible"><span class="fa-solid fa-code" style="color: rgb(132,123,255); margin-top: 0.15em; margin-right: 0.5em; float: left; font-size: 1em;"></span>Director BuildUp State</button>
+      <button type="button" class="collapsible"><span class="fa-solid fa-code" style="color: rgb(132,123,255); margin-top: 0.15em; margin-right: 0.5em; float: left; font-size: 0.95em;"></span>Director BuildUp State</button>
       <div class="collapsibleblock">
 
       <br>
@@ -633,7 +644,7 @@
       <!--========================================-->
       <!--Code Snippet x - Director Peak State-->
       <!--========================================-->
-      <button type="button" class="collapsible"><span class="fa-solid fa-code" style="color: rgb(132,123,255); margin-top: 0.15em; margin-right: 0.5em; float: left; font-size: 1em;"></span>Director Peak State</button>
+      <button type="button" class="collapsible"><span class="fa-solid fa-code" style="color: rgb(132,123,255); margin-top: 0.15em; margin-right: 0.5em; float: left; font-size: 0.95em;"></span>Director Peak State</button>
       <div class="collapsibleblock">
 
       <br>
@@ -671,7 +682,7 @@
       <!--========================================-->
       <!--Code Snippet x - Director PeakFade State-->
       <!--========================================-->
-      <button type="button" class="collapsible"><span class="fa-solid fa-code" style="color: rgb(132,123,255); margin-top: 0.15em; margin-right: 0.5em; float: left; font-size: 1em;"></span>Director PeakFade State</button>
+      <button type="button" class="collapsible"><span class="fa-solid fa-code" style="color: rgb(132,123,255); margin-top: 0.15em; margin-right: 0.5em; float: left; font-size: 0.95em;"></span>Director PeakFade State</button>
       <div class="collapsibleblock">
 
       <br>
@@ -710,7 +721,7 @@
       <!--========================================-->
       <!--Code Snippet x - Director Inspector View-->
       <!--========================================-->
-      <button type="button" class="collapsible"><span class="fa-solid fa-file-code" style="color: rgb(132,123,255); margin-top: 0.15em;  margin-right: 0.5em; float: left; font-size: 1em;"></span>Director Inspector View</button>
+      <button type="button" class="collapsible"><span class="fa-solid fa-file-code" style="color: rgb(132,123,255); margin-top: 0.15em;  margin-right: 0.5em; float: left; font-size: 0.95em;"></span>Director Inspector View</button>
       <div class="collapsibleblock">
           <br>
           <img src="../images/DirectorAiProject/DirectorInspectorView.png" alt="Director Inspector View">
@@ -720,7 +731,7 @@
       <!--========================================================-->
       <!--Code Snippet x - Director Active Area Set Inspector View-->
       <!--========================================================-->
-      <button type="button" class="collapsible"><span class="fa-solid fa-file-code" style="color: rgb(132,123,255); margin-top: 0.15em; margin-right: 0.5em; float: left; font-size: 1em;"></span>Director Active Area Set</button>
+      <button type="button" class="collapsible"><span class="fa-solid fa-file-code" style="color: rgb(132,123,255); margin-top: 0.15em; margin-right: 0.5em; float: left; font-size: 0.95em;"></span>Director Active Area Set</button>
       <div class="collapsibleblock">
           <br>
           <img src="../images/DirectorAiProject/ActiveAreaSetInspectorView.png" alt="ActiveAreaSet Inspector View">
