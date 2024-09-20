@@ -2878,6 +2878,10 @@ input, select, textarea {
 	background: none;
 	color: rgba(134, 134, 134, 0.8);
 }
+.buttonformat:hover {
+	color: #6fffbe;
+}
+
 .buttonlink {
 	text-decoration: none;
 }
