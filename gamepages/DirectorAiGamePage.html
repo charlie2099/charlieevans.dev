@@ -86,18 +86,22 @@
       <h3 style="border-bottom: 2px solid rgb(179,255,107); padding: 20px; font-size: 0.85em;"><strong style="color: rgb(179,255,107, 0.5);"><span class="fa solid fa-gamepad"></span> Project Page <span style="color: rgba(255, 255, 255, 1);">| Director Ai</span> </strong></h3>
         
       <a href="../blogpage.html"><button class="btn"> <span class="fa-solid fa-arrow-circle-left" style="font-size: 0.9em;"></span> <span style="font-weight: normal; font-size: 0.9em;">Back</span></button></a>
-
+        
       <h1 class="blogheader1">Director Ai for Shooter and Survival Games</h1>
-      <h4 style="color: rgba(255,255,255,0.5); font-weight: normal; text-align: center;">Jan 30th, 2023 <span style="color: #6fffbe;">(Updated: Feb 15th)</span></h4>
+      <h4 style="color: rgba(255,255,255,0.5); font-weight: normal; text-align: center;"><span style="color: white;">Published:</span> Jan 30th, 2023 | <span style="color: white;">Updated:</span> Sept 22nd, 2024</h4>
 
-      <p>Welcome to the <span style="color: rgb(179,255,107); font-style: italic;">Project Page</span> for my 
-          <span style="font-style: italic;">Director AI</span> system, a dissertation project I undertook as part of my bachelor's degree.
-          The following sections will give an overview of the project such as it's core features and limitations, the technical challneges
-          faced and how I overcame them, before concluding with a reflection on what I learnt and future plans for the project. Code samples
-          can be found at the bottom of this page.</p>
+      <!--==============-->
+      <!-- Introduction -->
+      <!--==============-->
+      <h2 class="blogheader2">Introduction</h2>
+      <p>Welcome to the <span style="color: rgb(179,255,107); font-style: italic;">Project Page</span> for my <span style="font-style: italic;">Director AI</span> system,
+        a project I undertook as a dissertation as part of my bachelor's degree in Games Technology. The following
+        sections will give an overview of the project such as it's core features and limitations, the technical
+        challenges faced and how I overcame them, before concluding with a reflection on what I learnt and future
+        plans for the project. Code samples can be found at the bottom of this page.</p>
 
       <a href="#codesamples"><button class="btn fa solid fa-code" style="color: rgb(132,123,255); font-size: 0.8em;"> <span style="color: white; font-weight: normal; font-size: 1em;">Code Samples</span></button></a>
-        
+      
       <br>
       <br>
         
@@ -110,91 +114,184 @@
         
       <br>
       <br>
-      <h2 class="blogheader2">What is an AI Director?</h2>
-      <p>An <span style="font-style: italic;">AI Director</span> is a system that manages the intensity and flow of 
-          the player's experience. It is used to dynamically control the difficulty and progression of the game in 
-          real time based on player performance, and aims to create a unique and challenging experience on each play 
-          so that no two games are the same. This typically involves the Director deciding when and where to spawn 
-          enemies, how many enemies should be in play at any one time, and modifying the level layout to open up new 
-          paths dynamically. 
-        <!--Such a system is popularly employed in the survival horror genre, with Left 4 Dead being a perfect example
-        of how such a system can be successful deployed to create novel experiences.--></p>
+      <!--===========================================-->  
+      <!--Background - The AI Director of Left 4 Dead-->  
+      <!--===========================================-->
+      <h2 class="blogheader2">Background - The AI Director of Left 4 Dead</h2>
+        
+        <p>The developers of the first-person shooter game <span style="font-style: italic;">Left 4 Dead</span> wanted to provide a 
+            challenging, engaging, and fresh experience for their players on every play. To achieve this, they 
+            developed a system they called an <span style="font-style: italic;">AI Director</span>, a collection of
+            systems that worked together seamlessly to govern the pacing of their game and how the drama unfolded. It
+            was an AI that worked behind the scenes rather than an actual physical entity.</p> 
+        
+        <p>Under the hood, the <span style="font-style: italic;">AI Director</span> analysed the performance of each player and based
+            it's decisions upon a perceived stress metric that it continually calculated for each player. Through this, 
+            it was able to decide when it perceived was the right time was to spawn more enemies, how many of them to 
+            spawn, what type of enemy to spawn, and more. The Director also had the capability to modify the level 
+            layout to open up new paths dynamically based on certain conditions, and more. These capabilities
+            enabled the Director to craft the best gameplay experience it could for it's players.</p>
+        
+      <!--=======-->
+      <!--Concept-->
+      <!--=======-->
+      <h2 class="blogheader2">Concept</h2>
       
-      <p>The goal for this project was to create a versatile Director Ai system that 
-        would allow designers to build their own rules and behaviours for games of 
-        the shooter and survival genre.</p>
+      <p>The aim for this project was to create a more versatile Director system that could be adapted to other 
+          videogame genres. For the purposes and scope of this project, two genres were selected. The shooter genre 
+          was selected to test the Director in a genre that it has been tried and tested in. The second genre selected 
+          was the survival genre as it is another well known and extremely popular genre, and it would be insightful 
+          to see how the Director could be utilised in such a different genre.</p>
+      
+      <p>Another aim for this project was to make the system modular in nature so that it would allow designers to 
+          easily build their own rules and behaviours for their shooter and survival games.</p>
         
-      <br>
-      <h2 class="blogheader2">Technical Challenges</h2>
-      <p>Constructing a flexible rules system for the Director to utilise effectively for both shooter and survival games proved to be a challenging task. It was important that rules could be processed for both game
-      genres by a single system.</p>
-      <p>...</p>
-
-      <br>
-      <h2 class="blogheader2">Features</h2> <!--What Went Well?-->
+      <!--============-->
+      <!-- Tech Stack -->
+      <!--============-->
+      <h3 class="blogheader3">Tech Stack</h3>
       <ul>
-          <li><span style="color: white; font-weight: bold;">Highly Customisable<!--and Data-driven--></span> - Designers can tweak and customise the director according to their own needs and preferences.</li>
-          <li><span style="color: white; font-weight: bold;">Flexible Rule Processing System</span> - Rules for both shooter and survival games can be processed by the system with the capability to adapt to other genre types.</li>
-          <li><span style="color: white; font-weight: bold;">Easy Deployment</span> - Simply drop the director prefab into the scene and then drag-and-drop the necessary requirements for the inspector (such as a reference to the player).</li>
+          <li>Engine/Framework/Library: <span style="color: white; font-weight: bold;">SFML 2.0</span></li>
+          <li>Programming Language: <span style="color: white; font-weight: bold;">C++</span></li>
+          <li>IDE: <span style="color: white; font-weight: bold;">JetBrains CLion</span></li>
+          <li>Operating System: <span style="color: white; font-weight: bold;">Windows</span></li>
       </ul>
+
+      <!--============-->
+      <!--Key Features-->
+      <!--============-->
+      <h2 class="blogheader2">Key Features</h2>
+      <blockquote>COMING SOON</blockquote>  
         
+      <!--<h2 class="blogheader2">Key Features</h2>
+      <ul>
+          <li><span style="color: white; font-weight: bold;">Shooter Game</span> - Text.</li>
+          <li><span style="color: white; font-weight: bold;">Survival Game</span> - Text.</li>
+          <li><span style="color: white; font-weight: bold;">Director</span> - Text.</li>
+          <ul>
+              <li><span style="color: white; font-weight: bold;">Placeholder</span></li>
+              <li><span style="color: white; font-weight: bold;">Placeholder</span></li>
+              <li><span style="color: white; font-weight: bold;">Placeholder</span></li>
+          </ul>
+          <li><span style="color: white; font-weight: bold;">Active Area Set</span></li>
+          <ul>
+              <li><span style="color: white; font-weight: bold;">Placeholder</span></li>
+              <li><span style="color: white; font-weight: bold;">Placeholder</span></li>
+              <li><span style="color: white; font-weight: bold;">Placeholder</span></li>
+          </ul>
+          <li><span style="color: white; font-weight: bold;">Rule System</span> - Text.</li>
+          <ul>
+              <li><span style="color: white; font-weight: bold;">Intensity Rule Engine</span></li>
+              <li><span style="color: white; font-weight: bold;">Behaviour Rule Engine</span></li>
+              <li><span style="color: white; font-weight: bold;">Intensity Rule Calculator</span></li>
+              <li><span style="color: white; font-weight: bold;">Behaviour Rule Calculator</span></li>
+          </ul>
+      </ul>-->
+      
+      <!--====================-->
+      <!--Technical Challenges-->
+      <!--====================-->
+      <h2 class="blogheader2">Technical Challenges</h2>
+      <blockquote>COMING SOON</blockquote>
+      <!--<p>Constructing a flexible rules system for the Director to utilise effectively for both shooter and survival games
+          proved to be a challenging task. It was important that rules could be processed for both game genres by a single
+          system.</p>-->
+      
+      <!--=========-->
+      <!--Strengths-->
+      <!--=========-->  
+      <h2 class="blogheader2">Strengths</h2> <!--What Went Well?-->
+      <ul>
+          <li><span style="color: white; font-weight: bold;">Highly Customisable</span> - Designers can tweak and customise the director according to
+              their own needs and preferences.</li>
+          <li><span style="color: white; font-weight: bold;">Easy Deployment</span> - The Director can quickly and easily be deployed by dropping it's
+              prefab into the scene and setting the necessary data requirements for the inspector.</li>
+          <li><span style="color: white; font-weight: bold;">Flexible Rule Processing</span> - Rules for both shooter and survival games can be 
+              processed by the system with the capability to adapt to other genre types too.</li>
+          <li><span style="color: white; font-weight: bold;">Dynamic Tilemap Processing</span> - Through the Active Area Set (AAS) system, the Director 
+              is able to process a given tilemap level and determine viable enemy spawn locations. </li>
+      </ul>
+
+      <!--===========-->
+      <!--Limitations-->
+      <!--===========-->  
       <h2 class="blogheader2">Limitations</h2> <!--What Didn't Go So Well?-->
-        <ul>
-            <li><span style="color: white; font-weight: bold;">Rules Must Be Manually Added<!--and Data-driven--></span> - Designers are required to access the code directly to write rules and add them to the rules list.
-                A custom editor tool should be built that will allow a designer to easily create and add rules to the rule engine without having to access the code directly.</li>
-            <li><span style="color: white; font-weight: bold;">Lack of Rule Evaluation Techniques</span> - Intensity rules are only fired based on the highest weighting output. Further techniques could be employed such 
-                as executing rules sequentially, at random, based on priority, or firing the first to match a condition.</li>
-        </ul>
-        
-        <!--<p>A limitation of the existing rules system is that it requires designers to
-            <span style="color: white;">manually add their rules</span> to to the rule 
-            calculator class so that it can be used in the rule engine calculation. Ideally a 
-            <span style="color: white;">custom editor tool should be built</span> that will
-            <span style="color: white;">allow a designer to easily create and add rules to the 
-                rule engine</span> without having to access the code directly.</p>
-        
-        <p>Another limitation of the current system is the <span style="color: white;">
-            lack of rule evaluation techniques employed</span>. Intensity rules are
-            <span style="color: white;">only fired based on the highest intensity
-                weighting output</span>, however further techniques could be introduced. Some 
-            examples include <span style="color: white;">executing rules sequentially</span>, 
-            <span style="color: white;">at random</span>, 
-            <span style="color: white;">based on priority</span>, or firing the
-            <span style="color: white;">first to match a condition</span>.</p>-->
-        
+      <ul>
+          <li><span style="color: white; font-weight: bold;">Rules Must Be Manually Added<!--and Data-driven--></span> - Designers are required to 
+              access the code directly to write rules and add them to the rules list. A custom editor tool should be 
+              built that will allow a designer to easily create and add rules to the rule engine without having to 
+              access the code directly.</li>
+          <li><span style="color: white; font-weight: bold;">Lack of Rule Evaluation Techniques</span> - Intensity rules are only fired based on the 
+              highest weighting output. Further techniques could be employed such as executing rules sequentially, at 
+              random, based on priority, or firing the first to match a condition.</li>
+          <li><span style="color: white; font-weight: bold;">2D Environment Focus</span> - The current implemented is limited to 2D game environments 
+              and so does not support 3D environments.</li>
+      </ul>
+
+      <!--=============-->
+      <!--What I Learnt-->
+      <!--=============-->
       <h2 class="blogheader2">What I Learnt</h2>
       <ul>
-          <li>The Rule Pattern - Abstracting messy logic into their own respective rule classes.</li>
-          <li>The State Pattern</li>
-          <li>...</li>
-      </ul>
-        
-      <h2 class="blogheader2">Future Improvements</h2>
+          <li>The Rule pattern</li>
+          <li>The State pattern</li>
+          <li>Event buses</li>
+          <li>Interfaces</li>
+          <li>Dictionaries</li>
+          <li>State caching</li>
+          <li>Modular architectures</li>
+          <li>Tilemap level design</li>
+      </ul> 
+      <!--<h2 class="blogheader2">What I Learnt (WORK-IN-PROGRESS)</h2>
+      <ul>
+          <li><span style="color: white; font-weight: bold;">The Rule Pattern</span> - Abstracting messy logic into their 
+              own respective rule classes.</li>
+          <li><span style="color: white; font-weight: bold;">The State Pattern</span> - Encapsulating simple behaviours 
+              into their own state classs and handling the transitional logic from one state to another.</li>
+          <li><span style="color: white; font-weight: bold;">Event Buses</span> - Text</li>
+          <li><span style="color: white; font-weight: bold;">Interfaces</span> - Text</li>
+          <li><span style="color: white; font-weight: bold;">Dictionaries</span> - Text</li>
+          <li><span style="color: white; font-weight: bold;">State caching</span> - Text</li>
+          <li><span style="color: white; font-weight: bold;">Modular Architectures</span> - The importance and value of 
+              loosely coupled systems and extensible design </li>
+          <li><span style="color: white; font-weight: bold;">Tilemap Level Design</span> - Text</li>
+      </ul>-->
+
+      <!--============-->
+      <!--Future Plans-->
+      <!--============-->
+      <h2 class="blogheader2">Future Plans</h2>
       <ul>
           <li>Rework director state logic using a state machine<span class="fa-solid fa-check-square" style="margin-left: 0.5em; font-size: 1em; color: greenyellow;"></span></li>
           <li>Utilise more methods of rule execution<span class="fa-solid fa-square" style="margin-left: 0.5em; font-size: 1em;"></span></li>
-          <li>Rule creation using a custom editor tool<span class="fa-solid fa-square" style="margin-left: 0.5em; font-size: 1em;"></span></li>
+          <li>Handle rule creation using a custom editor tool<span class="fa-solid fa-square" style="margin-left: 0.5em; font-size: 1em;"></span></li>
           <li>Adapt the active area set to work with 3D environments<span class="fa-solid fa-square" style="margin-left: 0.5em; font-size: 1em;"></span></li>
       </ul>
-      
+
+      <!--==========-->
+      <!--Conclusion-->
+      <!--==========-->
+      <h2 class="blogheader2">Conclusion</h2>
+      <blockquote>COMING SOON</blockquote>
+
+      <!--===============-->
+      <!--Visual Showcase-->
+      <!--===============-->
+      <h2 class="blogheader2">Visual Showcase</h2>
+      <blockquote>COMING SOON</blockquote>
+
+      <!--============-->
+      <!--Code Samples-->
+      <!--============-->
       <h2 class="blogheader2" id="codesamples">Code Samples</h2>
-      <style>.background{font-family:monaco,Consolas,LucidaConsole,monospace;color:#dfdfdf;}.method{color:#39ca8c;}.class{color:#bf90fd;}.keyword{color:#6b94e7;}.string{color:#C9A26D;}.interface{color:#bf90fd;}.enumName{color: #E1BFFF;}  .numericLiteral{color:#ED94C0;}  .control{color:#6b94e7;}  .namespace{color:#dfdfdf;}  .enumMember{color:#dfdfdf;}  .identifier{color:#dfdfdf;}  .punctuation{color:#dfdfdf;}  .operator{color:#dfdfdf;}  .propertyName{color:#dfdfdf;}  .fieldName{color:#dfdfdf;}  .localName{color:#9CDCFE;}  .parameter{color:#BDBDBD;}</style>
       <!-- code styling generated by https://github.com/Swiftly1/CsharpToColouredHTML -->
 
       <!--============================-->
       <!--Code Snippet x - Placeholder -->
       <!--============================-->
-      <!--<button type="button" class="collapsible" style="width: 100%;"><span class="fa-solid fa-code" style="color: rgb(132,123,255);  margin-right: 0.5em; float: left; font-size: 1em;"></span>Placeholder</button>
+      <!--<button type="button" class="collapsible" style="width: 100%;"><span class="fa-solid fa-code" style="color: rgb(132,123,255); margin-right: 0.5em; float: left; font-size: 1em;"></span>Placeholder</button>
       <div class="collapsibleblock">
-  
-      <br>
-      <pre ><code><span class="keyword">public interface</span> <span class="interface">IDirectorIntensityRule</span>
-  {
-      <span class="keyword">public float</span> <span class="method">CalculatePerceivedIntensity</span>(<span class="class">Director</span> <span class="parameter">director</span>);
-  }</code>
-      </pre>
       </div>-->
-
         
       <h3 class="blogheader3">Core</h3>
       <!--===================================-->
@@ -202,232 +299,30 @@
       <!--===================================-->
       <button type="button" class="collapsible"><span class="fa-solid fa-code" style="color: rgb(132,123,255); margin-top: 0.15em; margin-right: 0.5em; float: left; font-size: 0.95em;"></span>Director</button>
       <div class="collapsibleblock">
-
-      <br>
-      <pre class="background"><code><span class="keyword">public enum</span> <span class="enumName">DirectorEvent</span>
-{
-    EnteredNewState,
-    EnteredRespiteState,
-    EnteredBuildUpState,
-    EnteredPeakState,
-    EnteredPeakFadeState,
-    ReachedPeakIntensity
-}</code>
-        </pre>
-
-
-        <br>
-        <pre class="background"><code><span class="keyword">public class</span> <span class="class">Director</span> : <span class="class">MonoBehaviour</span>
-{
-    <span class="keyword">public static</span> <span class="class">Director</span> Instance;
-
-    <span class="keyword">private enum</span> <span class="enumName">Difficulty</span>
-    {
-        Easy = <span class="numericLiteral">0</span>,
-        Normal = <span class="numericLiteral">1</span>,
-        Hard = <span class="numericLiteral">2</span>
-    }
-
-    [<span class="class">SerializeField</span>] <span class="keyword">private</span> <span class="enumName">Difficulty</span> difficulty;
-    <span class="keyword">private</span> <span class="class">Dictionary</span>&lt;<span class="enumName">Difficulty</span>, <span class="keyword">float</span>&gt; _intensityModifierDict;
-
-    [<span class="class">Header</span>(<span class="string">&quot;INTENSITY&quot;</span>)] [<span class="class">SerializeField</span>] <span class="keyword">private float</span> intensityCalculationRate = <span class="numericLiteral">0.5f</span>;
-
-    [<span class="class">Header</span>(<span class="string">&quot;TEMPO&quot;</span>)] [<span class="class">SerializeField</span>] [<span class="class">Range</span>(<span class="numericLiteral">70</span>, <span class="numericLiteral">100</span>)]
-    <span class="keyword">private int</span> peakIntensityThreshold;
-
-    [<span class="class">Space</span>] [<span class="class">Tooltip</span>(<span class="string">&quot;Default value, but can be dynamically altered by the Director&quot;</span>)] [<span class="class">SerializeField</span>]
-    <span class="keyword">private float</span> defaultPeakDuration;
-
-    [<span class="class">SerializeField</span>] <span class="keyword">private float</span> defaultRespiteDuration;
-    [<span class="class">Space</span>] [<span class="class">SerializeField</span>] <span class="keyword">private int</span> maxBuildUpPopulation;
-    [<span class="class">SerializeField</span>] <span class="keyword">private int</span> maxPeakPopulation;
-    [<span class="class">SerializeField</span>] <span class="keyword">private int</span> maxRespitePopulation;
-
-    [<span class="class">Header</span>(<span class="string">&quot;ENEMY DATA&quot;</span>)] [<span class="class">SerializeField</span>]
-    <span class="keyword">private</span> <span class="class">List</span>&lt;<span class="class">GameObject</span>&gt; activeEnemies = <span class="keyword">new</span>();
-    [<span class="class">SerializeField</span>] <span class="keyword">private int</span> maxPopulationCount;
-
-    [<span class="class">Header</span>(<span class="string">&quot;PLAYER DATA&quot;</span>)] [<span class="class">SerializeField</span>]
-    <span class="keyword">private</span> Player player;
-
-    <span class="keyword">public float</span> RespiteDuration { <span class="keyword">get</span>; <span class="keyword">set</span>; }
-    <span class="keyword">public float</span> PeakDuration { <span class="keyword">get</span>; <span class="keyword">set</span>; }
-    <span class="keyword">public int</span> MaxPopulationCount { <span class="keyword">get</span>; <span class="keyword">set</span>; }
-
-    <span class="keyword">private readonly</span> StateMachine _stateMachine = <span class="keyword">new</span>();
-    <span class="keyword">private</span> <span class="class">Dictionary</span>&lt;<span class="class">Type</span>, <span class="interface">IState</span>&gt; _cachedIntensityStatesDict;
-
-    <span class="keyword">private readonly</span> DirectorIntensityCalculator _intensityCalculator = <span class="keyword">new</span>();
-    <span class="keyword">private float</span> _perceivedIntensity;
-
-    <span class="keyword">private void</span> <span class="method">OnEnable</span>() =&gt; _stateMachine.OnStateChanged += <span class="method">StateMachineOnStateChangedEvent</span>;
-    <span class="keyword">private void</span> <span class="method">OnDisable</span>() =&gt; _stateMachine.OnStateChanged -= <span class="method">StateMachineOnStateChangedEvent</span>;
-
-    <span class="keyword">private void</span> <span class="method">Awake</span>()
-    {
-        <span class="control">if</span> (Instance == <span class="keyword">null</span>)
-        {
-            Instance = <span class="keyword">this</span>;
-        }
-        <span class="control">else</span>
-        {
-            <span class="class">Debug</span>.<span class="method">LogError</span>(<span class="string">&quot;Only one instance of the Director should exist at any one time&quot;</span>);
-        }
-    }
-
-    <span class="keyword">private void</span> <span class="method">Start</span>()
-    {
-        RespiteDuration = defaultRespiteDuration;
-        PeakDuration = defaultPeakDuration;
-
-        _cachedIntensityStatesDict = <span class="keyword">new</span> <span class="class">Dictionary</span>&lt;<span class="class">Type</span>, <span class="interface">IState</span>&gt;
-        {
-            {<span class="keyword">typeof</span>(<span class="class">DirectorRespiteState</span>), <span class="keyword">new</span> <span class="class">DirectorRespiteState</span>(<span class="keyword">this</span>, _stateMachine)},
-            {<span class="keyword">typeof</span>(<span class="class">DirectorBuildUpState</span>), <span class="keyword">new</span> <span class="class">DirectorBuildUpState</span>(<span class="keyword">this</span>, _stateMachine)},
-            {<span class="keyword">typeof</span>(<span class="class">DirectorPeakState</span>), <span class="keyword">new</span> <span class="class">DirectorPeakState</span>(<span class="keyword">this</span>, _stateMachine)},
-            {<span class="keyword">typeof</span>(<span class="class">DirectorPeakFadeState</span>), <span class="keyword">new</span> <span class="class">DirectorPeakFadeState</span>(<span class="keyword">this</span>, _stateMachine)}
-        };
-        _stateMachine.<span class="method">SetStates</span>(_cachedIntensityStatesDict);
-        _stateMachine.<span class="method">ChangeState</span>(<span class="keyword">typeof</span>(<span class="class">DirectorRespiteState</span>));
-
-        _intensityModifierDict = <span class="keyword">new</span> <span class="class">Dictionary</span>&lt;<span class="enumName">Difficulty</span>, <span class="keyword">float</span>&gt;
-        {
-            {<span class="enumName">Difficulty</span>.Easy, <span class="numericLiteral">30</span>},
-            {<span class="enumName">Difficulty</span>.Normal, <span class="numericLiteral">60</span>},
-            {<span class="enumName">Difficulty</span>.Hard, <span class="numericLiteral">90</span>}
-        };
-    }
-
-    <span class="keyword">private void</span> <span class="method">Update</span>()
-    {
-        _stateMachine.<span class="method">Update</span>();
-    }
-
-    <span class="keyword">public void</span> <span class="method">IncreasePerceivedIntensity</span>() =&gt; <span class="method">StartCoroutine</span>(<span class="method">IncreasePerceivedIntensityCoroutine</span>());
-    <span class="keyword">public void</span> <span class="method">DecreasePerceivedIntensity</span>() =&gt; <span class="method">StartCoroutine</span>(<span class="method">DecreasePerceivedIntensityCoroutine</span>());
-
-    <span class="keyword">private</span> <span class="interface">IEnumerator</span> <span class="method">IncreasePerceivedIntensityCoroutine</span>()
-    {
-        <span class="keyword">float</span> <span class="localName">intensity</span> = _intensityCalculator.<span class="method">CalculatePerceivedIntensityOutput</span>(<span class="keyword">this</span>);
-        _perceivedIntensity += <span class="localName">intensity</span> * _intensityModifierDict[difficulty] * <span class="class">Time</span>.deltaTime;
-
-        <span class="control">if</span> (_perceivedIntensity &gt; <span class="numericLiteral">100</span>)
-        {
-            _perceivedIntensity = <span class="numericLiteral">100</span>;
-        }
-
-        <span class="control">yield return</span> <span class="keyword">new</span> <span class="class">WaitForSeconds</span>(intensityCalculationRate);
-    }
-
-    <span class="keyword">private</span> <span class="interface">IEnumerator</span> <span class="method">DecreasePerceivedIntensityCoroutine</span>()
-    {
-        <span class="keyword">float</span> <span class="localName">intensity</span> = _intensityCalculator.<span class="method">CalculatePerceivedIntensityOutput</span>(<span class="keyword">this</span>);
-        _perceivedIntensity -= <span class="localName">intensity</span> * _intensityModifierDict[difficulty] * <span class="class">Time</span>.deltaTime;
-
-        <span class="control">if</span> (_perceivedIntensity &lt; <span class="numericLiteral">0</span>)
-        {
-            _perceivedIntensity = <span class="numericLiteral">0</span>;
-        }
-
-        <span class="control">yield return</span> <span class="keyword">new</span> <span class="class">WaitForSeconds</span>(intensityCalculationRate);
-    }
-
-    <span class="keyword">public void</span> <span class="method">AddEnemy</span>(<span class="class">GameObject</span> <span class="parameter">enemy</span>)
-    {
-        activeEnemies.<span class="method">Add</span>(<span class="parameter">enemy</span>);
-    }
-
-    <span class="keyword">public void</span> <span class="method">RemoveEnemy</span>(<span class="class">GameObject</span> <span class="parameter">enemy</span>)
-    {
-        activeEnemies.<span class="method">Remove</span>(<span class="parameter">enemy</span>);
-    }
-    
-    <span class="keyword">private void</span> <span class="method">StateMachineOnStateChangedEvent</span>()
-    {
-        <span class="class">DirectorEventBus</span>.<span class="method">Publish</span>(<span class="enumName">DirectorEvent</span>.EnteredNewState);
-    }
-
-    <span class="keyword">public</span> Player <span class="method">GetPlayer</span>() =&gt; player;
-
-    <span class="keyword">public</span> <span class="interface">IState</span> <span class="method">GetDirectorState</span>() =&gt; _stateMachine.<span class="method">GetCurrentState</span>();
-
-    <span class="keyword">public float</span> <span class="method">GetPeakIntensityThreshold</span>() =&gt; peakIntensityThreshold;
-    <span class="keyword">public float</span> <span class="method">GetDefaultRespiteDuration</span>() =&gt; defaultRespiteDuration;
-    <span class="keyword">public float</span> <span class="method">GetDefaultPeakDuration</span>() =&gt; defaultPeakDuration;
-
-    <span class="keyword">public float</span> <span class="method">GetEnemyPopulationCount</span>() =&gt; activeEnemies.Count;
-    <span class="keyword">public int</span> <span class="method">GetMaxRespitePopulation</span>() =&gt; maxRespitePopulation;
-    <span class="keyword">public int</span> <span class="method">GetMaxBuildUpPopulation</span>() =&gt; maxBuildUpPopulation;
-    <span class="keyword">public int</span> <span class="method">GetMaxPeakPopulation</span>() =&gt; maxPeakPopulation;
-
-    <span class="keyword">public float</span> <span class="method">GetPerceivedIntensity</span>() =&gt; _perceivedIntensity;
-    <span class="keyword">public float</span> <span class="method">GetIntensityCalculationRate</span>() =&gt; intensityCalculationRate;
-    <span class="keyword">public float</span> <span class="method">GetIntensityScalar</span>() =&gt; _intensityModifierDict[difficulty];
-};
-</code>
-        </pre>
-        </div>
-
+          <!-- generated by https://github.com/Swiftly1/CsharpToColouredHTML feel free to remove it if you want -->
+          <iframe onload="this.height=this.contentWindow.document.body.scrollHeight + 40;" frameborder=0 height=500 width=100% srcdoc="&lt;style&gt;.background{font-family:monaco,Consolas,LucidaConsole,monospace;background-color:rgba(144, 144, 144, 0.075);border-radius: 4px;border: solid 1px #c9c9c9;font-size: 0.8em;margin: 2em 1em -3em 1em;padding: 1em 1em;}.method{color:#DCDCAA;}.class{color:#4EC9B0;}.keyword{color:#569cd6;}.string{color:#ce9178;}.interface{color:#b8d7a3;}.enumName{color:#b8d7a3;}.numericLiteral{color:#b8d7a3;}.control{color:#C586C0;}.enumMember{color:#dfdfdf;}.identifier{color:#dfdfdf;}.punctuation{color:#dfdfdf;}.operator{color:#dfdfdf;}.propertyName{color:#dfdfdf;}.fieldName{color:#dfdfdf;}.localName{color:#9CDCFE;}.parameter{color:#9CDCFE;}.code_highlight{background-color:#395929;}table{white-space:pre;}.line_no::before{content:attr(line_no);color:white;}.code_column{padding-left:5px;color:#dfdfdf;}&lt;/style&gt;
+            &lt;pre class=&quot;background&quot;&gt;
+            &lt;table&gt;
+            &lt;tbody&gt;
+            &lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;0&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;public enum&lt;/span&gt; &lt;span class=&quot;enumName&quot;&gt;DirectorEvent&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;1&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;{&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;2&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;    EnteredNewState,&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;3&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;    EnteredRespiteState,&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;4&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;    EnteredBuildUpState,&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;5&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;    EnteredPeakState,&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;6&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;    EnteredPeakFadeState,&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;7&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;    ReachedPeakIntensity&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;8&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;}&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;9&quot;&gt;&lt;/td&gt;&lt;td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;10&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;public class&lt;/span&gt; &lt;span class=&quot;class&quot;&gt;Director&lt;/span&gt; : &lt;span class=&quot;class&quot;&gt;MonoBehaviour&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;11&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;{&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;12&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;public static&lt;/span&gt; &lt;span class=&quot;class&quot;&gt;Director&lt;/span&gt; Instance;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;13&quot;&gt;&lt;/td&gt;&lt;td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;14&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;private enum&lt;/span&gt; &lt;span class=&quot;enumName&quot;&gt;Difficulty&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;15&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;    {&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;16&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;        Easy = &lt;span class=&quot;numericLiteral&quot;&gt;0&lt;/span&gt;,&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;17&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;        Normal = &lt;span class=&quot;numericLiteral&quot;&gt;1&lt;/span&gt;,&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;18&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;        Hard = &lt;span class=&quot;numericLiteral&quot;&gt;2&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;19&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;    }&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;20&quot;&gt;&lt;/td&gt;&lt;td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;21&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;    [&lt;span class=&quot;class&quot;&gt;SerializeField&lt;/span&gt;] &lt;span class=&quot;keyword&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;enumName&quot;&gt;Difficulty&lt;/span&gt; difficulty;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;22&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;class&quot;&gt;Dictionary&lt;/span&gt;&amp;lt;&lt;span class=&quot;enumName&quot;&gt;Difficulty&lt;/span&gt;, &lt;span class=&quot;keyword&quot;&gt;float&lt;/span&gt;&amp;gt; _intensityModifierDict;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;23&quot;&gt;&lt;/td&gt;&lt;td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;24&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;    [&lt;span class=&quot;class&quot;&gt;Header&lt;/span&gt;(&lt;span class=&quot;string&quot;&gt;&amp;quot;INTENSITY&amp;quot;&lt;/span&gt;)] [&lt;span class=&quot;class&quot;&gt;SerializeField&lt;/span&gt;] &lt;span class=&quot;keyword&quot;&gt;private float&lt;/span&gt; intensityCalculationRate = &lt;span class=&quot;numericLiteral&quot;&gt;0.5f&lt;/span&gt;;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;25&quot;&gt;&lt;/td&gt;&lt;td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;26&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;    [&lt;span class=&quot;class&quot;&gt;Header&lt;/span&gt;(&lt;span class=&quot;string&quot;&gt;&amp;quot;TEMPO&amp;quot;&lt;/span&gt;)] [&lt;span class=&quot;class&quot;&gt;SerializeField&lt;/span&gt;] [&lt;span class=&quot;class&quot;&gt;Range&lt;/span&gt;(&lt;span class=&quot;numericLiteral&quot;&gt;70&lt;/span&gt;, &lt;span class=&quot;numericLiteral&quot;&gt;100&lt;/span&gt;)]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;27&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;private int&lt;/span&gt; peakIntensityThreshold;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;28&quot;&gt;&lt;/td&gt;&lt;td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;29&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;    [&lt;span class=&quot;class&quot;&gt;Space&lt;/span&gt;] [&lt;span class=&quot;class&quot;&gt;Tooltip&lt;/span&gt;(&lt;span class=&quot;string&quot;&gt;&amp;quot;Default value, but can be dynamically altered by the Director&amp;quot;&lt;/span&gt;)] [&lt;span class=&quot;class&quot;&gt;SerializeField&lt;/span&gt;]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;30&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;private float&lt;/span&gt; defaultPeakDuration;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;31&quot;&gt;&lt;/td&gt;&lt;td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;32&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;    [&lt;span class=&quot;class&quot;&gt;SerializeField&lt;/span&gt;] &lt;span class=&quot;keyword&quot;&gt;private float&lt;/span&gt; defaultRespiteDuration;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;33&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;    [&lt;span class=&quot;class&quot;&gt;Space&lt;/span&gt;] [&lt;span class=&quot;class&quot;&gt;SerializeField&lt;/span&gt;] &lt;span class=&quot;keyword&quot;&gt;private int&lt;/span&gt; maxBuildUpPopulation;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;34&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;    [&lt;span class=&quot;class&quot;&gt;SerializeField&lt;/span&gt;] &lt;span class=&quot;keyword&quot;&gt;private int&lt;/span&gt; maxPeakPopulation;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;35&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;    [&lt;span class=&quot;class&quot;&gt;SerializeField&lt;/span&gt;] &lt;span class=&quot;keyword&quot;&gt;private int&lt;/span&gt; maxRespitePopulation;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;36&quot;&gt;&lt;/td&gt;&lt;td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;37&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;    [&lt;span class=&quot;class&quot;&gt;Header&lt;/span&gt;(&lt;span class=&quot;string&quot;&gt;&amp;quot;ENEMY DATA&amp;quot;&lt;/span&gt;)] [&lt;span class=&quot;class&quot;&gt;SerializeField&lt;/span&gt;]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;38&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;class&quot;&gt;List&lt;/span&gt;&amp;lt;&lt;span class=&quot;class&quot;&gt;GameObject&lt;/span&gt;&amp;gt; activeEnemies = &lt;span class=&quot;keyword&quot;&gt;new&lt;/span&gt;();&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;39&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;    [&lt;span class=&quot;class&quot;&gt;SerializeField&lt;/span&gt;] &lt;span class=&quot;keyword&quot;&gt;private int&lt;/span&gt; maxPopulationCount;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;40&quot;&gt;&lt;/td&gt;&lt;td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;41&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;    [&lt;span class=&quot;class&quot;&gt;Header&lt;/span&gt;(&lt;span class=&quot;string&quot;&gt;&amp;quot;PLAYER DATA&amp;quot;&lt;/span&gt;)] [&lt;span class=&quot;class&quot;&gt;SerializeField&lt;/span&gt;]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;42&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;class&quot;&gt;Player&lt;/span&gt; player;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;43&quot;&gt;&lt;/td&gt;&lt;td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;44&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;public float&lt;/span&gt; RespiteDuration { &lt;span class=&quot;keyword&quot;&gt;get&lt;/span&gt;; &lt;span class=&quot;keyword&quot;&gt;set&lt;/span&gt;; }&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;45&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;public float&lt;/span&gt; PeakDuration { &lt;span class=&quot;keyword&quot;&gt;get&lt;/span&gt;; &lt;span class=&quot;keyword&quot;&gt;set&lt;/span&gt;; }&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;46&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;public int&lt;/span&gt; MaxPopulationCount { &lt;span class=&quot;keyword&quot;&gt;get&lt;/span&gt;; &lt;span class=&quot;keyword&quot;&gt;set&lt;/span&gt;; }&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;47&quot;&gt;&lt;/td&gt;&lt;td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;48&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;private readonly&lt;/span&gt; &lt;span class=&quot;class&quot;&gt;StateMachine&lt;/span&gt; _stateMachine = &lt;span class=&quot;keyword&quot;&gt;new&lt;/span&gt;();&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;49&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;class&quot;&gt;Dictionary&lt;/span&gt;&amp;lt;&lt;span class=&quot;class&quot;&gt;Type&lt;/span&gt;, &lt;span class=&quot;interface&quot;&gt;IState&lt;/span&gt;&amp;gt; _cachedIntensityStatesDict;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;50&quot;&gt;&lt;/td&gt;&lt;td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;51&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;private readonly&lt;/span&gt; &lt;span class=&quot;class&quot;&gt;DirectorIntensityCalculator&lt;/span&gt; _intensityCalculator = &lt;span class=&quot;keyword&quot;&gt;new&lt;/span&gt;();&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;52&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;private float&lt;/span&gt; _perceivedIntensity;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;53&quot;&gt;&lt;/td&gt;&lt;td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;54&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;private void&lt;/span&gt; &lt;span class=&quot;method&quot;&gt;OnEnable&lt;/span&gt;() =&amp;gt; _stateMachine.OnStateChanged += &lt;span class=&quot;method&quot;&gt;StateMachineOnStateChangedEvent&lt;/span&gt;;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;55&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;private void&lt;/span&gt; &lt;span class=&quot;method&quot;&gt;OnDisable&lt;/span&gt;() =&amp;gt; _stateMachine.OnStateChanged -= &lt;span class=&quot;method&quot;&gt;StateMachineOnStateChangedEvent&lt;/span&gt;;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;56&quot;&gt;&lt;/td&gt;&lt;td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;57&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;private void&lt;/span&gt; &lt;span class=&quot;method&quot;&gt;Awake&lt;/span&gt;()&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;58&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;    {&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;59&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;        &lt;span class=&quot;control&quot;&gt;if&lt;/span&gt; (Instance == &lt;span class=&quot;keyword&quot;&gt;null&lt;/span&gt;)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;60&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;        {&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;61&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;            Instance = &lt;span class=&quot;keyword&quot;&gt;this&lt;/span&gt;;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;62&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;        }&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;63&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;        &lt;span class=&quot;control&quot;&gt;else&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;64&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;        {&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;65&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;            &lt;span class=&quot;class&quot;&gt;Debug&lt;/span&gt;.&lt;span class=&quot;method&quot;&gt;LogError&lt;/span&gt;(&lt;span class=&quot;string&quot;&gt;&amp;quot;Only one instance of the Director should exist at any one time&amp;quot;&lt;/span&gt;);&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;66&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;        }&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;67&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;    }&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;68&quot;&gt;&lt;/td&gt;&lt;td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;69&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;private void&lt;/span&gt; &lt;span class=&quot;method&quot;&gt;Start&lt;/span&gt;()&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;70&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;    {&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;71&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;        RespiteDuration = defaultRespiteDuration;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;72&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;        PeakDuration = defaultPeakDuration;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;73&quot;&gt;&lt;/td&gt;&lt;td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;74&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;        _cachedIntensityStatesDict = &lt;span class=&quot;keyword&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;class&quot;&gt;Dictionary&lt;/span&gt;&amp;lt;&lt;span class=&quot;class&quot;&gt;Type&lt;/span&gt;, &lt;span class=&quot;interface&quot;&gt;IState&lt;/span&gt;&amp;gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;75&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;        {&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;76&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;            {&lt;span class=&quot;keyword&quot;&gt;typeof&lt;/span&gt;(&lt;span class=&quot;class&quot;&gt;DirectorRespiteState&lt;/span&gt;), &lt;span class=&quot;keyword&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;class&quot;&gt;DirectorRespiteState&lt;/span&gt;(&lt;span class=&quot;keyword&quot;&gt;this&lt;/span&gt;, _stateMachine)},&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;77&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;            {&lt;span class=&quot;keyword&quot;&gt;typeof&lt;/span&gt;(&lt;span class=&quot;class&quot;&gt;DirectorBuildUpState&lt;/span&gt;), &lt;span class=&quot;keyword&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;class&quot;&gt;DirectorBuildUpState&lt;/span&gt;(&lt;span class=&quot;keyword&quot;&gt;this&lt;/span&gt;, _stateMachine)},&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;78&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;            {&lt;span class=&quot;keyword&quot;&gt;typeof&lt;/span&gt;(&lt;span class=&quot;class&quot;&gt;DirectorPeakState&lt;/span&gt;), &lt;span class=&quot;keyword&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;class&quot;&gt;DirectorPeakState&lt;/span&gt;(&lt;span class=&quot;keyword&quot;&gt;this&lt;/span&gt;, _stateMachine)},&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;79&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;            {&lt;span class=&quot;keyword&quot;&gt;typeof&lt;/span&gt;(&lt;span class=&quot;class&quot;&gt;DirectorPeakFadeState&lt;/span&gt;), &lt;span class=&quot;keyword&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;class&quot;&gt;DirectorPeakFadeState&lt;/span&gt;(&lt;span class=&quot;keyword&quot;&gt;this&lt;/span&gt;, _stateMachine)}&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;80&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;        };&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;81&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;        _stateMachine.&lt;span class=&quot;method&quot;&gt;SetStates&lt;/span&gt;(_cachedIntensityStatesDict);&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;82&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;        _stateMachine.&lt;span class=&quot;method&quot;&gt;ChangeState&lt;/span&gt;(&lt;span class=&quot;keyword&quot;&gt;typeof&lt;/span&gt;(&lt;span class=&quot;class&quot;&gt;DirectorRespiteState&lt;/span&gt;));&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;83&quot;&gt;&lt;/td&gt;&lt;td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;84&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;        _intensityModifierDict = &lt;span class=&quot;keyword&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;class&quot;&gt;Dictionary&lt;/span&gt;&amp;lt;&lt;span class=&quot;enumName&quot;&gt;Difficulty&lt;/span&gt;, &lt;span class=&quot;keyword&quot;&gt;float&lt;/span&gt;&amp;gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;85&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;        {&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;86&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;            {&lt;span class=&quot;enumName&quot;&gt;Difficulty&lt;/span&gt;.Easy, &lt;span class=&quot;numericLiteral&quot;&gt;30&lt;/span&gt;},&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;87&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;            {&lt;span class=&quot;enumName&quot;&gt;Difficulty&lt;/span&gt;.Normal, &lt;span class=&quot;numericLiteral&quot;&gt;60&lt;/span&gt;},&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;88&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;            {&lt;span class=&quot;enumName&quot;&gt;Difficulty&lt;/span&gt;.Hard, &lt;span class=&quot;numericLiteral&quot;&gt;90&lt;/span&gt;}&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;89&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;        };&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;90&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;    }&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;91&quot;&gt;&lt;/td&gt;&lt;td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;92&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;private void&lt;/span&gt; &lt;span class=&quot;method&quot;&gt;Update&lt;/span&gt;()&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;93&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;    {&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;94&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;        _stateMachine.&lt;span class=&quot;method&quot;&gt;Update&lt;/span&gt;();&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;95&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;    }&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;96&quot;&gt;&lt;/td&gt;&lt;td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;97&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;public void&lt;/span&gt; &lt;span class=&quot;method&quot;&gt;IncreasePerceivedIntensity&lt;/span&gt;() =&amp;gt; &lt;span class=&quot;method&quot;&gt;StartCoroutine&lt;/span&gt;(&lt;span class=&quot;method&quot;&gt;IncreasePerceivedIntensityCoroutine&lt;/span&gt;());&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;98&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;public void&lt;/span&gt; &lt;span class=&quot;method&quot;&gt;DecreasePerceivedIntensity&lt;/span&gt;() =&amp;gt; &lt;span class=&quot;method&quot;&gt;StartCoroutine&lt;/span&gt;(&lt;span class=&quot;method&quot;&gt;DecreasePerceivedIntensityCoroutine&lt;/span&gt;());&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;99&quot;&gt;&lt;/td&gt;&lt;td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;100&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;interface&quot;&gt;IEnumerator&lt;/span&gt; &lt;span class=&quot;method&quot;&gt;IncreasePerceivedIntensityCoroutine&lt;/span&gt;()&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;101&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;    {&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;102&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;        &lt;span class=&quot;keyword&quot;&gt;float&lt;/span&gt; &lt;span class=&quot;localName&quot;&gt;intensity&lt;/span&gt; = _intensityCalculator.&lt;span class=&quot;method&quot;&gt;CalculatePerceivedIntensityOutput&lt;/span&gt;(&lt;span class=&quot;keyword&quot;&gt;this&lt;/span&gt;);&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;103&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;        _perceivedIntensity += &lt;span class=&quot;localName&quot;&gt;intensity&lt;/span&gt; * _intensityModifierDict[difficulty] * &lt;span class=&quot;class&quot;&gt;Time&lt;/span&gt;.deltaTime;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;104&quot;&gt;&lt;/td&gt;&lt;td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;105&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;        &lt;span class=&quot;control&quot;&gt;if&lt;/span&gt; (_perceivedIntensity &amp;gt; &lt;span class=&quot;numericLiteral&quot;&gt;100&lt;/span&gt;)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;106&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;        {&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;107&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;            _perceivedIntensity = &lt;span class=&quot;numericLiteral&quot;&gt;100&lt;/span&gt;;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;108&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;        }&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;109&quot;&gt;&lt;/td&gt;&lt;td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;110&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;        &lt;span class=&quot;control&quot;&gt;yield return&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;class&quot;&gt;WaitForSeconds&lt;/span&gt;(intensityCalculationRate);&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;111&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;    }&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;112&quot;&gt;&lt;/td&gt;&lt;td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;113&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;interface&quot;&gt;IEnumerator&lt;/span&gt; &lt;span class=&quot;method&quot;&gt;DecreasePerceivedIntensityCoroutine&lt;/span&gt;()&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;114&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;    {&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;115&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;        &lt;span class=&quot;keyword&quot;&gt;float&lt;/span&gt; &lt;span class=&quot;localName&quot;&gt;intensity&lt;/span&gt; = _intensityCalculator.&lt;span class=&quot;method&quot;&gt;CalculatePerceivedIntensityOutput&lt;/span&gt;(&lt;span class=&quot;keyword&quot;&gt;this&lt;/span&gt;);&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;116&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;        _perceivedIntensity -= &lt;span class=&quot;localName&quot;&gt;intensity&lt;/span&gt; * _intensityModifierDict[difficulty] * &lt;span class=&quot;class&quot;&gt;Time&lt;/span&gt;.deltaTime;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;117&quot;&gt;&lt;/td&gt;&lt;td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;118&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;        &lt;span class=&quot;control&quot;&gt;if&lt;/span&gt; (_perceivedIntensity &amp;lt; &lt;span class=&quot;numericLiteral&quot;&gt;0&lt;/span&gt;)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;119&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;        {&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;120&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;            _perceivedIntensity = &lt;span class=&quot;numericLiteral&quot;&gt;0&lt;/span&gt;;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;121&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;        }&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;122&quot;&gt;&lt;/td&gt;&lt;td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;123&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;        &lt;span class=&quot;control&quot;&gt;yield return&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;class&quot;&gt;WaitForSeconds&lt;/span&gt;(intensityCalculationRate);&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;124&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;    }&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;125&quot;&gt;&lt;/td&gt;&lt;td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;126&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;public void&lt;/span&gt; &lt;span class=&quot;method&quot;&gt;AddEnemy&lt;/span&gt;(&lt;span class=&quot;class&quot;&gt;GameObject&lt;/span&gt; &lt;span class=&quot;parameter&quot;&gt;enemy&lt;/span&gt;)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;127&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;    {&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;128&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;        activeEnemies.&lt;span class=&quot;method&quot;&gt;Add&lt;/span&gt;(&lt;span class=&quot;parameter&quot;&gt;enemy&lt;/span&gt;);&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;129&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;    }&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;130&quot;&gt;&lt;/td&gt;&lt;td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;131&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;public void&lt;/span&gt; &lt;span class=&quot;method&quot;&gt;RemoveEnemy&lt;/span&gt;(&lt;span class=&quot;class&quot;&gt;GameObject&lt;/span&gt; &lt;span class=&quot;parameter&quot;&gt;enemy&lt;/span&gt;)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;132&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;    {&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;133&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;        activeEnemies.&lt;span class=&quot;method&quot;&gt;Remove&lt;/span&gt;(&lt;span class=&quot;parameter&quot;&gt;enemy&lt;/span&gt;);&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;134&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;    }&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;135&quot;&gt;&lt;/td&gt;&lt;td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;136&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;private void&lt;/span&gt; &lt;span class=&quot;method&quot;&gt;StateMachineOnStateChangedEvent&lt;/span&gt;()&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;137&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;    {&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;138&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;        &lt;span class=&quot;class&quot;&gt;DirectorEventBus&lt;/span&gt;.&lt;span class=&quot;method&quot;&gt;Publish&lt;/span&gt;(&lt;span class=&quot;enumName&quot;&gt;DirectorEvent&lt;/span&gt;.EnteredNewState);&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;139&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;    }&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;140&quot;&gt;&lt;/td&gt;&lt;td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;141&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;class&quot;&gt;Player&lt;/span&gt; &lt;span class=&quot;method&quot;&gt;GetPlayer&lt;/span&gt;() =&amp;gt; player;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;142&quot;&gt;&lt;/td&gt;&lt;td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;143&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;interface&quot;&gt;IState&lt;/span&gt; &lt;span class=&quot;method&quot;&gt;GetDirectorState&lt;/span&gt;() =&amp;gt; _stateMachine.&lt;span class=&quot;method&quot;&gt;GetCurrentState&lt;/span&gt;();&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;144&quot;&gt;&lt;/td&gt;&lt;td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;145&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;public float&lt;/span&gt; &lt;span class=&quot;method&quot;&gt;GetPeakIntensityThreshold&lt;/span&gt;() =&amp;gt; peakIntensityThreshold;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;146&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;public float&lt;/span&gt; &lt;span class=&quot;method&quot;&gt;GetDefaultRespiteDuration&lt;/span&gt;() =&amp;gt; defaultRespiteDuration;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;147&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;public float&lt;/span&gt; &lt;span class=&quot;method&quot;&gt;GetDefaultPeakDuration&lt;/span&gt;() =&amp;gt; defaultPeakDuration;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;148&quot;&gt;&lt;/td&gt;&lt;td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;149&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;public float&lt;/span&gt; &lt;span class=&quot;method&quot;&gt;GetEnemyPopulationCount&lt;/span&gt;() =&amp;gt; activeEnemies.Count;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;150&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;public int&lt;/span&gt; &lt;span class=&quot;method&quot;&gt;GetMaxRespitePopulation&lt;/span&gt;() =&amp;gt; maxRespitePopulation;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;151&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;public int&lt;/span&gt; &lt;span class=&quot;method&quot;&gt;GetMaxBuildUpPopulation&lt;/span&gt;() =&amp;gt; maxBuildUpPopulation;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;152&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;public int&lt;/span&gt; &lt;span class=&quot;method&quot;&gt;GetMaxPeakPopulation&lt;/span&gt;() =&amp;gt; maxPeakPopulation;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;153&quot;&gt;&lt;/td&gt;&lt;td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;154&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;public float&lt;/span&gt; &lt;span class=&quot;method&quot;&gt;GetPerceivedIntensity&lt;/span&gt;() =&amp;gt; _perceivedIntensity;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;155&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;public float&lt;/span&gt; &lt;span class=&quot;method&quot;&gt;GetIntensityCalculationRate&lt;/span&gt;() =&amp;gt; intensityCalculationRate;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;156&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;public float&lt;/span&gt; &lt;span class=&quot;method&quot;&gt;GetIntensityScalar&lt;/span&gt;() =&amp;gt; _intensityModifierDict[difficulty];&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;157&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;};&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;
+            &lt;/table&gt;&lt;/pre&gt;">
+          </iframe>
+      </div>
 
       <!--==========================-->
       <!--Code Snippet x - Event Bus-->
       <!--==========================-->
       <button type="button" class="collapsible"><span class="fa-solid fa-code" style="color: rgb(132,123,255); margin-top: 0.15em; margin-right: 0.5em; float: left; font-size: 0.95em;"></span>Director Event Bus</button>
       <div class="collapsibleblock">
-
-      <br>
-      <pre class="background"><code><span class="keyword">public static class</span> <span class="class">DirectorEventBus</span>
-{
-    <span class="keyword">private static readonly</span> <span class="class">Dictionary</span>&lt;<span class="enumName">DirectorEvent</span>, <span class="enumName">Action</span>&gt; _eventsDict = <span class="keyword">new</span>();
-
-    <span class="keyword">public static void</span> <span class="method">Subscribe</span>(<span class="enumName">DirectorEvent</span> <span class="parameter">eventName</span>, <span class="enumName">Action</span> <span class="parameter">listener</span>)
-    {
-        <span class="control">if</span> (_eventsDict.<span class="method">ContainsKey</span>(<span class="parameter">eventName</span>))
-        {
-            _eventsDict[<span class="parameter">eventName</span>] += <span class="parameter">listener</span>;
-        }
-        <span class="control">else</span>
-        {
-            _eventsDict.<span class="method">Add</span>(<span class="parameter">eventName</span>, <span class="parameter">listener</span>);
-        }
-    }
-
-    <span class="keyword">public static void</span> <span class="method">Unsubscribe</span>(<span class="enumName">DirectorEvent</span> <span class="parameter">eventName</span>, <span class="enumName">Action</span> <span class="parameter">listener</span>)
-    {
-        <span class="control">if</span> (_eventsDict.<span class="method">ContainsKey</span>(<span class="parameter">eventName</span>))
-        {
-            _eventsDict[<span class="parameter">eventName</span>] -= <span class="parameter">listener</span>;
-        }
-    }
-
-    <span class="keyword">public static void</span> <span class="method">Publish</span>(<span class="enumName">DirectorEvent</span> <span class="parameter">eventName</span>)
-    {
-        <span class="control">if</span> (_eventsDict.<span class="method">TryGetValue</span>(<span class="parameter">eventName</span>, <span class="keyword">out</span> <span class="enumName">Action</span> <span class="localName">thisEvent</span>))
-        {
-            <span class="localName">thisEvent</span>.<span class="method">Invoke</span>();
-        }
-    }
-}</code>
-          </pre>
-
-      <!--=================================================-->
-      <!--Code Snippet x - Director Event Bus Example Usage-->
-      <!--=================================================-->
-      <br>
-      <pre class="background"><code><span class="keyword">public class</span> <span class="class">DirectorEventTest</span> : <span class="class">MonoBehaviour</span>
-{
-    <span class="keyword">private void</span> <span class="method">OnEnable</span>() =&gt; <span class="class">DirectorEventBus</span>.<span class="method">Subscribe</span>(<span class="enumName">DirectorEvent</span>.ReachedPeakIntensity, <span class="method">SomeMethod</span>);
-    <span class="keyword">private void</span> <span class="method">OnDisable</span>() =&gt; <span class="class">DirectorEventBus</span>.<span class="method">Unsubscribe</span>(<span class="enumName">DirectorEvent</span>.ReachedPeakIntensity, <span class="method">SomeMethod</span>);
-
-    <span class="keyword">private void</span> <span class="method">SomeMethod</span>()
-    {
-        <span class="class">Debug</span>.<span class="method">Log</span>(<span class="string">&quot;Perceived intensity has reached the maximum threshold. &lt;color=red&gt;You Are Dead&lt;/color&gt;.&quot;</span>);
-    }
-}</code>
-            </pre>
-        </div>
-
+          <!-- generated by https://github.com/Swiftly1/CsharpToColouredHTML feel free to remove it if you want -->
+          <iframe onload="this.height=this.contentWindow.document.body.scrollHeight + 40;" frameborder=0 height=500 width=100% srcdoc="&lt;style&gt;.background{font-family:monaco,Consolas,LucidaConsole,monospace;background-color:rgba(144, 144, 144, 0.075);border-radius: 4px;border: solid 1px #c9c9c9;font-size: 0.8em;margin: 2em 1em -3em 1em;padding: 1em 1em;}.method{color:#DCDCAA;}.class{color:#4EC9B0;}.keyword{color:#569cd6;}.control{color:#C586C0;}.punctuation{color:#dfdfdf;}.operator{color:#dfdfdf;}.fieldName{color:#dfdfdf;}.localName{color:#9CDCFE;}.parameter{color:#9CDCFE;}.code_highlight{background-color:#395929;}table{white-space:pre;}.line_no::before{content:attr(line_no);color:white;}.code_column{padding-left:5px;color:#dfdfdf;}&lt;/style&gt;
+            &lt;pre class=&quot;background&quot;&gt;
+            &lt;table&gt;
+            &lt;tbody&gt;
+            &lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;0&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;public static class&lt;/span&gt; &lt;span class=&quot;class&quot;&gt;DirectorEventBus&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;1&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;{&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;2&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;private static readonly&lt;/span&gt; &lt;span class=&quot;class&quot;&gt;Dictionary&lt;/span&gt;&amp;lt;&lt;span class=&quot;class&quot;&gt;DirectorEvent&lt;/span&gt;, &lt;span class=&quot;class&quot;&gt;Action&lt;/span&gt;&amp;gt; _eventsDict = &lt;span class=&quot;keyword&quot;&gt;new&lt;/span&gt;();&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;3&quot;&gt;&lt;/td&gt;&lt;td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;4&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;public static void&lt;/span&gt; &lt;span class=&quot;method&quot;&gt;Subscribe&lt;/span&gt;(&lt;span class=&quot;class&quot;&gt;DirectorEvent&lt;/span&gt; &lt;span class=&quot;parameter&quot;&gt;eventName&lt;/span&gt;, &lt;span class=&quot;class&quot;&gt;Action&lt;/span&gt; &lt;span class=&quot;parameter&quot;&gt;listener&lt;/span&gt;)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;5&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;    {&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;6&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;        &lt;span class=&quot;control&quot;&gt;if&lt;/span&gt; (_eventsDict.&lt;span class=&quot;method&quot;&gt;ContainsKey&lt;/span&gt;(&lt;span class=&quot;parameter&quot;&gt;eventName&lt;/span&gt;))&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;7&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;        {&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;8&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;            _eventsDict[&lt;span class=&quot;parameter&quot;&gt;eventName&lt;/span&gt;] += &lt;span class=&quot;parameter&quot;&gt;listener&lt;/span&gt;;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;9&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;        }&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;10&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;        &lt;span class=&quot;control&quot;&gt;else&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;11&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;        {&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;12&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;            _eventsDict.&lt;span class=&quot;method&quot;&gt;Add&lt;/span&gt;(&lt;span class=&quot;parameter&quot;&gt;eventName&lt;/span&gt;, &lt;span class=&quot;parameter&quot;&gt;listener&lt;/span&gt;);&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;13&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;        }&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;14&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;    }&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;15&quot;&gt;&lt;/td&gt;&lt;td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;16&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;public static void&lt;/span&gt; &lt;span class=&quot;method&quot;&gt;Unsubscribe&lt;/span&gt;(&lt;span class=&quot;class&quot;&gt;DirectorEvent&lt;/span&gt; &lt;span class=&quot;parameter&quot;&gt;eventName&lt;/span&gt;, &lt;span class=&quot;class&quot;&gt;Action&lt;/span&gt; &lt;span class=&quot;parameter&quot;&gt;listener&lt;/span&gt;)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;17&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;    {&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;18&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;        &lt;span class=&quot;control&quot;&gt;if&lt;/span&gt; (_eventsDict.&lt;span class=&quot;method&quot;&gt;ContainsKey&lt;/span&gt;(&lt;span class=&quot;parameter&quot;&gt;eventName&lt;/span&gt;))&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;19&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;        {&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;20&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;            _eventsDict[&lt;span class=&quot;parameter&quot;&gt;eventName&lt;/span&gt;] -= &lt;span class=&quot;parameter&quot;&gt;listener&lt;/span&gt;;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;21&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;        }&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;22&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;    }&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;23&quot;&gt;&lt;/td&gt;&lt;td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;24&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;public static void&lt;/span&gt; &lt;span class=&quot;method&quot;&gt;Publish&lt;/span&gt;(&lt;span class=&quot;class&quot;&gt;DirectorEvent&lt;/span&gt; &lt;span class=&quot;parameter&quot;&gt;eventName&lt;/span&gt;)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;25&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;    {&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;26&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;        &lt;span class=&quot;control&quot;&gt;if&lt;/span&gt; (_eventsDict.&lt;span class=&quot;method&quot;&gt;TryGetValue&lt;/span&gt;(&lt;span class=&quot;parameter&quot;&gt;eventName&lt;/span&gt;, &lt;span class=&quot;keyword&quot;&gt;out&lt;/span&gt; &lt;span class=&quot;class&quot;&gt;Action&lt;/span&gt; &lt;span class=&quot;localName&quot;&gt;thisEvent&lt;/span&gt;))&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;27&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;        {&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;28&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;            &lt;span class=&quot;localName&quot;&gt;thisEvent&lt;/span&gt;.&lt;span class=&quot;method&quot;&gt;Invoke&lt;/span&gt;();&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;29&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;        }&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;30&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;    }&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;31&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;}&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;
+            &lt;/table&gt;&lt;/pre&gt;">
+          </iframe>
+      </div>
         
       <br>  
       <h3 class="blogheader3">Rule Engine</h3>
@@ -436,13 +331,14 @@
       <!--==================================================-->
       <button type="button" class="collapsible"><span class="fa-solid fa-code" style="color: rgb(132,123,255); margin-top: 0.15em; margin-right: 0.5em; float: left; font-size: 0.95em;"></span>Director Intensity Rule Interface</button>
       <div class="collapsibleblock">
-          
-        <br>
-        <pre ><code><span class="keyword">public interface</span> <span class="interface">IDirectorIntensityRule</span>
-{
-    <span class="keyword">public float</span> <span class="method">CalculatePerceivedIntensity</span>(<span class="class">Director</span> <span class="parameter">director</span>);
-}</code>
-        </pre>
+          <!-- generated by https://github.com/Swiftly1/CsharpToColouredHTML feel free to remove it if you want -->
+          <iframe onload="this.height=this.contentWindow.document.body.scrollHeight + 40;" frameborder=0 height=500 width=100% srcdoc="&lt;style&gt;.background{font-family:monaco,Consolas,LucidaConsole,monospace;background-color:rgba(144, 144, 144, 0.075);border-radius: 4px;border: solid 1px #c9c9c9;font-size: 0.8em;margin: 2em 1em -3em 1em;padding: 1em 1em;}.method{color:#DCDCAA;}.class{color:#4EC9B0;}.keyword{color:#569cd6;}.interface{color:#b8d7a3;}.punctuation{color:#dfdfdf;}.parameter{color:#9CDCFE;}.code_highlight{background-color:#395929;}table{white-space:pre;}.line_no::before{content:attr(line_no);color:white;}.code_column{padding-left:5px;color:#dfdfdf;}&lt;/style&gt;
+            &lt;pre class=&quot;background&quot;&gt;
+            &lt;table&gt;
+            &lt;tbody&gt;
+            &lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;0&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;public interface&lt;/span&gt; &lt;span class=&quot;interface&quot;&gt;IDirectorIntensityRule&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;1&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;{&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;2&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;public float&lt;/span&gt; &lt;span class=&quot;method&quot;&gt;CalculatePerceivedIntensity&lt;/span&gt;(&lt;span class=&quot;class&quot;&gt;Director&lt;/span&gt; &lt;span class=&quot;parameter&quot;&gt;director&lt;/span&gt;);&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;3&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;}&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;
+            &lt;/table&gt;&lt;/pre&gt;">
+          </iframe>
       </div>
 
 
@@ -451,63 +347,30 @@
       <!--===================================================-->
       <button type="button" class="collapsible"><span class="fa-solid fa-code" style="color: rgb(132,123,255); margin-top: 0.15em; margin-right: 0.5em; float: left; font-size: 0.95em;"></span>Director Intensity Rule Calculator</button>
       <div class="collapsibleblock">
-
-      <br>
-      <pre class="background"><code><span class="keyword">public class</span> <span class="class">DirectorIntensityCalculator</span> 
-{
-    <span class="keyword">private</span> <span class="class">List</span>&lt;<span class="interface">IDirectorIntensityRule</span>&gt; _rules;
-
-    <span class="keyword">public</span> <span class="class">DirectorIntensityCalculator</span>()
-    {
-        _rules = <span class="keyword">new</span> <span class="class">List</span>&lt;<span class="interface">IDirectorIntensityRule</span>&gt;
-        {
-            <span class="keyword">new</span> <span class="class">PassiveHauntIncreaseRule</span>()
-        };
-    }
-    
-    <span class="keyword">public float</span> <span class="method">CalculatePerceivedIntensityOutput</span>(<span class="class">Director</span> <span class="parameter">director</span>) 
-    {
-        <span class="keyword">var</span> <span class="localName">engine</span> = <span class="keyword">new</span> <span class="class">DirectorIntensityRuleEngine</span>(_rules);
-        <span class="control">return</span> <span class="localName">engine</span>.<span class="method">CalculatePerceivedIntensityPercentage</span>(<span class="parameter">director</span>);
-        
-        <span class="comment">// Using the DirectorIntensityRuleEngine to evaluate the rules and produce an output</span>
-        <span class="comment">// Outputs the greatest intensity value</span>
-    }
-}</code>
-            </pre>
+          <!-- generated by https://github.com/Swiftly1/CsharpToColouredHTML feel free to remove it if you want -->
+          <iframe onload="this.height=this.contentWindow.document.body.scrollHeight + 40;" frameborder=0 height=500 width=100% srcdoc="&lt;style&gt;.background{font-family:monaco,Consolas,LucidaConsole,monospace;background-color:rgba(144, 144, 144, 0.075);border-radius: 4px;border: solid 1px #c9c9c9;font-size: 0.8em;margin: 2em 1em -3em 1em;padding: 1em 1em;}.method{color:#DCDCAA;}.class{color:#4EC9B0;}.keyword{color:#569cd6;}.interface{color:#b8d7a3;}.control{color:#C586C0;}.comment{color:#6A9955;}.punctuation{color:#dfdfdf;}.operator{color:#dfdfdf;}.fieldName{color:#dfdfdf;}.localName{color:#9CDCFE;}.parameter{color:#9CDCFE;}.code_highlight{background-color:#395929;}table{white-space:pre;}.line_no::before{content:attr(line_no);color:white;}.code_column{padding-left:5px;color:#dfdfdf;}&lt;/style&gt;
+            &lt;pre class=&quot;background&quot;&gt;
+            &lt;table&gt;
+            &lt;tbody&gt;
+            &lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;0&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;public class&lt;/span&gt; &lt;span class=&quot;class&quot;&gt;DirectorIntensityCalculator&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;1&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;{&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;2&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;class&quot;&gt;List&lt;/span&gt;&amp;lt;&lt;span class=&quot;interface&quot;&gt;IDirectorIntensityRule&lt;/span&gt;&amp;gt; _rules;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;3&quot;&gt;&lt;/td&gt;&lt;td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;4&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;class&quot;&gt;DirectorIntensityCalculator&lt;/span&gt;()&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;5&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;    {&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;6&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;        _rules = &lt;span class=&quot;keyword&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;class&quot;&gt;List&lt;/span&gt;&amp;lt;&lt;span class=&quot;interface&quot;&gt;IDirectorIntensityRule&lt;/span&gt;&amp;gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;7&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;        {&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;8&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;            &lt;span class=&quot;keyword&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;class&quot;&gt;PassiveHauntIncreaseRule&lt;/span&gt;()&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;9&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;        };&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;10&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;    }&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;11&quot;&gt;&lt;/td&gt;&lt;td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;12&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;public float&lt;/span&gt; &lt;span class=&quot;method&quot;&gt;CalculatePerceivedIntensityOutput&lt;/span&gt;(&lt;span class=&quot;class&quot;&gt;Director&lt;/span&gt; &lt;span class=&quot;parameter&quot;&gt;director&lt;/span&gt;)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;13&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;    {&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;14&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;        &lt;span class=&quot;keyword&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;localName&quot;&gt;engine&lt;/span&gt; = &lt;span class=&quot;keyword&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;class&quot;&gt;DirectorIntensityRuleEngine&lt;/span&gt;(_rules);&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;15&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;        &lt;span class=&quot;control&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;localName&quot;&gt;engine&lt;/span&gt;.&lt;span class=&quot;method&quot;&gt;CalculatePerceivedIntensityPercentage&lt;/span&gt;(&lt;span class=&quot;parameter&quot;&gt;director&lt;/span&gt;);&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;16&quot;&gt;&lt;/td&gt;&lt;td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;17&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;        &lt;span class=&quot;comment&quot;&gt;// Using the DirectorIntensityRuleEngine to evaluate the rules and produce an output&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;18&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;        &lt;span class=&quot;comment&quot;&gt;// Outputs the greatest intensity value&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;19&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;    }&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;20&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;}&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;
+            &lt;/table&gt;&lt;/pre&gt;">
+          </iframe>
       </div>
-
         
       <!--===============================================-->
       <!--Code Snippet x - Director Intensity Rule Engine -->
       <!--===============================================-->
       <button type="button" class="collapsible"><span class="fa-solid fa-code" style="color: rgb(132,123,255); margin-top: 0.15em; margin-right: 0.5em; float: left; font-size: 0.95em;"></span>Director Intensity Rule Engine</button>
       <div class="collapsibleblock">
-
-      <br>
-      <pre class="background"><code><span class="keyword">public class</span> <span class="class">DirectorIntensityRuleEngine</span> 
-{
-    <span class="keyword">private readonly</span> <span class="class">List</span>&lt;<span class="interface">IDirectorIntensityRule</span>&gt; _rules = <span class="keyword">new</span> <span class="class">List</span>&lt;<span class="interface">IDirectorIntensityRule</span>&gt;();
-
-    <span class="keyword">public</span> <span class="class">DirectorIntensityRuleEngine</span>(<span class="struct">IEnumerable</span>&lt;<span class="interface">IDirectorIntensityRule</span>&gt; <span class="parameter">rules</span>)
-    {
-        _rules.<span class="method">AddRange</span>(<span class="parameter">rules</span>); 
-    }
-
-    <span class="keyword">public float</span> <span class="method">CalculatePerceivedIntensityPercentage</span>(<span class="class">Director</span> <span class="parameter">director</span>) 
-    {
-        <span class="keyword">float</span> <span class="localName">intensity</span> = <span class="numericLiteral">0</span>; 
-        <span class="control">foreach</span> (<span class="keyword">var</span> <span class="localName">rule</span> <span class="control">in</span> _rules)
-        {
-            <span class="localName">intensity</span> = <span class="enumName">Mathf</span>.<span class="method">Max</span>(<span class="localName">intensity</span>, <span class="localName">rule</span>.<span class="method">CalculatePerceivedIntensity</span>(<span class="parameter">director</span>));
-            <span class="comment">// Applies the rule which outputs the greatest intensity weighting</span>
-        }
-        <span class="control">return</span> <span class="localName">intensity</span>;
-    }
-}</code>
-      </pre>
-      </div>  
-        
+          <!-- generated by https://github.com/Swiftly1/CsharpToColouredHTML feel free to remove it if you want -->
+          <iframe onload="this.height=this.contentWindow.document.body.scrollHeight + 40;" frameborder=0 height=500 width=100% srcdoc="&lt;style&gt;.background{font-family:monaco,Consolas,LucidaConsole,monospace;background-color:rgba(144, 144, 144, 0.075);border-radius: 4px;border: solid 1px #c9c9c9;font-size: 0.8em;margin: 2em 1em -3em 1em;padding: 1em 1em;}.method{color:#DCDCAA;}.class{color:#4EC9B0;}.keyword{color:#569cd6;}.interface{color:#b8d7a3;}.numericLiteral{color:#b8d7a3;}.control{color:#C586C0;}.comment{color:#6A9955;}.struct{color:#86C691;}.punctuation{color:#dfdfdf;}.operator{color:#dfdfdf;}.fieldName{color:#dfdfdf;}.localName{color:#9CDCFE;}.parameter{color:#9CDCFE;}.code_highlight{background-color:#395929;}table{white-space:pre;}.line_no::before{content:attr(line_no);color:white;}.code_column{padding-left:5px;color:#dfdfdf;}&lt;/style&gt;
+            &lt;pre class=&quot;background&quot;&gt;
+            &lt;table&gt;
+            &lt;tbody&gt;
+            &lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;0&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;public class&lt;/span&gt; &lt;span class=&quot;class&quot;&gt;DirectorIntensityRuleEngine&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;1&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;{&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;2&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;private readonly&lt;/span&gt; &lt;span class=&quot;class&quot;&gt;List&lt;/span&gt;&amp;lt;&lt;span class=&quot;interface&quot;&gt;IDirectorIntensityRule&lt;/span&gt;&amp;gt; _rules = &lt;span class=&quot;keyword&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;class&quot;&gt;List&lt;/span&gt;&amp;lt;&lt;span class=&quot;interface&quot;&gt;IDirectorIntensityRule&lt;/span&gt;&amp;gt;();&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;3&quot;&gt;&lt;/td&gt;&lt;td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;4&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;class&quot;&gt;DirectorIntensityRuleEngine&lt;/span&gt;(&lt;span class=&quot;struct&quot;&gt;IEnumerable&lt;/span&gt;&amp;lt;&lt;span class=&quot;interface&quot;&gt;IDirectorIntensityRule&lt;/span&gt;&amp;gt; &lt;span class=&quot;parameter&quot;&gt;rules&lt;/span&gt;)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;5&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;    {&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;6&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;        _rules.&lt;span class=&quot;method&quot;&gt;AddRange&lt;/span&gt;(&lt;span class=&quot;parameter&quot;&gt;rules&lt;/span&gt;);&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;7&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;    }&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;8&quot;&gt;&lt;/td&gt;&lt;td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;9&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;public float&lt;/span&gt; &lt;span class=&quot;method&quot;&gt;CalculatePerceivedIntensityPercentage&lt;/span&gt;(&lt;span class=&quot;class&quot;&gt;Director&lt;/span&gt; &lt;span class=&quot;parameter&quot;&gt;director&lt;/span&gt;)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;10&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;    {&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;11&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;        &lt;span class=&quot;keyword&quot;&gt;float&lt;/span&gt; &lt;span class=&quot;localName&quot;&gt;intensity&lt;/span&gt; = &lt;span class=&quot;numericLiteral&quot;&gt;0&lt;/span&gt;;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;12&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;        &lt;span class=&quot;control&quot;&gt;foreach&lt;/span&gt; (&lt;span class=&quot;keyword&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;localName&quot;&gt;rule&lt;/span&gt; &lt;span class=&quot;control&quot;&gt;in&lt;/span&gt; _rules)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;13&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;        {&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;14&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;            &lt;span class=&quot;localName&quot;&gt;intensity&lt;/span&gt; = &lt;span class=&quot;class&quot;&gt;Mathf&lt;/span&gt;.&lt;span class=&quot;method&quot;&gt;Max&lt;/span&gt;(&lt;span class=&quot;localName&quot;&gt;intensity&lt;/span&gt;, &lt;span class=&quot;localName&quot;&gt;rule&lt;/span&gt;.&lt;span class=&quot;method&quot;&gt;CalculatePerceivedIntensity&lt;/span&gt;(&lt;span class=&quot;parameter&quot;&gt;director&lt;/span&gt;));&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;15&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;            &lt;span class=&quot;comment&quot;&gt;// Applies the rule which outputs the greatest intensity weighting&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;16&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;        }&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;17&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;        &lt;span class=&quot;control&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;localName&quot;&gt;intensity&lt;/span&gt;;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;18&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;    }&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;19&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;}&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;
+            &lt;/table&gt;&lt;/pre&gt;">
+          </iframe>
+      </div>
       
       <br>
       <h3 class="blogheader3">State Machine</h3>
@@ -516,205 +379,75 @@
       <!--==============================-->
       <button type="button" class="collapsible"><span class="fa-solid fa-code" style="color: rgb(132,123,255); margin-top: 0.15em; margin-right: 0.5em; float: left; font-size: 0.95em;"></span>State Machine</button>
       <div class="collapsibleblock">
-
-          <br>
-          <pre class="background"><code><span class="keyword">public interface</span> <span class="interface">IState</span>
-{
-    <span class="keyword">public void</span> <span class="method">OnStateEnter</span>();
-    <span class="keyword">public void</span> <span class="method">OnStateUpdate</span>();
-    <span class="keyword">public void</span> <span class="method">OnStateExit</span>();
-}</code>
-          </pre>
-          
-          <br>
-          <pre class="background"><code><span class="keyword">public class</span> <span class="class">StateMachine</span>
-{
-    <span class="keyword">private</span> <span class="interface">IState</span> _currentState;
-    <span class="keyword">private</span> <span class="class">Dictionary</span>&lt;<span class="class">Type</span>, <span class="interface">IState</span>&gt; _availableStatesDict;
-    <span class="keyword">public event</span> <span class="enumName">Action</span> OnStateChanged;
-
-    <span class="keyword">public void</span> <span class="method">Update</span>()
-    {
-        <span class="control">if</span> (_currentState == <span class="keyword">null</span>)
-        {
-            _currentState = _availableStatesDict.Values.<span class="method">First</span>();
-        }
-        
-        <span class="control">if</span> (_currentState != <span class="keyword">null</span>) _currentState.<span class="method">OnStateUpdate</span>();
-    }
-    
-    <span class="keyword">public void</span> <span class="method">SetStates</span>(<span class="class">Dictionary</span>&lt;<span class="class">Type</span>, <span class="interface">IState</span>&gt; <span class="parameter">statesDict</span>)
-    {
-        _availableStatesDict = <span class="parameter">statesDict</span>;
-    }
-
-    <span class="keyword">public void</span> <span class="method">ChangeState</span>(<span class="class">Type</span> <span class="parameter">newState</span>)
-    {
-        <span class="control">if</span> (_currentState != <span class="keyword">null</span>) _currentState.<span class="method">OnStateExit</span>();
-
-        _currentState = _availableStatesDict[<span class="parameter">newState</span>];
-        _currentState.<span class="method">OnStateEnter</span>();
-        OnStateChanged?.<span class="method">Invoke</span>();
-    }
-
-    <span class="keyword">public</span> <span class="interface">IState</span> <span class="method">GetCurrentState</span>()
-    {
-        <span class="control">return</span> _currentState;
-    }
-}</code>
-          </pre>
+          <!-- generated by https://github.com/Swiftly1/CsharpToColouredHTML feel free to remove it if you want -->
+          <iframe onload="this.height=this.contentWindow.document.body.scrollHeight + 40;" frameborder=0 height=500 width=100% srcdoc="&lt;style&gt;.background{font-family:monaco,Consolas,LucidaConsole,monospace;background-color:rgba(144, 144, 144, 0.075);border-radius: 4px;border: solid 1px #c9c9c9;font-size: 0.8em;margin: 2em 1em -3em 1em;padding: 1em 1em;}.method{color:#DCDCAA;}.class{color:#4EC9B0;}.keyword{color:#569cd6;}.interface{color:#b8d7a3;}.control{color:#C586C0;}.identifier{color:#dfdfdf;}.punctuation{color:#dfdfdf;}.operator{color:#dfdfdf;}.fieldName{color:#dfdfdf;}.parameter{color:#9CDCFE;}.eventName{color:#dfdfdf;}.code_highlight{background-color:#395929;}table{white-space:pre;}.line_no::before{content:attr(line_no);color:white;}.code_column{padding-left:5px;color:#dfdfdf;}&lt;/style&gt;
+            &lt;pre class=&quot;background&quot;&gt;
+            &lt;table&gt;
+            &lt;tbody&gt;
+            &lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;0&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;public interface&lt;/span&gt; &lt;span class=&quot;interface&quot;&gt;IState&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;1&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;{&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;2&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;public void&lt;/span&gt; &lt;span class=&quot;method&quot;&gt;OnStateEnter&lt;/span&gt;();&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;3&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;public void&lt;/span&gt; &lt;span class=&quot;method&quot;&gt;OnStateUpdate&lt;/span&gt;();&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;4&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;public void&lt;/span&gt; &lt;span class=&quot;method&quot;&gt;OnStateExit&lt;/span&gt;();&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;5&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;}&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;6&quot;&gt;&lt;/td&gt;&lt;td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;7&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;public class&lt;/span&gt; &lt;span class=&quot;class&quot;&gt;StateMachine&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;8&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;{&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;9&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;interface&quot;&gt;IState&lt;/span&gt; _currentState;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;10&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;class&quot;&gt;Dictionary&lt;/span&gt;&amp;lt;&lt;span class=&quot;class&quot;&gt;Type&lt;/span&gt;, &lt;span class=&quot;interface&quot;&gt;IState&lt;/span&gt;&amp;gt; _availableStatesDict;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;11&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;public event&lt;/span&gt; &lt;span class=&quot;class&quot;&gt;Action&lt;/span&gt; OnStateChanged;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;12&quot;&gt;&lt;/td&gt;&lt;td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;13&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;public void&lt;/span&gt; &lt;span class=&quot;method&quot;&gt;Update&lt;/span&gt;()&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;14&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;    {&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;15&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;        &lt;span class=&quot;control&quot;&gt;if&lt;/span&gt; (_currentState == &lt;span class=&quot;keyword&quot;&gt;null&lt;/span&gt;)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;16&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;        {&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;17&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;            _currentState = _availableStatesDict.Values.&lt;span class=&quot;method&quot;&gt;First&lt;/span&gt;();&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;18&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;        }&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;19&quot;&gt;&lt;/td&gt;&lt;td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;20&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;        &lt;span class=&quot;control&quot;&gt;if&lt;/span&gt; (_currentState != &lt;span class=&quot;keyword&quot;&gt;null&lt;/span&gt;) _currentState.&lt;span class=&quot;method&quot;&gt;OnStateUpdate&lt;/span&gt;();&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;21&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;    }&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;22&quot;&gt;&lt;/td&gt;&lt;td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;23&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;public void&lt;/span&gt; &lt;span class=&quot;method&quot;&gt;SetStates&lt;/span&gt;(&lt;span class=&quot;class&quot;&gt;Dictionary&lt;/span&gt;&amp;lt;&lt;span class=&quot;class&quot;&gt;Type&lt;/span&gt;, &lt;span class=&quot;interface&quot;&gt;IState&lt;/span&gt;&amp;gt; &lt;span class=&quot;parameter&quot;&gt;statesDict&lt;/span&gt;)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;24&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;    {&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;25&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;        _availableStatesDict = &lt;span class=&quot;parameter&quot;&gt;statesDict&lt;/span&gt;;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;26&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;    }&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;27&quot;&gt;&lt;/td&gt;&lt;td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;28&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;public void&lt;/span&gt; &lt;span class=&quot;method&quot;&gt;ChangeState&lt;/span&gt;(&lt;span class=&quot;class&quot;&gt;Type&lt;/span&gt; &lt;span class=&quot;parameter&quot;&gt;newState&lt;/span&gt;)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;29&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;    {&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;30&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;        &lt;span class=&quot;control&quot;&gt;if&lt;/span&gt; (_currentState != &lt;span class=&quot;keyword&quot;&gt;null&lt;/span&gt;) _currentState.&lt;span class=&quot;method&quot;&gt;OnStateExit&lt;/span&gt;();&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;31&quot;&gt;&lt;/td&gt;&lt;td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;32&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;        _currentState = _availableStatesDict[&lt;span class=&quot;parameter&quot;&gt;newState&lt;/span&gt;];&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;33&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;        _currentState.&lt;span class=&quot;method&quot;&gt;OnStateEnter&lt;/span&gt;();&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;34&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;        OnStateChanged?.&lt;span class=&quot;method&quot;&gt;Invoke&lt;/span&gt;();&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;35&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;    }&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;36&quot;&gt;&lt;/td&gt;&lt;td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;37&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;interface&quot;&gt;IState&lt;/span&gt; &lt;span class=&quot;method&quot;&gt;GetCurrentState&lt;/span&gt;()&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;38&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;    {&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;39&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;        &lt;span class=&quot;control&quot;&gt;return&lt;/span&gt; _currentState;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;40&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;    }&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;41&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;}&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;
+            &lt;/table&gt;&lt;/pre&gt;">
+          </iframe>
       </div>
-
-
+        
       <!--========================================-->
       <!--Code Snippet x - Director Respite State-->
       <!--========================================-->
       <button type="button" class="collapsible"><span class="fa-solid fa-code" style="color: rgb(132,123,255); margin-top: 0.15em; margin-right: 0.5em; float: left; font-size: 0.95em;"></span>Director Respite State</button>
       <div class="collapsibleblock">
-
-      <br>
-      <pre class="background"><code><span class="keyword">public class</span> <span class="class">DirectorRespiteState</span> : <span class="interface">IState</span>
-{
-    <span class="keyword">private</span> <span class="class">Director</span> _director;
-    <span class="keyword">private</span> <span class="class">StateMachine</span> _stateMachine;
-    
-    <span class="keyword">public</span> <span class="class">DirectorRespiteState</span>(<span class="class">Director</span> <span class="parameter">director</span>, <span class="class">StateMachine</span> <span class="parameter">stateMachine</span>)
-    {
-        _director = <span class="parameter">director</span>;
-        _stateMachine = <span class="parameter">stateMachine</span>;
-    }
-
-    <span class="keyword">public void</span> <span class="method">OnStateEnter</span>() =&gt; <span class="class">DirectorEventBus</span>.<span class="method">Publish</span>(<span class="class">DirectorEvent</span>.EnteredRespiteState);
-
-    <span class="keyword">public void</span> <span class="method">OnStateUpdate</span>()
-    {
-        _director.RespiteDuration -= <span class="class">Time</span>.deltaTime;
-        
-        <span class="control">if</span> (_director.RespiteDuration &lt;= <span class="numericLiteral">0</span>)
-        {
-            _director.MaxPopulationCount = _director.<span class="method">GetMaxBuildUpPopulation</span>();
-            _director.RespiteDuration = _director.<span class="method">GetDefaultRespiteDuration</span>(); 
-            _stateMachine.<span class="method">ChangeState</span>(<span class="keyword">typeof</span>(DirectorBuildUpState));
-        }
-    }
-
-    <span class="keyword">public void</span> <span class="method">OnStateExit</span>() {}
-}</code>
-      </pre>
+          <!-- generated by https://github.com/Swiftly1/CsharpToColouredHTML feel free to remove it if you want -->
+          <iframe onload="this.height=this.contentWindow.document.body.scrollHeight + 40;" frameborder=0 height=500 width=100% srcdoc="&lt;style&gt;.background{font-family:monaco,Consolas,LucidaConsole,monospace;background-color:rgba(144, 144, 144, 0.075);border-radius: 4px;border: solid 1px #c9c9c9;font-size: 0.8em;margin: 2em 1em -3em 1em;padding: 1em 1em;}.method{color:#DCDCAA;}.class{color:#4EC9B0;}.keyword{color:#569cd6;}.interface{color:#b8d7a3;}.numericLiteral{color:#b8d7a3;}.control{color:#C586C0;}.identifier{color:#dfdfdf;}.punctuation{color:#dfdfdf;}.operator{color:#dfdfdf;}.fieldName{color:#dfdfdf;}.parameter{color:#9CDCFE;}.code_highlight{background-color:#395929;}table{white-space:pre;}.line_no::before{content:attr(line_no);color:white;}.code_column{padding-left:5px;color:#dfdfdf;}&lt;/style&gt;
+            &lt;pre class=&quot;background&quot;&gt;
+            &lt;table&gt;
+            &lt;tbody&gt;
+            &lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;0&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;public class&lt;/span&gt; &lt;span class=&quot;class&quot;&gt;DirectorRespiteState&lt;/span&gt; : &lt;span class=&quot;interface&quot;&gt;IState&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;1&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;{&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;2&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;class&quot;&gt;Director&lt;/span&gt; _director;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;3&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;class&quot;&gt;StateMachine&lt;/span&gt; _stateMachine;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;4&quot;&gt;&lt;/td&gt;&lt;td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;5&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;class&quot;&gt;DirectorRespiteState&lt;/span&gt;(&lt;span class=&quot;class&quot;&gt;Director&lt;/span&gt; &lt;span class=&quot;parameter&quot;&gt;director&lt;/span&gt;, &lt;span class=&quot;class&quot;&gt;StateMachine&lt;/span&gt; &lt;span class=&quot;parameter&quot;&gt;stateMachine&lt;/span&gt;)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;6&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;    {&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;7&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;        _director = &lt;span class=&quot;parameter&quot;&gt;director&lt;/span&gt;;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;8&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;        _stateMachine = &lt;span class=&quot;parameter&quot;&gt;stateMachine&lt;/span&gt;;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;9&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;    }&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;10&quot;&gt;&lt;/td&gt;&lt;td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;11&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;public void&lt;/span&gt; &lt;span class=&quot;method&quot;&gt;OnStateEnter&lt;/span&gt;() =&amp;gt; &lt;span class=&quot;class&quot;&gt;DirectorEventBus&lt;/span&gt;.&lt;span class=&quot;method&quot;&gt;Publish&lt;/span&gt;(&lt;span class=&quot;class&quot;&gt;DirectorEvent&lt;/span&gt;.EnteredRespiteState);&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;12&quot;&gt;&lt;/td&gt;&lt;td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;13&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;public void&lt;/span&gt; &lt;span class=&quot;method&quot;&gt;OnStateUpdate&lt;/span&gt;()&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;14&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;    {&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;15&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;        _director.RespiteDuration -= &lt;span class=&quot;class&quot;&gt;Time&lt;/span&gt;.deltaTime;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;16&quot;&gt;&lt;/td&gt;&lt;td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;17&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;        &lt;span class=&quot;control&quot;&gt;if&lt;/span&gt; (_director.RespiteDuration &amp;lt;= &lt;span class=&quot;numericLiteral&quot;&gt;0&lt;/span&gt;)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;18&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;        {&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;19&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;            _director.MaxPopulationCount = _director.&lt;span class=&quot;method&quot;&gt;GetMaxBuildUpPopulation&lt;/span&gt;();&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;20&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;            _director.RespiteDuration = _director.&lt;span class=&quot;method&quot;&gt;GetDefaultRespiteDuration&lt;/span&gt;();&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;21&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;            _stateMachine.&lt;span class=&quot;method&quot;&gt;ChangeState&lt;/span&gt;(&lt;span class=&quot;keyword&quot;&gt;typeof&lt;/span&gt;(&lt;span class=&quot;class&quot;&gt;DirectorBuildUpState&lt;/span&gt;));&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;22&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;        }&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;23&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;    }&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;24&quot;&gt;&lt;/td&gt;&lt;td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;25&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;public void&lt;/span&gt; &lt;span class=&quot;method&quot;&gt;OnStateExit&lt;/span&gt;() {}&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;26&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;}&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;
+            &lt;/table&gt;&lt;/pre&gt;">
+          </iframe>
       </div>
-
 
       <!--========================================-->
       <!--Code Snippet x - Director Build-up State-->
       <!--========================================-->
       <button type="button" class="collapsible"><span class="fa-solid fa-code" style="color: rgb(132,123,255); margin-top: 0.15em; margin-right: 0.5em; float: left; font-size: 0.95em;"></span>Director BuildUp State</button>
       <div class="collapsibleblock">
-
-      <br>
-      <pre class="background"><code><span class="keyword">public class</span> <span class="class">DirectorBuildUpState</span> : <span class="interface">IState</span>
-{
-    <span class="keyword">private</span> <span class="class">Director</span> _director;
-    <span class="keyword">private</span> <span class="class">StateMachine</span> _stateMachine;
-    
-    <span class="keyword">public</span> <span class="class">DirectorBuildUpState</span>(<span class="class">Director</span> <span class="parameter">director</span>, <span class="class">StateMachine</span> <span class="parameter">stateMachine</span>)
-    {
-        _director = <span class="parameter">director</span>;
-        _stateMachine = <span class="parameter">stateMachine</span>;
-    }
-
-    <span class="keyword">public void</span> <span class="method">OnStateEnter</span>() =&gt; <span class="class">DirectorEventBus</span>.<span class="method">Publish</span>(<span class="enumName">DirectorEvent</span>.EnteredBuildUpState);
-
-    <span class="keyword">public void</span> <span class="method">OnStateUpdate</span>()
-    {
-        _director.<span class="method">IncreasePerceivedIntensity</span>();
-        
-        <span class="control">if</span> (_director.<span class="method">GetPerceivedIntensity</span>() &gt;= _director.<span class="method">GetPeakIntensityThreshold</span>())
-        {
-            _director.MaxPopulationCount = _director.<span class="method">GetMaxPeakPopulation</span>();
-            _stateMachine.<span class="method">ChangeState</span>(<span class="keyword">typeof</span>(DirectorPeakState));
-        }
-    }
-
-    <span class="keyword">public void</span> <span class="method">OnStateExit</span>() =&gt; <span class="class">DirectorEventBus</span>.<span class="method">Publish</span>(<span class="enumName">DirectorEvent</span>.ReachedPeakIntensity);
-}</code>
-      </pre>
+          <!-- generated by https://github.com/Swiftly1/CsharpToColouredHTML feel free to remove it if you want -->
+          <iframe onload="this.height=this.contentWindow.document.body.scrollHeight + 40;" frameborder=0 height=500 width=100% srcdoc="&lt;style&gt;.background{font-family:monaco,Consolas,LucidaConsole,monospace;background-color:rgba(144, 144, 144, 0.075);border-radius: 4px;border: solid 1px #c9c9c9;font-size: 0.8em;margin: 2em 1em -3em 1em;padding: 1em 1em;}.method{color:#DCDCAA;}.class{color:#4EC9B0;}.keyword{color:#569cd6;}.interface{color:#b8d7a3;}.control{color:#C586C0;}.identifier{color:#dfdfdf;}.punctuation{color:#dfdfdf;}.operator{color:#dfdfdf;}.fieldName{color:#dfdfdf;}.parameter{color:#9CDCFE;}.code_highlight{background-color:#395929;}table{white-space:pre;}.line_no::before{content:attr(line_no);color:white;}.code_column{padding-left:5px;color:#dfdfdf;}&lt;/style&gt;
+            &lt;pre class=&quot;background&quot;&gt;
+            &lt;table&gt;
+            &lt;tbody&gt;
+            &lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;0&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;public class&lt;/span&gt; &lt;span class=&quot;class&quot;&gt;DirectorBuildUpState&lt;/span&gt; : &lt;span class=&quot;interface&quot;&gt;IState&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;1&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;{&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;2&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;class&quot;&gt;Director&lt;/span&gt; _director;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;3&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;class&quot;&gt;StateMachine&lt;/span&gt; _stateMachine;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;4&quot;&gt;&lt;/td&gt;&lt;td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;5&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;class&quot;&gt;DirectorBuildUpState&lt;/span&gt;(&lt;span class=&quot;class&quot;&gt;Director&lt;/span&gt; &lt;span class=&quot;parameter&quot;&gt;director&lt;/span&gt;, &lt;span class=&quot;class&quot;&gt;StateMachine&lt;/span&gt; &lt;span class=&quot;parameter&quot;&gt;stateMachine&lt;/span&gt;)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;6&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;    {&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;7&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;        _director = &lt;span class=&quot;parameter&quot;&gt;director&lt;/span&gt;;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;8&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;        _stateMachine = &lt;span class=&quot;parameter&quot;&gt;stateMachine&lt;/span&gt;;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;9&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;    }&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;10&quot;&gt;&lt;/td&gt;&lt;td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;11&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;public void&lt;/span&gt; &lt;span class=&quot;method&quot;&gt;OnStateEnter&lt;/span&gt;() =&amp;gt; &lt;span class=&quot;class&quot;&gt;DirectorEventBus&lt;/span&gt;.&lt;span class=&quot;method&quot;&gt;Publish&lt;/span&gt;(&lt;span class=&quot;class&quot;&gt;DirectorEvent&lt;/span&gt;.EnteredBuildUpState);&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;12&quot;&gt;&lt;/td&gt;&lt;td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;13&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;public void&lt;/span&gt; &lt;span class=&quot;method&quot;&gt;OnStateUpdate&lt;/span&gt;()&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;14&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;    {&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;15&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;        _director.&lt;span class=&quot;method&quot;&gt;IncreasePerceivedIntensity&lt;/span&gt;();&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;16&quot;&gt;&lt;/td&gt;&lt;td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;17&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;        &lt;span class=&quot;control&quot;&gt;if&lt;/span&gt; (_director.&lt;span class=&quot;method&quot;&gt;GetPerceivedIntensity&lt;/span&gt;() &amp;gt;= _director.&lt;span class=&quot;method&quot;&gt;GetPeakIntensityThreshold&lt;/span&gt;())&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;18&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;        {&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;19&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;            _director.MaxPopulationCount = _director.&lt;span class=&quot;method&quot;&gt;GetMaxPeakPopulation&lt;/span&gt;();&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;20&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;            _stateMachine.&lt;span class=&quot;method&quot;&gt;ChangeState&lt;/span&gt;(&lt;span class=&quot;keyword&quot;&gt;typeof&lt;/span&gt;(&lt;span class=&quot;class&quot;&gt;DirectorPeakState&lt;/span&gt;));&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;21&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;        }&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;22&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;    }&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;23&quot;&gt;&lt;/td&gt;&lt;td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;24&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;public void&lt;/span&gt; &lt;span class=&quot;method&quot;&gt;OnStateExit&lt;/span&gt;() =&amp;gt; &lt;span class=&quot;class&quot;&gt;DirectorEventBus&lt;/span&gt;.&lt;span class=&quot;method&quot;&gt;Publish&lt;/span&gt;(&lt;span class=&quot;class&quot;&gt;DirectorEvent&lt;/span&gt;.ReachedPeakIntensity);&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;25&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;}&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;
+            &lt;/table&gt;&lt;/pre&gt;">
+          </iframe>
       </div>
-
 
       <!--========================================-->
       <!--Code Snippet x - Director Peak State-->
       <!--========================================-->
       <button type="button" class="collapsible"><span class="fa-solid fa-code" style="color: rgb(132,123,255); margin-top: 0.15em; margin-right: 0.5em; float: left; font-size: 0.95em;"></span>Director Peak State</button>
       <div class="collapsibleblock">
-
-      <br>
-      <pre class="background"><code><span class="keyword">public class</span> <span class="class">DirectorPeakState</span> : <span class="interface">IState</span>
-{
-    <span class="keyword">private</span> <span class="class">Director</span> _director;
-    <span class="keyword">private</span> <span class="class">StateMachine</span> _stateMachine;
-    
-    <span class="keyword">public</span> <span class="class">DirectorPeakState</span>(<span class="class">Director</span> <span class="parameter">director</span>, <span class="class">StateMachine</span> <span class="parameter">stateMachine</span>)
-    {
-        _director = <span class="parameter">director</span>;
-        _stateMachine = <span class="parameter">stateMachine</span>;
-    }
-
-    <span class="keyword">public void</span> <span class="method">OnStateEnter</span>() =&gt; <span class="class">DirectorEventBus</span>.<span class="method">Publish</span>(<span class="class">DirectorEvent</span>.EnteredPeakState);
-
-    <span class="keyword">public void</span> <span class="method">OnStateUpdate</span>()
-    {
-        _director.PeakDuration -= <span class="class">Time</span>.deltaTime;
-        
-        <span class="control">if</span>(_director.PeakDuration &lt;= <span class="numericLiteral">0</span>)
-        {
-            _director.MaxPopulationCount = <span class="numericLiteral">0</span>;
-            _director.PeakDuration = _director.<span class="method">GetDefaultPeakDuration</span>(); 
-            _stateMachine.<span class="method">ChangeState</span>(<span class="keyword">typeof</span>(DirectorPeakFadeState));
-        }
-    }
-
-    <span class="keyword">public void</span> <span class="method">OnStateExit</span>() {}
-}</code>
-      </pre>
+          <!-- generated by https://github.com/Swiftly1/CsharpToColouredHTML feel free to remove it if you want -->
+          <iframe onload="this.height=this.contentWindow.document.body.scrollHeight + 40;" frameborder=0 height=500 width=100% srcdoc="&lt;style&gt;.background{font-family:monaco,Consolas,LucidaConsole,monospace;background-color:rgba(144, 144, 144, 0.075);border-radius: 4px;border: solid 1px #c9c9c9;font-size: 0.8em;margin: 2em 1em -3em 1em;padding: 1em 1em;}.method{color:#DCDCAA;}.class{color:#4EC9B0;}.keyword{color:#569cd6;}.interface{color:#b8d7a3;}.numericLiteral{color:#b8d7a3;}.control{color:#C586C0;}.identifier{color:#dfdfdf;}.punctuation{color:#dfdfdf;}.operator{color:#dfdfdf;}.fieldName{color:#dfdfdf;}.parameter{color:#9CDCFE;}.code_highlight{background-color:#395929;}table{white-space:pre;}.line_no::before{content:attr(line_no);color:white;}.code_column{padding-left:5px;color:#dfdfdf;}&lt;/style&gt;
+            &lt;pre class=&quot;background&quot;&gt;
+            &lt;table&gt;
+            &lt;tbody&gt;
+            &lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;0&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;public class&lt;/span&gt; &lt;span class=&quot;class&quot;&gt;DirectorPeakState&lt;/span&gt; : &lt;span class=&quot;interface&quot;&gt;IState&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;1&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;{&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;2&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;class&quot;&gt;Director&lt;/span&gt; _director;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;3&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;class&quot;&gt;StateMachine&lt;/span&gt; _stateMachine;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;4&quot;&gt;&lt;/td&gt;&lt;td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;5&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;class&quot;&gt;DirectorPeakState&lt;/span&gt;(&lt;span class=&quot;class&quot;&gt;Director&lt;/span&gt; &lt;span class=&quot;parameter&quot;&gt;director&lt;/span&gt;, &lt;span class=&quot;class&quot;&gt;StateMachine&lt;/span&gt; &lt;span class=&quot;parameter&quot;&gt;stateMachine&lt;/span&gt;)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;6&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;    {&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;7&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;        _director = &lt;span class=&quot;parameter&quot;&gt;director&lt;/span&gt;;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;8&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;        _stateMachine = &lt;span class=&quot;parameter&quot;&gt;stateMachine&lt;/span&gt;;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;9&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;    }&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;10&quot;&gt;&lt;/td&gt;&lt;td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;11&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;public void&lt;/span&gt; &lt;span class=&quot;method&quot;&gt;OnStateEnter&lt;/span&gt;() =&amp;gt; &lt;span class=&quot;class&quot;&gt;DirectorEventBus&lt;/span&gt;.&lt;span class=&quot;method&quot;&gt;Publish&lt;/span&gt;(&lt;span class=&quot;class&quot;&gt;DirectorEvent&lt;/span&gt;.EnteredPeakState);&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;12&quot;&gt;&lt;/td&gt;&lt;td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;13&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;public void&lt;/span&gt; &lt;span class=&quot;method&quot;&gt;OnStateUpdate&lt;/span&gt;()&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;14&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;    {&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;15&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;        _director.PeakDuration -= &lt;span class=&quot;class&quot;&gt;Time&lt;/span&gt;.deltaTime;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;16&quot;&gt;&lt;/td&gt;&lt;td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;17&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;        &lt;span class=&quot;control&quot;&gt;if&lt;/span&gt;(_director.PeakDuration &amp;lt;= &lt;span class=&quot;numericLiteral&quot;&gt;0&lt;/span&gt;)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;18&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;        {&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;19&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;            _director.MaxPopulationCount = &lt;span class=&quot;numericLiteral&quot;&gt;0&lt;/span&gt;;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;20&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;            _director.PeakDuration = _director.&lt;span class=&quot;method&quot;&gt;GetDefaultPeakDuration&lt;/span&gt;();&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;21&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;            _stateMachine.&lt;span class=&quot;method&quot;&gt;ChangeState&lt;/span&gt;(&lt;span class=&quot;keyword&quot;&gt;typeof&lt;/span&gt;(&lt;span class=&quot;class&quot;&gt;DirectorPeakFadeState&lt;/span&gt;));&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;22&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;        }&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;23&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;    }&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;24&quot;&gt;&lt;/td&gt;&lt;td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;25&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;public void&lt;/span&gt; &lt;span class=&quot;method&quot;&gt;OnStateExit&lt;/span&gt;() {}&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;26&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;}&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;
+            &lt;/table&gt;&lt;/pre&gt;">
+          </iframe>
       </div>
-
 
       <!--========================================-->
       <!--Code Snippet x - Director PeakFade State-->
       <!--========================================-->
       <button type="button" class="collapsible"><span class="fa-solid fa-code" style="color: rgb(132,123,255); margin-top: 0.15em; margin-right: 0.5em; float: left; font-size: 0.95em;"></span>Director PeakFade State</button>
       <div class="collapsibleblock">
-
-      <br>
-      <pre class="background"><code><span class="keyword">public class</span> <span class="class">DirectorPeakFadeState</span> : <span class="interface">IState</span>
-{
-    <span class="keyword">private</span> <span class="class">Director</span> _director;
-    <span class="keyword">private</span> <span class="class">StateMachine</span> _stateMachine;
-    
-    <span class="keyword">public</span> <span class="class">DirectorPeakFadeState</span>(<span class="class">Director</span> <span class="parameter">director</span>, <span class="class">StateMachine</span> <span class="parameter">stateMachine</span>)
-    {
-        _director = <span class="parameter">director</span>;
-        _stateMachine = <span class="parameter">stateMachine</span>;
-    }
-
-    <span class="keyword">public void</span> <span class="method">OnStateEnter</span>() =&gt; <span class="class">DirectorEventBus</span>.<span class="method">Publish</span>(<span class="class">DirectorEvent</span>.EnteredPeakFadeState);
-
-    <span class="keyword">public void</span> <span class="method">OnStateUpdate</span>()
-    {
-        _director.<span class="method">DecreasePerceivedIntensity</span>();
-        
-        <span class="control">if</span> (_director.<span class="method">GetEnemyPopulationCount</span>() == <span class="numericLiteral">0</span> &amp;&amp; _director.<span class="method">GetPerceivedIntensity</span>() == <span class="numericLiteral">0</span>)
-        {
-            _director.MaxPopulationCount = _director.<span class="method">GetMaxRespitePopulation</span>();
-            _stateMachine.<span class="method">ChangeState</span>(<span class="keyword">typeof</span>(DirectorRespiteState));
-        }
-    }
-
-    <span class="keyword">public void</span> <span class="method">OnStateExit</span>() {}
-}</code>
-      </pre>
+          <!-- generated by https://github.com/Swiftly1/CsharpToColouredHTML feel free to remove it if you want -->
+          <iframe onload="this.height=this.contentWindow.document.body.scrollHeight + 40;" frameborder=0 height=500 width=100% srcdoc="&lt;style&gt;.background{font-family:monaco,Consolas,LucidaConsole,monospace;background-color:rgba(144, 144, 144, 0.075);border-radius: 4px;border: solid 1px #c9c9c9;font-size: 0.8em;margin: 2em 1em -3em 1em;padding: 1em 1em;}.method{color:#DCDCAA;}.class{color:#4EC9B0;}.keyword{color:#569cd6;}.interface{color:#b8d7a3;}.numericLiteral{color:#b8d7a3;}.control{color:#C586C0;}.identifier{color:#dfdfdf;}.punctuation{color:#dfdfdf;}.operator{color:#dfdfdf;}.fieldName{color:#dfdfdf;}.parameter{color:#9CDCFE;}.code_highlight{background-color:#395929;}table{white-space:pre;}.line_no::before{content:attr(line_no);color:white;}.code_column{padding-left:5px;color:#dfdfdf;}&lt;/style&gt;
+            &lt;pre class=&quot;background&quot;&gt;
+            &lt;table&gt;
+            &lt;tbody&gt;
+            &lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;0&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;public class&lt;/span&gt; &lt;span class=&quot;class&quot;&gt;DirectorPeakFadeState&lt;/span&gt; : &lt;span class=&quot;interface&quot;&gt;IState&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;1&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;{&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;2&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;class&quot;&gt;Director&lt;/span&gt; _director;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;3&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;class&quot;&gt;StateMachine&lt;/span&gt; _stateMachine;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;4&quot;&gt;&lt;/td&gt;&lt;td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;5&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;class&quot;&gt;DirectorPeakFadeState&lt;/span&gt;(&lt;span class=&quot;class&quot;&gt;Director&lt;/span&gt; &lt;span class=&quot;parameter&quot;&gt;director&lt;/span&gt;, &lt;span class=&quot;class&quot;&gt;StateMachine&lt;/span&gt; &lt;span class=&quot;parameter&quot;&gt;stateMachine&lt;/span&gt;)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;6&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;    {&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;7&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;        _director = &lt;span class=&quot;parameter&quot;&gt;director&lt;/span&gt;;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;8&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;        _stateMachine = &lt;span class=&quot;parameter&quot;&gt;stateMachine&lt;/span&gt;;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;9&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;    }&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;10&quot;&gt;&lt;/td&gt;&lt;td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;11&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;public void&lt;/span&gt; &lt;span class=&quot;method&quot;&gt;OnStateEnter&lt;/span&gt;() =&amp;gt; &lt;span class=&quot;class&quot;&gt;DirectorEventBus&lt;/span&gt;.&lt;span class=&quot;method&quot;&gt;Publish&lt;/span&gt;(&lt;span class=&quot;class&quot;&gt;DirectorEvent&lt;/span&gt;.EnteredPeakFadeState);&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;12&quot;&gt;&lt;/td&gt;&lt;td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;13&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;public void&lt;/span&gt; &lt;span class=&quot;method&quot;&gt;OnStateUpdate&lt;/span&gt;()&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;14&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;    {&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;15&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;        _director.&lt;span class=&quot;method&quot;&gt;DecreasePerceivedIntensity&lt;/span&gt;();&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;16&quot;&gt;&lt;/td&gt;&lt;td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;17&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;        &lt;span class=&quot;control&quot;&gt;if&lt;/span&gt; (_director.&lt;span class=&quot;method&quot;&gt;GetEnemyPopulationCount&lt;/span&gt;() == &lt;span class=&quot;numericLiteral&quot;&gt;0&lt;/span&gt; &amp;amp;&amp;amp; _director.&lt;span class=&quot;method&quot;&gt;GetPerceivedIntensity&lt;/span&gt;() == &lt;span class=&quot;numericLiteral&quot;&gt;0&lt;/span&gt;)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;18&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;        {&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;19&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;            _director.MaxPopulationCount = _director.&lt;span class=&quot;method&quot;&gt;GetMaxRespitePopulation&lt;/span&gt;();&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;20&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;            _stateMachine.&lt;span class=&quot;method&quot;&gt;ChangeState&lt;/span&gt;(&lt;span class=&quot;keyword&quot;&gt;typeof&lt;/span&gt;(&lt;span class=&quot;class&quot;&gt;DirectorRespiteState&lt;/span&gt;));&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;21&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;        }&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;22&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;    }&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;23&quot;&gt;&lt;/td&gt;&lt;td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;24&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;public void&lt;/span&gt; &lt;span class=&quot;method&quot;&gt;OnStateExit&lt;/span&gt;() {}&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;line_no&quot; line_no=&quot;25&quot;&gt;&lt;/td&gt;&lt;td class=&quot;code_column&quot;&gt;}&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;
+            &lt;/table&gt;&lt;/pre&gt;">
+          </iframe>
       </div>
-
 
       <br>
       <h3 class="blogheader3">Unity Inspector</h3>
@@ -727,7 +460,6 @@
           <img src="../images/DirectorAiProject/DirectorInspectorView.png" alt="Director Inspector View">
       </div>
         
-        
       <!--========================================================-->
       <!--Code Snippet x - Director Active Area Set Inspector View-->
       <!--========================================================-->
@@ -736,7 +468,6 @@
           <br>
           <img src="../images/DirectorAiProject/ActiveAreaSetInspectorView.png" alt="ActiveAreaSet Inspector View">
       </div>
-
         
       <br>
       <h2 class="blogheader2">Other Resources</h2>
@@ -748,12 +479,9 @@
         
       <br>
       <br>
-        
-      <!--<br>
-      <br>
-      <h2 class="blogheader2" style="color: white;">References</h2>
-      <p>Lorem ipsum.</p>  -->
-        
+      <!--<h2 class="blogheader2">References</h2>
+      <p>Left 4 Dead.</p>
+      <br>-->
         
     </div> <!--End of Inner-->
   </div> <!--End of Main-->
