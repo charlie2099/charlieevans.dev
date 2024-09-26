@@ -3085,8 +3085,6 @@ input, select, textarea {
 	opacity: 1;
 }
 
-
-
 /* Media Queries */
 @media screen and (max-width: 1280px) {
 	.tiles .blogtile {
