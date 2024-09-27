@@ -89,7 +89,13 @@ transitional logic from one state to another.
 ## Conclusion
 - This project was an invaluable learning experience, providing deep insights into
 - A simple but capable system that enables designers to creator their own rules for shooter and survival games
-- 
+- This project was a good proof of concept to showcase how such a system could be integrated into other 
+videogame genres.
+
+This project has proven to be an invaluable learning experience, offering profound insights into the
+development of a simple yet powerful system that empowers designers to create their own rules for shooter 
+and survival games. Additionally, it serves as a compelling proof of concept, demonstrating how this system 
+can be effectively integrated into various other video game genres.
 
 ## Code Samples
 - Text

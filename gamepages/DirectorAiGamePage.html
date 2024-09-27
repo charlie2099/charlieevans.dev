@@ -88,8 +88,17 @@
       <a href="../blogpage.html"><button class="btn"> <span class="fa-solid fa-arrow-circle-left" style="font-size: 0.9em;"></span> <span style="font-weight: normal; font-size: 0.9em;">Back</span></button></a>
         
       <h1 class="blogheader1">Director Ai for Shooter and Survival Games</h1>
-      <h4 style="color: rgba(255,255,255,0.5); font-weight: normal; text-align: center;"><span style="color: white;">Published:</span> Jan 30th, 2023 | <span style="color: white;">Updated:</span> Sept 22nd, 2024</h4>
-
+      <h4 style="color: rgba(255,255,255,0.5); font-weight: normal; text-align: center;"><span style="color: white;">Published:</span> Jan 30th, 2023 | <span style="color: white;">Updated:</span> Sept 27th, 2024</h4>
+        
+      <br>
+      <figure style="display: inline-block;">
+          <video class="projecttileimage" autoplay muted loop style="width: 85%; border: 1px solid rgb(179,255,107); border-radius: 20px; display: block; margin-left: auto; margin-right: auto; margin-bottom: 0.5em;">
+              <source src="../images/GIFS/DirectorAiDemo.webm" type=video/webm>
+          </video>
+          <figcaption style="text-align: center; font-size: 0.8em;">Gameplay preview of the AI Director handling the pacing of a simple shooter and survival game.</figcaption>
+      </figure>
+      <br>
+        
       <!--==============-->
       <!-- Introduction -->
       <!--==============-->
@@ -98,22 +107,10 @@
         a project I undertook as a dissertation as part of my bachelor's degree in Games Technology. The following
         sections will give an overview of the project such as it's core features and limitations, the technical
         challenges faced and how I overcame them, before concluding with a reflection on what I learnt and future
-        plans for the project. Code samples can be found at the bottom of this page.</p>
+        plans for the project. Code samples can be found at the end of this page.</p>
 
       <a href="#codesamples"><button class="btn fa solid fa-code" style="color: rgb(132,123,255); font-size: 0.8em;"> <span style="color: white; font-weight: normal; font-size: 1em;">Code Samples</span></button></a>
       
-      <br>
-      <br>
-        
-      <figure style="display: inline-block;">
-          <video class="projecttileimage" autoplay muted loop style="width: 85%; border: 1px solid rgb(179,255,107); border-radius: 20px; display: block; margin-left: auto; margin-right: auto; margin-bottom: 0.5em;">
-              <source src="../images/GIFS/DirectorAiDemo.webm" type=video/webm>
-          </video>
-          <figcaption style="text-align: center; font-size: 0.8em;">Gameplay preview of the AI Director in action.</figcaption>
-      </figure>  
-        
-      <br>
-      <br>
       <!--===========================================-->  
       <!--Background - The AI Director of Left 4 Dead-->  
       <!--===========================================-->
@@ -161,7 +158,28 @@
       <!--Key Features-->
       <!--============-->
       <h2 class="blogheader2">Key Features</h2>
-      <blockquote>COMING SOON</blockquote>  
+      <!--<blockquote>COMING SOON</blockquote>-->
+
+      <ul>
+          <li>
+              <span style="color: white; font-weight: bold;">Rule-based Architecture</span>
+              <ul style="font-size: 1.2em;">
+                  <li>Intensity Rule Engine</li>
+                  <li>Behaviour Rule Engine</li>
+                  <li>Intensity Rule Calculator</li>
+                  <li>Behaviour Rule Calculator</li>
+              </ul>
+          </li>
+
+          <li>
+              <span style="color: white; font-weight: bold;">Active Area Set</span>
+              <ul style="font-size: 1.2em;">
+                  <li>Dynamic Tilemap Processing</li>
+                  <li>Dynamic Enemy Population</li>
+                  <li>Dynamic Item Spawning</li>
+              </ul>
+          </li>
+      </ul>  
         
       <!--<h2 class="blogheader2">Key Features</h2>
       <ul>
@@ -228,34 +246,49 @@
               and so does not support 3D environments.</li>
       </ul>
 
-      <!--=============-->
-      <!--What I Learnt-->
-      <!--=============-->
-      <h2 class="blogheader2">What I Learnt</h2>
+      <!--===================-->
+      <!--Learning Highlights-->
+      <!--===================-->
+      <h2 class="blogheader2">Learning Highlights</h2>
       <ul>
-          <li>The Rule pattern</li>
-          <li>The State pattern</li>
-          <li>Event buses</li>
-          <li>Interfaces</li>
-          <li>Dictionaries</li>
-          <li>State caching</li>
-          <li>Modular architectures</li>
-          <li>Tilemap level design</li>
-      </ul> 
-      <!--<h2 class="blogheader2">What I Learnt (WORK-IN-PROGRESS)</h2>
-      <ul>
-          <li><span style="color: white; font-weight: bold;">The Rule Pattern</span> - Abstracting messy logic into their 
-              own respective rule classes.</li>
-          <li><span style="color: white; font-weight: bold;">The State Pattern</span> - Encapsulating simple behaviours 
-              into their own state classs and handling the transitional logic from one state to another.</li>
-          <li><span style="color: white; font-weight: bold;">Event Buses</span> - Text</li>
-          <li><span style="color: white; font-weight: bold;">Interfaces</span> - Text</li>
-          <li><span style="color: white; font-weight: bold;">Dictionaries</span> - Text</li>
-          <li><span style="color: white; font-weight: bold;">State caching</span> - Text</li>
-          <li><span style="color: white; font-weight: bold;">Modular Architectures</span> - The importance and value of 
-              loosely coupled systems and extensible design </li>
-          <li><span style="color: white; font-weight: bold;">Tilemap Level Design</span> - Text</li>
-      </ul>-->
+          <li>
+              <span style="color: white; font-weight: bold;">Design Patterns</span>
+              <ul style="font-size: 1.2em;">
+                  <li>Rule pattern</li>
+                  <li>State pattern</li>
+                  <li>Event Buses</li>
+              </ul>
+          </li>
+
+          <li>
+              <span style="color: white; font-weight: bold;">System Design</span>
+              <ul style="font-size: 1.2em;">
+                  <li>Interfaces</li>
+                  <li>Modular architectures</li>
+              </ul>
+          </li>
+
+          <li>
+              <span style="color: white; font-weight: bold;">Data Structures</span>
+              <ul style="font-size: 1.2em;">
+                  <li>Dictionaries</li>
+              </ul>
+          </li>
+
+          <li>
+              <span style="color: white; font-weight: bold;">Level Design</span>
+              <ul style="font-size: 1.2em;">
+                  <li>Tilemaps</li>
+              </ul>
+          </li>
+
+          <li>
+              <span style="color: white; font-weight: bold;">Optimisation</span>
+              <ul style="font-size: 1.2em;">
+                  <li>State caching</li>
+              </ul>
+          </li>
+      </ul>
 
       <!--============-->
       <!--Future Plans-->
@@ -266,23 +299,29 @@
           <li>Utilise more methods of rule execution<span class="fa-solid fa-square" style="margin-left: 0.5em; font-size: 1em;"></span></li>
           <li>Handle rule creation using a custom editor tool<span class="fa-solid fa-square" style="margin-left: 0.5em; font-size: 1em;"></span></li>
           <li>Adapt the active area set to work with 3D environments<span class="fa-solid fa-square" style="margin-left: 0.5em; font-size: 1em;"></span></li>
+          <li>Objecting pooling enemies<span class="fa-solid fa-square" style="margin-left: 0.5em; font-size: 1em;"></span></li>
+          <li>Develop and integrate an attractor system<span class="fa-solid fa-square" style="margin-left: 0.5em; font-size: 1em;"></span></li>
+          <li>Develop a complete game and fully-fledged and integrated Director system<span class="fa-solid fa-square" style="margin-left: 0.5em; font-size: 1em;"></span></li>
       </ul>
 
       <!--==========-->
       <!--Conclusion-->
       <!--==========-->
       <h2 class="blogheader2">Conclusion</h2>
-      <blockquote>COMING SOON</blockquote>
+      <p>This project was an invaluable learning experience, offering profound insights into the development
+      of a simple yet powerful system that empowers designers to create their own rules for shooter and survival games.
+      Additionally, this project served as as a compelling proof of concept, demonstrating how such a system can be 
+      effectively integrated into other video game genres.</p>
 
       <!--===============-->
       <!--Visual Showcase-->
       <!--===============-->
-      <h2 class="blogheader2">Visual Showcase</h2>
-      <blockquote>COMING SOON</blockquote>
+      <!--<h2 class="blogheader2">Visual Showcase</h2>
+      <blockquote>COMING SOON</blockquote>-->
         
-      <!--===============-->
-      <!--Visual Showcase-->
-      <!--===============-->
+      <!--====-->
+      <!--Demo-->
+      <!--====-->
       <h2 class="blogheader2">Demo</h2>
       <blockquote>COMING SOON</blockquote>
       <!--<iframe width="610" height="167" frameborder="0" src="https://itch.io/embed/2997073">
@@ -320,6 +359,20 @@
           </iframe>
       </div>
 
+        
+        
+        
+        <!--=======================-->
+        <!--NEW CODE COLOUR STYLING-->
+        <!--=======================-->
+<!--
+        <style>.background{font-family:monaco,Consolas,LucidaConsole,monospace;color:#dfdfdf;}.method{color:#39ca8c;}.class{color:#bf90fd;}.keyword{color:#6b94e7;}.string{color:#C9A26D;}.interface{color:#bf90fd;}.enumName{color: #E1BFFF;}  .numericLiteral{color:#ED94C0;}  .control{color:#6b94e7;}  .namespace{color:#dfdfdf;}  .enumMember{color:#dfdfdf;}  .identifier{color:#dfdfdf;}  .punctuation{color:#dfdfdf;}  .operator{color:#dfdfdf;}  .propertyName{color:#dfdfdf;}  .fieldName{color:#dfdfdf;}  .localName{color:#9CDCFE;}  .parameter{color:#BDBDBD;}</style>
+-->
+
+        
+        
+        
+        
       <!--==========================-->
       <!--Code Snippet x - Event Bus-->
       <!--==========================-->
@@ -493,6 +546,26 @@
       <!--<h2 class="blogheader2">References</h2>
       <p>Left 4 Dead.</p>
       <br>-->
+        
+      <script src="https://giscus.app/client.js"
+              data-repo="charlie2099/charlieevans.dev"
+              data-repo-id="MDEwOlJlcG9zaXRvcnkzMDMxMDg2NjQ="
+              data-category="Announcements"
+              data-category-id="DIC_kwDOEhESOM4CThBr"
+              data-mapping="pathname"
+              data-strict="0"
+              data-reactions-enabled="1"
+              data-emit-metadata="0"
+              data-input-position="bottom"
+              data-theme="dark"
+              data-lang="en"
+              crossorigin="anonymous"
+              async>
+      </script>
+
+      <br>
+        
+       <!--<div class="giscus"></div>-->
         
     </div> <!--End of Inner-->
   </div> <!--End of Main-->
