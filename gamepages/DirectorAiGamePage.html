@@ -28,6 +28,10 @@
     .blogheader2 {
         color: rgb(179,255,107);
     }
+    .blogheader3 {
+        color: rgb(179,255,107);
+        font-style: italic;
+    }
 </style>
 
 <body> <!--class="is-preload"-->
@@ -88,7 +92,7 @@
       <a href="../blogpage.html"><button class="btn"> <span class="fa-solid fa-arrow-circle-left" style="font-size: 0.9em;"></span> <span style="font-weight: normal; font-size: 0.9em;">Back</span></button></a>
         
       <h1 class="blogheader1">Director Ai for Shooter and Survival Games</h1>
-      <h4 style="color: rgba(255,255,255,0.5); font-weight: normal; text-align: center;"><span style="color: white;">Published:</span> Jan 30th, 2023 | <span style="color: white;">Updated:</span> Sept 27th, 2024</h4>
+      <h4 style="color: rgba(255,255,255,0.5); font-weight: normal; text-align: center;"><span style="color: white;">Published:</span> Jan 30th, 2023 | <span style="color: white;">Updated:</span> Sept 29th, 2024</h4>
         
       <br>
       <figure style="display: inline-block;">
@@ -116,43 +120,77 @@
       <!--===========================================-->
       <h2 class="blogheader2">Background - The AI Director of Left 4 Dead</h2>
         
-        <p>The developers of the first-person shooter game <span style="font-style: italic;">Left 4 Dead</span> wanted to provide a 
-            challenging, engaging, and fresh experience for their players on every play. To achieve this, they 
-            developed a system they called an <span style="font-style: italic;">AI Director</span>, a collection of
-            systems that worked together seamlessly to govern the pacing of their game and how the drama unfolded. It
-            was an AI that worked behind the scenes rather than an actual physical entity.</p> 
+      <p>The developers of the first-person shooter game <span style="font-style: italic;">Left 4 Dead</span> wanted to provide a 
+          challenging, engaging, and fresh experience for their players on every play. To achieve this, they 
+          developed a system they called an <span style="font-style: italic;">AI Director</span>, a collection of
+          systems that worked together seamlessly to govern the pacing of their game and how the drama unfolded. It
+          was an AI that operated behind the scenes rather than as an in-game physical entity.</p>
+
+      <p>Under the hood, the <span style="font-style: italic;">AI Director</span> analysed the performance of each player and based
+          it's decisions upon a perceived stress metric that it continually calculated for each player. Through this,
+          it was able to decide when it perceived was the right time was to spawn more enemies, how many of them to
+          spawn, what type of enemy to spawn, and more. The Director also had the capability to modify the level
+          layout to open up new paths dynamically based on certain conditions, and more. These capabilities
+          enabled the Director to craft the best gameplay experience it could for it's players.</p>
         
-        <p>Under the hood, the <span style="font-style: italic;">AI Director</span> analysed the performance of each player and based
-            it's decisions upon a perceived stress metric that it continually calculated for each player. Through this, 
-            it was able to decide when it perceived was the right time was to spawn more enemies, how many of them to 
-            spawn, what type of enemy to spawn, and more. The Director also had the capability to modify the level 
-            layout to open up new paths dynamically based on certain conditions, and more. These capabilities
-            enabled the Director to craft the best gameplay experience it could for it's players.</p>
-        
+      <p>The following video explores what an AI Director is in greater detail.</p>
+
+      <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/Mnt5zxb8W0Y?si=bmloJnogxCSXnMyu"
+              title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
+           encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen>
+      </iframe>
+      
       <!--=======-->
       <!--Concept-->
       <!--=======-->
       <h2 class="blogheader2">Concept</h2>
-      
-      <p>The aim for this project was to create a more versatile Director system that could be adapted to other 
-          videogame genres. For the purposes and scope of this project, two genres were selected. The shooter genre 
-          was selected to test the Director in a genre that it has been tried and tested in. The second genre selected 
-          was the survival genre as it is another well known and extremely popular genre, and it would be insightful 
-          to see how the Director could be utilised in such a different genre.</p>
-      
-      <p>Another aim for this project was to make the system modular in nature so that it would allow designers to 
-          easily build their own rules and behaviours for their shooter and survival games.</p>
         
+      <p>Inspired by Left 4 Dead's AI Director, the idea for this project was to develop a more versatile Director system 
+          that could be adopted by game developers to use in their own games regardless of genre. It was important therefore
+          that the system architecture was modular and generic in nature so that rules and behaviours could be processed by
+          a single system. This is one of the fundamental challenges this project attempts to solve.</p>
+
+      <!--=======-->
+      <!-- Scope -->
+      <!--=======-->
+      <h3 class="blogheader3">Scope</h3>
+      <p>For the purposes and scope of this project, two genres were selected. The shooter genre was selected to test the
+          Director in a genre that it had been tried and tested in. The second genre selected was the survival genre as 
+          it is another well known and extremely popular genre, and it would be insightful to see how the Director could 
+          be utilised in such a different genre.</p>
+      
       <!--============-->
       <!-- Tech Stack -->
       <!--============-->
       <h3 class="blogheader3">Tech Stack</h3>
       <ul>
-          <li>Engine/Framework/Library: <span style="color: white; font-weight: bold;">SFML 2.0</span></li>
-          <li>Programming Language: <span style="color: white; font-weight: bold;">C++</span></li>
-          <li>IDE: <span style="color: white; font-weight: bold;">JetBrains CLion</span></li>
+          <li>Engine/Framework/Library: <span style="color: white; font-weight: bold;">Unity (2021.1.21)</span></li>
+          <li>Programming Language: <span style="color: white; font-weight: bold;">C#</span></li>
+          <li>IDE: <span style="color: white; font-weight: bold;">JetBrains Rider</span></li>
           <li>Operating System: <span style="color: white; font-weight: bold;">Windows</span></li>
       </ul>
+
+      <!--====================-->
+      <!--Technical Challenges-->
+      <!--====================-->
+      <h2 class="blogheader2">Technical Challenges</h2>
+
+      <!--=============-->
+      <!-- Rule System -->
+      <!--=============-->
+      <h3 class="blogheader3">Rule System</h3>
+      <blockquote>COMING SOON</blockquote>
+
+      <!--<p>In the beginning stages of development the project saw major difficulties in creating a single rule system that could
+          be considered generic, and thus could not cater rule creation and processing across games of different genres. Later 
+          in development however, the Rule pattern was discovered. The Rule pattern is a...</p>-->
+
+      <!--=================-->
+      <!-- Active Area Set -->
+      <!--=================-->
+      <h3 class="blogheader3">Active Area Set</h3>
+      <blockquote>COMING SOON</blockquote>
 
       <!--============-->
       <!--Key Features-->
@@ -161,6 +199,14 @@
       <!--<blockquote>COMING SOON</blockquote>-->
 
       <ul>
+          <li>
+              <span style="color: white; font-weight: bold;">Games</span>
+              <ul style="font-size: 1.2em;">
+                  <li>Top-down Shooter Game</li>
+                  <li>Top-down Survival Game</li>
+              </ul>
+          </li>
+          
           <li>
               <span style="color: white; font-weight: bold;">Rule-based Architecture</span>
               <ul style="font-size: 1.2em;">
@@ -179,42 +225,8 @@
                   <li>Dynamic Item Spawning</li>
               </ul>
           </li>
-      </ul>  
+      </ul>
         
-      <!--<h2 class="blogheader2">Key Features</h2>
-      <ul>
-          <li><span style="color: white; font-weight: bold;">Shooter Game</span> - Text.</li>
-          <li><span style="color: white; font-weight: bold;">Survival Game</span> - Text.</li>
-          <li><span style="color: white; font-weight: bold;">Director</span> - Text.</li>
-          <ul>
-              <li><span style="color: white; font-weight: bold;">Placeholder</span></li>
-              <li><span style="color: white; font-weight: bold;">Placeholder</span></li>
-              <li><span style="color: white; font-weight: bold;">Placeholder</span></li>
-          </ul>
-          <li><span style="color: white; font-weight: bold;">Active Area Set</span></li>
-          <ul>
-              <li><span style="color: white; font-weight: bold;">Placeholder</span></li>
-              <li><span style="color: white; font-weight: bold;">Placeholder</span></li>
-              <li><span style="color: white; font-weight: bold;">Placeholder</span></li>
-          </ul>
-          <li><span style="color: white; font-weight: bold;">Rule System</span> - Text.</li>
-          <ul>
-              <li><span style="color: white; font-weight: bold;">Intensity Rule Engine</span></li>
-              <li><span style="color: white; font-weight: bold;">Behaviour Rule Engine</span></li>
-              <li><span style="color: white; font-weight: bold;">Intensity Rule Calculator</span></li>
-              <li><span style="color: white; font-weight: bold;">Behaviour Rule Calculator</span></li>
-          </ul>
-      </ul>-->
-      
-      <!--====================-->
-      <!--Technical Challenges-->
-      <!--====================-->
-      <h2 class="blogheader2">Technical Challenges</h2>
-      <blockquote>COMING SOON</blockquote>
-      <!--<p>Constructing a flexible rules system for the Director to utilise effectively for both shooter and survival games
-          proved to be a challenging task. It was important that rules could be processed for both game genres by a single
-          system.</p>-->
-      
       <!--=========-->
       <!--Strengths-->
       <!--=========-->  
@@ -313,22 +325,28 @@
       Additionally, this project served as as a compelling proof of concept, demonstrating how such a system can be 
       effectively integrated into other video game genres.</p>
 
+      <!--<iframe width="560px;" height="315px;" src="https://www.youtube-nocookie.com/embed/Y1wvqfNqyqQ?si=9-rYJsIQMMpyy1M1"
+              title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+              gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+      </iframe>-->
+
       <!--===============-->
       <!--Visual Showcase-->
       <!--===============-->
       <!--<h2 class="blogheader2">Visual Showcase</h2>
       <blockquote>COMING SOON</blockquote>-->
         
-      <!--====-->
-      <!--Demo-->
-      <!--====-->
-      <h2 class="blogheader2">Demo</h2>
-      <blockquote>COMING SOON</blockquote>
-      <!--<iframe width="610" height="167" frameborder="0" src="https://itch.io/embed/2997073">
+      <!--=====-->
+      <!--Demos-->
+      <!--=====-->
+      <h2 class="blogheader2">Demos</h2>
+      <iframe width="615" height="165" frameborder="0" src="https://itch.io/embed/2997073?border_width=0&amp;dark=true">
           <a href="https://mrchilli.itch.io/director-ai">Director AI by MrChilli</a>
       </iframe>
-      <br>
-      <br>-->
+
+        <iframe width="615" height="165" frameborder="0" src="https://itch.io/embed/3004291?border_width=0&amp;dark=true">
+            <a href="https://mrchilli.itch.io/director-ai-top-down-survival">Director AI (Top-down Survival) by MrChilli</a>
+        </iframe>
 
       <!--============-->
       <!--Code Samples-->
@@ -358,20 +376,6 @@
             &lt;/table&gt;&lt;/pre&gt;">
           </iframe>
       </div>
-
-        
-        
-        
-        <!--=======================-->
-        <!--NEW CODE COLOUR STYLING-->
-        <!--=======================-->
-<!--
-        <style>.background{font-family:monaco,Consolas,LucidaConsole,monospace;color:#dfdfdf;}.method{color:#39ca8c;}.class{color:#bf90fd;}.keyword{color:#6b94e7;}.string{color:#C9A26D;}.interface{color:#bf90fd;}.enumName{color: #E1BFFF;}  .numericLiteral{color:#ED94C0;}  .control{color:#6b94e7;}  .namespace{color:#dfdfdf;}  .enumMember{color:#dfdfdf;}  .identifier{color:#dfdfdf;}  .punctuation{color:#dfdfdf;}  .operator{color:#dfdfdf;}  .propertyName{color:#dfdfdf;}  .fieldName{color:#dfdfdf;}  .localName{color:#9CDCFE;}  .parameter{color:#BDBDBD;}</style>
--->
-
-        
-        
-        
         
       <!--==========================-->
       <!--Code Snippet x - Event Bus-->
