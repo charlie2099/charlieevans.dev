@@ -2,40 +2,54 @@
 # Director AI for Shooter and Survival Games
 Published: Jan 30th, 2023 | Updated: Sept 22nd, 2024
 
-Welcome to the Project Page for my Director AI system, a project I undertook as a dissertation 
-as part of my bachelor's degree in Games Technology. The following sections will give an 
-overview of the project such as it's core features and limitations, the technical challenges
-faced and how I overcame them, before concluding with a reflection on what I learnt and future 
-plans for the project. Code samples can be found at the bottom of this page.
+Welcome to the Project Page for my Director AI system, a project I undertook as part of my bachelor's degree 
+dissertation in Games Technology. The following sections will give an overview of the project such
+as it's core features and limitations, the technical challenges faced and how I overcame them, before 
+concluding with a reflection on what I learnt and future plans for the project. Code samples can be found
+at the end of this page.
 
 ## Background - The AI Director of Left 4 Dead
-The developers of the first-person shooter game Left 4 Dead wanted to provide a challenging, 
-engaging, and fresh experience for their players on every play. To achieve this, they developed
-a system they called an AI Director, a collection of systems that worked together seamlessly to 
-govern the pacing of their game and how the drama unfolded. Under the hood this involved the AI
-Director analysing the performance of each player and basing it's actions upon a perceived stress
-metric that it continually calculated for each player. 
+The developers of the first-person shooter game Left 4 Dead wanted to provide a challenging, engaging, and
+fresh experience for their players on every play. To achieve this, they developed a system they called an 
+AI Director, a collection of systems that worked together seamlessly to govern the pacing of their game and
+how the drama unfolded. It was an AI that operated behind the scenes rather than as an in-game physical 
+entity.
+
+Under the hood, the AI Director analysed the performance of each player and based it's decisions upon a 
+perceived stress metric that it continually calculated for each player. Through this, it was able to decide
+when it perceived was the right time was to spawn more enemies, how many of them to spawn, what type of 
+enemy to spawn, and more. The Director also had the capability to modify the level layout to open up new 
+paths dynamically based on certain conditions, and more. These capabilities enabled the Director to craft 
+the best gameplay experience it could for it's players.
+
+The following video explores what an AI Director is in greater detail.
+https://youtu.be/Mnt5zxb8W0Y
 
 ## Concept
-The aim for this project was to create a more versatile Director system that could be adapted to other
-videogame genres. For the purposes and scope of this project, two genres were selected. The shooter genre
-was selected to test the Director in a genre that it has been tried and tested in. The second genre selected
-was the survival genre as it is another well known and extremely popular genre, and it would be insightful
-to see how the Director could be utilised in such a different genre.
-
-Another aim for this project was to make the system modular in nature so that it would allow designers to 
-easily build their own rules and behaviours for their shooter and survival games.
+Inspired by Left 4 Dead's AI Director, the idea for this project was to develop a more versatile Director 
+system that could be adopted by game developers to use in their own games regardless of genre. It was 
+important therefore that the system architecture was modular and generic in nature so that rules and 
+behaviours could be processed by a single system. This is one of the fundamental challenges this project 
+attempts to solve.
 
 
+Inspired by the AI Director in the Left 4 Dead series, this project aimed to create a more versatile Director
+system that game developers could integrate easily into their own projects.  
 
-An AI Director is a system that manages the intensity and flow of the player's experience. It 
-is used to dynamically control the difficulty and progression of the game in real time based on
-player performance, and aims to create a unique and challenging experience on each play so that
-no two games are the same. This typically involves the Director deciding when and where to spawn
-enemies, how many enemies should be in play at any one time, and modifying the level layout to 
-open up new paths dynamically. The goal for this project was to create a versatile Director Ai 
-system that would allow designers to build their own rules and behaviours for games of the shooter 
-and survival genre.
+
+
+### Scope
+To evaluate the versatility and effectiveness of the Director, two distinct game genres were chosen to
+develop Director systems for. The shooter genre was an obvious first choice, a domain where the Director 
+has already been extensively tested and proven to work effectively in. This first system would act as a 
+reliable benchmark to compare the second Director system against. The second genre selected was the 
+survival genre, a highly popular and mechanically different genre to shooter games.
+
+### Tech Stack
+- Engine/Framework/Library: Unity (2021.1.21)
+- Programming Language: C#
+- IDE: JetBrains Rider
+- Operating System: Windows
 
 ## Technical Challenges
 Constructing a flexible rules system for the Director to utilise effectively for both shooter and survival 
@@ -46,6 +60,36 @@ In the beginning stages of development however, the project saw major difficulti
 that could be considered generic. After the submission of the prototype demo and receiving valuable tutor
 feedback the project was able to move forward with a clearer vision of where to go next. From there the 
 project was able to see success as development on the rules system began.
+
+### Rule System
+In the early stages of development, the project faced significant challenges in creating a single rule 
+system that could process rules across various game genres. The initial architectural design suffered
+from depending on rules that were highly context dependant and tightly coupled to core scripts.
+
+As development and research progressed, the Rule pattern was discovered. This powerful design pattern
+allows for the encapsulation of conditional logic into their self-contained and reusable rule classes. 
+This approach provided a high degree of modularity, flexibility, extensibility, as well as readability. 
+
+addressed former issues with
+
+these core principles 
+
+### Active Area System
+
+
+## Key Features
+- Games
+  - Top-down Shooter Game
+  - Top-down Survival Game
+- Rule-based Architecture
+  - Intensity Rule Engine
+  - Behaviour Rule Engine
+  - Intensity Rule Calculator
+  - Behaviour Rule Calculator
+- Active Area Set
+  - Dynamic Tilemap Processing
+  - Dynamic Enemy Population
+  - Dynamic Item Spawning
 
 ## Strengths
 - Highly Customisable - Designers can tweak and customise the director according to their own needs and
@@ -67,35 +111,35 @@ or firing the first to match a condition.
 - 2D Environment Focus: The current implemented is limited to 2D game environments and so does not support
 3D environments.
 
-## What I learnt
-- The Rule Pattern - Abstracting messy logic into their own respective rule classes.
-- The State Pattern - Encapsulating simple behaviours into their own state classs and handling the
-transitional logic from one state to another.
-- Event Buses - Text
-- Interfaces - Text
-- Dictionaries - Text
-- State caching - Text
-- Modular Architectures - The importance and value of loosely coupled systems and extensible design
-- Tilemap Level Design - Text
+## Learning Highlights
+- Design Patterns
+  - Rule pattern
+  - State pattern
+  - Event Buses
+- System Design
+  - Interfaces
+  - Modular architectures
+- Data Structures
+  - Dictionaries
+- Level Design
+  - Tilemaps
+- Optimisation
+  - State caching
 
 ## Future Plans
 - Rework director state logic using a state machine
 - Utilise more methods of rule execution
 - Handle rule creation using a custom editor tool
 - Adapt the active area set to work with 3D environments
-- Attractor system
-- Pooling enemies 
+- Objecting pooling enemies
+- Develop and integrate an attractor system
+- Develop a complete game and fully-fledged and integrated Director system
 
 ## Conclusion
-- This project was an invaluable learning experience, providing deep insights into
-- A simple but capable system that enables designers to creator their own rules for shooter and survival games
-- This project was a good proof of concept to showcase how such a system could be integrated into other 
-videogame genres.
-
-This project has proven to be an invaluable learning experience, offering profound insights into the
-development of a simple yet powerful system that empowers designers to create their own rules for shooter 
-and survival games. Additionally, it serves as a compelling proof of concept, demonstrating how this system 
-can be effectively integrated into various other video game genres.
+This project was an invaluable learning experience, offering profound insights into the development of a 
+simple yet powerful system that empowers designers to create their own rules for shooter and survival
+games. Additionally, this project served as as a compelling proof of concept, demonstrating how such a 
+system can be effectively integrated into other video game genres.
 
 ## Code Samples
 - Text

@@ -99,7 +99,7 @@
           <video class="projecttileimage" autoplay muted loop style="width: 85%; border: 1px solid rgb(179,255,107); border-radius: 20px; display: block; margin-left: auto; margin-right: auto; margin-bottom: 0.5em;">
               <source src="../images/GIFS/DirectorAiDemo.webm" type=video/webm>
           </video>
-          <figcaption style="text-align: center; font-size: 0.8em;">Gameplay preview of the AI Director handling the pacing of a simple shooter and survival game.</figcaption>
+          <figcaption style="text-align: center; font-size: 0.8em;">Gameplay preview of the AI Director within a simple shooter and survival game.</figcaption>
       </figure>
       <br>
         
@@ -107,11 +107,11 @@
       <!-- Introduction -->
       <!--==============-->
       <h2 class="blogheader2">Introduction</h2>
-      <p>Welcome to the <span style="color: rgb(179,255,107); font-style: italic;">Project Page</span> for my <span style="font-style: italic;">Director AI</span> system,
-        a project I undertook as a dissertation as part of my bachelor's degree in Games Technology. The following
-        sections will give an overview of the project such as it's core features and limitations, the technical
-        challenges faced and how I overcame them, before concluding with a reflection on what I learnt and future
-        plans for the project. Code samples can be found at the end of this page.</p>
+      <p>Welcome to the <span style="color: rgb(179,255,107); font-weight: bold;">Project Page</span> for my Director AI system, 
+          a project I undertook as part of my <span style="font-weight: bold; color: white;">bachelor's degree dissertation</span>
+          in Games Technology. The following sections will give an overview of the project such as it's core features and limitations,
+          the technical challenges faced and how I overcame them, before concluding with a reflection on what I learnt and future 
+          plans for the project. Code samples can be found at the end of this page.</p>
 
       <a href="#codesamples"><button class="btn fa solid fa-code" style="color: rgb(132,123,255); font-size: 0.8em;"> <span style="color: white; font-weight: normal; font-size: 1em;">Code Samples</span></button></a>
       
@@ -120,18 +120,19 @@
       <!--===========================================-->
       <h2 class="blogheader2">Background - The AI Director of Left 4 Dead</h2>
         
-      <p>The developers of the first-person shooter game <span style="font-style: italic;">Left 4 Dead</span> wanted to provide a 
-          challenging, engaging, and fresh experience for their players on every play. To achieve this, they 
-          developed a system they called an <span style="font-style: italic;">AI Director</span>, a collection of
-          systems that worked together seamlessly to govern the pacing of their game and how the drama unfolded. It
-          was an AI that operated behind the scenes rather than as an in-game physical entity.</p>
+      <p>The developers of the first-person shooter game <span style="font-weight: bold; color: white;">Left 4 Dead</span> wanted to
+          provide a challenging, engaging, and fresh experience for their players on every play. To achieve this, they developed a 
+          system they called an <span style="font-weight: bold; color: white;">AI Director</span>, a collection of systems that worked
+          together seamlessly to <span style="font-weight: bold; color: white;">govern the pacing</span> and 
+          <span style="font-weight: bold; color: white;">how the drama unfolded</span>. It was an AI that
+          <span style="font-weight: bold; color: white;">operated behind the scenes</span> rather than as an in-game physical entity.</p>
 
-      <p>Under the hood, the <span style="font-style: italic;">AI Director</span> analysed the performance of each player and based
-          it's decisions upon a perceived stress metric that it continually calculated for each player. Through this,
-          it was able to decide when it perceived was the right time was to spawn more enemies, how many of them to
-          spawn, what type of enemy to spawn, and more. The Director also had the capability to modify the level
-          layout to open up new paths dynamically based on certain conditions, and more. These capabilities
-          enabled the Director to craft the best gameplay experience it could for it's players.</p>
+        <p>Under the hood, the AI Director <span style="font-weight: bold; color: white;">analysed the performance of each player</span>
+            and <span style="font-weight: bold; color: white;">based it's decisions upon a perceived player stress metric</span> that it
+            continually calculated for each player. Through this, it was able to decide when it perceived was the right time was to spawn 
+            more enemies, how many of them to spawn, what type of enemy to spawn, and more. The Director also had the capability to modify 
+            the level layout to open up new paths dynamically based on certain conditions, and more. These capabilities enabled the Director 
+            to <span style="font-weight: bold; color: white;">craft the best gameplay experience it could for it's players</span>.</p>
         
       <p>The following video explores what an AI Director is in greater detail.</p>
 
@@ -146,19 +147,24 @@
       <!--=======-->
       <h2 class="blogheader2">Concept</h2>
         
-      <p>Inspired by Left 4 Dead's AI Director, the idea for this project was to develop a more versatile Director system 
-          that could be adopted by game developers to use in their own games regardless of genre. It was important therefore
-          that the system architecture was modular and generic in nature so that rules and behaviours could be processed by
-          a single system. This is one of the fundamental challenges this project attempts to solve.</p>
+      <p>Inspired by the AI Director in the Left 4 Dead series, this project aimed to create a more
+          <span style="font-weight: bold; color: white;">versatile Director system</span> that game developers could 
+          integrate easily into their own projects regardless of it's genre. It was important therefore that the system 
+          architecture was <span style="font-weight: bold; color: white;">modular</span> and generic in nature so that
+          <span style="font-weight: bold; color: white;">rules and behaviours could be processed by a single system</span>.
+          This is one of the fundamental challenges this project attempts to solve.</p>
 
       <!--=======-->
       <!-- Scope -->
       <!--=======-->
       <h3 class="blogheader3">Scope</h3>
-      <p>For the purposes and scope of this project, two genres were selected. The shooter genre was selected to test the
-          Director in a genre that it had been tried and tested in. The second genre selected was the survival genre as 
-          it is another well known and extremely popular genre, and it would be insightful to see how the Director could 
-          be utilised in such a different genre.</p>
+      
+      <p>To evaluate the versatility and effectiveness of the Director, two distinct game genres were chosen to develop Director 
+          systems for. The <span style="font-weight: bold; color: white;">shooter genre</span> was an obvious first choice, a 
+          domain where the Director has already been extensively tested and proven to work in. This first system would act as a
+          reliable benchmark to compare the second Director system against. The second genre selected was the
+          <span style="font-weight: bold; color: white;">survival genre</span>, a highly popular and mechanically different genre
+          to shooter games.</p>
       
       <!--============-->
       <!-- Tech Stack -->
@@ -180,17 +186,34 @@
       <!-- Rule System -->
       <!--=============-->
       <h3 class="blogheader3">Rule System</h3>
-      <blockquote>COMING SOON</blockquote>
+      
+      <p>In the early stages of development, the project faced significant challenges in creating a 
+          <span style="font-weight: bold; color: white;">single rule system</span> that could
+          <span style="font-weight: bold; color: white;">process rules across various game genres</span>. The initial 
+           design suffered from depending on rigid rules that were tightly coulpled to specific game logic in each game.</p>
 
-      <!--<p>In the beginning stages of development the project saw major difficulties in creating a single rule system that could
-          be considered generic, and thus could not cater rule creation and processing across games of different genres. Later 
-          in development however, the Rule pattern was discovered. The Rule pattern is a...</p>-->
+        <p>As development and research progressed, the <span style="font-weight: bold; color: white;">Rule pattern</span>
+            was discovered. This powerful design pattern allows for the 
+            <span style="font-weight: bold; color: white;">encapsulation of conditional logic</span> 
+            into their own <span style="font-weight: bold; color: white;">self-contained and reusable rule classes</span>. This
+            approach provided a high degree of 
+            <span style="font-weight: bold; color: white;">modularity, flexibility, extensibility, and readability</span> and 
+            addressed the core issue of having to make significant changes to the existing codebase to integrate new rules.</p>
 
       <!--=================-->
       <!-- Active Area Set -->
       <!--=================-->
       <h3 class="blogheader3">Active Area Set</h3>
       <blockquote>COMING SOON</blockquote>
+
+      <!--<p>Another technical challenge was the development of the <span style="font-weight: bold; color: white;">Active Area Set (AAS)</span>,
+          a complementary system of the director. The AAS defines the active area around the player, in which enemies and items are populated 
+          into the game world and then dynamically resespawned as the player navigates through the environment.</p>
+      
+      <p>Implementing this system presented several challenges. </p>
+      
+      <p>Difficulties: real-time dynamic pathfinding, real-time population of enemies on a tilemap in a viable location but also outside of the 
+          player's view and knowledge, real-time despawning of enemies when out of range of the active area,</p>-->
 
       <!--============-->
       <!--Key Features-->
@@ -320,10 +343,11 @@
       <!--Conclusion-->
       <!--==========-->
       <h2 class="blogheader2">Conclusion</h2>
-      <p>This project was an invaluable learning experience, offering profound insights into the development
-      of a simple yet powerful system that empowers designers to create their own rules for shooter and survival games.
-      Additionally, this project served as as a compelling proof of concept, demonstrating how such a system can be 
-      effectively integrated into other video game genres.</p>
+      <p>This project was an invaluable learning experience, offering profound insights into the development of a 
+          <span style="font-weight: bold; color: white;">simple yet powerful system</span> that
+          <span style="font-weight: bold; color: white;">empowers designers to create their own rules</span> for shooter and survival games. 
+          Additionally, this project served as a <span style="font-weight: bold; color: white;">compelling proof of concept</span>,
+          demonstrating how such a system can be effectively integrated into other video game genres.</p>
 
       <!--<iframe width="560px;" height="315px;" src="https://www.youtube-nocookie.com/embed/Y1wvqfNqyqQ?si=9-rYJsIQMMpyy1M1"
               title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
