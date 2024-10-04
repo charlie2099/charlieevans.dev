@@ -75,7 +75,19 @@ addressed former issues with
 these core principles 
 
 ### Active Area System
+Another technical challenge faced was the development of the Active Area Set (AAS), a key component of the
+director system. The AAS defines the active area around the player, managing enemy populations and item spawns
+in the game world as the player navigates through the environment. The system also efficiently reuses enemy 
+entities when creating and destroying enemy populations, allowing it to manage large numbers of enemies at a time
+in an efficient and performant manner.
 
+Implementing this system presented several challenges. The system needed to be able to process a developer's level 
+regardless of the type of the game the developer was making.
+      
+Difficulties: real-time dynamic pathfinding, real-time population of enemies on a tilemap in a viable location but
+also outside of the player's view and knowledge, real-time despawning of enemies when out of range of the active area,
+
+Population management, strategic placement, performance, scalability and flexibility
 
 ## Key Features
 - Games
