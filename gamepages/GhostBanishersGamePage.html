@@ -111,87 +111,180 @@
       <p>Welcome to the <span style="color: rgb(179,255,107); font-weight: bold;">Project Page</span> for <span style="font-style: italic;">Ghost Banishers</span>, a 
         <span style="color: white; font-weight: bold;">group project</span> I undertook as part of my
         postgraduate diploma in Commercial Games Development. The following sections will give an
-        overview of the project, highighting it's core features, strengths, and limitations, as well
+        overview of the project, highlighting it's core features, strengths, and limitations, as well
         as summary of the key technical challenges and how I overcame them. Finally, this article
         will conclude with a reflection on what I learnt and future plans for the project. Code
         samples can be found at the end of this page.</p>
 
       <a href="#codesamples"><button class="btn fa solid fa-code" style="color: rgb(132,123,255); font-size: 0.8em;"> <span style="color: white; font-weight: normal; font-size: 1em;">Code Samples</span></button></a>
       
+      <!--=======-->
+      <!--Concept-->
+      <!--=======-->
       <h2 class="blogheader2">Concept</h2>
-      <p><span style="font-style: italic;">Ghost Banishers</span> is a <span style="color: white; font-weight: bold;">cooperative VR game</span> which tasks players 
-        with <span style="color: white; font-weight: bold;">solving a puzzle to banish ghosts</span> lurking in the darkness. Players are required to
-        <span style="color: white; font-weight: bold;">light candles and place them onto pedestals</span>, but must ensure that the flame colour of each candle is correct for the pedestal it is placed on 
-        according to the rules laid out in the player's rule book. 
-        <span style="color: white; font-weight: bold;">New flame colours can be created by mixing flame colours together</span>, however the colour
-        mixing rules may vary depending on the current puzzle sequence in play which is randomly selected at the beginning of each game. The puzzle 
-        sequence can be identified by players by asking the VR user to locate a series of specific symbols (shapes) that are present on certain pedestals
-        and relaying what symbols they see to the player with the rule book so that the puzzle sequence can be determined.
+      <p><span style="font-style: italic;">Ghost Banishers</span> is a <span style="color: white; font-weight: bold;">cooperative VR game</span> which tasks players with 
+        <span style="color: white; font-weight: bold;">solving a puzzle to banish ghosts</span> lurking in the darkness. Players are required to
+        <span style="color: white; font-weight: bold;">light candles and place them onto pedestals</span>, but must ensure that the flame colour of each 
+        candle is correct for the pedestal it is placed on according to the rules laid out in the player's rule book. 
+        <span style="color: white; font-weight: bold;">New flame colours can be created by mixing flame colours together</span>, however the colour mixing 
+        rules may vary depending on the current puzzle sequence in play which is randomly selected at the beginning of each game.
+        The puzzle sequence can be identified by players by asking the VR user to locate a series of specific symbols (shapes) 
+        that are present on certain pedestals and relaying what symbols they see to the player with the rule book so that the
+        puzzle sequence can be determined.
       
-      <p>This game originated from a larger collection of ghost-banishing minigames designed to be 
-      played by <span style="color: white; font-weight: bold;">six players using only one VR device</span>. This unique restriction forced players to 
-      work in close collaboration with each other, encouraging efficient <span style="color: white; font-weight: bold;">communication and teamwork</span>
-      in order to succeed, creating a frantic yet very engaging gameplay experience.</p>
+      <p>This game originated from a larger collection of ghost-banishing minigames designed to be played by 
+        <span style="color: white; font-weight: bold;">six players using only one VR device</span>. This unique restriction forced players to work in close 
+        collaboration with each other, encouraging efficient <span style="color: white; font-weight: bold;">communication and teamwork</span> in order to 
+        succeed, creating a frantic yet very engaging gameplay experience.</p>
+
+      <!--============-->
+      <!-- Tech Stack -->
+      <!--============-->
+      <h3 class="blogheader3">Tech Stack</h3>
+      <ul>
+        <li>Engine/Framework/Library: <span style="color: white; font-weight: bold;">Unity (2022.1.16)</span></li>
+        <li>Programming Language: <span style="color: white; font-weight: bold;">C#</span></li>
+        <li>IDE: <span style="color: white; font-weight: bold;">JetBrains Rider</span></li>
+        <li>Operating System: <span style="color: white; font-weight: bold;">Windows</span></li>
+        <li>Platform: <span style="color: white; font-weight: bold;">Oculus Quest 2</span></li>
+      </ul>
+
+      <!--====================-->
+      <!-- Key Game Mechanics -->
+      <!--====================-->
+      <h2 class="blogheader2">Key Game Mechanics</h2>
+      <ul>
+        <li><span style="color: white; font-weight: bold;">Flame Colour Mixing</span> - Flame colours can be mixed together to create 
+          new colours, the mixing rules of which are defined in the players' rulebook.</li>
+        <li><span style="color: white; font-weight: bold;">Flammable Object System</span> - A dynamic flammable system that enables 
+          'flammable' objects including matchsticks, fire pots, and candles to be ignited and easily ignite with each other when touching.</li>
+        <li><span style="color: white; font-weight: bold;">Dynamic Puzzle Sequences</span> - Each game begins with a randomly selected 
+          puzzle sequence that the players can figure out by identifying symbols in the gamespace and matching them to pre-defined 
+          sequences in the rulebook.</li>
+        <li><span style="color: white; font-weight: bold;">Haunting System</span> - An underlying AI system that monitors the pacing of
+          the game and spawns ghosts depending on particular player metrics.</li>
+        <li><span style="color: white; font-weight: bold;">Player Roles</span> - The VR player must work to light candles with the 
+          correct flame colours and place them onto specific pedestals, whilst the non-VR players must consult the rulebook and monitor
+          the VR player's projected game display to help guide the VR player through the puzzle.</li>
+        <!--<li><span style="color: white; font-weight: bold;">Object Interaction</span> - Item pick-ups, candle placement, .</li>-->
+      </ul>
       
       <!--======================-->
       <!-- Technical Challenges -->
       <!--======================-->
       <h2 class="blogheader2">Technical Challenges</h2>
 
-      <!--===============-->
-      <!-- Candle Puzzle -->
-      <!--===============-->
-      <h3 class="blogheader3">Candle Puzzle</h3>
-      <blockquote>COMING SOON</blockquote>
-
       <!--=================================-->
       <!-- Flame Colour Mixing Rule System -->
       <!--=================================-->
       <h3 class="blogheader3">Flame Colour Mixing Rule System</h3>
       <blockquote>COMING SOON</blockquote>
+      <!--<p>Text</p>
+      <br>
+      <p>- Background & problem (Struggle defining how different flame colours mix with each other and produce particular colours whilst maintaining a modular architecture so rules can be changed with ease)</p>
+      <p>- Solution & result (Simple rule system utilising c# dictionaries)</p>-->
 
       <!--==================-->
       <!-- Flammable System -->
       <!--==================-->
       <h3 class="blogheader3">Flammable System</h3>
       <blockquote>COMING SOON</blockquote>
-
-      <!--==========-->
-      <!-- Features -->
-      <!--==========-->
-      <h2 class="blogheader2">Features</h2>
+      <!--<p>Text</p>
+      <br>
+      <p>- Background & problem (Struggle making a modular architecture for creating flammable objects that can ignite with each other)</p>
+      <p>- Solution & result ()</p>-->
+      
+      <!--===============-->
+      <!-- Candle Puzzle -->
+      <!--===============-->
+      <h3 class="blogheader3">Candle Puzzle</h3>
       <blockquote>COMING SOON</blockquote>
-      <!--<ul>
-        <li><span style="color: white; font-weight: bold;">Passthrough Environment</span> - Text.</li>
-        <li><span style="color: white; font-weight: bold;">Flame Mixing System</span> - Text.</li>
-        <li><span style="color: white; font-weight: bold;">Interactables</span> - Text.</li>
-        <li><span style="color: white; font-weight: bold;">Ghosts</span> - Text.</li>
-        <li><span style="color: white; font-weight: bold;">Haunting System</span> - Text.</li>
-      </ul>-->
+      <!--<p>Text</p>
+      <br>
+      <p>- Background & problem (Struggle to make a challenging, fast-paced puzzle | Stuggle incorporating puzzle code smoothly into current architecture and alongside other puzzles | Multiple puzzle sequences | Colour mapping issues)</p>
+      <p>- Solution & result (Lighting candles with certain colours and placing on specific pedestals | Inheritance architecture | List of predefined puzzle sequence rules)</p>-->
+
+      <!--===========-->
+      <!-- Strengths -->
+      <!--===========-->
+      <h2 class="blogheader2">Strengths</h2>
+      <ul>
+        <li><span style="color: white; font-weight: bold;">Fun Flame Mixing Mechanic</span> - Blending together different coloured flames to produce new 
+          colours is a fun and engaging mechanic that is well-suited to the VR nature of the game.</li>
+        <li><span style="color: white; font-weight: bold;">Engaging Co-op Experience</span> - The gameplay loop serves a cooperative experience well, with
+          the VR player being responsible for navigating the gamespace and completing the puzzle directly, whilst other players must consult the rulebook 
+          and monitor the projected game display to help guide the VR player through the puzzle.</li>
+        <li><span style="color: white; font-weight: bold;">Challenging Puzzles</span> - The puzzle features a sufficent level of depth which is simple yet
+          challenging given the fast-paced nature of the game.</li>
+      </ul>
 
       <!--=============-->
       <!-- Limitations -->
       <!--=============-->
       <h2 class="blogheader2">Limitations</h2>
-      <blockquote>COMING SOON</blockquote>
-      <!--<ul>
-        <li><span style="color: white; font-weight: bold;">Text</span> - Text.</li>
-      </ul>-->
+      <ul>
+        <li><span style="color: white; font-weight: bold;">Lack of VR Passthrough Integration Into Gameplay</span> - The game lacks any integration of VR passthrough within gameplay. 
+          Integrating this into gameplay could involve requiring the VR player to first draw out their gamespace and then having the game dynamically 
+          spawn key gameplay items such as candles onto real-world furniture such as a table or shelf.</li>
+        <li><span style="color: white; font-weight: bold;">Lack of Haunting Rules</span> - Currently the games haunting system only features a single rule for passively increasing 
+          the haunt meter over time. The game would benefit from a more comprehensive set of rules to promote better pacing and challenge for players 
+          depending on their performance to encourage replayability.</li>
+        <li><span style="color: white; font-weight: bold;">Puzzle Sequences Can Be Identified Too Quickly</span> - Identifying which puzzle sequence is 
+          currently in play is too easy. Symbols should instead be hidden within the level for players to find to provide an increased challenge.</li>
+      </ul>
 
       <!--=====================-->
       <!-- Learning Highlights -->
       <!--=====================-->
       <h2 class="blogheader2">Learning Highlights</h2>
-      <blockquote>COMING SOON</blockquote>
-      <!--<ul>
-        <li>Text - Text.</li>
-      </ul>-->
+      <ul>
+        <li>
+          <span style="color: white; font-weight: bold;">Design Patterns</span>
+          <ul style="font-size: 1.2em;">
+            <li>Rule pattern</li>
+            <li>State pattern</li>
+          </ul>
+        </li>
+
+        <li>
+          <span style="color: white; font-weight: bold;">System Design</span>
+          <ul style="font-size: 1.2em;">
+            <li>Modular architectures</li>
+          </ul>
+        </li>
+
+        <li>
+          <span style="color: white; font-weight: bold;">Data Structures</span>
+          <ul style="font-size: 1.2em;">
+            <li>Tuples</li>
+            <li>Dictionaries</li>
+          </ul>
+        </li>
+
+        <li>
+          <span style="color: white; font-weight: bold;">VR</span>
+          <ul style="font-size: 1.2em;">
+            <li>Head and Motion Tracking</li>
+            <li>Object Interaction</li>
+            <li>Oculus Quest 2 Support</li>
+          </ul>
+        </li>
+
+        <li>
+          <span style="color: white; font-weight: bold;">Editor Tools</span>
+          <ul style="font-size: 1.2em;">
+            <li>OnValidate (function)</li>
+          </ul>
+        </li>
+      </ul>
 
       <!--============-->
       <!-- Conclusion -->
       <!--============-->
       <h2 class="blogheader2">Conclusion</h2>
-      <blockquote>COMING SOON</blockquote>
+      <p>This project served as a great introduction to VR game development. Developing this game as part of a nine-person team was certainly 
+        a challenge but helped strengthen my ability to work effectively with others. The result of this project was an engaging, cooperative 
+        VR experience that required every player to work together in unison to solve the games puzzles and banish the ghosts for good.</p>
 
       <!--=====================-->
       <!-- Future Improvements -->

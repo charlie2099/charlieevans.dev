@@ -23,7 +23,7 @@ can in the allotted time.
 ## Introduction (Rewrite)
 Welcome to the Project Page for Ghost Banishers, a group project I undertook as part of my 
 postgraduate diploma in Commercial Games Development. The following sections will give an 
-overview of the project, highighting it's core features, strengths, and limitations, as well
+overview of the project, highlighting it's core features, strengths, and limitations, as well
 as summary of the key technical challenges and how I overcame them. Finally, this article
 will conclude with a reflection on what I learnt and future plans for the project. Code 
 samples can be found at the end of this page. 
@@ -35,3 +35,21 @@ ghost-banishing minigames designed to be played by 6 players using only only one
 This unique restriction forced players to work in close collaboration with each other, 
 encouraging efficient communication and teamwork in order to succeed, creating a frantic yet 
 very engaging gameplay experience.
+
+## Technical Challenges 
+
+### Candle Puzzle
+### Flame Colour Mixing Rule System
+### Flammable System
+
+## Key Features / Gameplay Mechanics
+- 
+
+## Limitations
+- 
+
+## Learning Highlights
+- VR development
+- Local coop
+
+## Conclusions
