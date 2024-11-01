@@ -324,20 +324,21 @@ input, select, textarea {
 		padding: 0.5em 0 0.5em 2em;
 	}
 
-	code {
-		background: rgba(144, 144, 144, 0.075);
-		border-radius: 4px;
-		border: solid 1px #c9c9c9;
-		font-size: 0.8em; /* 0.9em = ~18px, 0.8em = ~16px*/
-		margin: -0.5em 1em -3em 1em;
-		/*padding: 0.25em 0.65em;*/
-	}
-
 	pre {
-		-webkit-overflow-scrolling: touch;
-		font-family: "Courier New", monospace;
-		font-size: 0.9em;
-		/*margin: 0 0 2em 0;*/
+		background-color: #f6f8fa;
+		border-radius: 3px;
+		font-size: 85%;
+		line-height: 1.45;
+		overflow: auto;
+		padding: 16px;
+	}
+	
+	code {
+		background-color: rgba(27,31,35,.05);
+		border-radius: 3px;
+		font-size: 85%;
+		margin: 0;
+		padding: .2em .4em;
 	}
 
 		pre code {
@@ -2984,7 +2985,7 @@ input, select, textarea {
 }
 
 .blogheader4 {
-	font-size: 1em;
+	font-size: 0.95em;
 	font-weight: normal;
 	letter-spacing: -0.035em;
 	margin: 0 0 0.5em 0;
@@ -3108,7 +3109,6 @@ input, select, textarea {
 	.tiles .blogtile {
 		width: 100%;
 	}
-	
 	#main .inner iframe {
 		width: 100%;
 	}

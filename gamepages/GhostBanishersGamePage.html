@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
   <title>Charlie Evans | Portfolio</title>
   <meta charset="utf-8" />
@@ -92,7 +92,7 @@
       <a href="../blogpage.html"><button class="btn"> <span class="fa-solid fa-arrow-circle-left" style="font-size: 0.9em;"></span> <span style="font-weight: normal; font-size: 0.9em;">Back</span></button></a>
 
       <h1 class="blogheader1">Ghost Banishers</h1>
-      <h4 style="color: rgba(255,255,255,0.5); font-weight: normal; text-align: center;"><span style="color: white;">Published:</span> Oct 7th, 2024 <!--| <span style="color: white;">Updated:</span> Sept 22nd, 2024--></h4>
+      <h4 style="color: rgba(255,255,255,0.5); font-weight: normal; text-align: center;"><span style="color: white;">Published:</span> Oct 7th, 2024 | <span style="color: white;">Updated:</span> Nov 1st, 2024</h4>
 
       <br>
 
@@ -100,7 +100,7 @@
         <video class="projecttileimage" autoplay muted loop style="width: 85%; border: 1px solid rgb(179,255,107); border-radius: 20px; display: block; margin-left: auto; margin-right: auto; margin-bottom: 0.5em;">
           <source src="../images/GIFS/HauntedHouseDemo.webm" type=video/webm>
         </video>
-        <figcaption style="text-align: center; font-size: 0.8em;">Gameplay preview of <span style="font-style: italic;">Ghost Banishers</span>.</figcaption>
+        <figcaption style="text-align: center; font-size: 0.8em;">Outdated Alpha preview of <span style="font-style: italic;">Ghost Banishers</span>.</figcaption>
       </figure>
 
       <!--==============-->
@@ -149,6 +149,18 @@
         <li>Platform: <span style="color: white; font-weight: bold;">Oculus Quest 2</span></li>
       </ul>
 
+      <!--==================-->
+      <!-- My Contributions -->
+      <!--==================-->
+      <h3 class="blogheader3">My Contributions</h3>
+      <ul>
+        <li>Design and development of the candle puzzle</li>
+        <li>Flame colour mixing rule system</li>
+        <li>Flammable system</li>
+        <li>Haunting system & enemies</li>
+        <li>VR setup</li>
+      </ul>
+
       <!--====================-->
       <!-- Key Game Mechanics -->
       <!--====================-->
@@ -178,18 +190,57 @@
       <!-- Flame Colour Mixing Rule System -->
       <!--=================================-->
       <h3 class="blogheader3">Flame Colour Mixing Rule System</h3>
-      <blockquote>COMING SOON</blockquote>
-      <!--<p>Text</p>
-      <br>
-      <p>- Background & problem (Struggle defining how different flame colours mix with each other and produce particular colours whilst maintaining a modular architecture so rules can be changed with ease)</p>
-      <p>- Solution & result (Simple rule system utilising c# dictionaries)</p>-->
+
+      <p>One of the key technical challenges in this project was developing the flame colour mixing mechanic. The goal was to create a system which would enable 
+        two different coloured flames to be combined together to produce a new colour, and provide an architecture that prohibited easy modification 
+        of colour mixing rules. This flexibility was crucial for enabling designers to implement their own colour mixing rulesets, which could then be utilised
+        randomly on each play to add another layer of puzzle complexity.</p>
+      
+      <p>To address this challenge a rule-based system was implemented using C# dictionaries, a generic collection type that stores keys and values. The 
+        key components of this system include:</p>
+      <ul>
+        <li><span style="color: white; font-weight: bold;">Rules Dictionary</span> - Stores colour pair combinations within a tuple as the dictionary keys, and their resulting mixed colours as the dictionary values.</li>
+        <li><span style="color: white; font-weight: bold;">CombineColours Method</span> - Returns the produced colour of two queried colours, if a rule exists for it.</li>
+        <li><span style="color: white; font-weight: bold;">CheckRule Method</span> - Queries if a colour pair rule currently exists.</li>
+        <li><span style="color: white; font-weight: bold;">CreateRule Method</span> - Used by designers internally to add new colour pair combinations and their colour outputs to the rules dictionary.</li>
+        <li><span style="color: white; font-weight: bold;">SetRuleset Method</span> - Allows designers to define multiple rulesets with varying complexities.</li>
+      </ul>
+      
+      <p>The system also supported the creation of rules of three levels of rule complexity: </p>
+      <!--<ul>
+        <li><span style="color: white; font-weight: bold;">Level 1 Rules</span> - Uses colours available at the start of the game.</li>
+        <li><span style="color: white; font-weight: bold;">Level 2 Rules</span> - Combines one starting colour with a colour that needs to be created.</li>
+        <li><span style="color: white; font-weight: bold;">Level 3 Rules</span> - Requires two colours that both need to be created first.</li>
+      </ul>-->
+
+      <iframe onload="this.height=this.contentWindow.document.body.scrollHeight + 40;" width=100% srcdoc="&lt;style&gt;.background{font-family:monaco,Consolas,LucidaConsole,monospace;overflow:scroll;background-color:#0e0e0e;border-radius: 4px;border: solid 1px #c9c9c9;font-size: 0.8em;padding: 1em 0em;color:#dfdfdf;}.method{color:#DCDCAA;}.class{color:#4EC9B0;}.comment{color:#6A9955;}.identifier{color:#dfdfdf;}.punctuation{color:#dfdfdf;}.operator{color:#dfdfdf;}&lt;/style&gt;
+      &lt;pre class=&quot;background&quot;&gt;
+      &lt;span class=&quot;comment&quot;&gt;// RULESET 1&lt;/span&gt;
+      
+      &lt;span class=&quot;comment&quot;&gt;// Rule complexity level 1 (requiring only starting colours)&lt;/span&gt; 
+      &lt;span class=&quot;method&quot;&gt;CreateRule&lt;/span&gt;(&lt;span class=&quot;class&quot;&gt;FlameColour&lt;/span&gt;.Orange, &lt;span class=&quot;class&quot;&gt;FlameColour&lt;/span&gt;.Cyan, &lt;span class=&quot;class&quot;&gt;FlameColour&lt;/span&gt;.Red);
+      &lt;span class=&quot;method&quot;&gt;CreateRule&lt;/span&gt;(&lt;span class=&quot;class&quot;&gt;FlameColour&lt;/span&gt;.Orange, &lt;span class=&quot;class&quot;&gt;FlameColour&lt;/span&gt;.Green, &lt;span class=&quot;class&quot;&gt;FlameColour&lt;/span&gt;.DarkBlue);
+      
+      &lt;span class=&quot;comment&quot;&gt;// Rule complexity level 2 (requiring one colour that needs to be created first)&lt;/span&gt;
+      &lt;span class=&quot;method&quot;&gt;CreateRule&lt;/span&gt;(&lt;span class=&quot;class&quot;&gt;FlameColour&lt;/span&gt;.DarkBlue, &lt;span class=&quot;class&quot;&gt;FlameColour&lt;/span&gt;.Cyan, &lt;span class=&quot;class&quot;&gt;FlameColour&lt;/span&gt;.Yellow);
+      
+      &lt;span class=&quot;comment&quot;&gt;// Rule complexity level 3 (requiring two colours that need to be created first)&lt;/span&gt;
+      &lt;span class=&quot;method&quot;&gt;CreateRule&lt;/span&gt;(&lt;span class=&quot;class&quot;&gt;FlameColour&lt;/span&gt;.DarkBlue, &lt;span class=&quot;class&quot;&gt;FlameColour&lt;/span&gt;.Yellow, &lt;span class=&quot;class&quot;&gt;FlameColour&lt;/span&gt;.Purple);
+      &lt;span class=&quot;method&quot;&gt;CreateRule&lt;/span&gt;(&lt;span class=&quot;class&quot;&gt;FlameColour&lt;/span&gt;.Yellow, &lt;span class=&quot;class&quot;&gt;FlameColour&lt;/span&gt;.Purple, &lt;span class=&quot;class&quot;&gt;FlameColour&lt;/span&gt;.Pink);&lt;/pre&gt;
+      "></iframe>
+      
+      <p style="margin-top: 0">This approach allowed for easy definition and modification of colour mixing rules, and offered a performative approach through the use of dictionaries and it's 
+        quick lookup capabilities.</p>
+      
+      <p>The full code sample can be found by clicking the button below:</p>
+
+      <a href="#codesample1"><button class="btn fa solid fa-code" style="color: rgb(132,123,255); font-size: 0.8em;"> <span style="color: white; font-weight: normal; font-size: 1em;">Flame Colour Mixing Rule System</span></button></a>
 
       <!--==================-->
       <!-- Flammable System -->
       <!--==================-->
-      <h3 class="blogheader3">Flammable System</h3>
-      <blockquote>COMING SOON</blockquote>
-      <!--<p>Text</p>
+      <!--<h3 class="blogheader3">Flammable System</h3>
+      <p>Text</p>
       <br>
       <p>- Background & problem (Struggle making a modular architecture for creating flammable objects that can ignite with each other)</p>
       <p>- Solution & result ()</p>-->
@@ -197,9 +248,8 @@
       <!--===============-->
       <!-- Candle Puzzle -->
       <!--===============-->
-      <h3 class="blogheader3">Candle Puzzle</h3>
-      <blockquote>COMING SOON</blockquote>
-      <!--<p>Text</p>
+      <!--<h3 class="blogheader3">Candle Puzzle</h3>
+      <p>Text</p>
       <br>
       <p>- Background & problem (Struggle to make a challenging, fast-paced puzzle | Stuggle incorporating puzzle code smoothly into current architecture and alongside other puzzles | Multiple puzzle sequences | Colour mapping issues)</p>
       <p>- Solution & result (Lighting candles with certain colours and placing on specific pedestals | Inheritance architecture | List of predefined puzzle sequence rules)</p>-->
@@ -316,7 +366,7 @@
       <button type="button" class="collapsible" style="width: 100%;"><span class="fa-solid fa-code" style="color: rgb(132,123,255);  margin-right: 0.5em; float: left; font-size: 1em;"></span>Candle Puzzle</button>
       <div class="collapsibleblock">
         <!-- generated by https://github.com/Swiftly1/CsharpToColouredHTML feel free to remove it if you want -->
-        <iframe onload="this.height=this.contentWindow.document.body.scrollHeight + 50;" frameborder=0 height=500 width=100% srcdoc="&lt;style&gt;.background{font-family:monaco,Consolas,LucidaConsole,monospace;background-color:#1E1E1E;overflow:scroll;background-color:rgba(144, 144, 144, 0.075);border-radius: 4px;border: solid 1px #c9c9c9;font-size: 0.8em;margin: 2em 1em -3em 1em;padding: 1em 1em;}.method{color:#DCDCAA;}.class{color:#4EC9B0;}.keyword{color:#569cd6;}.numericLiteral{color:#b8d7a3;}.control{color:#C586C0;}.comment{color:#6A9955;}.namespace{color:#dfdfdf;}.identifier{color:#dfdfdf;}.punctuation{color:#dfdfdf;}.operator{color:#dfdfdf;}.fieldName{color:#dfdfdf;}.localName{color:#9CDCFE;}.parameter{color:#9CDCFE;}.code_highlight{background-color:#395929;}table{white-space:pre;}.line_no::before{content:attr(line_no);color:white;}.code_column{padding-left:5px;color:#dfdfdf;}&lt;/style&gt;
+        <iframe onload="this.height=this.contentWindow.document.body.scrollHeight + 50;" frameborder=0 height=500 width=100% srcdoc="&lt;style&gt;.background{font-family:monaco,Consolas,LucidaConsole,monospace;overflow:scroll;background-color:#0e0e0e;border-radius: 4px;border: solid 1px #c9c9c9;font-size: 0.8em;margin: 2em 1em -3em 1em;padding: 1em 1em;}.method{color:#DCDCAA;}.class{color:#4EC9B0;}.keyword{color:#569cd6;}.numericLiteral{color:#b8d7a3;}.control{color:#C586C0;}.comment{color:#6A9955;}.namespace{color:#dfdfdf;}.identifier{color:#dfdfdf;}.punctuation{color:#dfdfdf;}.operator{color:#dfdfdf;}.fieldName{color:#dfdfdf;}.localName{color:#9CDCFE;}.parameter{color:#9CDCFE;}.code_highlight{background-color:#395929;}table{white-space:pre;}.line_no::before{content:attr(line_no);color:white;}.code_column{padding-left:5px;color:#dfdfdf;}&lt;/style&gt;
             &lt;pre class=&quot;background&quot;&gt;
             &lt;table&gt;
             &lt;tbody&gt;
@@ -331,7 +381,7 @@
       <button type="button" class="collapsible" style="width: 100%;"><span class="fa-solid fa-code" style="color: rgb(132,123,255);  margin-right: 0.5em; float: left; font-size: 1em;"></span>Matchbox</button>
       <div class="collapsibleblock">
         <!-- generated by https://github.com/Swiftly1/CsharpToColouredHTML feel free to remove it if you want -->
-        <iframe onload="this.height=this.contentWindow.document.body.scrollHeight + 40;" frameborder=0 height=500 width=100% srcdoc="&lt;style&gt;.background{font-family:monaco,Consolas,LucidaConsole,monospace;background-color:#1E1E1E;overflow:scroll;background-color:rgba(144, 144, 144, 0.075);border-radius: 4px;border: solid 1px #c9c9c9;font-size: 0.8em;margin: 2em 1em -3em 1em;padding: 1em 1em;}.method{color:#DCDCAA;}.class{color:#4EC9B0;}.keyword{color:#569cd6;}.numericLiteral{color:#b8d7a3;}.control{color:#C586C0;}.struct{color:#86C691;}.namespace{color:#dfdfdf;}.identifier{color:#dfdfdf;}.punctuation{color:#dfdfdf;}.operator{color:#dfdfdf;}.propertyName{color:#dfdfdf;}.fieldName{color:#dfdfdf;}.parameter{color:#9CDCFE;}.code_highlight{background-color:#395929;}table{white-space:pre;}.line_no::before{content:attr(line_no);color:white;}.code_column{padding-left:5px;color:#dfdfdf;}&lt;/style&gt;
+        <iframe onload="this.height=this.contentWindow.document.body.scrollHeight + 40;" frameborder=0 height=500 width=100% srcdoc="&lt;style&gt;.background{font-family:monaco,Consolas,LucidaConsole,monospace;overflow:scroll;background-color:#0e0e0e;border-radius: 4px;border: solid 1px #c9c9c9;font-size: 0.8em;margin: 2em 1em -3em 1em;padding: 1em 1em;}.method{color:#DCDCAA;}.class{color:#4EC9B0;}.keyword{color:#569cd6;}.numericLiteral{color:#b8d7a3;}.control{color:#C586C0;}.struct{color:#86C691;}.namespace{color:#dfdfdf;}.identifier{color:#dfdfdf;}.punctuation{color:#dfdfdf;}.operator{color:#dfdfdf;}.propertyName{color:#dfdfdf;}.fieldName{color:#dfdfdf;}.parameter{color:#9CDCFE;}.code_highlight{background-color:#395929;}table{white-space:pre;}.line_no::before{content:attr(line_no);color:white;}.code_column{padding-left:5px;color:#dfdfdf;}&lt;/style&gt;
             &lt;pre class=&quot;background&quot;&gt;
             &lt;table&gt;
             &lt;tbody&gt;
@@ -346,7 +396,7 @@
       <button type="button" class="collapsible" style="width: 100%;"><span class="fa-solid fa-code" style="color: rgb(132,123,255);  margin-right: 0.5em; float: left; font-size: 1em;"></span>Candle Pedestal</button>
       <div class="collapsibleblock">
         <!-- generated by https://github.com/Swiftly1/CsharpToColouredHTML feel free to remove it if you want -->
-        <iframe onload="this.height=this.contentWindow.document.body.scrollHeight + 50;" frameborder=0 height=500 width=100% srcdoc="&lt;style&gt;.background{font-family:monaco,Consolas,LucidaConsole,monospace;background-color:#1E1E1E;overflow:scroll;background-color:rgba(144, 144, 144, 0.075);border-radius: 4px;border: solid 1px #c9c9c9;font-size: 0.8em;margin: 2em 1em -3em 1em;padding: 1em 1em;}.method{color:#DCDCAA;}.class{color:#4EC9B0;}.keyword{color:#569cd6;}.string{color:#ce9178;}.enumName{color:#b8d7a3;}.numericLiteral{color:#b8d7a3;}.control{color:#C586C0;}.comment{color:#6A9955;}.struct{color:#86C691;}.namespace{color:#dfdfdf;}.enumMember{color:#dfdfdf;}.identifier{color:#dfdfdf;}.punctuation{color:#dfdfdf;}.operator{color:#dfdfdf;}.propertyName{color:#dfdfdf;}.fieldName{color:#dfdfdf;}.localName{color:#9CDCFE;}.parameter{color:#9CDCFE;}.eventName{color:#dfdfdf;}.code_highlight{background-color:#395929;}table{white-space:pre;}.line_no::before{content:attr(line_no);color:white;}.code_column{padding-left:5px;color:#dfdfdf;}&lt;/style&gt;
+        <iframe onload="this.height=this.contentWindow.document.body.scrollHeight + 50;" frameborder=0 height=500 width=100% srcdoc="&lt;style&gt;.background{font-family:monaco,Consolas,LucidaConsole,monospace;overflow:scroll;background-color:#0e0e0e;border-radius: 4px;border: solid 1px #c9c9c9;font-size: 0.8em;margin: 2em 1em -3em 1em;padding: 1em 1em;}.method{color:#DCDCAA;}.class{color:#4EC9B0;}.keyword{color:#569cd6;}.string{color:#ce9178;}.enumName{color:#b8d7a3;}.numericLiteral{color:#b8d7a3;}.control{color:#C586C0;}.comment{color:#6A9955;}.struct{color:#86C691;}.namespace{color:#dfdfdf;}.enumMember{color:#dfdfdf;}.identifier{color:#dfdfdf;}.punctuation{color:#dfdfdf;}.operator{color:#dfdfdf;}.propertyName{color:#dfdfdf;}.fieldName{color:#dfdfdf;}.localName{color:#9CDCFE;}.parameter{color:#9CDCFE;}.eventName{color:#dfdfdf;}.code_highlight{background-color:#395929;}table{white-space:pre;}.line_no::before{content:attr(line_no);color:white;}.code_column{padding-left:5px;color:#dfdfdf;}&lt;/style&gt;
             &lt;pre class=&quot;background&quot;&gt;
             &lt;table&gt;
             &lt;tbody&gt;
@@ -361,7 +411,7 @@
       <!--<button type="button" class="collapsible" style="width: 100%;"><span class="fa-solid fa-code" style="color: rgb(132,123,255);  margin-right: 0.5em; float: left; font-size: 1em;"></span>Candle Pedestal Colour</button>
       <div class="collapsibleblock">
         &lt;!&ndash; generated by https://github.com/Swiftly1/CsharpToColouredHTML feel free to remove it if you want &ndash;&gt;
-        <iframe onload="this.height=this.contentWindow.document.body.scrollHeight + 40;" frameborder=0 height=500 width=100% srcdoc="&lt;style&gt;.background{font-family:monaco,Consolas,LucidaConsole,monospace;background-color:#1E1E1E;overflow:scroll;background-color:rgba(144, 144, 144, 0.075);border-radius: 4px;border: solid 1px #c9c9c9;font-size: 0.8em;margin: 2em 1em -3em 1em;padding: 1em 1em;}.keyword{color:#569cd6;}.enumName{color:#b8d7a3;}.namespace{color:#dfdfdf;}.enumMember{color:#dfdfdf;}.punctuation{color:#dfdfdf;}.code_highlight{background-color:#395929;}table{white-space:pre;}.line_no::before{content:attr(line_no);color:white;}.code_column{padding-left:5px;color:#dfdfdf;}&lt;/style&gt;
+        <iframe onload="this.height=this.contentWindow.document.body.scrollHeight + 40;" frameborder=0 height=500 width=100% srcdoc="&lt;style&gt;.background{font-family:monaco,Consolas,LucidaConsole,monospace;overflow:scroll;background-color:#0e0e0e;border-radius: 4px;border: solid 1px #c9c9c9;font-size: 0.8em;margin: 2em 1em -3em 1em;padding: 1em 1em;}.keyword{color:#569cd6;}.enumName{color:#b8d7a3;}.namespace{color:#dfdfdf;}.enumMember{color:#dfdfdf;}.punctuation{color:#dfdfdf;}.code_highlight{background-color:#395929;}table{white-space:pre;}.line_no::before{content:attr(line_no);color:white;}.code_column{padding-left:5px;color:#dfdfdf;}&lt;/style&gt;
             &lt;pre class=&quot;background&quot;&gt;
             &lt;table&gt;
             &lt;tbody&gt;
@@ -376,7 +426,7 @@
       <!--<button type="button" class="collapsible" style="width: 100%;"><span class="fa-solid fa-code" style="color: rgb(132,123,255);  margin-right: 0.5em; float: left; font-size: 1em;"></span>Candle Flame Colour</button>
       <div class="collapsibleblock">
         &lt;!&ndash; generated by https://github.com/Swiftly1/CsharpToColouredHTML feel free to remove it if you want &ndash;&gt;
-        <iframe onload="this.height=this.contentWindow.document.body.scrollHeight + 40;" frameborder=0 height=500 width=100% srcdoc="&lt;style&gt;.background{font-family:monaco,Consolas,LucidaConsole,monospace;background-color:#1E1E1E;overflow:scroll;background-color:rgba(144, 144, 144, 0.075);border-radius: 4px;border: solid 1px #c9c9c9;font-size: 0.8em;margin: 2em 1em -3em 1em;padding: 1em 1em;}.keyword{color:#569cd6;}.enumName{color:#b8d7a3;}.namespace{color:#dfdfdf;}.enumMember{color:#dfdfdf;}.punctuation{color:#dfdfdf;}.code_highlight{background-color:#395929;}table{white-space:pre;}.line_no::before{content:attr(line_no);color:white;}.code_column{padding-left:5px;color:#dfdfdf;}&lt;/style&gt;
+        <iframe onload="this.height=this.contentWindow.document.body.scrollHeight + 40;" frameborder=0 height=500 width=100% srcdoc="&lt;style&gt;.background{font-family:monaco,Consolas,LucidaConsole,monospace;overflow:scroll;background-color:#0e0e0e;border-radius: 4px;border: solid 1px #c9c9c9;font-size: 0.8em;margin: 2em 1em -3em 1em;padding: 1em 1em;}.keyword{color:#569cd6;}.enumName{color:#b8d7a3;}.namespace{color:#dfdfdf;}.enumMember{color:#dfdfdf;}.punctuation{color:#dfdfdf;}.code_highlight{background-color:#395929;}table{white-space:pre;}.line_no::before{content:attr(line_no);color:white;}.code_column{padding-left:5px;color:#dfdfdf;}&lt;/style&gt;
             &lt;pre class=&quot;background&quot;&gt;
             &lt;table&gt;
             &lt;tbody&gt;
@@ -391,10 +441,10 @@
       <!--==========================================-->
       <!--Code Snippet x - Flame Colour Mixing Rules-->
       <!--==========================================-->
-      <button type="button" class="collapsible" style="width: 100%;"><span class="fa-solid fa-code" style="color: rgb(132,123,255);  margin-right: 0.5em; float: left; font-size: 1em;"></span>Flame Colour Mixing Rules</button>
+      <button type="button" class="collapsible" id="codesample1" style="width: 100%;"><span class="fa-solid fa-code" style="color: rgb(132,123,255);  margin-right: 0.5em; float: left; font-size: 1em;"></span>Flame Colour Mixing Rules</button>
       <div class="collapsibleblock">
         <!-- generated by https://github.com/Swiftly1/CsharpToColouredHTML feel free to remove it if you want -->
-        <iframe onload="this.height=this.contentWindow.document.body.scrollHeight + 40;" frameborder=0 height=500 width=100% srcdoc="&lt;style&gt;.background{font-family:monaco,Consolas,LucidaConsole,monospace;background-color:#1E1E1E;overflow:scroll;background-color:rgba(144, 144, 144, 0.075);border-radius: 4px;border: solid 1px #c9c9c9;font-size: 0.8em;margin: 2em 1em -3em 1em;padding: 1em 1em;}.method{color:#DCDCAA;}.class{color:#4EC9B0;}.keyword{color:#569cd6;}.numericLiteral{color:#b8d7a3;}.control{color:#C586C0;}.comment{color:#6A9955;}.namespace{color:#dfdfdf;}.identifier{color:#dfdfdf;}.punctuation{color:#dfdfdf;}.operator{color:#dfdfdf;}.fieldName{color:#dfdfdf;}.localName{color:#9CDCFE;}.parameter{color:#9CDCFE;}.code_highlight{background-color:#395929;}table{white-space:pre;}.line_no::before{content:attr(line_no);color:white;}.code_column{padding-left:5px;color:#dfdfdf;}&lt;/style&gt;
+        <iframe onload="this.height=this.contentWindow.document.body.scrollHeight + 40;" frameborder=0 height=500 width=100% srcdoc="&lt;style&gt;.background{font-family:monaco,Consolas,LucidaConsole,monospace;overflow:scroll;background-color:#0e0e0e;border-radius: 4px;border: solid 1px #c9c9c9;font-size: 0.8em;margin: 2em 1em -3em 1em;padding: 1em 1em;}.method{color:#DCDCAA;}.class{color:#4EC9B0;}.keyword{color:#569cd6;}.numericLiteral{color:#b8d7a3;}.control{color:#C586C0;}.comment{color:#6A9955;}.namespace{color:#dfdfdf;}.identifier{color:#dfdfdf;}.punctuation{color:#dfdfdf;}.operator{color:#dfdfdf;}.fieldName{color:#dfdfdf;}.localName{color:#9CDCFE;}.parameter{color:#9CDCFE;}.code_highlight{background-color:#395929;}table{white-space:pre;}.line_no::before{content:attr(line_no);color:white;}.code_column{padding-left:5px;color:#dfdfdf;}&lt;/style&gt;
             &lt;pre class=&quot;background&quot;&gt;
             &lt;table&gt;
             &lt;tbody&gt;
@@ -409,7 +459,7 @@
       <button type="button" class="collapsible" style="width: 100%;"><span class="fa-solid fa-code" style="color: rgb(132,123,255);  margin-right: 0.5em; float: left; font-size: 1em;"></span>Colour Mapping Utility</button>
       <div class="collapsibleblock">
         <!-- generated by https://github.com/Swiftly1/CsharpToColouredHTML feel free to remove it if you want -->
-        <iframe onload="this.height=this.contentWindow.document.body.scrollHeight + 40;" frameborder=0 height=500 width=100% srcdoc="&lt;style&gt;.background{font-family:monaco,Consolas,LucidaConsole,monospace;background-color:#1E1E1E;overflow:scroll;background-color:rgba(144, 144, 144, 0.075);border-radius: 4px;border: solid 1px #c9c9c9;font-size: 0.8em;margin: 2em 1em -3em 1em;padding: 1em 1em;}.method{color:#DCDCAA;}.class{color:#4EC9B0;}.keyword{color:#569cd6;}.numericLiteral{color:#b8d7a3;}.control{color:#C586C0;}.struct{color:#86C691;}.namespace{color:#dfdfdf;}.identifier{color:#dfdfdf;}.punctuation{color:#dfdfdf;}.operator{color:#dfdfdf;}.fieldName{color:#dfdfdf;}.parameter{color:#9CDCFE;}.code_highlight{background-color:#395929;}table{white-space:pre;}.line_no::before{content:attr(line_no);color:white;}.code_column{padding-left:5px;color:#dfdfdf;}&lt;/style&gt;
+        <iframe onload="this.height=this.contentWindow.document.body.scrollHeight + 40;" frameborder=0 height=500 width=100% srcdoc="&lt;style&gt;.background{font-family:monaco,Consolas,LucidaConsole,monospace;overflow:scroll;background-color:#0e0e0e;border-radius: 4px;border: solid 1px #c9c9c9;font-size: 0.8em;margin: 2em 1em -3em 1em;padding: 1em 1em;}.method{color:#DCDCAA;}.class{color:#4EC9B0;}.keyword{color:#569cd6;}.numericLiteral{color:#b8d7a3;}.control{color:#C586C0;}.struct{color:#86C691;}.namespace{color:#dfdfdf;}.identifier{color:#dfdfdf;}.punctuation{color:#dfdfdf;}.operator{color:#dfdfdf;}.fieldName{color:#dfdfdf;}.parameter{color:#9CDCFE;}.code_highlight{background-color:#395929;}table{white-space:pre;}.line_no::before{content:attr(line_no);color:white;}.code_column{padding-left:5px;color:#dfdfdf;}&lt;/style&gt;
             &lt;pre class=&quot;background&quot;&gt;
             &lt;table&gt;
             &lt;tbody&gt;
@@ -427,7 +477,7 @@
       <button type="button" class="collapsible" style="width: 100%;"><span class="fa-solid fa-code" style="color: rgb(132,123,255);  margin-right: 0.5em; float: left; font-size: 1em;"></span>Flammable</button>
       <div class="collapsibleblock">
         <!-- generated by https://github.com/Swiftly1/CsharpToColouredHTML feel free to remove it if you want -->
-        <iframe onload="this.height=this.contentWindow.document.body.scrollHeight + 40;" frameborder=0 height=500 width=100% srcdoc="&lt;style&gt;.background{font-family:monaco,Consolas,LucidaConsole,monospace;background-color:#1E1E1E;overflow:scroll;background-color:rgba(144, 144, 144, 0.075);border-radius: 4px;border: solid 1px #c9c9c9;font-size: 0.8em;margin: 2em 1em -3em 1em;padding: 1em 1em;}.method{color:#DCDCAA;}.class{color:#4EC9B0;}.keyword{color:#569cd6;}.numericLiteral{color:#b8d7a3;}.control{color:#C586C0;}.comment{color:#6A9955;}.struct{color:#86C691;}.namespace{color:#dfdfdf;}.identifier{color:#dfdfdf;}.punctuation{color:#dfdfdf;}.operator{color:#dfdfdf;}.propertyName{color:#dfdfdf;}.fieldName{color:#dfdfdf;}.localName{color:#9CDCFE;}.parameter{color:#9CDCFE;}.code_highlight{background-color:#395929;}table{white-space:pre;}.line_no::before{content:attr(line_no);color:white;}.code_column{padding-left:5px;color:#dfdfdf;}&lt;/style&gt;
+        <iframe onload="this.height=this.contentWindow.document.body.scrollHeight + 40;" frameborder=0 height=500 width=100% srcdoc="&lt;style&gt;.background{font-family:monaco,Consolas,LucidaConsole,monospace;overflow:scroll;background-color:#0e0e0e;border-radius: 4px;border: solid 1px #c9c9c9;font-size: 0.8em;margin: 2em 1em -3em 1em;padding: 1em 1em;}.method{color:#DCDCAA;}.class{color:#4EC9B0;}.keyword{color:#569cd6;}.numericLiteral{color:#b8d7a3;}.control{color:#C586C0;}.comment{color:#6A9955;}.struct{color:#86C691;}.namespace{color:#dfdfdf;}.identifier{color:#dfdfdf;}.punctuation{color:#dfdfdf;}.operator{color:#dfdfdf;}.propertyName{color:#dfdfdf;}.fieldName{color:#dfdfdf;}.localName{color:#9CDCFE;}.parameter{color:#9CDCFE;}.code_highlight{background-color:#395929;}table{white-space:pre;}.line_no::before{content:attr(line_no);color:white;}.code_column{padding-left:5px;color:#dfdfdf;}&lt;/style&gt;
             &lt;pre class=&quot;background&quot;&gt;
             &lt;table&gt;
             &lt;tbody&gt;
@@ -442,7 +492,7 @@
       <button type="button" class="collapsible" style="width: 100%;"><span class="fa-solid fa-code" style="color: rgb(132,123,255);  margin-right: 0.5em; float: left; font-size: 1em;"></span>Fire Pot</button>
       <div class="collapsibleblock">
         <!-- generated by https://github.com/Swiftly1/CsharpToColouredHTML feel free to remove it if you want -->
-        <iframe onload="this.height=this.contentWindow.document.body.scrollHeight + 50;" frameborder=0 height=500 width=100% srcdoc="&lt;style&gt;.background{font-family:monaco,Consolas,LucidaConsole,monospace;background-color:#1E1E1E;overflow:scroll;background-color:rgba(144, 144, 144, 0.075);border-radius: 4px;border: solid 1px #c9c9c9;font-size: 0.8em;margin: 2em 1em -3em 1em;padding: 1em 1em;}.method{color:#DCDCAA;}.class{color:#4EC9B0;}.keyword{color:#569cd6;}.control{color:#C586C0;}.comment{color:#6A9955;}.namespace{color:#dfdfdf;}.identifier{color:#dfdfdf;}.punctuation{color:#dfdfdf;}.operator{color:#dfdfdf;}.localName{color:#9CDCFE;}.parameter{color:#9CDCFE;}.code_highlight{background-color:#395929;}table{white-space:pre;}.line_no::before{content:attr(line_no);color:white;}.code_column{padding-left:5px;color:#dfdfdf;}&lt;/style&gt;
+        <iframe onload="this.height=this.contentWindow.document.body.scrollHeight + 50;" frameborder=0 height=500 width=100% srcdoc="&lt;style&gt;.background{font-family:monaco,Consolas,LucidaConsole,monospace;overflow:scroll;background-color:#0e0e0e;border-radius: 4px;border: solid 1px #c9c9c9;font-size: 0.8em;margin: 2em 1em -3em 1em;padding: 1em 1em;}.method{color:#DCDCAA;}.class{color:#4EC9B0;}.keyword{color:#569cd6;}.control{color:#C586C0;}.comment{color:#6A9955;}.namespace{color:#dfdfdf;}.identifier{color:#dfdfdf;}.punctuation{color:#dfdfdf;}.operator{color:#dfdfdf;}.localName{color:#9CDCFE;}.parameter{color:#9CDCFE;}.code_highlight{background-color:#395929;}table{white-space:pre;}.line_no::before{content:attr(line_no);color:white;}.code_column{padding-left:5px;color:#dfdfdf;}&lt;/style&gt;
             &lt;pre class=&quot;background&quot;&gt;
             &lt;table&gt;
             &lt;tbody&gt;
@@ -457,7 +507,7 @@
       <button type="button" class="collapsible" style="width: 100%;"><span class="fa-solid fa-code" style="color: rgb(132,123,255);  margin-right: 0.5em; float: left; font-size: 1em;"></span>Matchstick</button>
       <div class="collapsibleblock">
         <!-- generated by https://github.com/Swiftly1/CsharpToColouredHTML feel free to remove it if you want -->
-        <iframe onload="this.height=this.contentWindow.document.body.scrollHeight + 40;" frameborder=0 height=500 width=100% srcdoc="&lt;style&gt;.background{font-family:monaco,Consolas,LucidaConsole,monospace;background-color:#1E1E1E;overflow:scroll;background-color:rgba(144, 144, 144, 0.075);border-radius: 4px;border: solid 1px #c9c9c9;font-size: 0.8em;margin: 2em 1em -3em 1em;padding: 1em 1em;}.method{color:#DCDCAA;}.class{color:#4EC9B0;}.keyword{color:#569cd6;}.numericLiteral{color:#b8d7a3;}.control{color:#C586C0;}.struct{color:#86C691;}.namespace{color:#dfdfdf;}.identifier{color:#dfdfdf;}.punctuation{color:#dfdfdf;}.operator{color:#dfdfdf;}.fieldName{color:#dfdfdf;}.code_highlight{background-color:#395929;}table{white-space:pre;}.line_no::before{content:attr(line_no);color:white;}.code_column{padding-left:5px;color:#dfdfdf;}&lt;/style&gt;
+        <iframe onload="this.height=this.contentWindow.document.body.scrollHeight + 40;" frameborder=0 height=500 width=100% srcdoc="&lt;style&gt;.background{font-family:monaco,Consolas,LucidaConsole,monospace;overflow:scroll;background-color:#0e0e0e;border-radius: 4px;border: solid 1px #c9c9c9;font-size: 0.8em;margin: 2em 1em -3em 1em;padding: 1em 1em;}.method{color:#DCDCAA;}.class{color:#4EC9B0;}.keyword{color:#569cd6;}.numericLiteral{color:#b8d7a3;}.control{color:#C586C0;}.struct{color:#86C691;}.namespace{color:#dfdfdf;}.identifier{color:#dfdfdf;}.punctuation{color:#dfdfdf;}.operator{color:#dfdfdf;}.fieldName{color:#dfdfdf;}.code_highlight{background-color:#395929;}table{white-space:pre;}.line_no::before{content:attr(line_no);color:white;}.code_column{padding-left:5px;color:#dfdfdf;}&lt;/style&gt;
             &lt;pre class=&quot;background&quot;&gt;
             &lt;table&gt;
             &lt;tbody&gt;
@@ -472,7 +522,7 @@
       <button type="button" class="collapsible" style="width: 100%;"><span class="fa-solid fa-code" style="color: rgb(132,123,255);  margin-right: 0.5em; float: left; font-size: 1em;"></span>Candle</button>
       <div class="collapsibleblock">
         <!-- generated by https://github.com/Swiftly1/CsharpToColouredHTML feel free to remove it if you want -->
-        <iframe onload="this.height=this.contentWindow.document.body.scrollHeight + 50;" frameborder=0 height=500 width=100% srcdoc="&lt;style&gt;.background{font-family:monaco,Consolas,LucidaConsole,monospace;background-color:#1E1E1E;overflow:scroll;background-color:rgba(144, 144, 144, 0.075);border-radius: 4px;border: solid 1px #c9c9c9;font-size: 0.8em;margin: 2em 1em -3em 1em;padding: 1em 1em;}.method{color:#DCDCAA;}.class{color:#4EC9B0;}.keyword{color:#569cd6;}.numericLiteral{color:#b8d7a3;}.control{color:#C586C0;}.comment{color:#6A9955;}.struct{color:#86C691;}.namespace{color:#dfdfdf;}.identifier{color:#dfdfdf;}.punctuation{color:#dfdfdf;}.operator{color:#dfdfdf;}.propertyName{color:#dfdfdf;}.fieldName{color:#dfdfdf;}.localName{color:#9CDCFE;}.parameter{color:#9CDCFE;}.eventName{color:#dfdfdf;}.code_highlight{background-color:#395929;}table{white-space:pre;}.line_no::before{content:attr(line_no);color:white;}.code_column{padding-left:5px;color:#dfdfdf;}&lt;/style&gt;
+        <iframe onload="this.height=this.contentWindow.document.body.scrollHeight + 50;" frameborder=0 height=500 width=100% srcdoc="&lt;style&gt;.background{font-family:monaco,Consolas,LucidaConsole,monospace;overflow:scroll;background-color:#0e0e0e;border-radius: 4px;border: solid 1px #c9c9c9;font-size: 0.8em;margin: 2em 1em -3em 1em;padding: 1em 1em;}.method{color:#DCDCAA;}.class{color:#4EC9B0;}.keyword{color:#569cd6;}.numericLiteral{color:#b8d7a3;}.control{color:#C586C0;}.comment{color:#6A9955;}.struct{color:#86C691;}.namespace{color:#dfdfdf;}.identifier{color:#dfdfdf;}.punctuation{color:#dfdfdf;}.operator{color:#dfdfdf;}.propertyName{color:#dfdfdf;}.fieldName{color:#dfdfdf;}.localName{color:#9CDCFE;}.parameter{color:#9CDCFE;}.eventName{color:#dfdfdf;}.code_highlight{background-color:#395929;}table{white-space:pre;}.line_no::before{content:attr(line_no);color:white;}.code_column{padding-left:5px;color:#dfdfdf;}&lt;/style&gt;
             &lt;pre class=&quot;background&quot;&gt;
             &lt;table&gt;
             &lt;tbody&gt;
@@ -490,7 +540,7 @@
       <button type="button" class="collapsible" style="width: 100%;"><span class="fa-solid fa-code" style="color: rgb(132,123,255);  margin-right: 0.5em; float: left; font-size: 1em;"></span>Enemy</button>
       <div class="collapsibleblock">
         <!-- generated by https://github.com/Swiftly1/CsharpToColouredHTML feel free to remove it if you want -->
-        <iframe onload="this.height=this.contentWindow.document.body.scrollHeight + 40;" frameborder=0 height=500 width=100% srcdoc="&lt;style&gt;.background{font-family:monaco,Consolas,LucidaConsole,monospace;background-color:#1E1E1E;overflow:scroll;background-color:rgba(144, 144, 144, 0.075);border-radius: 4px;border: solid 1px #c9c9c9;font-size: 0.8em;margin: 2em 1em -3em 1em;padding: 1em 1em;}.method{color:#DCDCAA;}.class{color:#4EC9B0;}.keyword{color:#569cd6;}.interface{color:#b8d7a3;}.control{color:#C586C0;}.struct{color:#86C691;}.namespace{color:#dfdfdf;}.identifier{color:#dfdfdf;}.punctuation{color:#dfdfdf;}.operator{color:#dfdfdf;}.propertyName{color:#dfdfdf;}.fieldName{color:#dfdfdf;}.localName{color:#9CDCFE;}.parameter{color:#9CDCFE;}.code_highlight{background-color:#395929;}table{white-space:pre;}.line_no::before{content:attr(line_no);color:white;}.code_column{padding-left:5px;color:#dfdfdf;}&lt;/style&gt;
+        <iframe onload="this.height=this.contentWindow.document.body.scrollHeight + 40;" frameborder=0 height=500 width=100% srcdoc="&lt;style&gt;.background{font-family:monaco,Consolas,LucidaConsole,monospace;overflow:scroll;background-color:#0e0e0e;border-radius: 4px;border: solid 1px #c9c9c9;font-size: 0.8em;margin: 2em 1em -3em 1em;padding: 1em 1em;}.method{color:#DCDCAA;}.class{color:#4EC9B0;}.keyword{color:#569cd6;}.interface{color:#b8d7a3;}.control{color:#C586C0;}.struct{color:#86C691;}.namespace{color:#dfdfdf;}.identifier{color:#dfdfdf;}.punctuation{color:#dfdfdf;}.operator{color:#dfdfdf;}.propertyName{color:#dfdfdf;}.fieldName{color:#dfdfdf;}.localName{color:#9CDCFE;}.parameter{color:#9CDCFE;}.code_highlight{background-color:#395929;}table{white-space:pre;}.line_no::before{content:attr(line_no);color:white;}.code_column{padding-left:5px;color:#dfdfdf;}&lt;/style&gt;
             &lt;pre class=&quot;background&quot;&gt;
             &lt;table&gt;
             &lt;tbody&gt;
@@ -505,7 +555,7 @@
       <button type="button" class="collapsible" style="width: 100%;"><span class="fa-solid fa-code" style="color: rgb(132,123,255);  margin-right: 0.5em; float: left; font-size: 1em;"></span>State Machine</button>
       <div class="collapsibleblock">
         <!-- generated by https://github.com/Swiftly1/CsharpToColouredHTML feel free to remove it if you want -->
-        <iframe onload="this.height=this.contentWindow.document.body.scrollHeight + 40;" frameborder=0 height=500 width=100% srcdoc="&lt;style&gt;.background{font-family:monaco,Consolas,LucidaConsole,monospace;background-color:#1E1E1E;overflow:scroll;background-color:rgba(144, 144, 144, 0.075);border-radius: 4px;border: solid 1px #c9c9c9;font-size: 0.8em;margin: 2em 1em -3em 1em;padding: 1em 1em;}.method{color:#DCDCAA;}.class{color:#4EC9B0;}.keyword{color:#569cd6;}.interface{color:#b8d7a3;}.numericLiteral{color:#b8d7a3;}.control{color:#C586C0;}.identifier{color:#dfdfdf;}.punctuation{color:#dfdfdf;}.operator{color:#dfdfdf;}.propertyName{color:#dfdfdf;}.fieldName{color:#dfdfdf;}.localName{color:#9CDCFE;}.parameter{color:#9CDCFE;}.eventName{color:#dfdfdf;}.code_highlight{background-color:#395929;}table{white-space:pre;}.line_no::before{content:attr(line_no);color:white;}.code_column{padding-left:5px;color:#dfdfdf;}&lt;/style&gt;
+        <iframe onload="this.height=this.contentWindow.document.body.scrollHeight + 40;" frameborder=0 height=500 width=100% srcdoc="&lt;style&gt;.background{font-family:monaco,Consolas,LucidaConsole,monospace;overflow:scroll;background-color:#0e0e0e;border-radius: 4px;border: solid 1px #c9c9c9;font-size: 0.8em;margin: 2em 1em -3em 1em;padding: 1em 1em;}.method{color:#DCDCAA;}.class{color:#4EC9B0;}.keyword{color:#569cd6;}.interface{color:#b8d7a3;}.numericLiteral{color:#b8d7a3;}.control{color:#C586C0;}.identifier{color:#dfdfdf;}.punctuation{color:#dfdfdf;}.operator{color:#dfdfdf;}.propertyName{color:#dfdfdf;}.fieldName{color:#dfdfdf;}.localName{color:#9CDCFE;}.parameter{color:#9CDCFE;}.eventName{color:#dfdfdf;}.code_highlight{background-color:#395929;}table{white-space:pre;}.line_no::before{content:attr(line_no);color:white;}.code_column{padding-left:5px;color:#dfdfdf;}&lt;/style&gt;
             &lt;pre class=&quot;background&quot;&gt;
             &lt;table&gt;
             &lt;tbody&gt;
@@ -520,7 +570,7 @@
       <button type="button" class="collapsible" style="width: 100%;"><span class="fa-solid fa-code" style="color: rgb(132,123,255);  margin-right: 0.5em; float: left; font-size: 1em;"></span>Ghost Observing State</button>
       <div class="collapsibleblock">
         <!-- generated by https://github.com/Swiftly1/CsharpToColouredHTML feel free to remove it if you want -->
-        <iframe onload="this.height=this.contentWindow.document.body.scrollHeight + 40;" frameborder=0 height=500 width=100% srcdoc="&lt;style&gt;.background{font-family:monaco,Consolas,LucidaConsole,monospace;background-color:#1E1E1E;overflow:scroll;background-color:rgba(144, 144, 144, 0.075);border-radius: 4px;border: solid 1px #c9c9c9;font-size: 0.8em;margin: 2em 1em -3em 1em;padding: 1em 1em;}.method{color:#DCDCAA;}.class{color:#4EC9B0;}.keyword{color:#569cd6;}.interface{color:#b8d7a3;}.numericLiteral{color:#b8d7a3;}.control{color:#C586C0;}.namespace{color:#dfdfdf;}.identifier{color:#dfdfdf;}.punctuation{color:#dfdfdf;}.operator{color:#dfdfdf;}.fieldName{color:#dfdfdf;}.parameter{color:#9CDCFE;}.code_highlight{background-color:#395929;}table{white-space:pre;}.line_no::before{content:attr(line_no);color:white;}.code_column{padding-left:5px;color:#dfdfdf;}&lt;/style&gt;
+        <iframe onload="this.height=this.contentWindow.document.body.scrollHeight + 40;" frameborder=0 height=500 width=100% srcdoc="&lt;style&gt;.background{font-family:monaco,Consolas,LucidaConsole,monospace;overflow:scroll;background-color:#0e0e0e;border-radius: 4px;border: solid 1px #c9c9c9;font-size: 0.8em;margin: 2em 1em -3em 1em;padding: 1em 1em;}.method{color:#DCDCAA;}.class{color:#4EC9B0;}.keyword{color:#569cd6;}.interface{color:#b8d7a3;}.numericLiteral{color:#b8d7a3;}.control{color:#C586C0;}.namespace{color:#dfdfdf;}.identifier{color:#dfdfdf;}.punctuation{color:#dfdfdf;}.operator{color:#dfdfdf;}.fieldName{color:#dfdfdf;}.parameter{color:#9CDCFE;}.code_highlight{background-color:#395929;}table{white-space:pre;}.line_no::before{content:attr(line_no);color:white;}.code_column{padding-left:5px;color:#dfdfdf;}&lt;/style&gt;
             &lt;pre class=&quot;background&quot;&gt;
             &lt;table&gt;
             &lt;tbody&gt;
@@ -535,7 +585,7 @@
       <button type="button" class="collapsible" style="width: 100%;"><span class="fa-solid fa-code" style="color: rgb(132,123,255);  margin-right: 0.5em; float: left; font-size: 1em;"></span>Ghost Aggressive State</button>
       <div class="collapsibleblock">
         <!-- generated by https://github.com/Swiftly1/CsharpToColouredHTML feel free to remove it if you want -->
-        <iframe onload="this.height=this.contentWindow.document.body.scrollHeight + 40;" frameborder=0 height=500 width=100% srcdoc="&lt;style&gt;.background{font-family:monaco,Consolas,LucidaConsole,monospace;background-color:#1E1E1E;overflow:scroll;background-color:rgba(144, 144, 144, 0.075);border-radius: 4px;border: solid 1px #c9c9c9;font-size: 0.8em;margin: 2em 1em -3em 1em;padding: 1em 1em;}.method{color:#DCDCAA;}.class{color:#4EC9B0;}.keyword{color:#569cd6;}.interface{color:#b8d7a3;}.control{color:#C586C0;}.namespace{color:#dfdfdf;}.identifier{color:#dfdfdf;}.punctuation{color:#dfdfdf;}.operator{color:#dfdfdf;}.fieldName{color:#dfdfdf;}.parameter{color:#9CDCFE;}.code_highlight{background-color:#395929;}table{white-space:pre;}.line_no::before{content:attr(line_no);color:white;}.code_column{padding-left:5px;color:#dfdfdf;}&lt;/style&gt;
+        <iframe onload="this.height=this.contentWindow.document.body.scrollHeight + 40;" frameborder=0 height=500 width=100% srcdoc="&lt;style&gt;.background{font-family:monaco,Consolas,LucidaConsole,monospace;overflow:scroll;background-color:#0e0e0e;border-radius: 4px;border: solid 1px #c9c9c9;font-size: 0.8em;margin: 2em 1em -3em 1em;padding: 1em 1em;}.method{color:#DCDCAA;}.class{color:#4EC9B0;}.keyword{color:#569cd6;}.interface{color:#b8d7a3;}.control{color:#C586C0;}.namespace{color:#dfdfdf;}.identifier{color:#dfdfdf;}.punctuation{color:#dfdfdf;}.operator{color:#dfdfdf;}.fieldName{color:#dfdfdf;}.parameter{color:#9CDCFE;}.code_highlight{background-color:#395929;}table{white-space:pre;}.line_no::before{content:attr(line_no);color:white;}.code_column{padding-left:5px;color:#dfdfdf;}&lt;/style&gt;
             &lt;pre class=&quot;background&quot;&gt;
             &lt;table&gt;
             &lt;tbody&gt;
@@ -550,7 +600,7 @@
       <button type="button" class="collapsible" style="width: 100%;"><span class="fa-solid fa-code" style="color: rgb(132,123,255);  margin-right: 0.5em; float: left; font-size: 1em;"></span>Ghost Retreating State</button>
       <div class="collapsibleblock">
         <!-- generated by https://github.com/Swiftly1/CsharpToColouredHTML feel free to remove it if you want -->
-        <iframe onload="this.height=this.contentWindow.document.body.scrollHeight + 40;" frameborder=0 height=500 width=100% srcdoc="&lt;style&gt;.background{font-family:monaco,Consolas,LucidaConsole,monospace;background-color:#1E1E1E;overflow:scroll;background-color:rgba(144, 144, 144, 0.075);border-radius: 4px;border: solid 1px #c9c9c9;font-size: 0.8em;margin: 2em 1em -3em 1em;padding: 1em 1em;}.method{color:#DCDCAA;}.class{color:#4EC9B0;}.keyword{color:#569cd6;}.interface{color:#b8d7a3;}.control{color:#C586C0;}.namespace{color:#dfdfdf;}.identifier{color:#dfdfdf;}.punctuation{color:#dfdfdf;}.operator{color:#dfdfdf;}.fieldName{color:#dfdfdf;}.parameter{color:#9CDCFE;}.code_highlight{background-color:#395929;}table{white-space:pre;}.line_no::before{content:attr(line_no);color:white;}.code_column{padding-left:5px;color:#dfdfdf;}&lt;/style&gt;
+        <iframe onload="this.height=this.contentWindow.document.body.scrollHeight + 40;" frameborder=0 height=500 width=100% srcdoc="&lt;style&gt;.background{font-family:monaco,Consolas,LucidaConsole,monospace;overflow:scroll;background-color:#0e0e0e;border-radius: 4px;border: solid 1px #c9c9c9;font-size: 0.8em;margin: 2em 1em -3em 1em;padding: 1em 1em;}.method{color:#DCDCAA;}.class{color:#4EC9B0;}.keyword{color:#569cd6;}.interface{color:#b8d7a3;}.control{color:#C586C0;}.namespace{color:#dfdfdf;}.identifier{color:#dfdfdf;}.punctuation{color:#dfdfdf;}.operator{color:#dfdfdf;}.fieldName{color:#dfdfdf;}.parameter{color:#9CDCFE;}.code_highlight{background-color:#395929;}table{white-space:pre;}.line_no::before{content:attr(line_no);color:white;}.code_column{padding-left:5px;color:#dfdfdf;}&lt;/style&gt;
             &lt;pre class=&quot;background&quot;&gt;
             &lt;table&gt;
             &lt;tbody&gt;

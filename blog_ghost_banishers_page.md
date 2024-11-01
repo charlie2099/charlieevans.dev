@@ -38,18 +38,30 @@ very engaging gameplay experience.
 
 ## Technical Challenges 
 
-### Candle Puzzle
 ### Flame Colour Mixing Rule System
+- Problem: Needed to develop a system that would enable colours to be mixed together to 
+create new colours. It was also important that the flame mixing colour logic wasn't hardcoded,
+as we wanted to mix up the colour mixing rules so it wasn't the same every play. 
+
+- Solution: The solution to this was a simple rule system that used dictionaries to pair 
+colour mixing rules with the resulting produced colour. 
+
 ### Flammable System
+- Text
+
+### Candle Puzzle
+- Text
+
 
 ## Key Features / Gameplay Mechanics
-- 
+- Text
 
 ## Limitations
-- 
+- Text
 
 ## Learning Highlights
 - VR development
 - Local coop
 
 ## Conclusions
+- Text
