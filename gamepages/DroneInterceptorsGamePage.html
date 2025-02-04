@@ -96,7 +96,7 @@
       <a href="../blogpage.html"><button class="btn"> <span class="fa-solid fa-arrow-circle-left" style="font-size: 0.9em;"></span> <span style="font-weight: normal; font-size: 0.9em;">Back</span></button></a>
 
       <h1 class="blogheader1">Drone Interceptors</h1>
-      <h4 style="color: rgba(255,255,255,0.5); font-weight: normal; text-align: center;"><span style="color: white;">Published:</span> Nov 2nd, 2024 | <span style="color: white;">Updated:</span> Dec 19th, 2024</h4>
+      <h4 style="color: rgba(255,255,255,0.5); font-weight: normal; text-align: center;"><span style="color: white;">Published:</span> Nov 2nd, 2024 | <span style="color: white;">Updated:</span> Feb 4th, 2025</h4>
 
       <br>
 
@@ -170,7 +170,7 @@
       <!--======================-->
       <!-- Customisation System -->
       <!--======================-->
-      <h3 class="blogheader3">Customisation System</h3>
+      <h3 class="blogheader3">Drone Workshop & Customisation System</h3>
       <blockquote>COMING SOON</blockquote>
       <!--<p>Text.</p>
       <ul>
@@ -183,31 +183,26 @@
       <!-- Save System -->
       <!--=============-->
       <h3 class="blogheader3">Save System</h3>
-      <blockquote>COMING SOON</blockquote>
-      <!--<p>Another key technical challenge was developing a save system that could cater for generic data.</p>
       
-      <p>A robust and flexible save system was needed to handle various types of data while maintaining code reusability and type safety.</p>
-
-      <h4 class="blogheader4">The Problem</h4>
-      <p>System Requirements:</p>
-      <ul>
-        <li><span style="color: white; font-weight: bold;">Flexibility</span> - Handle various data types such as drone configurations, post-match analytics, and budget information, without changing the core save/load logic.</li>
-        <li><span style="color: white; font-weight: bold;">Extensibility</span> - Be easily extendable for any future data types that need to be introduced.</li>
-        <li><span style="color: white; font-weight: bold;">Simplicity</span> - Offer simple methods for saving, loading, and deleting data.</li>
-        &lt;!&ndash;<li><span style="color: white; font-weight: bold;">Type Safety</span> - To prevent errors when loading specific data types.</li>&ndash;&gt;
-      </ul>
+      <p>Each drone build begins with a base set of attributes. As new augments are added during customisation, these attributes are modified. 
+        It was crucial to retain these updated attributes not only when transitioning from the customisation stage through to the simulation scene 
+        but also across sessions, <span style="color: white; font-weight: bold;">allowing the data to persist even after the player reboots the game</span>. 
+        This was essential for providing the player with the ability to iteratively test their drone configurations. </p>
+        
+      <p>This meant that we required a save system of sorts, that would enable us to <span style="color: white; font-weight: bold;">save and retrieve a player's drone configurations from file</span>. 
+        Coincidentally at this stage in development we also required a save system for the drone budgeting system, as well as a way to preserve post-match analytic data. Due to 
+        these additional needs, it made sense to us to build a <span style="color: white; font-weight: bold;">singular agnostic system</span> that was flexible in the different types of save data
+        that it could support.</p>
       
-      <h4 class="blogheader4">The Solution</h4>
-      <p>Text</p>
+      <p>Building this system initially proved to be a challenge. The system needed to be <span style="color: white; font-weight: bold;">lightweight and easy to use</span>, as well as <span style="color: white; font-weight: bold;">flexible and extensible</span> 
+        should new types of save data need to be introduced later on in development. We settled on building a <span style="color: white; font-weight: bold;">JSON-based system</span> using Unity's JsonUtility as it could provide the
+        lightweightness, readability, and flexibility we were after.</p>
 
-      <iframe onload="this.height=this.contentWindow.document.body.scrollHeight + 25;" frameborder=0 height=500 width=100% srcdoc="&lt;style&gt;.background{font-family:monaco,Consolas,LucidaConsole,monospace;overflow:scroll;background-color:#0e0e0e;border-radius: 4px;border: solid 1px #c9c9c9;font-size: 0.8em;margin: 2em 1em -3em 1em;padding: 1em 1em;color:#dfdfdf;}.method{color:#DCDCAA;}.class{color:#4EC9B0;}.keyword{color:#569cd6;}.typeParam{color:#b8d7a3;}.punctuation{color:#dfdfdf;}.parameter{color:#9CDCFE;}&lt;/style&gt;
-      &lt;pre class=&quot;background&quot;&gt;
-      &lt;span class=&quot;keyword&quot;&gt;public static void&lt;/span&gt; &lt;span class=&quot;method&quot;&gt;Save&lt;/span&gt;(&lt;span class=&quot;class&quot;&gt;SaveData&lt;/span&gt; &lt;span class=&quot;parameter&quot;&gt;saveData&lt;/span&gt;, &lt;span class=&quot;keyword&quot;&gt;string&lt;/span&gt; &lt;span class=&quot;parameter&quot;&gt;dataPath&lt;/span&gt;) {}
+      <h4 class="blogheader4">An Inheritance-based Architecture</h4>
       
-      &lt;span class=&quot;keyword&quot;&gt;public static&lt;/span&gt; &lt;span class=&quot;typeParam&quot;&gt;T&lt;/span&gt; &lt;span class=&quot;method&quot;&gt;Load&lt;/span&gt;&amp;lt;&lt;span class=&quot;typeParam&quot;&gt;T&lt;/span&gt;&amp;gt;(&lt;span class=&quot;keyword&quot;&gt;string&lt;/span&gt; &lt;span class=&quot;parameter&quot;&gt;dataPath&lt;/span&gt;) &lt;span class=&quot;keyword&quot;&gt;where&lt;/span&gt; &lt;span class=&quot;typeParam&quot;&gt;T&lt;/span&gt; : &lt;span class=&quot;class&quot;&gt;SaveData&lt;/span&gt; {}&lt;/pre&gt;
-      "></iframe>
+      <p>An abstract base class was made that all saveable data types would inherit from, which we aptly named "SaveData". We then created the following specific data classes:</p>
 
-      <iframe onload="this.height=this.contentWindow.document.body.scrollHeight + 25;" frameborder=0 height=500 width=100% srcdoc="&lt;style&gt;.background{font-family:monaco,Consolas,LucidaConsole,monospace;overflow:scroll;background-color:#0e0e0e;border-radius: 4px;border: solid 1px #c9c9c9;font-size: 0.8em;margin: 2em 1em -3em 1em;padding: 1em 1em;color:#dfdfdf;}.class{color:#4EC9B0;}.keyword{color:#569cd6;}.punctuation{color:#dfdfdf;}&lt;/style&gt;
+      <iframe onload="this.height=this.contentWindow.document.body.scrollHeight + 25;" frameborder=0 height=500 width=100% srcdoc="&lt;style&gt;.background{font-family:monaco,Consolas,LucidaConsole,monospace;overflow:scroll;background-color:#0e0e0e;border-radius: 4px;border: solid 1px #c9c9c9;font-size: 0.8em;margin: 0em 1em -3em 1em;padding: 1em 1em;color:#dfdfdf;}.class{color:#4EC9B0;}.keyword{color:#569cd6;}.punctuation{color:#dfdfdf;}&lt;/style&gt;
       &lt;pre class=&quot;background&quot;&gt;
       [&lt;span class=&quot;class&quot;&gt;Serializable&lt;/span&gt;]
       &lt;span class=&quot;keyword&quot;&gt;public abstract class&lt;/span&gt; &lt;span class=&quot;class&quot;&gt;SaveData&lt;/span&gt; {}
@@ -221,11 +216,89 @@
       [&lt;span class=&quot;class&quot;&gt;Serializable&lt;/span&gt;]
       &lt;span class=&quot;keyword&quot;&gt;public class&lt;/span&gt; &lt;span class=&quot;class&quot;&gt;BudgetData&lt;/span&gt; : &lt;span class=&quot;class&quot;&gt;SaveData&lt;/span&gt; {}&lt;/pre&gt;
       "></iframe>
+      
+      <p>Creating new save types is as simple as creating a new class and ensuring it inherits from SaveData.</p>
 
-      <br>
+      <h4 class="blogheader4">File Operations</h4>
+      
+      <p>We created a class called JsonFileHandler that was designed around our SaveData architecture and served as our core file management system, providing static methods for 
+        saving and loading data from a file as shown below.</p>
+      
+      <!--<p>To handle essential file operations such as saving and loading, we created a central class called JsonFileHandler. This class was designed to work with the SaveData architecture we had created, 
+        and included the following statically accessible methods:</p>-->
+      
+      
+      <!--<br>
       <br>
       
-      <a href="#codesample1"><button class="btn fa solid fa-code" style="color: rgb(132,123,255); font-size: 0.8em;"> <span style="color: white; font-weight: normal; font-size: 1em;">Save System</span></button></a>-->
+      <p>The save system was another key technical challenge. Firstly, I wanted the system to be lightweight and easy to use. For me this meant having methods that were simple to understand such as Save, Load, Delete, and a verification method for 
+        checking if a save file exists. That's it. Given it's simple nature and my current experience, it made sense to build this system using JSON. Secondly, I wanted the system to be extensible. If I wanted to introduce a new
+        type of save data to be saved by the system then it should be able to easily accomodate that. Similiarly I wanted the system to be flexible, whereby the system can handle multiple types of save data unrelated to each other such as drone
+        configurations, post-match analytics, or budget information, without changing the core saving and loading logic.</p>
+
+      <h4 class="blogheader4">The Problem</h4>
+      <p>Another key technical challenge was creating a flexible save system that could cater for different types of data.</p>
+
+      <h4 class="blogheader4">The Solution</h4>
+      <p>A JSON-based system was opted for due to it's lightweight nature and ease of use.</p>
+      
+      <br>
+      <br>
+      <br>
+      <br>
+
+      <h4 class="blogheader4">The Problem</h4>
+      <p>System Requirements:</p>
+      <ul>
+        <li><span style="color: white; font-weight: bold;">Flexibility</span> - Handle various data types such as drone configurations, post-match analytics, and budget information, without changing the core save/load logic.</li>
+        <li><span style="color: white; font-weight: bold;">Extensibility</span> - Be easily extendable for any future data types that need to be introduced.</li>
+        <li><span style="color: white; font-weight: bold;">Simplicity</span> - Offer simple methods for saving, loading, and deleting data.</li>
+        &lt;!&ndash;<li><span style="color: white; font-weight: bold;">Type Safety</span> - To prevent errors when loading specific data types.</li>&ndash;&gt;
+      </ul>
+      
+      <h4 class="blogheader4">The Solution</h4>
+      <p>Text</p>-->
+
+
+      <iframe onload="this.height=this.contentWindow.document.body.scrollHeight + 25;" frameborder=0 height=500 width=100% srcdoc="&lt;style&gt;.background{font-family:monaco,Consolas,LucidaConsole,monospace;overflow:scroll;background-color:#0e0e0e;border-radius: 4px;border: solid 1px #c9c9c9;font-size: 0.8em;margin: 0em 1em -3em 1em;padding: 1em 1em;color:#dfdfdf;}.method{color:#DCDCAA;}.class{color:#4EC9B0;}.keyword{color:#569cd6;}.typeParam{color:#b8d7a3;}.punctuation{color:#dfdfdf;}.parameter{color:#9CDCFE;}&lt;/style&gt;
+      &lt;pre class=&quot;background&quot;&gt;
+      &lt;span class=&quot;keyword&quot;&gt;public static void&lt;/span&gt; &lt;span class=&quot;method&quot;&gt;Save&lt;/span&gt;(&lt;span class=&quot;class&quot;&gt;SaveData&lt;/span&gt; &lt;span class=&quot;parameter&quot;&gt;saveData&lt;/span&gt;, &lt;span class=&quot;keyword&quot;&gt;string&lt;/span&gt; &lt;span class=&quot;parameter&quot;&gt;dataPath&lt;/span&gt;) {}
+      
+      &lt;span class=&quot;keyword&quot;&gt;public static&lt;/span&gt; &lt;span class=&quot;typeParam&quot;&gt;T&lt;/span&gt; &lt;span class=&quot;method&quot;&gt;Load&lt;/span&gt;&amp;lt;&lt;span class=&quot;typeParam&quot;&gt;T&lt;/span&gt;&amp;gt;(&lt;span class=&quot;keyword&quot;&gt;string&lt;/span&gt; &lt;span class=&quot;parameter&quot;&gt;dataPath&lt;/span&gt;) &lt;span class=&quot;keyword&quot;&gt;where&lt;/span&gt; &lt;span class=&quot;typeParam&quot;&gt;T&lt;/span&gt; : &lt;span class=&quot;class&quot;&gt;SaveData&lt;/span&gt; {}
+      
+      &lt;span class=&quot;keyword&quot;&gt;public static void&lt;/span&gt; &lt;span class=&quot;method&quot;&gt;Delete&lt;/span&gt;(&lt;span class=&quot;keyword&quot;&gt;string&lt;/span&gt; &lt;span class=&quot;parameter&quot;&gt;dataPath&lt;/span&gt;) {}
+      
+      &lt;span class=&quot;keyword&quot;&gt;public static bool&lt;/span&gt; &lt;span class=&quot;method&quot;&gt;CheckFileExists&lt;/span&gt;(&lt;span class=&quot;keyword&quot;&gt;string&lt;/span&gt; &lt;span class=&quot;parameter&quot;&gt;fileName&lt;/span&gt;) {}&lt;/pre&gt;
+      "></iframe>
+      
+      <p>For type safety and convenience, we opted to use generics for the load method.</p>
+      
+      <p>The following code demonstrates how straightforward the system is to use:</p>
+
+      <iframe onload="this.height=this.contentWindow.document.body.scrollHeight + 25;" frameborder=0 height=500 width=100% srcdoc="&lt;style&gt;.background{font-family:monaco,Consolas,LucidaConsole,monospace;overflow:scroll;background-color:#0e0e0e;border-radius: 4px;border: solid 1px #c9c9c9;font-size: 0.8em;margin: 0em 1em -3em 1em;padding: 1em 1em;color:#dfdfdf;}.method{color:#DCDCAA;}.class{color:#4EC9B0;}.keyword{color:#569cd6;}.string{color:#ce9178;}.control{color:#C586C0;}.comment{color:#6A9955;}.punctuation{color:#dfdfdf;}.operator{color:#dfdfdf;}.localName{color:#9CDCFE;}&lt;/style&gt;
+      &lt;pre class=&quot;background&quot;&gt;
+      &lt;span class=&quot;comment&quot;&gt;// Saving drone data&lt;/span&gt;
+      &lt;span class=&quot;keyword&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;localName&quot;&gt;droneData&lt;/span&gt; = &lt;span class=&quot;keyword&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;class&quot;&gt;DroneData&lt;/span&gt;();
+      &lt;span class=&quot;class&quot;&gt;JsonFileHandler&lt;/span&gt;.&lt;span class=&quot;method&quot;&gt;Save&lt;/span&gt;(&lt;span class=&quot;localName&quot;&gt;droneData&lt;/span&gt;, &lt;span class=&quot;string&quot;&gt;&amp;quot;drone_save&amp;quot;&lt;/span&gt;);
+      
+      &lt;span class=&quot;comment&quot;&gt;// Loading drone data&lt;/span&gt;
+      &lt;span class=&quot;keyword&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;localName&quot;&gt;loadedDroneData&lt;/span&gt; = &lt;span class=&quot;class&quot;&gt;JsonFileHandler&lt;/span&gt;.&lt;span class=&quot;method&quot;&gt;Load&lt;/span&gt;&amp;lt;&lt;span class=&quot;class&quot;&gt;DroneData&lt;/span&gt;&amp;gt;(&lt;span class=&quot;string&quot;&gt;&amp;quot;drone_save&amp;quot;&lt;/span&gt;);
+      
+      &lt;span class=&quot;comment&quot;&gt;// Checking if save exists&lt;/span&gt;
+      &lt;span class=&quot;control&quot;&gt;if&lt;/span&gt; (&lt;span class=&quot;class&quot;&gt;JsonFileHandler&lt;/span&gt;.&lt;span class=&quot;method&quot;&gt;CheckFileExists&lt;/span&gt;(&lt;span class=&quot;string&quot;&gt;&amp;quot;drone_save&amp;quot;&lt;/span&gt;))
+      {
+          &lt;span class=&quot;comment&quot;&gt;// Return save data if it exists&lt;/span&gt;
+      }&lt;/pre&gt;
+      "></iframe>
+
+      <!--<h4 class="blogheader4">Outcome</h4>-->
+      
+      <p>Combined with <span style="color: white; font-weight: bold;">Unity ScriptableObjects</span>, an <span style="color: white; font-weight: bold;">inheritance-based architecture</span>, <span style="color: white; font-weight: bold;">interfaces</span>,
+        and <span style="color: white; font-weight: bold;">generics</span>, a robust system was forged that satisfied all of our requirements.</p>
+
+      <p>Click the button below to jump to the full code sample found at the bottom of this page.</p>
+      
+      <a href="#codesample1"><button class="btn fa solid fa-code" style="color: rgb(132,123,255); font-size: 0.8em;"> <span style="color: white; font-weight: normal; font-size: 1em;">Save System</span></button></a>
 
       <!--===========-->
       <!-- Strengths -->
@@ -293,10 +366,9 @@
       <!-- Conclusion -->
       <!--============-->
       <h2 class="blogheader2">Conclusion</h2>
-      <blockquote>COMING SOON</blockquote>
-      <!--<p>Strikes a balance between gamification and simulation.</p>
+      <p>Strikes a balance between gamification and simulation.</p>
       <p>An educational tool, offering a playground for exploring drone interception strategies while providing an entertaining experience.</p>
-      <p>A comprehensive drone workshop for drone tinkering and experiementation.</p>-->
+      <p>A comprehensive drone workshop for drone tinkering and experiementation.</p>
 
       <!--=====================-->
       <!-- Future Improvements -->

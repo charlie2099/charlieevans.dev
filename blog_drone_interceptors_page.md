@@ -1,5 +1,57 @@
 # Drone Interceptors
 
+
+<p>This is an essential mechanic for iteratively testing different drone configurations to see which combinations of components (alongside other factors) are most effective 
+        at intercepting hostile drones.</p>
+
+These can provide improvements in a drone's performance, or
+introduce trade-offs such as making a drone heavier or more costly to construct.
+
+### Customisation System
+Each drone builds starts off with a base set of attributes. As new augments are added
+to a drone during the customisation stage, the base attributes of the drones are affected,
+for better or worse. For example, augmenting a drone with a component of any kind will of
+course increase it's weight attribute. Certain components may see an increase or decrease
+in a drones speed, acceleration, range, cost, and more.
+
+
+### Save System
+Another of the key technical challenges faced was developing a save system. A save
+system was needed to handle the
+
+There was a need for a system that could update and retrieve data dynamically 
+
+Due to the dynamic nature of the customisation system, it was inevitable that an
+additional system would be needed to handle the retrival of different 
+
+
+
+#### Context
+See above
+
+#### Problem
+Once a drone has finished being customised in the workshop, and it's base attributes have
+now changed, it was important that this new data is carried forward with the drone to the
+next scene, the game. It was also important that this data was retained after the player
+had finished playing, and not lost after the player reboots the game at a later point. 
+
+Inevitably, this meant a system was needed that could handle the saving and retrieval of 
+a player's drone configurations. Additionally, a data retrieval system was also required 
+for the game's post analytics and drone budgeting system.
+
+#### Proposed Solution
+It made sense therefore that rather than developing three separate save systems for each 
+use case, a singular system should be designed that could flexibly support different types
+of save data. 
+
+#### Solution 
+Placeholder
+
+
+
+
+### Other Stuff
+
 Our clients are looking for ways to customize their drones, so that they can easily add or 
 remove components to fine-tune them before deploying them. They desire a playground in which 
 to experiment with different drone configurations in order to test and evaluate the most 
